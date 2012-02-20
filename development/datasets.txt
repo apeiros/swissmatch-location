@@ -1,0 +1,15 @@
+* active(date=Date.today) 
+* inactive(date=Date.today)
+  ZipCodes, Communities, Cantons
+  - selects all entities whose valid_from/valid_until fits
+
+* autocomplete(string)
+  ZipCodes (name in all locales), Communities (name in all locales),
+  Cantons (license_tag and name in all locales)
+  - selects all entities whose name (or other value) starts with the given string,
+    normalized using transliteration
+
+* with_type(*types)
+* without_type(*types)
+  ZipCodes
+  - selects all zip codes that have one of the given types

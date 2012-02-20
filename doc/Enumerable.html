@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Enumerable
+  
+    &mdash; Documentation by YARD 0.7.2
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (E)</a> &raquo; 
+    
+    
+    <span class="title">Enumerable</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: Enumerable
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r1">Included in:</dt>
+    <dd class="r1"><span class='object_link'><a href="SwissMatch/Cantons.html" title="SwissMatch::Cantons (class)">SwissMatch::Cantons</a></span>, <span class='object_link'><a href="SwissMatch/Communities.html" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span>, <span class='object_link'><a href="SwissMatch/ZipCodes.html" title="SwissMatch::ZipCodes (class)">SwissMatch::ZipCodes</a></span></dd>
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/swissmatch/ruby.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+This file provides a couple of ruby monkey patches.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#last-instance_method" title="#last (instance method)">- (Object) <strong>last</strong>(n = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+The last element(s) of self.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="last-instance_method">
+  
+    - (<tt>Object</tt>) <strong>last</strong>(n = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+The last element(s) of self. If the enumerable is empty, the first form
+returns nil, the second an empty Array. The method is optimized to make use
+of reverse_each if present.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">ary.last     -&gt;  obj or nil
+ary.last(n)  -&gt;  new_ary</pre>
+    
+  </div>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'><p>
+The last element(s) of self. If the enumerable is empty, the first form
+returns nil, the second an empty Array. The method is optimized to make use
+of reverse_each if present.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/ruby.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id last'>last</span><span class='lparen'>(</span><span class='id n'>n</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id reverse_each_method'>reverse_each_method</span> <span class='op'>=</span> <span class='id method'>method</span><span class='lparen'>(</span><span class='symbol'>:reverse_each</span><span class='rparen'>)</span>
+  <span class='id has_reverse_each'>has_reverse_each</span>    <span class='op'>=</span> <span class='id reverse_each_method'>reverse_each_method</span> <span class='op'>&amp;&amp;</span> <span class='id reverse_each_method'>reverse_each_method</span><span class='period'>.</span><span class='id owner'>owner</span> <span class='op'>!=</span> <span class='const'>Enumerable</span> <span class='comment'># native reverse_each needed
+</span>  <span class='kw'>if</span> <span class='id n'>n</span> <span class='kw'>then</span>
+    <span class='id return_value'>return_value</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='kw'>if</span> <span class='id has_reverse_each'>has_reverse_each</span> <span class='kw'>then</span>
+      <span class='id reverse_each'>reverse_each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id val'>val</span><span class='op'>|</span>
+        <span class='id return_value'>return_value</span><span class='period'>.</span><span class='id unshift'>unshift</span><span class='lparen'>(</span><span class='id val'>val</span><span class='rparen'>)</span>
+        <span class='kw'>return</span> <span class='id return_value'>return_value</span> <span class='kw'>if</span> <span class='id return_value'>return_value</span><span class='period'>.</span><span class='id size'>size</span> <span class='op'>==</span> <span class='id n'>n</span>
+      <span class='rbrace'>}</span>
+    <span class='kw'>else</span>
+      <span class='id each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id val'>val</span><span class='op'>|</span>
+        <span class='id return_value'>return_value</span><span class='period'>.</span><span class='id push'>push</span><span class='lparen'>(</span><span class='id val'>val</span><span class='rparen'>)</span>
+        <span class='id return_value'>return_value</span><span class='period'>.</span><span class='id shift'>shift</span> <span class='kw'>if</span> <span class='id return_value'>return_value</span><span class='period'>.</span><span class='id size'>size</span> <span class='op'>&gt;</span> <span class='id n'>n</span>
+      <span class='rbrace'>}</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='kw'>if</span> <span class='id has_reverse_each'>has_reverse_each</span> <span class='kw'>then</span>
+      <span class='id reverse_each'>reverse_each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id value'>value</span><span class='op'>|</span> <span class='kw'>return</span> <span class='id value'>value</span> <span class='rbrace'>}</span>
+    <span class='kw'>else</span>
+      <span class='id return_value'>return_value</span> <span class='op'>=</span> <span class='kw'>nil</span>
+      <span class='id each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id value'>value</span><span class='op'>|</span> <span class='id return_value'>return_value</span> <span class='op'>=</span> <span class='id value'>value</span> <span class='rbrace'>}</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id return_value'>return_value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Mon Feb 20 12:48:07 2012 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.2 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>
