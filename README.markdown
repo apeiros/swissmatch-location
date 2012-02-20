@@ -18,12 +18,14 @@ Installation
 Usage
 -----
 Example usage:
+
     require 'swissmatch/autoload' # use this to automatically load the data
     SwissMatch.zip_code(8000).first.name        # => "Zürich"
     SwissMatch.zip_code(8000, 0).name           # => "Zürich"
     SwissMatch.zip_code(8000, "Zürich").add_on  # => 0
 
 If you want to load the data into your database, you can use:
+
     swissmatch_db create
     swissmatch_db seed
 
