@@ -49,13 +49,20 @@ module SwissMatch
     end
 
     def to_hash
-      @names.merge(:name => @name, :license_tag => @license_tag)
+      {
+        :name         => @name,
+        :name_de      => @names[:de],
+        :name_fr      => @names[:fr],
+        :name_it      => @names[:it],
+        :name_rt      => @names[:rt],
+        :license_tag  => @license_tag
+      }
     end
 
     alias to_s name
 
     def hash
-      [self.class, @license_tag]
+      [self.class, @license_tag].hash
     end
 
     def eql?(other)

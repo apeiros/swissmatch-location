@@ -47,7 +47,7 @@ module SwissMatch
     def [](key)
       case key
         when 100_000..999_999, /\A(\d{4})(\d\d)\z/
-          by_code_and_add_on($1.to_i, $2.to_i)
+          $1 ? by_code_and_add_on($1.to_i, $2.to_i) : by_code_and_add_on(*key.divmod(100))
         when 0..9999, /\A\d{4}\z/
           by_code(key.to_i)
         when String
@@ -134,7 +134,9 @@ module SwissMatch
     # @return [SwissMatch::ZipCode]
     #   The SwissMatch::ZipCode with the given 4 digit code and name in any language.
     def by_code_and_name(code, name)
-      @by_code_and_name ||= Hash[zip_codes.map { |c| [[c.code, c.name], c] }]
+      @by_code_and_name ||= Hash[@zip_codes.flat_map { |c|
+        c.names.map { |name| [[c.code, name], c] }
+      }]
       @by_code_and_name[[code,name]]
     end
 

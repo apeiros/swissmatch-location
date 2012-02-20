@@ -2,6 +2,11 @@
 
 
 
+require 'swissmatch'
+require 'active_record'
+
+
+
 module SwissMatch
   module ActiveRecord
     LanguageToCode = {
@@ -39,10 +44,12 @@ module SwissMatch
       end
       data_source.zip_codes.each do |zip_code|
         hash                        = zip_code.to_hash
+        hash.delete(:delivery_by)
+        #hash[:record_type]          = hash.delete(:type)
         hash[:canton_id]            = canton2id[hash.delete(:canton)]
         hash[:community_id]         = community2id[hash.delete(:community)]
-        hash[:language]             = LanguageToCode[zip_code.delete(:language)]
-        hash[:language_alternative] = LanguageToCode[zip_code.delete(:language_alternative)]
+        hash[:language]             = LanguageToCode[hash.delete(:language)]
+        hash[:language_alternative] = LanguageToCode[hash.delete(:language_alternative)]
         SwissMatch::ActiveRecord::ZipCode.create!(hash).id
       end
     end
@@ -51,8 +58,14 @@ module SwissMatch
     end
 
     class Migration < ::ActiveRecord::Migration
-      def change
-        create_table :swissmatch_cantons do |t|
+      def down
+        drop_table :swissmatch_cantons
+        drop_table :swissmatch_communities
+        drop_table :swissmatch_zip_codes
+      end
+
+      def up
+        create_table :swissmatch_cantons, :comment => 'All swiss cantons as needed by swiss posts MAT[CH], includes the non-cantons DE and IT.' do |t|
           t.string  :license_tag, :comment => 'The two letter abbreviation of the cantons name as used on license plates.'
           t.string  :name,        :comment => 'The official name of the canton.'
           t.string  :name_de,     :comment => 'The name of the canton in german.'
@@ -62,7 +75,7 @@ module SwissMatch
           t.timestamps
         end
 
-        create_table :swissmatch_communities do |t|
+        create_table :swissmatch_communities, :comment => 'The swiss communities as per plz_c file from the swiss posts MAT[CH].' do |t|
           t.string  :community_number,  :comment => 'A unique, never recycled identification number. Also known as BFSNR.'
           t.string  :name,              :comment => 'The official name of the community.'
           t.string  :canton_id,         :comment => 'The canton this community belongs to.'
@@ -70,7 +83,7 @@ module SwissMatch
           t.timestamps
         end
 
-        create_table :swissmatch_zip_codes do |t|
+        create_table :swissmatch_zip_codes, :comment => 'The swiss zip codes as per plz_p1 and plz_p2 files from the swiss posts MAT[CH].' do |t|
           t.integer :ordering_number,       :comment => 'The postal ordering number, also known as ONRP.'
           t.integer :type,                  :comment => 'The type of the entry. One of 10 (Domizil- und Fachadressen), 20 (Nur Domiziladressen), 30 (Nur Fach-PLZ), 40 (Firmen-PLZ) or 80 (Postinterne PLZ).'
           t.integer :code,                  :comment => 'The 4 digit numeric zip code. Note that the 4 digit code alone does not uniquely identify a zip code record.'
@@ -91,16 +104,35 @@ module SwissMatch
 
           t.timestamps
         end
+
+        # not every db supports foreign key constraints, and maybe there are also syntax differences,
+        # hence wrap it
+        begin
+          execute <<-SQL
+            ALTER TABLE swissmatch_communities
+              ADD CONSTRAINT fk_sm_com_0001 FOREIGN KEY (canton_id) REFERENCES swissmatch_cantons(id)
+              ADD CONSTRAINT fk_sm_com_0002 FOREIGN KEY (agglomeration_id) REFERENCES swissmatch_communities(id)
+          SQL
+          execute <<-SQL
+            ALTER TABLE swissmatch_zip_codes
+              ADD CONSTRAINT fk_sm_com_0001 FOREIGN KEY (canton_id) REFERENCES swissmatch_cantons(id)
+              ADD CONSTRAINT fk_sm_com_0002 FOREIGN KEY (community_id) REFERENCES swissmatch_communities(id)
+              ADD CONSTRAINT fk_sm_com_0002 FOREIGN KEY (delivery_by_id) REFERENCES swissmatch_zip_codes(id)
+          SQL
+        rescue => e
+          warn "No foreign key support (#{e})"
+        end
       end
     end
 
-    class ZipCode < ActiveRecord::Base
-      self.table_name = "swissmatch_zip_codes"
+    class ZipCode < ::ActiveRecord::Base
+      self.table_name         = "swissmatch_zip_codes"
+      self.inheritance_column = "no_sti_in_this_model" # set it to something unused, so 'type' can be used as column name
     end
-    class Community < ActiveRecord::Base
+    class Community < ::ActiveRecord::Base
       self.table_name = "swissmatch_communities"
     end
-    class Canton < ActiveRecord::Base
+    class Canton < ::ActiveRecord::Base
       self.table_name = "swissmatch_cantons"
     end
   end

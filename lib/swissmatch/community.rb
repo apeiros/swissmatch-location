@@ -54,7 +54,7 @@ module SwissMatch
     end
 
     def hash
-      [self.class, @community_number]
+      [self.class, @community_number].hash
     end
 
     def eql?(other)

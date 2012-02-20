@@ -37,6 +37,18 @@ module SwissMatch
     attr_reader :data
   end
 
+  def self.canton(name_or_plate)
+    @data.cantons[name_or_plate]
+  end
+
+  def self.community(key)
+    @data.communities.by_community_number(key)
+  end
+
+  def self.communities(name)
+    @data.communities.by_name(name)
+  end
+
   # @param [String, Integer] code_or_name
   #   Either the 4 digit zip code as Integer or String, or the city name as a String in
   #   utf-8.
@@ -63,7 +75,7 @@ module SwissMatch
   # @return [Array<SwissMatch::ZipCode>]
   #   The zip codes with the given code and the given add-on or name.
   def self.zip_code(code, city_or_add_on)
-    case second
+    case city_or_add_on
       when Integer, /\A\d\d\z/
         @data.zip_codes.by_code_and_add_on(code.to_i, city_or_add_on.to_i)
       when String

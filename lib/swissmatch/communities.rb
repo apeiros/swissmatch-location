@@ -14,7 +14,7 @@ module SwissMatch
     def initialize(communities)
       @all                  = communities
       @by_community_number  = Hash[communities.map { |c| [c.community_number, c] }]
-      @by_name              = Hash[communities.map { |c| [c.name, c] }]
+      @by_name              = communities.group_by(&:name)
     end
 
     # Calls the block once for every SwissMatch::Community in this SwissMatch::Communities
@@ -43,7 +43,7 @@ module SwissMatch
       self
     end
 
-    # @return [SwissMatch::Community]
+    # @return [Array<SwissMatch::Community>, SwissMatch::Community]
     #   The community with the given name or community number.
     def [](key)
       @by_name[key] || by_community_number[key.to_i]
@@ -55,7 +55,7 @@ module SwissMatch
       @by_community_number[number]
     end
 
-    # @return [SwissMatch::Community]
+    # @return [Array<SwissMatch::Community>]
     #   The community with the given name.
     def by_name(name)
       @by_name[name]

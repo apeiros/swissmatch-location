@@ -190,12 +190,16 @@ module SwissMatch
     end
 
     def to_hash
-      @names.merge({
+      {
         :ordering_number      => @ordering_number,
         :type                 => @type,
         :code                 => @code,
         :add_on               => @add_on,
         :name                 => @name,
+        :name_de              => @names[:de],
+        :name_fr              => @names[:fr],
+        :name_it              => @names[:it],
+        :name_rt              => @names[:rt],
         :canton               => @canton,
         :language             => @language,
         :language_alternative => @language_alternative,
@@ -204,11 +208,11 @@ module SwissMatch
         :community            => @community,
         :valid_from           => @valid_from,
         :valid_until          => @valid_until,
-      })
+      }
     end
 
     def hash
-      [self.class, @ordering_number]
+      [self.class, @ordering_number].hash
     end
 
     def eql?(other)
