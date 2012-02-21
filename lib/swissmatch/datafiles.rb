@@ -223,37 +223,45 @@ module SwissMatch
       raise "Must load cantons first" unless cantons
       raise "Must load communities first" unless communities
 
-      temporary = {}
-      zip1_file = Dir.enum_for(:glob, "#{@data_directory}/plz_p1_*.txt").last
-      zip2_file = Dir.enum_for(:glob, "#{@data_directory}/plz_p2_*.txt").last
+      temporary       = {}
+      self_delivered  = []
+      others          = []
+      zip1_file       = Dir.enum_for(:glob, "#{@data_directory}/plz_p1_*.txt").last
+      zip2_file       = Dir.enum_for(:glob, "#{@data_directory}/plz_p2_*.txt").last
       load_table(zip1_file, :zip_1).each do |row|
-        onrp = row.at(0).to_i
-        temporary[onrp] = [
-          onrp,                             # ordering_number
-          row.at(1).to_i,                   # type
-          row.at(2).to_i,                   # code
-          row.at(3).to_i,                   # add_on
-          row.at(4),                        # name
-          row.at(4),                        # name_de
-          row.at(4),                        # name_fr
-          row.at(4),                        # name_it
-          row.at(4),                        # name_rt
-          row.at(5),                        # name_short
-          row.at(5),                        # name_short_de
-          row.at(5),                        # name_short_fr
-          row.at(5),                        # name_short_it
-          row.at(5),                        # name_short_rt
+        onrp        = row.at(0).to_i
+        delivery_by = row.at(10).to_i
+        delivery_by = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
+        data        = [
+          onrp,                              # ordering_number
+          row.at(1).to_i,                    # type
+          row.at(2).to_i,                    # code
+          row.at(3).to_i,                    # add_on
+          row.at(4),                         # name
+          row.at(4),                         # name_de
+          row.at(4),                         # name_fr
+          row.at(4),                         # name_it
+          row.at(4),                         # name_rt
+          row.at(5),                         # name_short
+          row.at(5),                         # name_short_de
+          row.at(5),                         # name_short_fr
+          row.at(5),                         # name_short_it
+          row.at(5),                         # name_short_rt
           cantons.by_license_tag(row.at(6)), # canton
-          LanguageCodes[row.at(7).to_i],    # language
-          LanguageCodes[row.at(8).to_i],    # language_alternative
-          row.at(9) == "1",                 # sortfile_member
-          row.at(10).to_i,                  # delivery_by
+          LanguageCodes[row.at(7).to_i],     # language
+          LanguageCodes[row.at(8).to_i],     # language_alternative
+          row.at(9) == "1",                  # sortfile_member
+          delivery_by,                       # delivery_by
           communities.by_community_number(row.at(11).to_i),  # community_number
           Date.civil(*row.at(12).match(/^(\d{4})(\d\d)(\d\d)$/).captures.map(&:to_i)) # valid_from
         ]
+        temporary[onrp] = data
+        if :self == delivery_by then
+          self_delivered << data
+        else
+          others << data
+        end
       end
-
-      # FIXME: resolve delivery_by
 
       load_table(zip2_file, :zip_2).each do |onrp, rn, type, lang, short, name|
         next unless type == "2"
@@ -265,7 +273,17 @@ module SwissMatch
         entry[s2] = short
       end
 
-      ZipCodes.new(temporary.values.map { |row| ZipCode.new(*row) })
+      self_delivered.each do |row|
+        temporary[row.at(0)] = ZipCode.new(*row)
+      end
+      others.each do |row|
+        if row.at(18) then
+          raise "Delivery not found:\n#{row.inspect}" unless row[18] = temporary[row.at(18)]
+        end
+        temporary[row.at(0)] = ZipCode.new(*row)
+      end
+
+      ZipCodes.new(temporary.values)
     end
 
     # Reads a file and parses using the pattern of the given name.

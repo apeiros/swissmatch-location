@@ -57,7 +57,6 @@ module SwissMatch
     #   Whether this ZipCode instance is included in the MAT[CH]sort sortfile
     attr_reader :sortfile_member
 
-    # @todo This method currently returns the ONRP instead of the ZipCode
     # @return [SwissMatch::ZipCode]
     #   By which postal office delivery of letters is usually taken care of.
     attr_reader :delivery_by
@@ -125,7 +124,7 @@ module SwissMatch
       @language             = language
       @language_alternative = language_alternative
       @sortfile_member      = sortfile_member
-      @delivery_by          = delivery_by
+      @delivery_by          = delivery_by == :self ? self : delivery_by
       @community            = community
       @valid_from           = valid_from
       @valid_until          = valid_until
