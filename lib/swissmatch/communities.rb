@@ -46,7 +46,7 @@ module SwissMatch
     # @return [Array<SwissMatch::Community>, SwissMatch::Community]
     #   The community with the given name or community number.
     def [](key)
-      @by_name[key] || by_community_number[key.to_i]
+      @by_name[key] || @by_community_number[key.to_i]
     end
 
     # @return [SwissMatch::Community]
