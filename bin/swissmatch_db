@@ -41,15 +41,10 @@ log_file ||= "log/#{environment}.log" if File.writable?("log")
 log_file = nil if log_file == '_'
 log_file = $stdout if log_file == '-'
 
-# load config
+# establish connection and setup logging
 abort("Configuration file not found, use -c switch to specify one. Tried '#{config_file}'") unless File.readable?(config_file)
-config = YAML.load_file(config_file)
-config = config[environment] if config[environment]
-config = Hash[config.map { |k,v| [k.to_sym, v] }]
-
-# establish connection
+SwissMatch::ActiveRecord.connect_from_config(config_file, environment)
 ActiveRecord::Base.logger = Logger.new(log_file) if log_file
-ActiveRecord::Base.establish_connection(config)
 
 # handle commands
 case ARGV.first
