@@ -72,10 +72,12 @@ module SwissMatch
   #   Either the 2 digit zip-code add-on as string or integer, or the city name as a
   #   String in utf-8.
   #
-  # @return [Array<SwissMatch::ZipCode>]
+  # @return [SwissMatch::ZipCode]
   #   The zip codes with the given code and the given add-on or name.
-  def self.zip_code(code, city_or_add_on)
+  def self.zip_code(code, city_or_add_on=nil)
     case city_or_add_on
+      when nil
+        @data.zip_codes.by_ordering_number(code.to_i)
       when Integer, /\A\d\d\z/
         @data.zip_codes.by_code_and_add_on(code.to_i, city_or_add_on.to_i)
       when String
