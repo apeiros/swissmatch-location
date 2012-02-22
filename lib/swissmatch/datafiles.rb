@@ -278,7 +278,13 @@ module SwissMatch
       end
       others.each do |row|
         if row.at(18) then
-          raise "Delivery not found:\n#{row.inspect}" unless row[18] = temporary[row.at(18)]
+          raise "Delivery not found:\n#{row.inspect}" unless tmp = temporary[row.at(18)]
+          if tmp.kind_of?(Array) then
+            #puts "Invalid reference: onrp #{row.at(0)} delivery by #{row.at(18)}"
+            row[18] = nil
+          else
+            row[18] = tmp
+          end
         end
         temporary[row.at(0)] = ZipCode.new(*row)
       end
