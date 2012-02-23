@@ -2,6 +2,10 @@
 
 
 
+require 'swissmatch/loaderror'
+
+
+
 module SwissMatch
 
   # Deals with retrieving and updating the files provided by the swiss postal service,
@@ -100,9 +104,13 @@ module SwissMatch
     # @return [SwissMatch::ZipCodes] The loaded swiss zip codes
     attr_reader :zip_codes
 
+    # @return [Array<LoadError>] Errors that occurred while loading the data
+    attr_reader :errors
+
     # @param [nil, String] data_directory
     #   The directory in which the post mat[ch] files reside
     def initialize(data_directory=nil)
+      reset_errors!
       if data_directory then
         @data_directory = data_directory
       elsif ENV['SWISSMATCH_DATA'] then
@@ -112,6 +120,13 @@ module SwissMatch
         data_directory  = Gem.datadir 'swissmatch' if defined?(Gem) && !File.directory?(data_directory)
         @data_directory = data_directory
       end
+    end
+
+    # Resets the list of errors that were encountered during load
+    # @return [self]
+    def reset_errors!
+      @errors = []
+      self
     end
 
     # Load new files
@@ -166,6 +181,8 @@ module SwissMatch
     #   Returns an array of the form [SwissMatch::Cantons, SwissMatch::Communities,
     #   SwissMatch::ZipCodes].
     def load
+      reset_errors!
+
       cantons     = load_cantons
       communities = load_communities(cantons)
       zip_codes   = load_zipcodes(cantons, communities)
@@ -280,7 +297,7 @@ module SwissMatch
         if row.at(18) then
           raise "Delivery not found:\n#{row.inspect}" unless tmp = temporary[row.at(18)]
           if tmp.kind_of?(Array) then
-            #puts "Invalid reference: onrp #{row.at(0)} delivery by #{row.at(18)}"
+            @errors << LoadError.new("Invalid reference: onrp #{row.at(0)} delivery by #{row.at(18)}", row)
             row[18] = nil
           else
             row[18] = tmp

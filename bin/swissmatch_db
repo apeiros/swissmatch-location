@@ -17,7 +17,7 @@ config_file = ENV["SWISSMATCH_DB_CONFIG"] || 'config/database.yml'
 parser      = OptionParser.new do |opts|
   opts.banner = "Usage: #{$0} [options] command"
 
-  opts.on("-h", "--help", "Print help and exit") do |v|
+  opts.on("-h", "--help", "Print help and exit") do
     help
     exit
   end
