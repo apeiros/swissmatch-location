@@ -2,7 +2,11 @@
 
 
 
+warn "WARNING: Directory Services API is not yet stable (from swissmatch/telsearch.rb)"
 require 'swissmatch/address'
+require 'uri'
+require 'open-uri'
+require 'nokogiri'
 
 
 
@@ -12,11 +16,11 @@ module SwissMatch
   # Also see http://tel.search.ch/api/help
   class TelSearch
     NS = {'t' => 'http://tel.search.ch/api/spec/result/1.0/'}
-    API_URI = 
+    API_URI = URI.parse('http://tel.search.ch/api')
 
     def initialize(key)
       @key = key
-      @uri = API_URI URI.parse('http://tel.search.ch/api')
+      @uri = API_URI
     end
 
     def search_ch_mapping(params)
