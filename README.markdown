@@ -17,12 +17,14 @@ Installation
 
 Usage
 -----
-### Example usage:
+### Example usage
 
     require 'swissmatch/autoload' # use this to automatically load the data
-    SwissMatch.zip_codes(8000).first.name        # => "Zürich"
+    SwissMatch.zip_codes(8000).first.name       # => "Zürich"
     SwissMatch.zip_code(8000, 0).name           # => "Zürich"
     SwissMatch.zip_code(8000, "Zürich").add_on  # => 0
+    SwissMatch.canton("ZH").name(:it)           # => "Zurigo"
+    SwissMatch.canton("Zurigo").name            # => "Zürich"
 
 ### SwissMatch and Databases
 If you want to load the data into your database, you can use:
@@ -58,3 +60,10 @@ The key 'global' will be used as the base for every environment.
 Description
 -----------
 Deal with swiss zip codes.
+
+
+
+Credits
+-------
+
+* <a href="http://www.awd.ch/">AWD Switzerland<a>, for donating time to work on this gem.
