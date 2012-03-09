@@ -286,8 +286,12 @@ module SwissMatch
         lang      = lang.to_i
         s1,s2     = *LanguageSlots[lang]
         entry     = temporary[onrp]
-        entry[s1] = name
-        entry[s2] = short
+        if entry[15] == LanguageCodes[lang] then # alternative name
+          # not yet implemented
+        else
+          entry[s1] = name
+          entry[s2] = short
+        end
       end
 
       self_delivered.each do |row|
