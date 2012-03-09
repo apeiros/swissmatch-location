@@ -56,7 +56,7 @@ module SwissMatch
     # @return [SwissMatch::Canton]
     #   The canton with the given license tag or name (in any language)
     def [](key)
-      @by_license_tag[key] || @by_name[name]
+      @by_license_tag[key] || @by_name[key]
     end
 
     # @return [SwissMatch::Canton]
