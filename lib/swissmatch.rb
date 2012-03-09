@@ -33,8 +33,12 @@ module SwissMatch
   @data             = nil
 
   class <<self
-    # @return [SwissMatch::DataFiles] The data source used
+    # @return [SwissMatch::DataFiles, nil] The data source used
     attr_reader :data
+
+    # @return [SwissMatch::DirectoryService, nil]
+    # The directory service used to search for addresses
+    attr_accessor :directory_service
   end
 
   def self.canton(name_or_plate)

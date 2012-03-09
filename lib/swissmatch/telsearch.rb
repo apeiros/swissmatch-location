@@ -2,7 +2,7 @@
 
 
 
-warn "WARNING: Directory Services API is not yet stable (from swissmatch/telsearch.rb)"
+require 'swissmatch/directoryservice'
 require 'swissmatch/address'
 require 'uri'
 require 'open-uri'
@@ -14,8 +14,8 @@ module SwissMatch
 
   # A Directory service, using tel.search.ch's API.
   # Also see http://tel.search.ch/api/help
-  class TelSearch
-    NS = {'t' => 'http://tel.search.ch/api/spec/result/1.0/'}
+  class TelSearch < DirectoryService
+    NS      = {'t' => 'http://tel.search.ch/api/spec/result/1.0/'}
     API_URI = URI.parse('http://tel.search.ch/api')
 
     def initialize(key)
@@ -50,7 +50,7 @@ module SwissMatch
 
   private
     def extract(node, selector)
-      subnode = node.at_css('t|firstname', NS)
+      subnode = node.at_css(selector, NS)
       text    = subnode && subnode.text
 
       block_given? ? yield(text) : text
