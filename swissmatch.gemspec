@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
 
   s.files                     =
     Dir['bin/**/*'] +
+    Dir['data/**/*'] +
     Dir['lib/**/*'] +
     Dir['rake/**/*'] +
     Dir['test/**/*'] +
