@@ -188,7 +188,10 @@ module SwissMatch
       end
     end
 
-    def to_hash
+    def to_hash(retain_references=false)
+      delivery_by = retain_references ? @delivery_by : (@delivery_by && @delivery_by.ordering_number)
+      community   = retain_references ? @community : (@community && @community.community_number)
+      canton      = retain_references ? @canton : (@canton && @canton.license_tag)
       {
         :ordering_number      => @ordering_number,
         :type                 => @type,
@@ -199,12 +202,12 @@ module SwissMatch
         :name_fr              => @names[:fr],
         :name_it              => @names[:it],
         :name_rt              => @names[:rt],
-        :canton               => @canton,
+        :canton               => canton,
         :language             => @language,
         :language_alternative => @language_alternative,
         :sortfile_member      => @sortfile_member,
-        :delivery_by          => @delivery_by,
-        :community            => @community,
+        :delivery_by          => delivery_by,
+        :community            => community,
         :valid_from           => @valid_from,
         :valid_until          => @valid_until,
       }
