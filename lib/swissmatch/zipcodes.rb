@@ -121,7 +121,7 @@ module SwissMatch
     #   An array with all SwissMatch::ZipCode objects having the given 4 digit code.
     def by_code(code)
       @by_code ||= @zip_codes.group_by { |c| c.code }
-      ZipCodes.new(@by_code[code])
+      ZipCodes.new(@by_code[code] || [])
     end
 
     # @return [SwissMatch::ZipCode]
@@ -149,7 +149,7 @@ module SwissMatch
           hash[name] << zip_code
         end
       }
-      ZipCodes.new(@by_name[name])
+      ZipCodes.new(@by_name[name] || [])
     end
 
     # @return [Integer] The number of SwissMatch::ZipCode objects in this collection.
