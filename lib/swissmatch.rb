@@ -45,12 +45,16 @@ module SwissMatch
     @data.cantons[name_or_plate]
   end
 
+  def self.cantons
+    @data.cantons
+  end
+
   def self.community(key)
     @data.communities.by_community_number(key)
   end
 
-  def self.communities(name)
-    @data.communities.by_name(name)
+  def self.communities(name=nil)
+    name ? @data.communities.by_name(name) : @data.communities
   end
 
   # @param [String, Integer] code_or_name
@@ -59,12 +63,14 @@ module SwissMatch
   #
   # @return [Array<SwissMatch::ZipCode>]
   #   A list of zip codes with the given code or name.
-  def self.zip_codes(code_or_name)
+  def self.zip_codes(code_or_name=nil)
     case code_or_name
       when Integer, /\A\d{4}\z/
         @data.zip_codes.by_code(code_or_name.to_i)
       when String
         @data.zip_codes.by_name(code_or_name)
+      when nil
+        @data.zip_codes
       else
         raise ArgumentError, "Invalid argument, must be a ZipCode#code (Integer or String) or ZipCode#name (String)"
     end
