@@ -24,34 +24,80 @@ module SwissMatch
       ::ActiveRecord::Base.establish_connection(config)
     end
 
+    def self.delete_all
+      SwissMatch::ActiveRecord::ZipCode.delete_all
+      SwissMatch::ActiveRecord::Community.delete_all
+      SwissMatch::ActiveRecord::Canton.delete_all
+    end
+
+    def self.cursor_hidden(io=$stdout)
+      io.printf "\e[?25l"
+      io.flush
+      yield
+    ensure
+      io.printf "\e[?25h"
+      io.flush
+    end
+
+    def self.print_progress(progress, total, width=80, io=$stdout)
+      bar_width = width-8
+      percent   = progress.fdiv(total)
+      filled    = (percent*bar_width).round
+      empty     = bar_width - filled
+      io.printf "\r\e[1m %5.1f%%\e[0m \e[44m%*s\e[46m%*s\e[0m", percent*100, filled, '', empty, ''
+      io.flush
+    end
+
     def self.seed(data_source=SwissMatch.data)
       canton2id     = {}
+      total         = data_source.cantons.size +
+                      data_source.communities.size +
+                      data_source.zip_codes.size +
+                      10
+      progress      = 0
 
-      data_source.cantons.each do |canton|
-        canton2id[canton] = SwissMatch::ActiveRecord::Canton.create!(canton.to_hash, :without_protection => true).id
-      end
-      data_source.communities.partition do |community|
-        hash                    = community.to_hash
-        hash[:canton_id]        = canton2id[hash.delete(:canton)]
-        a = hash.delete(:agglomeration)
-        hash[:agglomeration_id] = a && a.agglomeration.community_number
-        SwissMatch::ActiveRecord::Community.create!(hash, :without_protection => true)
-      end
-      self_delivered, others = data_source.zip_codes.partition { |code| code.delivery_by.nil? || code.delivery_by == code }
-      process_code = proc do |zip_code|
-        hash                        = zip_code.to_hash
-        hash[:id]                   = hash.delete(:ordering_number)
-        v = hash.delete(:delivery_by)
-        hash[:delivery_by_id]       = v && v.ordering_number
-        hash[:canton_id]            = canton2id[hash.delete(:canton)]
-        hash[:community_id]         = hash.delete(:community).community_number
-        hash[:language]             = LanguageToCode[hash.delete(:language)]
-        hash[:language_alternative] = LanguageToCode[hash.delete(:language_alternative)]
-        SwissMatch::ActiveRecord::ZipCode.create!(hash, :without_protection => true)
-      end
+      cursor_hidden do
+        print_progress(progress, total)
 
-      self_delivered.each(&process_code)
-      others.each(&process_code)
+        ::ActiveRecord::Base.transaction do
+          delete_all
+          print_progress(progress+=10, total)
+
+          data_source.cantons.each do |canton|
+            canton2id[canton.license_tag] = SwissMatch::ActiveRecord::Canton.create!(canton.to_hash, :without_protection => true).id
+            print_progress(progress+=1, total)
+          end
+          data_source.communities.partition do |community|
+            hash                    = community.to_hash
+            hash[:canton_id]        = canton2id[hash.delete(:canton)]
+            hash[:agglomeration_id] = hash.delete(:agglomeration)
+            SwissMatch::ActiveRecord::Community.create!(hash, :without_protection => true)
+            print_progress(progress+=1, total)
+          end
+          self_delivered, others = data_source.zip_codes.partition { |code| code.delivery_by.nil? || code.delivery_by == code }
+          process_code = proc do |zip_code|
+            hash                        = zip_code.to_hash
+            hash[:id]                   = hash.delete(:ordering_number)
+            hash[:delivery_by_id]       = hash.delete(:delivery_by)
+            hash[:canton_id]            = canton2id[hash.delete(:canton)]
+            hash[:language]             = LanguageToCode[hash.delete(:language)]
+            hash[:language_alternative] = LanguageToCode[hash.delete(:language_alternative)]
+            hash[:community_id]         = hash.delete(:community)
+
+            # FIXME: work around, should be replaced by a proper mechanism
+            hash.delete(:valid_from)
+            hash.delete(:valid_until)
+            hash[:active]               = true
+
+            SwissMatch::ActiveRecord::ZipCode.create!(hash, :without_protection => true)
+            print_progress(progress+=1, total)
+          end
+
+          self_delivered.each(&process_code)
+          others.each(&process_code)
+        end
+      end
+      puts "","Done"
     end
 
     def self.update(data_source=SwissMatch.data)
@@ -97,13 +143,14 @@ module SwissMatch
           t.string  :name_fr,               :limit => 27, :comment => 'The name (city) in french that belongs to this zip code. At a maximum 27 characters long.'
           t.string  :name_it,               :limit => 27, :comment => 'The name (city) in italian that belongs to this zip code. At a maximum 27 characters long.'
           t.string  :name_rt,               :limit => 27, :comment => 'The name (city) in rheto-romanic that belongs to this zip code. At a maximum 27 characters long.'
-          t.integer :language,              :limit => 1,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          t.integer :language_alternative,  :limit => 1,  :comment => 'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
+          t.integer :language,              :limit => 2,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
+          t.integer :language_alternative,  :limit => 2,  :comment => 'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
           t.boolean :sortfile_member,                     :comment => 'Whether this ZipCode instance is included in the MAT[CH]sort sortfile.'
           t.integer :delivery_by_id,        :limit => 6,  :comment => '[CURRENTLY NOT USED] By which postal office delivery of letters is usually taken care of.'
           t.integer :community_id,          :limit => 6,  :comment => 'The community this zip code belongs to.'
-          t.date    :valid_from,                          :comment => 'The date from which on this zip code starts to be in use.'
-          t.date    :valid_until,                         :comment => '[CURRENTLY NOT USED] The date until which this zip code is in use.'
+          t.boolean :active,                              :comment => 'Whether this record is currently active.'
+#           t.date    :valid_from,                          :comment => 'The date from which on this zip code starts to be in use.'
+#           t.date    :valid_until,                         :comment => '[CURRENTLY NOT USED] The date until which this zip code is in use.'
 
           t.timestamps
         end
