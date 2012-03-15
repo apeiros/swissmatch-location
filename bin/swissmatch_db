@@ -59,13 +59,15 @@ case ARGV.first
   when nil
     puts "No command given"
     help
-    abort
+    abort "Aborting"
   else
-    abort("Unknown command: #{ARGV.first}")
+    puts "Unknown command: #{ARGV.first}"
+    help
+    abort "Aborting"
 end
 
 BEGIN {
   def help
-    puts "Available commands are:", "  migrate", "  seed"
+    puts "Available commands are:", "  create", "  seed", "  destroy"
   end
 }
