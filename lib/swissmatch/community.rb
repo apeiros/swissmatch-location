@@ -44,12 +44,20 @@ module SwissMatch
 
     alias to_s name
 
-    def to_hash
+    def to_hash(retain_references=false)
+      if retain_references then
+        canton        = @canton
+        agglomeration = @agglomeration
+      else
+        canton        = @canton && @canton.license_tag
+        agglomeration = @agglomeration && @agglomeration.community_number
+      end
+
       {
         :community_number => @community_number,
         :name             => @name,
-        :canton           => @canton,
-        :agglomeration    => @agglomeration,
+        :canton           => canton,
+        :agglomeration    => agglomeration,
       }
     end
 
