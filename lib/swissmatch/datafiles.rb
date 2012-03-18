@@ -130,32 +130,44 @@ module SwissMatch
     end
 
     # Load new files
+    #
+    # @return [Array<String>]
+    #   An array with the absolute file paths of the extracted files.
     def load_updates
-      URLAll.each do |url|
+      URLAll.flat_map { |url|
         http_get_zip_file(url, @data_directory)
-      end
+      }
     end
 
     # Performs an HTTP-GET for the given url, extracts it as a zipped file into the
     # destination directory.
+    #
+    # @return [Array<String>]
+    #   An array with the absolute file paths of the extracted files.
     def http_get_zip_file(url, destination)
       require 'open-uri'
-      require 'zip/zip'
+      require 'swissmatch/zip' # patched zip/zip
       require 'fileutils'
+
+      files = []
+
       open(url) do |zip_buffer|
         Zip::ZipFile.open(zip_buffer) do |zip_file|
           zip_file.each do |f|
             target_path = File.join(destination, f.name)
             FileUtils.mkdir_p(File.dirname(target_path))
             zip_file.extract(f, target_path) unless File.exist?(target_path)
+            files << target_path
           end
         end
       end
+
+      files
     end
 
     # Unzips it as a zipped file into the destination directory.
     def unzip_file(file, destination)
-      require 'zip/zip'
+      require 'swissmatch/zip'
       Zip::ZipFile.open(file) do |zip_file|
         zip_file.each do |f|
           target_path = File.join(destination, f.name)
