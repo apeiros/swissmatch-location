@@ -30,7 +30,8 @@ require 'swissmatch/zipcodes'
 #     require 'swissmatch/autoload'
 #     SwissMatch.zip_code(8000, 'Zürich').ordering_number # => 
 module SwissMatch
-  @data             = nil
+  @data               = nil
+  @directory_service  = nil
 
   class <<self
     # @return [SwissMatch::DataFiles, nil] The data source used
