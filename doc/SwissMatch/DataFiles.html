@@ -203,28 +203,6 @@ An array of all urls
         </dt>
         <dd><pre class="code"><span class='lbracket'>[</span><span class='const'>URLZip1</span><span class='comma'>,</span> <span class='const'>URLZip2</span><span class='comma'>,</span> <span class='const'>URLCommunity</span><span class='rbracket'>]</span></pre></dd>
       
-        <dt id="LanguageSlots-constant" class="">LanguageSlots =
-          <div class="docstring">
-  <div class="discussion">
-    <p>
-Used during parsing. Contains the mapping from column to language
-</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-</div>
-        </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span>
-  <span class='kw'>nil</span><span class='comma'>,</span>
-  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span><span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
-  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span><span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
-  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span><span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
-  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span><span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
-<span class='rbracket'>]</span></pre></dd>
-      
         <dt id="CantonData-constant" class="">CantonData =
           <div class="docstring">
   <div class="discussion">
@@ -378,6 +356,33 @@ The directory in which the post mat[ch] files reside.
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#errors-instance_method" title="#errors (instance method)">- (Array&lt;LoadError&gt;) <strong>errors</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Errors that occurred while loading the data.
+</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#zip_codes-instance_method" title="#zip_codes (instance method)">- (SwissMatch::ZipCodes) <strong>zip_codes</strong> </a>
     
 
@@ -451,7 +456,7 @@ Used to generate the regular expressions used to parse the data files.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#http_get_zip_file-instance_method" title="#http_get_zip_file (instance method)">- (Object) <strong>http_get_zip_file</strong>(url, destination) </a>
+      <a href="#http_get_zip_file-instance_method" title="#http_get_zip_file (instance method)">- (Array&lt;String&gt;) <strong>http_get_zip_file</strong>(url, destination) </a>
     
 
     
@@ -625,7 +630,7 @@ Reads a file and parses using the pattern of the given name.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#load_updates-instance_method" title="#load_updates (instance method)">- (Object) <strong>load_updates</strong> </a>
+      <a href="#load_updates-instance_method" title="#load_updates (instance method)">- (Array&lt;String&gt;) <strong>load_updates</strong> </a>
     
 
     
@@ -665,6 +670,30 @@ Load new files.
     <span class="summary_desc"><div class='inline'><p>
 TODO: load all files, not just the most recent TODO: calculate valid_until
 dates.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reset_errors%21-instance_method" title="#reset_errors! (instance method)">- (self) <strong>reset_errors!</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Resets the list of errors that were encountered during load.
 </p>
 </div></span>
   
@@ -748,6 +777,9 @@ The directory in which the post mat[ch] files reside
       <pre class="lines">
 
 
+102
+103
+104
 105
 106
 107
@@ -756,20 +788,19 @@ The directory in which the post mat[ch] files reside
 110
 111
 112
-113
-114
-115</pre>
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 102</span>
 
 <span class='kw'>def</span> <span class='id initialize'>initialize</span><span class='lparen'>(</span><span class='id data_directory'>data_directory</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id reset_errors!'>reset_errors!</span>
   <span class='kw'>if</span> <span class='id data_directory'>data_directory</span> <span class='kw'>then</span>
     <span class='ivar'>@data_directory</span> <span class='op'>=</span> <span class='id data_directory'>data_directory</span>
   <span class='kw'>elsif</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>SWISSMATCH_DATA</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span> <span class='kw'>then</span>
     <span class='ivar'>@data_directory</span> <span class='op'>=</span> <span class='const'>ENV</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>SWISSMATCH_DATA</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
   <span class='kw'>else</span>
-    <span class='id data_directory'>data_directory</span>  <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id expand_path'>expand_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>../../../data</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='kw'>__FILE__</span><span class='rparen'>)</span>
+    <span class='id data_directory'>data_directory</span>  <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id expand_path'>expand_path</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>../../../data/swissmatch</span><span class='tstring_end'>'</span></span><span class='comma'>,</span> <span class='kw'>__FILE__</span><span class='rparen'>)</span>
     <span class='id data_directory'>data_directory</span>  <span class='op'>=</span> <span class='const'>Gem</span><span class='period'>.</span><span class='id datadir'>datadir</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch</span><span class='tstring_end'>'</span></span> <span class='kw'>if</span> <span class='kw'>defined?</span><span class='lparen'>(</span><span class='const'>Gem</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='const'>File</span><span class='period'>.</span><span class='id directory?'>directory?</span><span class='lparen'>(</span><span class='id data_directory'>data_directory</span><span class='rparen'>)</span>
     <span class='ivar'>@data_directory</span> <span class='op'>=</span> <span class='id data_directory'>data_directory</span>
   <span class='kw'>end</span>
@@ -830,12 +861,12 @@ The loaded swiss cantons
       <pre class="lines">
 
 
-95
-96
-97</pre>
+89
+90
+91</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 89</span>
 
 <span class='kw'>def</span> <span class='id cantons'>cantons</span>
   <span class='ivar'>@cantons</span>
@@ -891,12 +922,12 @@ The loaded swiss communities
       <pre class="lines">
 
 
-98
-99
-100</pre>
+92
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 92</span>
 
 <span class='kw'>def</span> <span class='id communities'>communities</span>
   <span class='ivar'>@communities</span>
@@ -933,15 +964,76 @@ The directory in which the post mat[ch] files reside
       <pre class="lines">
 
 
-92
-93
-94</pre>
+86
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id data_directory'>data_directory</span>
   <span class='ivar'>@data_directory</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <span id="errors-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="errors-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="LoadError.html" title="SwissMatch::LoadError (class)">LoadError</a></span>&gt;</tt>) <strong>errors</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Errors that occurred while loading the data
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="LoadError.html" title="SwissMatch::LoadError (class)">LoadError</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Errors that occurred while loading the data
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id errors'>errors</span>
+  <span class='ivar'>@errors</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -994,12 +1086,12 @@ The loaded swiss zip codes
       <pre class="lines">
 
 
-101
-102
-103</pre>
+95
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id zip_codes'>zip_codes</span>
   <span class='ivar'>@zip_codes</span>
@@ -1042,12 +1134,12 @@ fields, delimited by \r\n.
       <pre class="lines">
 
 
-19
-20
-21</pre>
+23
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id generate_expression'>generate_expression</span><span class='lparen'>(</span><span class='id size'>size</span><span class='rparen'>)</span>
   <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^</span><span class='embexpr_beg'>#{</span><span class='const'>Array</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id size'>size</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>([^\t]*)</span><span class='tstring_end'>'</span></span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>\t</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'>\r\n</span><span class='regexp_end'>/</span></span>
@@ -1066,7 +1158,7 @@ fields, delimited by \r\n.
       <div class="method_details first">
   <p class="signature first" id="http_get_zip_file-instance_method">
   
-    - (<tt>Object</tt>) <strong>http_get_zip_file</strong>(url, destination) 
+    - (<tt>Array&lt;String&gt;</tt>) <strong>http_get_zip_file</strong>(url, destination) 
   
 
   
@@ -1081,44 +1173,75 @@ the destination directory.
   </div>
 </div>
 <div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
   
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+An array with the absolute file paths of the extracted files.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
 137
 138
-139</pre>
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 126</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id http_get_zip_file'>http_get_zip_file</span><span class='lparen'>(</span><span class='id url'>url</span><span class='comma'>,</span> <span class='id destination'>destination</span><span class='rparen'>)</span>
   <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>open-uri</span><span class='tstring_end'>'</span></span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>zip/zip</span><span class='tstring_end'>'</span></span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>fileutils</span><span class='tstring_end'>'</span></span>
+  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch/zip</span><span class='tstring_end'>'</span></span> <span class='comment'># patched zip/zip
+</span>  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>fileutils</span><span class='tstring_end'>'</span></span>
+
+  <span class='id files'>files</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+
   <span class='id open'>open</span><span class='lparen'>(</span><span class='id url'>url</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id zip_buffer'>zip_buffer</span><span class='op'>|</span>
     <span class='const'>Zip</span><span class='op'>::</span><span class='const'>ZipFile</span><span class='period'>.</span><span class='id open'>open</span><span class='lparen'>(</span><span class='id zip_buffer'>zip_buffer</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id zip_file'>zip_file</span><span class='op'>|</span>
       <span class='id zip_file'>zip_file</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span>
         <span class='id target_path'>target_path</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id destination'>destination</span><span class='comma'>,</span> <span class='id f'>f</span><span class='period'>.</span><span class='id name'>name</span><span class='rparen'>)</span>
         <span class='const'>FileUtils</span><span class='period'>.</span><span class='id mkdir_p'>mkdir_p</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id dirname'>dirname</span><span class='lparen'>(</span><span class='id target_path'>target_path</span><span class='rparen'>)</span><span class='rparen'>)</span>
         <span class='id zip_file'>zip_file</span><span class='period'>.</span><span class='id extract'>extract</span><span class='lparen'>(</span><span class='id f'>f</span><span class='comma'>,</span> <span class='id target_path'>target_path</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='const'>File</span><span class='period'>.</span><span class='id exist?'>exist?</span><span class='lparen'>(</span><span class='id target_path'>target_path</span><span class='rparen'>)</span>
+        <span class='id files'>files</span> <span class='op'>&lt;&lt;</span> <span class='id target_path'>target_path</span>
       <span class='kw'>end</span>
     <span class='kw'>end</span>
   <span class='kw'>end</span>
+
+  <span class='id files'>files</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1170,18 +1293,22 @@ SwissMatch::ZipCodes].
       <pre class="lines">
 
 
-168
-169
-170
-171
-172
-173
-174</pre>
+185
+186
+187
+188
+189
+190
+191
+192
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 168</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 185</span>
 
 <span class='kw'>def</span> <span class='id load'>load</span>
+  <span class='id reset_errors!'>reset_errors!</span>
+
   <span class='id cantons'>cantons</span>     <span class='op'>=</span> <span class='id load_cantons'>load_cantons</span>
   <span class='id communities'>communities</span> <span class='op'>=</span> <span class='id load_communities'>load_communities</span><span class='lparen'>(</span><span class='id cantons'>cantons</span><span class='rparen'>)</span>
   <span class='id zip_codes'>zip_codes</span>   <span class='op'>=</span> <span class='id load_zipcodes'>load_zipcodes</span><span class='lparen'>(</span><span class='id cantons'>cantons</span><span class='comma'>,</span> <span class='id communities'>communities</span><span class='rparen'>)</span>
@@ -1236,13 +1363,13 @@ Returns self.
       <pre class="lines">
 
 
-160
-161
-162
-163</pre>
+177
+178
+179
+180</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 160</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 177</span>
 
 <span class='kw'>def</span> <span class='id load!'>load!</span>
   <span class='ivar'>@cantons</span><span class='comma'>,</span> <span class='ivar'>@communities</span><span class='comma'>,</span> <span class='ivar'>@zip_codes</span> <span class='op'>=</span> <span class='op'>*</span><span class='id load'>load</span>
@@ -1298,16 +1425,16 @@ service.
       <pre class="lines">
 
 
-178
-179
-180
-181
-182
-183
-184</pre>
+197
+198
+199
+200
+201
+202
+203</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 197</span>
 
 <span class='kw'>def</span> <span class='id load_cantons'>load_cantons</span>
   <span class='const'>Cantons</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span>
@@ -1366,35 +1493,35 @@ by the files known to this DataFiles instance.
       <pre class="lines">
 
 
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
 208
 209
 210
 211
 212
 213
-214</pre>
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 189</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 208</span>
 
 <span class='kw'>def</span> <span class='id load_communities'>load_communities</span><span class='lparen'>(</span><span class='id cantons'>cantons</span><span class='rparen'>)</span>
   <span class='id raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Must load cantons first</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id cantons'>cantons</span>
@@ -1509,14 +1636,14 @@ file.
       <pre class="lines">
 
 
-280
-281
-282
-283
-284</pre>
+321
+322
+323
+324
+325</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 280</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 321</span>
 
 <span class='kw'>def</span> <span class='id load_table'>load_table</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='id pattern'>pattern</span><span class='rparen'>)</span>
   <span class='const'>File</span><span class='period'>.</span><span class='id read'>read</span><span class='lparen'>(</span><span class='id path'>path</span><span class='comma'>,</span> <span class='symbol'>:encoding</span> <span class='op'>=&gt;</span> <span class='const'>Encoding</span><span class='op'>::</span><span class='const'>ISO8859_1</span><span class='rparen'>)</span><span class='period'>.</span>
@@ -1531,7 +1658,7 @@ file.
       <div class="method_details ">
   <p class="signature " id="load_updates-instance_method">
   
-    - (<tt>Object</tt>) <strong>load_updates</strong> 
+    - (<tt>Array&lt;String&gt;</tt>) <strong>load_updates</strong> 
   
 
   
@@ -1545,26 +1672,45 @@ Load new files
   </div>
 </div>
 <div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
   
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+An array with the absolute file paths of the extracted files.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-118
-119
-120
-121
-122</pre>
+126
+127
+128
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 118</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 126</span>
 
 <span class='kw'>def</span> <span class='id load_updates'>load_updates</span>
-  <span class='const'>URLAll</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id url'>url</span><span class='op'>|</span>
+  <span class='const'>URLAll</span><span class='period'>.</span><span class='id flat_map'>flat_map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id url'>url</span><span class='op'>|</span>
     <span class='id http_get_zip_file'>http_get_zip_file</span><span class='lparen'>(</span><span class='id url'>url</span><span class='comma'>,</span> <span class='ivar'>@data_directory</span><span class='rparen'>)</span>
-  <span class='kw'>end</span>
+  <span class='rbrace'>}</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1616,25 +1762,6 @@ files known to this DataFiles instance.
       <pre class="lines">
 
 
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
 241
 242
 243
@@ -1663,58 +1790,175 @@ files known to this DataFiles instance.
 266
 267
 268
-269</pre>
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 222</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 241</span>
 
 <span class='kw'>def</span> <span class='id load_zipcodes'>load_zipcodes</span><span class='lparen'>(</span><span class='id cantons'>cantons</span><span class='comma'>,</span> <span class='id communities'>communities</span><span class='rparen'>)</span>
   <span class='id raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Must load cantons first</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id cantons'>cantons</span>
   <span class='id raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Must load communities first</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id communities'>communities</span>
 
-  <span class='id temporary'>temporary</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
-  <span class='id zip1_file'>zip1_file</span> <span class='op'>=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id enum_for'>enum_for</span><span class='lparen'>(</span><span class='symbol'>:glob</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@data_directory</span><span class='rbrace'>}</span><span class='tstring_content'>/plz_p1_*.txt</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id last'>last</span>
-  <span class='id zip2_file'>zip2_file</span> <span class='op'>=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id enum_for'>enum_for</span><span class='lparen'>(</span><span class='symbol'>:glob</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@data_directory</span><span class='rbrace'>}</span><span class='tstring_content'>/plz_p2_*.txt</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id last'>last</span>
+  <span class='id temporary'>temporary</span>       <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id self_delivered'>self_delivered</span>  <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id others'>others</span>          <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='id zip1_file'>zip1_file</span>       <span class='op'>=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id enum_for'>enum_for</span><span class='lparen'>(</span><span class='symbol'>:glob</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@data_directory</span><span class='rbrace'>}</span><span class='tstring_content'>/plz_p1_*.txt</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id last'>last</span>
+  <span class='id zip2_file'>zip2_file</span>       <span class='op'>=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id enum_for'>enum_for</span><span class='lparen'>(</span><span class='symbol'>:glob</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@data_directory</span><span class='rbrace'>}</span><span class='tstring_content'>/plz_p2_*.txt</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id last'>last</span>
   <span class='id load_table'>load_table</span><span class='lparen'>(</span><span class='id zip1_file'>zip1_file</span><span class='comma'>,</span> <span class='symbol'>:zip_1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id row'>row</span><span class='op'>|</span>
-    <span class='id onrp'>onrp</span> <span class='op'>=</span> <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span>
-    <span class='id temporary'>temporary</span><span class='lbracket'>[</span><span class='id onrp'>onrp</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbracket'>[</span>
-      <span class='id onrp'>onrp</span><span class='comma'>,</span>                             <span class='comment'># ordering_number
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                   <span class='comment'># type
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                   <span class='comment'># code
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                   <span class='comment'># add_on
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>4</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>4</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_de
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>4</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_fr
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>4</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_it
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>4</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_rt
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_short
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_short_de
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_short_fr
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_short_it
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span><span class='comma'>,</span>                        <span class='comment'># name_short_rt
+    <span class='id onrp'>onrp</span>                  <span class='op'>=</span> <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span>
+    <span class='id delivery_by'>delivery_by</span>           <span class='op'>=</span> <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>10</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span>
+    <span class='id delivery_by'>delivery_by</span>           <span class='op'>=</span> <span class='kw'>case</span> <span class='id delivery_by'>delivery_by</span> <span class='kw'>when</span> <span class='int'>0</span> <span class='kw'>then</span> <span class='kw'>nil</span><span class='semicolon'>;</span> <span class='kw'>when</span> <span class='id onrp'>onrp</span> <span class='kw'>then</span> <span class='symbol'>:self</span><span class='semicolon'>;</span> <span class='kw'>else</span> <span class='id delivery_by'>delivery_by</span><span class='semicolon'>;</span> <span class='kw'>end</span>
+    <span class='id language'>language</span>              <span class='op'>=</span> <span class='const'>LanguageCodes</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>7</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rbracket'>]</span>
+    <span class='id language_alternative'>language_alternative</span>  <span class='op'>=</span> <span class='const'>LanguageCodes</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>8</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rbracket'>]</span>
+    <span class='id name'>name</span>                  <span class='op'>=</span> <span class='const'>Name</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>4</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id language'>language</span><span class='rparen'>)</span>
+    <span class='id name_short'>name_short</span>            <span class='op'>=</span> <span class='const'>Name</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='id language'>language</span><span class='rparen'>)</span>
+    <span class='id data'>data</span>                  <span class='op'>=</span> <span class='lbracket'>[</span>
+      <span class='id onrp'>onrp</span><span class='comma'>,</span>                              <span class='comment'># ordering_number
+</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                    <span class='comment'># type
+</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                    <span class='comment'># code
+</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>3</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                    <span class='comment'># add_on
+</span>      <span class='id name'>name</span><span class='comma'>,</span>                              <span class='comment'># name (official)
+</span>      <span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span><span class='comma'>,</span>                            <span class='comment'># names (official + alternative)
+</span>      <span class='id name_short'>name_short</span><span class='comma'>,</span>                        <span class='comment'># name_short (official)
+</span>      <span class='lbracket'>[</span><span class='id name_short'>name_short</span><span class='rbracket'>]</span><span class='comma'>,</span>                      <span class='comment'># names_short (official + alternative)
 </span>      <span class='id cantons'>cantons</span><span class='period'>.</span><span class='id by_license_tag'>by_license_tag</span><span class='lparen'>(</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>6</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='comment'># canton
-</span>      <span class='const'>LanguageCodes</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>7</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rbracket'>]</span><span class='comma'>,</span>    <span class='comment'># language
-</span>      <span class='const'>LanguageCodes</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>8</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rbracket'>]</span><span class='comma'>,</span>    <span class='comment'># language_alternative
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>9</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>                 <span class='comment'># sortfile_member
-</span>      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>10</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span>                  <span class='comment'># delivery_by
+</span>      <span class='id language'>language</span><span class='comma'>,</span>
+      <span class='id language_alternative'>language_alternative</span><span class='comma'>,</span>
+      <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>9</span><span class='rparen'>)</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>                  <span class='comment'># sortfile_member
+</span>      <span class='id delivery_by'>delivery_by</span><span class='comma'>,</span>                       <span class='comment'># delivery_by
 </span>      <span class='id communities'>communities</span><span class='period'>.</span><span class='id by_community_number'>by_community_number</span><span class='lparen'>(</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>11</span><span class='rparen'>)</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span><span class='comma'>,</span>  <span class='comment'># community_number
 </span>      <span class='const'>Date</span><span class='period'>.</span><span class='id civil'>civil</span><span class='lparen'>(</span><span class='op'>*</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>12</span><span class='rparen'>)</span><span class='period'>.</span><span class='id match'>match</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^(\d{4})(\d\d)(\d\d)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id captures'>captures</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_i</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='comment'># valid_from
 </span>    <span class='rbracket'>]</span>
+    <span class='id temporary'>temporary</span><span class='lbracket'>[</span><span class='id onrp'>onrp</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id data'>data</span>
+    <span class='kw'>if</span> <span class='symbol'>:self</span> <span class='op'>==</span> <span class='id delivery_by'>delivery_by</span> <span class='kw'>then</span>
+      <span class='id self_delivered'>self_delivered</span> <span class='op'>&lt;&lt;</span> <span class='id data'>data</span>
+    <span class='kw'>else</span>
+      <span class='id others'>others</span> <span class='op'>&lt;&lt;</span> <span class='id data'>data</span>
+    <span class='kw'>end</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># FIXME: resolve delivery_by
-</span>
   <span class='id load_table'>load_table</span><span class='lparen'>(</span><span class='id zip2_file'>zip2_file</span><span class='comma'>,</span> <span class='symbol'>:zip_2</span><span class='rparen'>)</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id onrp'>onrp</span><span class='comma'>,</span> <span class='id rn'>rn</span><span class='comma'>,</span> <span class='id type'>type</span><span class='comma'>,</span> <span class='id lang'>lang</span><span class='comma'>,</span> <span class='id short'>short</span><span class='comma'>,</span> <span class='id name'>name</span><span class='op'>|</span>
     <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id type'>type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2</span><span class='tstring_end'>&quot;</span></span>
     <span class='id onrp'>onrp</span>      <span class='op'>=</span> <span class='id onrp'>onrp</span><span class='period'>.</span><span class='id to_i'>to_i</span>
-    <span class='id lang'>lang</span>      <span class='op'>=</span> <span class='id lang'>lang</span><span class='period'>.</span><span class='id to_i'>to_i</span>
-    <span class='id s1'>s1</span><span class='comma'>,</span><span class='id s2'>s2</span>     <span class='op'>=</span> <span class='op'>*</span><span class='const'>LanguageSlots</span><span class='lbracket'>[</span><span class='id lang'>lang</span><span class='rbracket'>]</span>
+    <span class='id lang_code'>lang_code</span> <span class='op'>=</span> <span class='id lang'>lang</span><span class='period'>.</span><span class='id to_i'>to_i</span>
+    <span class='id language'>language</span>  <span class='op'>=</span> <span class='const'>LanguageCodes</span><span class='lbracket'>[</span><span class='id lang_code'>lang_code</span><span class='rbracket'>]</span>
     <span class='id entry'>entry</span>     <span class='op'>=</span> <span class='id temporary'>temporary</span><span class='lbracket'>[</span><span class='id onrp'>onrp</span><span class='rbracket'>]</span>
-    <span class='id entry'>entry</span><span class='lbracket'>[</span><span class='id s1'>s1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id name'>name</span>
-    <span class='id entry'>entry</span><span class='lbracket'>[</span><span class='id s2'>s2</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id short'>short</span>
+    <span class='id entry'>entry</span><span class='lbracket'>[</span><span class='int'>5</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='const'>Name</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id name'>name</span><span class='comma'>,</span> <span class='id language'>language</span><span class='comma'>,</span> <span class='id rn'>rn</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
+    <span class='id entry'>entry</span><span class='lbracket'>[</span><span class='int'>7</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='const'>Name</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id short'>short</span><span class='comma'>,</span> <span class='id language'>language</span><span class='comma'>,</span> <span class='id rn'>rn</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
   <span class='kw'>end</span>
 
-  <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id temporary'>temporary</span><span class='period'>.</span><span class='id values'>values</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id row'>row</span><span class='op'>|</span> <span class='const'>ZipCode</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='op'>*</span><span class='id row'>row</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id self_delivered'>self_delivered</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id row'>row</span><span class='op'>|</span>
+    <span class='id temporary'>temporary</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>ZipCode</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='op'>*</span><span class='id row'>row</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id others'>others</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id row'>row</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>18</span><span class='rparen'>)</span> <span class='kw'>then</span>
+      <span class='id raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Delivery not found:\n</span><span class='embexpr_beg'>#{</span><span class='id row'>row</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id tmp'>tmp</span> <span class='op'>=</span> <span class='id temporary'>temporary</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>18</span><span class='rparen'>)</span><span class='rbracket'>]</span>
+      <span class='kw'>if</span> <span class='id tmp'>tmp</span><span class='period'>.</span><span class='id kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>Array</span><span class='rparen'>)</span> <span class='kw'>then</span>
+        <span class='ivar'>@errors</span> <span class='op'>&lt;&lt;</span> <span class='const'>LoadError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid reference: onrp </span><span class='embexpr_beg'>#{</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'> delivery by </span><span class='embexpr_beg'>#{</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>18</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id row'>row</span><span class='rparen'>)</span>
+        <span class='id row'>row</span><span class='lbracket'>[</span><span class='int'>18</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='kw'>nil</span>
+      <span class='kw'>else</span>
+        <span class='id row'>row</span><span class='lbracket'>[</span><span class='int'>18</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id tmp'>tmp</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+    <span class='id temporary'>temporary</span><span class='lbracket'>[</span><span class='id row'>row</span><span class='period'>.</span><span class='id at'>at</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>ZipCode</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='op'>*</span><span class='id row'>row</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id temporary'>temporary</span><span class='period'>.</span><span class='id values'>values</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="reset_errors!-instance_method">
+  
+    - (<tt>self</tt>) <strong>reset_errors!</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Resets the list of errors that were encountered during load
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>self</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 117</span>
+
+<span class='kw'>def</span> <span class='id reset_errors!'>reset_errors!</span>
+  <span class='ivar'>@errors</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1745,22 +1989,22 @@ Unzips it as a zipped file into the destination directory.
       <pre class="lines">
 
 
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151</pre>
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 142</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/datafiles.rb', line 159</span>
 
 <span class='kw'>def</span> <span class='id unzip_file'>unzip_file</span><span class='lparen'>(</span><span class='id file'>file</span><span class='comma'>,</span> <span class='id destination'>destination</span><span class='rparen'>)</span>
-  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>zip/zip</span><span class='tstring_end'>'</span></span>
+  <span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch/zip</span><span class='tstring_end'>'</span></span>
   <span class='const'>Zip</span><span class='op'>::</span><span class='const'>ZipFile</span><span class='period'>.</span><span class='id open'>open</span><span class='lparen'>(</span><span class='id file'>file</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id zip_file'>zip_file</span><span class='op'>|</span>
     <span class='id zip_file'>zip_file</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id f'>f</span><span class='op'>|</span>
       <span class='id target_path'>target_path</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='id destination'>destination</span><span class='comma'>,</span> <span class='id f'>f</span><span class='period'>.</span><span class='id name'>name</span><span class='rparen'>)</span>
@@ -1779,7 +2023,7 @@ Unzips it as a zipped file into the destination directory.
 </div>
     
     <div id="footer">
-  Generated on Mon Feb 20 12:48:08 2012 by 
+  Generated on Mon Mar 19 13:06:17 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.7.2 (ruby-1.9.2).
 </div>

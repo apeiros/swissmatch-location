@@ -186,7 +186,10 @@ query interface.
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'><p>
+WARNING: the autocompletion API is not yet final.
+</p>
+</div></span>
   
 </li>
 
@@ -660,7 +663,7 @@ The SwissMatch::ZipCode objects this SwissMatch::ZipCodes should contain
 <span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id key'>key</span><span class='rparen'>)</span>
   <span class='kw'>case</span> <span class='id key'>key</span>
     <span class='kw'>when</span> <span class='int'>100_000</span><span class='op'>..</span><span class='int'>999_999</span><span class='comma'>,</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A(\d{4})(\d\d)\z</span><span class='regexp_end'>/</span></span>
-      <span class='id by_code_and_add_on'>by_code_and_add_on</span><span class='lparen'>(</span><span class='backref'>$1</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span> <span class='backref'>$2</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
+      <span class='backref'>$1</span> <span class='op'>?</span> <span class='id by_code_and_add_on'>by_code_and_add_on</span><span class='lparen'>(</span><span class='backref'>$1</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span> <span class='backref'>$2</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id by_code_and_add_on'>by_code_and_add_on</span><span class='lparen'>(</span><span class='op'>*</span><span class='id key'>key</span><span class='period'>.</span><span class='id divmod'>divmod</span><span class='lparen'>(</span><span class='int'>100</span><span class='rparen'>)</span><span class='rparen'>)</span>
     <span class='kw'>when</span> <span class='int'>0</span><span class='op'>..</span><span class='int'>9999</span><span class='comma'>,</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A\d{4}\z</span><span class='regexp_end'>/</span></span>
       <span class='id by_code'>by_code</span><span class='lparen'>(</span><span class='id key'>key</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
     <span class='kw'>when</span> <span class='const'>String</span>
@@ -709,13 +712,23 @@ The SwissMatch::ZipCode objects this SwissMatch::ZipCodes should contain
   
 
   
-</p><table class="source_code">
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+WARNING: the autocompletion API is not yet final
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-94
 95
 96
 97
@@ -724,10 +737,11 @@ The SwissMatch::ZipCode objects this SwissMatch::ZipCodes should contain
 100
 101
 102
-103</pre>
+103
+104</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id autocomplete'>autocomplete</span><span class='lparen'>(</span><span class='id string'>string</span><span class='rparen'>)</span>
   <span class='ivar'>@autocomplete</span> <span class='op'>||=</span> <span class='const'>AutoCompletion</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='ivar'>@zip_codes</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id zip_code'>zip_code</span><span class='op'>|</span>
@@ -789,17 +803,17 @@ code.
       <pre class="lines">
 
 
-122
 123
 124
-125</pre>
+125
+126</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 123</span>
 
 <span class='kw'>def</span> <span class='id by_code'>by_code</span><span class='lparen'>(</span><span class='id code'>code</span><span class='rparen'>)</span>
   <span class='ivar'>@by_code</span> <span class='op'>||=</span> <span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id group_by'>group_by</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id c'>c</span><span class='op'>|</span> <span class='id c'>c</span><span class='period'>.</span><span class='id code'>code</span> <span class='rbrace'>}</span>
-  <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@by_code</span><span class='lbracket'>[</span><span class='id code'>code</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@by_code</span><span class='lbracket'>[</span><span class='id code'>code</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -851,13 +865,13 @@ add-on.
       <pre class="lines">
 
 
-129
 130
 131
-132</pre>
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 129</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 130</span>
 
 <span class='kw'>def</span> <span class='id by_code_and_add_on'>by_code_and_add_on</span><span class='lparen'>(</span><span class='id code'>code</span><span class='comma'>,</span> <span class='id add_on'>add_on</span><span class='rparen'>)</span>
   <span class='ivar'>@by_full_code</span> <span class='op'>||=</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id c'>c</span><span class='op'>|</span> <span class='lbracket'>[</span><span class='id c'>c</span><span class='period'>.</span><span class='id full_code'>full_code</span><span class='comma'>,</span> <span class='id c'>c</span><span class='rbracket'>]</span> <span class='rbrace'>}</span><span class='rbracket'>]</span>
@@ -913,16 +927,20 @@ language.
       <pre class="lines">
 
 
-136
 137
 138
-139</pre>
+139
+140
+141
+142</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 136</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id by_code_and_name'>by_code_and_name</span><span class='lparen'>(</span><span class='id code'>code</span><span class='comma'>,</span> <span class='id name'>name</span><span class='rparen'>)</span>
-  <span class='ivar'>@by_code_and_name</span> <span class='op'>||=</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id c'>c</span><span class='op'>|</span> <span class='lbracket'>[</span><span class='lbracket'>[</span><span class='id c'>c</span><span class='period'>.</span><span class='id code'>code</span><span class='comma'>,</span> <span class='id c'>c</span><span class='period'>.</span><span class='id name'>name</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id c'>c</span><span class='rbracket'>]</span> <span class='rbrace'>}</span><span class='rbracket'>]</span>
+  <span class='ivar'>@by_code_and_name</span> <span class='op'>||=</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id flat_map'>flat_map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id c'>c</span><span class='op'>|</span>
+    <span class='id c'>c</span><span class='period'>.</span><span class='id names'>names</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id name'>name</span><span class='op'>|</span> <span class='lbracket'>[</span><span class='lbracket'>[</span><span class='id c'>c</span><span class='period'>.</span><span class='id code'>code</span><span class='comma'>,</span> <span class='id name'>name</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id c'>c</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='rbrace'>}</span><span class='rbracket'>]</span>
   <span class='ivar'>@by_code_and_name</span><span class='lbracket'>[</span><span class='lbracket'>[</span><span class='id code'>code</span><span class='comma'>,</span><span class='id name'>name</span><span class='rbracket'>]</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -973,27 +991,27 @@ An array with all SwissMatch::ZipCode objects having the given name.
       <pre class="lines">
 
 
-143
-144
-145
 146
 147
 148
 149
 150
-151</pre>
+151
+152
+153
+154</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id by_name'>by_name</span><span class='lparen'>(</span><span class='id name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@by_name</span> <span class='op'>||=</span> <span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id each_with_object'>each_with_object</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id zip_code'>zip_code</span><span class='comma'>,</span> <span class='id hash'>hash</span><span class='op'>|</span>
-    <span class='id zip_code'>zip_code</span><span class='period'>.</span><span class='id names'>names</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id name'>name</span><span class='op'>|</span>
+    <span class='id zip_code'>zip_code</span><span class='period'>.</span><span class='id names'>names</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_s</span><span class='rparen'>)</span><span class='period'>.</span><span class='id uniq'>uniq</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id name'>name</span><span class='op'>|</span>
       <span class='id hash'>hash</span><span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
       <span class='id hash'>hash</span><span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span> <span class='op'>&lt;&lt;</span> <span class='id zip_code'>zip_code</span>
     <span class='kw'>end</span>
   <span class='rbrace'>}</span>
-  <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1043,13 +1061,13 @@ The SwissMatch::ZipCode with the given ordering number (ONRP).
       <pre class="lines">
 
 
-115
 116
 117
-118</pre>
+118
+119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id by_ordering_number'>by_ordering_number</span><span class='lparen'>(</span><span class='id onrp'>onrp</span><span class='rparen'>)</span>
   <span class='ivar'>@by_ordering_number</span> <span class='op'>||=</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id c'>c</span><span class='op'>|</span> <span class='lbracket'>[</span><span class='id c'>c</span><span class='period'>.</span><span class='id ordering_number'>ordering_number</span><span class='comma'>,</span> <span class='id c'>c</span><span class='rbracket'>]</span> <span class='rbrace'>}</span><span class='rbracket'>]</span>
@@ -1401,12 +1419,12 @@ The number of SwissMatch::ZipCode objects in this collection.
       <pre class="lines">
 
 
-154
-155
-156</pre>
+157
+158
+159</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 154</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 157</span>
 
 <span class='kw'>def</span> <span class='id size'>size</span>
   <span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id size'>size</span>
@@ -1459,12 +1477,12 @@ An Array with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
       <pre class="lines">
 
 
-160
-161
-162</pre>
+163
+164
+165</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 160</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 163</span>
 
 <span class='kw'>def</span> <span class='id to_a'>to_a</span>
   <span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id dup'>dup</span>
@@ -1487,12 +1505,12 @@ An Array with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
       <pre class="lines">
 
 
-105
 106
-107</pre>
+107
+108</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id with_type'>with_type</span><span class='lparen'>(</span><span class='op'>*</span><span class='id types'>types</span><span class='rparen'>)</span>
   <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id zip_code'>zip_code</span><span class='op'>|</span> <span class='id types'>types</span><span class='period'>.</span><span class='id include?'>include?</span><span class='lparen'>(</span><span class='id zip_code'>zip_code</span><span class='period'>.</span><span class='id type'>type</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
@@ -1515,12 +1533,12 @@ An Array with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
       <pre class="lines">
 
 
-109
 110
-111</pre>
+111
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcodes.rb', line 110</span>
 
 <span class='kw'>def</span> <span class='id without_type'>without_type</span><span class='lparen'>(</span><span class='op'>*</span><span class='id types'>types</span><span class='rparen'>)</span>
   <span class='const'>ZipCodes</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@zip_codes</span><span class='period'>.</span><span class='id reject'>reject</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id zip_code'>zip_code</span><span class='op'>|</span> <span class='id types'>types</span><span class='period'>.</span><span class='id include?'>include?</span><span class='lparen'>(</span><span class='id zip_code'>zip_code</span><span class='period'>.</span><span class='id type'>type</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
@@ -1535,7 +1553,7 @@ An Array with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
 </div>
     
     <div id="footer">
-  Generated on Mon Feb 20 12:48:07 2012 by 
+  Generated on Mon Mar 19 13:06:16 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.7.2 (ruby-1.9.2).
 </div>
