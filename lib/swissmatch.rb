@@ -77,6 +77,35 @@ module SwissMatch
     end
   end
 
+  # Returns a single zip code. A zip code can be uniquely identified by any of:
+  # * Its ordering_number (ONRP, a 4 digit Integer)
+  # * Its zip code (4 digit Integer) and add-on (2 digit Integer)
+  # * Its zip code (4 digit Integer) and any official name (String)
+  # The data can be passed in different ways, e.g. all numbers can be passed either
+  # as a String or as an Integer. The identification by zip code and add-on can be done
+  # by either using a combined 6 digit number (e.g. 800000 for "8000 Zürich"), or by
+  # passing 2 arguments, passing the zip code and the add-on separately.
+  #
+  # === IMPORTANT
+  # You must be aware, that passing a single 4-digit code to SwissMatch::zip_code uses
+  # the ONRP, and NOT the zip-code. The 4 digit zip code alone does NOT uniquely identify
+  # a zip code.
+  #
+  #
+  # @example Get a zip code by ONRP
+  #   SwissMatch.zip_code(4384)           # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #
+  # @example Get a zip code by 4-digit code and add-on
+  #   SwissMatch.zip_code(8000, 0)        # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #   SwissMatch.zip_code("8000", "00")   # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #   SwissMatch.zip_code(800000)         # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #   SwissMatch.zip_code("800000")       # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #
+  # @example Get a zip code by 4-digit code and name
+  #   SwissMatch.zip_code(8000, "Zürich") # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #   SwissMatch.zip_code(8000, "Zurigo") # => #<SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich>
+  #
+  #
   # @param [String, Integer] code
   #   The 4 digit zip code as Integer or String
   # @param [String, Integer] city_or_add_on
