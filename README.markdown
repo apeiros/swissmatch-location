@@ -54,7 +54,7 @@ If you want to load the data into your database, you can use:
 
 This needs active_record 3.2+ to be installed, and you should either be in a rails project, or
 use the -c option to specify a database configuration file.
-The models used for that can be loaded by `require 'swissmatch/active\_record'`.
+The models used for that can be loaded by `require 'swissmatch/active_record'`.
 See SwissMatch::ActiveRecord::Canton, SwissMatch::ActiveRecord::Community and
 SwissMatch::ActiveRecord::ZipCode
 
