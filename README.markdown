@@ -20,8 +20,9 @@ Usage
 ### Example usage
 
     require 'swissmatch/autoload' # use this to automatically load the data
-    SwissMatch.zip_codes(8000).first.name                   # => "Zürich"
-    SwissMatch.zip_code(8000, 0).name                       # => "Zürich"
+    SwissMatch.zip_codes(8000).first.name                   # => "Zürich"(de, 0)
+    SwissMatch.zip_code(8000, 0).name                       # => "Zürich"(de, 0)
+    SwissMatch.zip_code(8000, 0).names(:it)                 # => ["Zurigo"(it, 3)]
     SwissMatch.zip_code(8000, "Zürich").add_on              # => 0
     SwissMatch.canton("ZH").name(:it)                       # => "Zurigo"
     SwissMatch.canton("Zurigo").name                        # => "Zürich"
