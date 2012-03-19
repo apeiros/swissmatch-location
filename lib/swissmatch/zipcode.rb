@@ -135,6 +135,41 @@ module SwissMatch
       }.uniq
     end
 
+    # Since a zip code can - for any given language - have no name, exactly one name,
+    # or even multiple names, it is sometimes difficult to write good code to
+    # automatically provide well localized addresses. This method helps with that, in that
+    # it guarantees a single name, as well chosen as possible.
+    # It returns the name for the given language, and with the lowest running number, if
+    # no name can be found for the given language, the primary name (@see #name) is
+    # returned.
+    #
+    # @param [Symbol, nil] language
+    #   One of nil, :de, :fr, :it or :rt
+    #
+    # @return [SwissMatch::Name]
+    #   A single name for the zip code, chosen by a 'best fit' algorithm.
+    def suggested_name(language=nil)
+      (language && @names.find { |name| name.language == language }) || @name
+    end
+
+
+    # Since a zip code can - for any given language - have no name, exactly one name,
+    # or even multiple names, it is sometimes difficult to write good code to
+    # automatically provide well localized addresses. This method helps with that, in that
+    # it guarantees a single name, as well chosen as possible.
+    # It returns the name for the given language, and with the lowest running number, if
+    # no name can be found for the given language, the primary name (@see #name) is
+    # returned.
+    #
+    # @param [Symbol, nil] language
+    #   One of nil, :de, :fr, :it or :rt
+    #
+    # @return [SwissMatch::Name]
+    #   A single short name for the zip code, chosen by a 'best fit' algorithm.
+    def suggested_short_name(language=nil)
+      (language && @short_name.find { |name| name.language == language }) || @short_name
+    end
+
     # @param [Symbol, nil] language
     #   One of nil, :de, :fr, :it or :rt
     #
