@@ -48,16 +48,6 @@ module SwissMatch
     # An array of all urls
     URLAll          = [URLZip1, URLZip2, URLCommunity]
 
-    # @private
-    # Used during parsing. Contains the mapping from column to language
-    LanguageSlots = [
-      nil,
-      [5,10],
-      [6,11],
-      [7,12],
-      [8,13],
-    ]
-
     # The data of all cantons
     # @private
     CantonData = [
@@ -258,27 +248,25 @@ module SwissMatch
       zip1_file       = Dir.enum_for(:glob, "#{@data_directory}/plz_p1_*.txt").last
       zip2_file       = Dir.enum_for(:glob, "#{@data_directory}/plz_p2_*.txt").last
       load_table(zip1_file, :zip_1).each do |row|
-        onrp        = row.at(0).to_i
-        delivery_by = row.at(10).to_i
-        delivery_by = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
-        data        = [
+        onrp                  = row.at(0).to_i
+        delivery_by           = row.at(10).to_i
+        delivery_by           = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
+        language              = LanguageCodes[row.at(7).to_i]
+        language_alternative  = LanguageCodes[row.at(8).to_i]
+        name                  = Name.new(row.at(4), language)
+        name_short            = Name.new(row.at(5), language)
+        data                  = [
           onrp,                              # ordering_number
           row.at(1).to_i,                    # type
           row.at(2).to_i,                    # code
           row.at(3).to_i,                    # add_on
-          row.at(4),                         # name
-          row.at(4),                         # name_de
-          row.at(4),                         # name_fr
-          row.at(4),                         # name_it
-          row.at(4),                         # name_rt
-          row.at(5),                         # name_short
-          row.at(5),                         # name_short_de
-          row.at(5),                         # name_short_fr
-          row.at(5),                         # name_short_it
-          row.at(5),                         # name_short_rt
+          name,                              # name (official)
+          [name],                            # names (official + alternative)
+          name_short,                        # name_short (official)
+          [name_short],                      # names_short (official + alternative)
           cantons.by_license_tag(row.at(6)), # canton
-          LanguageCodes[row.at(7).to_i],     # language
-          LanguageCodes[row.at(8).to_i],     # language_alternative
+          language,
+          language_alternative,
           row.at(9) == "1",                  # sortfile_member
           delivery_by,                       # delivery_by
           communities.by_community_number(row.at(11).to_i),  # community_number
@@ -295,15 +283,11 @@ module SwissMatch
       load_table(zip2_file, :zip_2).each do |onrp, rn, type, lang, short, name|
         next unless type == "2"
         onrp      = onrp.to_i
-        lang      = lang.to_i
-        s1,s2     = *LanguageSlots[lang]
+        lang_code = lang.to_i
+        language  = LanguageCodes[lang_code]
         entry     = temporary[onrp]
-        if entry[15] == LanguageCodes[lang] then # alternative name
-          # not yet implemented
-        else
-          entry[s1] = name
-          entry[s2] = short
-        end
+        entry[5] << Name.new(name, language, rn.to_i)
+        entry[7] << Name.new(short, language, rn.to_i)
       end
 
       self_delivered.each do |row|

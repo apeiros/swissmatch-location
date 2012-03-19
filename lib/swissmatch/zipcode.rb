@@ -2,6 +2,10 @@
 
 
 
+require 'swissmatch/name'
+
+
+
 module SwissMatch
 
   # Represents an area, commonly identified by zip-code and city-name.
@@ -45,6 +49,14 @@ module SwissMatch
     #   The canton this zip code belongs to
     attr_reader :canton
 
+    # @return [SwissMatch::Name]
+    #   The official name of this zip code (max. 27 characters)
+    attr_reader :name
+
+    # @return [SwissMatch::Name]
+    #   The official name of this zip code (max. 18 characters)
+    attr_reader :name_short
+
     # @return [Symbol]
     #   The main language in the area of this zip code. One of :de, :fr, :it or :rt.
     attr_reader :language
@@ -83,15 +95,9 @@ module SwissMatch
       code,
       add_on,
       name,
-      name_de,
-      name_fr,
-      name_it,
-      name_rt,
+      names,
       name_short,
-      name_short_de,
-      name_short_fr,
-      name_short_it,
-      name_short_rt,
+      names_short,
       canton,
       language,
       language_alternative,
@@ -101,28 +107,18 @@ module SwissMatch
       valid_from,
       valid_until = nil
     )
-      @ordering_number = ordering_number
-      @type            = type
-      @code            = code
-      @add_on          = add_on
-      @full_code       = code*100 + add_on
-      @name            = name
-      @name_short      = name_short
-      @names           = {
-        :de => name_de || name,
-        :fr => name_fr || name,
-        :it => name_it || name,
-        :rt => name_rt || name,
-      }
-      @names_short            = {
-        :de => name_short_de || name_short,
-        :fr => name_short_fr || name_short,
-        :it => name_short_it || name_short,
-        :rt => name_short_rt || name_short,
-      }
-      @canton               = canton
+      @ordering_number      = ordering_number
+      @type                 = type
+      @code                 = code
+      @add_on               = add_on
+      @full_code            = code*100 + add_on
       @language             = language
       @language_alternative = language_alternative
+      @name                 = name.is_a?(Name) ? name : Name.new(name, language)
+      @name_short           = name_short.is_a?(Name) ? name_short : Name.new(name_short, language)
+      @names                = (names || [@name]).sort_by(&:running_number)
+      @names_short          = (names_short || [@name_short]).sort_by(&:running_number)
+      @canton               = canton
       @sortfile_member      = sortfile_member
       @delivery_by          = delivery_by == :self ? self : delivery_by
       @community            = community
@@ -133,32 +129,28 @@ module SwissMatch
     # @return [Array<String>]
     #   The name of this zip code in all languages and normalizations (only unique values)
     def transliterated_names
-      names.each_with_object([]) { |name, ary|
-        ary.concat(SwissMatch.transliterate1(name).split(" "))
-        ary.concat(SwissMatch.transliterate2(name).split(" ")) # TODO: use transliterate gem
+      names.flat_map { |name, ary|
+        SwissMatch.transliterate1(name)+
+        SwissMatch.transliterate2(name)  # TODO: use transliterate gem
       }.uniq
     end
 
-    # @return [Array<String>]
-    #   The name of this zip code in all languages (only unique names)
-    def names
-      @names.values.uniq
-    end
-
-    # The name that belongs to this zip code. At a maximum 27 characters long.
-    #
     # @param [Symbol, nil] language
     #   One of nil, :de, :fr, :it or :rt
-    def name(language=nil)
-      language ? @names[language] : @name
+    #
+    # @return [Array<SwissMatch::Name>]
+    #   All official names (max. 27 chars) of this zip code.
+    def names(language=nil)
+      language ? @names.select { |name| name.language == language } : @names
     end
 
-    # The name that belongs to this zip code. At a maximum 18 characters long.
-    #
     # @param [Symbol, nil] language
     #   One of nil, :de, :fr, :it or :rt
-    def name_short(language=nil)
-      language ? @names_short[language] : @name_short
+    #
+    # @return [Array<SwissMatch::Name>]
+    #   All official short names (max. 18 chars) of this zip code.
+    def names_short(language=nil)
+      language ? @names_short.select { |name| name.language == language } : @names_short
     end
 
     # Compare two zip codes by their ordering number (ONRP)

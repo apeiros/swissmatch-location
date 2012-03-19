@@ -91,6 +91,7 @@ module SwissMatch
       ZipCodes.new(@zip_codes.reject { |zip_code| zip_code.in_use?(date) })
     end
 
+    # WARNING: the autocompletion API is not yet final
     def autocomplete(string)
       @autocomplete ||= AutoCompletion.map(@zip_codes) { |zip_code|
         zip_code.transliterated_names
@@ -144,7 +145,7 @@ module SwissMatch
     #   An array with all SwissMatch::ZipCode objects having the given name.
     def by_name(name)
       @by_name ||= @zip_codes.each_with_object({}) { |zip_code, hash|
-        zip_code.names.each do |name|
+        zip_code.names.map(&:to_s).uniq.each do |name|
           hash[name] ||= []
           hash[name] << zip_code
         end
