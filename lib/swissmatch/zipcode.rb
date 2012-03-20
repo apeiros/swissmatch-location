@@ -116,8 +116,8 @@ module SwissMatch
       @language_alternative = language_alternative
       @name                 = name.is_a?(Name) ? name : Name.new(name, language)
       @name_short           = name_short.is_a?(Name) ? name_short : Name.new(name_short, language)
-      @names                = (names || [@name]).sort_by(&:running_number)
-      @names_short          = (names_short || [@name_short]).sort_by(&:running_number)
+      @names                = (names || [@name]).sort_by(&:sequence_number)
+      @names_short          = (names_short || [@name_short]).sort_by(&:sequence_number)
       @canton               = canton
       @sortfile_member      = sortfile_member
       @delivery_by          = delivery_by == :self ? self : delivery_by
@@ -225,10 +225,7 @@ module SwissMatch
         :code                 => @code,
         :add_on               => @add_on,
         :name                 => @name,
-        :name_de              => @names[:de],
-        :name_fr              => @names[:fr],
-        :name_it              => @names[:it],
-        :name_rt              => @names[:rt],
+        :name_short           => @name_short,
         :canton               => canton,
         :language             => @language,
         :language_alternative => @language_alternative,
