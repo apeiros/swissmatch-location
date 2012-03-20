@@ -145,43 +145,43 @@ module SwissMatch
 
       def up
         create_table :swissmatch_cantons, :comment => 'All swiss cantons as needed by swiss posts MAT[CH], includes the non-cantons DE and IT.' do |t|
-          t.integer :id,          :limit => 6,  :comment => 'A unique ID, unrelated to the swiss postal service data.'
-          t.string  :license_tag, :limit => 2,  :comment => 'The two letter abbreviation of the cantons name as used on license plates.'
-          t.string  :name,        :limit => 32, :comment => 'The canonical name of the canton.'
-          t.string  :name_de,     :limit => 32, :comment => 'The name of the canton in german.'
-          t.string  :name_fr,     :limit => 32, :comment => 'The name of the canton in french.'
-          t.string  :name_it,     :limit => 32, :comment => 'The name of the canton in italian.'
-          t.string  :name_rt,     :limit => 32, :comment => 'The name of the canton in rheto-romanic.'
+          t.integer :id,          :null => false, :limit => 6,  :comment => 'A unique ID, unrelated to the swiss postal service data.'
+          t.string  :license_tag, :null => false, :limit => 2,  :comment => 'The two letter abbreviation of the cantons name as used on license plates.'
+          t.string  :name,        :null => false, :limit => 32, :comment => 'The canonical name of the canton.'
+          t.string  :name_de,     :null => false, :limit => 32, :comment => 'The name of the canton in german.'
+          t.string  :name_fr,     :null => false, :limit => 32, :comment => 'The name of the canton in french.'
+          t.string  :name_it,     :null => false, :limit => 32, :comment => 'The name of the canton in italian.'
+          t.string  :name_rt,     :null => false, :limit => 32, :comment => 'The name of the canton in rheto-romanic.'
 
           t.timestamps
         end
 
         create_table :swissmatch_communities, :comment => 'The swiss communities as per plz_c file from the swiss posts MAT[CH].' do |t|
-          t.integer  :id,                :limit => 6,  :comment => 'A unique, never recycled identification number. Also known as BFSNR.'
-          t.string   :name,              :limit => 32, :comment => 'The canonical name of the community.'
-          t.integer  :canton_id,         :limit => 6,  :comment => 'The canton this community belongs to.'
-          t.integer  :agglomeration_id,  :limit => 6,  :comment => 'The community this community is considered to be an agglomeration of. Note that a main community will reference itself.'
+          t.integer  :id,                :null => false, :limit => 6,  :comment => 'A unique, never recycled identification number. Also known as BFSNR.'
+          t.string   :name,              :null => false, :limit => 32, :comment => 'The canonical name of the community.'
+          t.integer  :canton_id,         :null => false, :limit => 6,  :comment => 'The canton this community belongs to.'
+          t.integer  :agglomeration_id,  :null => true,  :limit => 6,  :comment => 'The community this community is considered to be an agglomeration of. Note that a main community will reference itself.'
 
           t.timestamps
         end
 
         create_table :swissmatch_zip_codes, :comment => 'The swiss zip codes as per plz_p1 and plz_p2 files from the swiss posts MAT[CH].' do |t|
-          t.integer :id,                    :limit => 6,  :comment => 'The postal ordering number, also known as ONRP. Unique and never recycled.'
-          t.integer :type,                  :limit => 16, :comment => 'The type of the entry. One of 10 (Domizil- und Fachadressen), 20 (Nur Domiziladressen), 30 (Nur Fach-PLZ), 40 (Firmen-PLZ) or 80 (Postinterne PLZ).'
-          t.integer :code,                  :limit => 16, :comment => 'The 4 digit numeric zip code. Note that the 4 digit code alone does not uniquely identify a zip code record.'
-          t.integer :add_on,                :limit => 16, :comment => 'The 2 digit numeric code addition, to distinguish zip codes with the same 4 digit code.'
-          t.integer :canton_id,             :limit => 6,  :comment => 'The canton this zip code belongs to.'
-          t.string  :name,                  :limit => 27, :comment => 'The canonical name (city) that belongs to this zip code.'
-          t.string  :suggested_name_de,     :limit => 27, :comment => 'The suggested name of the zip code (city) for german.'
-          t.string  :suggested_name_fr,     :limit => 27, :comment => 'The suggested name of the zip code (city) for french.'
-          t.string  :suggested_name_it,     :limit => 27, :comment => 'The suggested name of the zip code (city) for italian.'
-          t.string  :suggested_name_rt,     :limit => 27, :comment => 'The suggested name of the zip code (city) for rheto-romanic.'
-          t.integer :language,              :limit => 2,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          t.integer :language_alternative,  :limit => 2,  :comment => 'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          t.boolean :sortfile_member,                     :comment => 'Whether this ZipCode instance is included in the MAT[CH]sort sortfile.'
-          t.integer :delivery_by_id,        :limit => 6,  :comment => 'By which postal office delivery of letters is usually taken care of.'
-          t.integer :community_id,          :limit => 6,  :comment => 'The community this zip code belongs to.'
-          t.boolean :active,                              :comment => 'Whether this record is currently active.'
+          t.integer :id,                    :null => false, :limit => 6,  :comment => 'The postal ordering number, also known as ONRP. Unique and never recycled.'
+          t.integer :type,                  :null => false, :limit => 16, :comment => 'The type of the entry. One of 10 (Domizil- und Fachadressen), 20 (Nur Domiziladressen), 30 (Nur Fach-PLZ), 40 (Firmen-PLZ) or 80 (Postinterne PLZ).'
+          t.integer :code,                  :null => false, :limit => 16, :comment => 'The 4 digit numeric zip code. Note that the 4 digit code alone does not uniquely identify a zip code record.'
+          t.integer :add_on,                :null => false, :limit => 16, :comment => 'The 2 digit numeric code addition, to distinguish zip codes with the same 4 digit code.'
+          t.integer :canton_id,             :null => false, :limit => 6,  :comment => 'The canton this zip code belongs to.'
+          t.string  :name,                  :null => false, :limit => 27, :comment => 'The canonical name (city) that belongs to this zip code.'
+          t.string  :suggested_name_de,     :null => false, :limit => 27, :comment => 'The suggested name of the zip code (city) for german.'
+          t.string  :suggested_name_fr,     :null => false, :limit => 27, :comment => 'The suggested name of the zip code (city) for french.'
+          t.string  :suggested_name_it,     :null => false, :limit => 27, :comment => 'The suggested name of the zip code (city) for italian.'
+          t.string  :suggested_name_rt,     :null => false, :limit => 27, :comment => 'The suggested name of the zip code (city) for rheto-romanic.'
+          t.integer :language,              :null => false, :limit => 2,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
+          t.integer :language_alternative,  :null => true,  :limit => 2,  :comment => 'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
+          t.boolean :sortfile_member,       :null => true,                :comment => 'Whether this ZipCode instance is included in the MAT[CH]sort sortfile.'
+          t.integer :delivery_by_id,        :null => true,  :limit => 6,  :comment => 'By which postal office delivery of letters is usually taken care of.'
+          t.integer :community_id,          :null => false, :limit => 6,  :comment => 'The community this zip code belongs to.'
+          t.boolean :active,                :null => false,               :comment => 'Whether this record is currently active.'
 #           t.date    :valid_from,                          :comment => 'The date from which on this zip code starts to be in use.'
 #           t.date    :valid_until,                         :comment => '[CURRENTLY NOT USED] The date until which this zip code is in use.'
 
@@ -190,12 +190,12 @@ module SwissMatch
         add_index :swissmatch_zip_codes, [:code]
 
         create_table :swissmatch_zip_code_names, :comment => 'Contains all primary and alternative names of zip codes.' do |t|
-          t.integer :id,              :limit => 6,  :comment => 'An internal ID.'
-          t.integer :zip_code_id,     :limit => 6,  :comment => 'The postal ordering number to which this name belongs.'
-          t.string  :name,            :limit => 27, :comment => 'The name (city) that belongs to this zip code. At a maximum 27 characters long.'
-          t.integer :language,        :limit => 2,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          t.integer :sequence_number, :limit => 3,  :comment => 'The sequence number of names unique for a single ONRP, a deleted sequence number is never reused.'
-          t.integer :designation,     :limit => 2,  :comment => 'The way this name is to be used. Valid values are 2 or 3, 2 2 means this name can be used instead of the zip_code name, 3 means this can be used in addition to the zip_code name.'
+          t.integer :id,              :null => false, :limit => 6,  :comment => 'An internal ID.'
+          t.integer :zip_code_id,     :null => false, :limit => 6,  :comment => 'The postal ordering number to which this name belongs.'
+          t.string  :name,            :null => false, :limit => 27, :comment => 'The name (city) that belongs to this zip code. At a maximum 27 characters long.'
+          t.integer :language,        :null => false, :limit => 2,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
+          t.integer :sequence_number, :null => false, :limit => 3,  :comment => 'The sequence number of names unique for a single ONRP, a deleted sequence number is never reused.'
+          t.integer :designation,     :null => false, :limit => 2,  :comment => 'The way this name is to be used. Valid values are 2 or 3, 2 2 means this name can be used instead of the zip_code name, 3 means this can be used in addition to the zip_code name.'
 
           t.timestamps
         end
