@@ -203,7 +203,7 @@ module SwissMatch
 
         # not every db supports views
         try_execute "No view support, did not create view swissmatch_named_zip_codes", <<-SQL
-          CREATE VIEW swissmatch_named_zip_codes AS (
+          CREATE VIEW swissmatch_named_zip_codes AS
             SELECT
               z.id                    zip_code_id,
               z.type                  type,
@@ -222,7 +222,6 @@ module SwissMatch
             FROM swissmatch_zip_codes z
             JOIN swissmatch_zip_code_names n ON n.zip_code_id = z.id
             WHERE n.designation = 2
-          )
         SQL
 
         # not every db supports comments
@@ -272,6 +271,8 @@ module SwissMatch
       belongs_to :canton,      :class_name => 'SwissMatch::ActiveRecord::Canton'
       belongs_to :community,   :class_name => 'SwissMatch::ActiveRecord::Community'
       belongs_to :delivery_by, :class_name => 'SwissMatch::ActiveRecord::ZipCode'
+      has_many   :delivers,    :class_name => 'SwissMatch::ActiveRecord::ZipCode', :foreign_key => 'delivery_by_id'
+      has_many   :names,       :class_name => 'SwissMatch::ActiveRecord::ZipCodeName'
     end
     class ZipCodeName < ::ActiveRecord::Base
       self.table_name         = "swissmatch_zip_code_names"
