@@ -53,7 +53,7 @@ module SwissMatch
       canton2id     = {}
       total         = data_source.cantons.size +
                       data_source.communities.size +
-                      data_source.zip_codes.size +
+                      data_source.zip_codes.size*2 +
                       10
       progress      = 0
 
@@ -84,6 +84,12 @@ module SwissMatch
             hash[:language]             = LanguageToCode[hash.delete(:language)]
             hash[:language_alternative] = LanguageToCode[hash.delete(:language_alternative)]
             hash[:community_id]         = hash.delete(:community)
+            hash.update(
+              :suggested_name_de => zip_code.suggested_name(:de),
+              :suggested_name_fr => zip_code.suggested_name(:fr),
+              :suggested_name_it => zip_code.suggested_name(:it),
+              :suggested_name_rt => zip_code.suggested_name(:rt)
+            )
             hash.delete(:name_short) # not used
 
             # FIXME: work around, should be replaced by a proper mechanism
@@ -99,7 +105,7 @@ module SwissMatch
               hash[:designation]  = 2 # designation of type 3 is not currently in the system
               SwissMatch::ActiveRecord::ZipCodeName.create!(hash, :without_protection => true)
             end
-            print_progress(progress+=1, total)
+            print_progress(progress+=2, total)
           end
 
           self_delivered.each(&process_code)
@@ -114,14 +120,25 @@ module SwissMatch
 
     class Migration < ::ActiveRecord::Migration
       def down
-        drop_table :swissmatch_zip_code_names
-        drop_table :swissmatch_zip_codes
-        drop_table :swissmatch_communities
-        drop_table :swissmatch_cantons
+        try_drop_table :swissmatch_zip_code_names
+        try_drop_table :swissmatch_zip_codes
+        try_drop_table :swissmatch_communities
+        try_drop_table :swissmatch_cantons
+        try_execute "No view support, did not drop view swissmatch_named_zip_codes", "DROP VIEW swissmatch_named_zip_codes"
+      end
+
+      def try_drop_table(name)
+        drop_table name
+      rescue => e
+        warn "Could not drop #{name}: #{e}"
       end
 
       def try_execute(failure_message, *sqls)
-        sqls.each do |sql| execute(sql) end
+        sqls.each do |sql_statements|
+          sql_statements.split(/;\n/).each do |sql_statement|
+            execute(sql_statement.chomp(';'))
+          end
+        end
       rescue => e
         warn "#{failure_message} (#{e})"
       end
@@ -130,7 +147,7 @@ module SwissMatch
         create_table :swissmatch_cantons, :comment => 'All swiss cantons as needed by swiss posts MAT[CH], includes the non-cantons DE and IT.' do |t|
           t.integer :id,          :limit => 6,  :comment => 'A unique ID, unrelated to the swiss postal service data.'
           t.string  :license_tag, :limit => 2,  :comment => 'The two letter abbreviation of the cantons name as used on license plates.'
-          t.string  :name,        :limit => 32, :comment => 'The official name of the canton.'
+          t.string  :name,        :limit => 32, :comment => 'The canonical name of the canton.'
           t.string  :name_de,     :limit => 32, :comment => 'The name of the canton in german.'
           t.string  :name_fr,     :limit => 32, :comment => 'The name of the canton in french.'
           t.string  :name_it,     :limit => 32, :comment => 'The name of the canton in italian.'
@@ -141,7 +158,7 @@ module SwissMatch
 
         create_table :swissmatch_communities, :comment => 'The swiss communities as per plz_c file from the swiss posts MAT[CH].' do |t|
           t.integer  :id,                :limit => 6,  :comment => 'A unique, never recycled identification number. Also known as BFSNR.'
-          t.string   :name,              :limit => 32, :comment => 'The official name of the community.'
+          t.string   :name,              :limit => 32, :comment => 'The canonical name of the community.'
           t.integer  :canton_id,         :limit => 6,  :comment => 'The canton this community belongs to.'
           t.integer  :agglomeration_id,  :limit => 6,  :comment => 'The community this community is considered to be an agglomeration of. Note that a main community will reference itself.'
 
@@ -154,7 +171,11 @@ module SwissMatch
           t.integer :code,                  :limit => 16, :comment => 'The 4 digit numeric zip code. Note that the 4 digit code alone does not uniquely identify a zip code record.'
           t.integer :add_on,                :limit => 16, :comment => 'The 2 digit numeric code addition, to distinguish zip codes with the same 4 digit code.'
           t.integer :canton_id,             :limit => 6,  :comment => 'The canton this zip code belongs to.'
-          t.string  :name,                  :limit => 27, :comment => 'The name (city) that belongs to this zip code. At a maximum 27 characters long.'
+          t.string  :name,                  :limit => 27, :comment => 'The canonical name (city) that belongs to this zip code.'
+          t.string  :suggested_name_de,     :limit => 27, :comment => 'The suggested name of the zip code (city) for german.'
+          t.string  :suggested_name_fr,     :limit => 27, :comment => 'The suggested name of the zip code (city) for french.'
+          t.string  :suggested_name_it,     :limit => 27, :comment => 'The suggested name of the zip code (city) for italian.'
+          t.string  :suggested_name_rt,     :limit => 27, :comment => 'The suggested name of the zip code (city) for rheto-romanic.'
           t.integer :language,              :limit => 2,  :comment => 'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
           t.integer :language_alternative,  :limit => 2,  :comment => 'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
           t.boolean :sortfile_member,                     :comment => 'Whether this ZipCode instance is included in the MAT[CH]sort sortfile.'
@@ -181,7 +202,7 @@ module SwissMatch
         add_index :swissmatch_zip_code_names, [:name]
 
         # not every db supports views
-        try_execute "No view support, did not create swissmatch_named_zip_codes", <<-SQL
+        try_execute "No view support, did not create view swissmatch_named_zip_codes", <<-SQL
           CREATE VIEW swissmatch_named_zip_codes AS (
             SELECT
               z.id                    zip_code_id,
@@ -206,28 +227,27 @@ module SwissMatch
 
         # not every db supports comments
         try_execute "No comment support, did comment on swissmatch_named_zip_codes", <<-SQL
-          COMMENT ON TABLE swissmatch_named_zip_codes IS 'Lists all zip-code/name combinations, an ONRP can occur multiple times.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.ordering_number IS       'The ONRP of the zip code (swissmatch_zip_codes.id)'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.type IS                  'The type of the entry. One of 10 (Domizil- und Fachadressen), 20 (Nur Domiziladressen), 30 (Nur Fach-PLZ), 40 (Firmen-PLZ) or 80 (Postinterne PLZ).'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.zip_code_id IS           'The postal ordering number to which this name belongs.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.name IS                  'The name (city) that belongs to this zip code. At a maximum 27 characters long.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.name_language IS         'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.sequence_number IS       'The sequence number of names unique for a single ONRP, a deleted sequence number is never reused.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.designation IS           'The way this name is to be used. Valid values are 2 or 3, 2 2 means this name can be used instead of the zip_code name, 3 means this can be used in addition to the zip_code name.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.code IS                  'The 4 digit numeric zip code. Note that the 4 digit code alone does not uniquely identify a zip code record.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.add_on IS                'The 2 digit numeric code addition, to distinguish zip codes with the same 4 digit code.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.canton_id IS             'The canton this zip code belongs to.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.name IS                  'The name (city) that belongs to this zip code. At a maximum 27 characters long.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.language IS              'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.language_alternative IS  'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.sortfile_member IS       'Whether this ZipCode instance is included in the MAT[CH]sort sortfile.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.delivery_by_id IS        'By which postal office delivery of letters is usually taken care of.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.community_id IS          'The community this zip code belongs to.'
-          COMMENT ON COLUMN swissmatch_named_zip_codes.active IS                'Whether this record is currently active.'
+          COMMENT ON TABLE swissmatch_named_zip_codes IS 'Lists all zip-code/name combinations, an ONRP can occur multiple times.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.zip_code_id IS           'The ONRP of the zip code (swissmatch_zip_codes.id)';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.type IS                  'The type of the entry. One of 10 (Domizil- und Fachadressen), 20 (Nur Domiziladressen), 30 (Nur Fach-PLZ), 40 (Firmen-PLZ) or 80 (Postinterne PLZ).';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.zip_code_id IS           'The postal ordering number to which this name belongs.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.name IS                  'The name (city) that belongs to this zip code. At a maximum 27 characters long.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.name_language IS         'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.sequence_number IS       'The sequence number of names unique for a single ONRP, a deleted sequence number is never reused.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.code IS                  'The 4 digit numeric zip code. Note that the 4 digit code alone does not uniquely identify a zip code record.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.add_on IS                'The 2 digit numeric code addition, to distinguish zip codes with the same 4 digit code.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.canton_id IS             'The canton this zip code belongs to.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.name IS                  'The name (city) that belongs to this zip code. At a maximum 27 characters long.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.language IS              'The main language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.language_alternative IS  'The second most used language in the area of this zip code. 1 = de, 2 = fr, 3 = it, 4 = rt.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.sortfile_member IS       'Whether this ZipCode instance is included in the MAT[CH]sort sortfile.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.delivery_by_id IS        'By which postal office delivery of letters is usually taken care of.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.community_id IS          'The community this zip code belongs to.';
+          COMMENT ON COLUMN swissmatch_named_zip_codes.active IS                'Whether this record is currently active.';
         SQL
 
         # not every db supports foreign key constraints, and maybe there are also syntax differences,
-        try_execute "No foreign key support", <<-SQL1, <<-SQL2, <<-SQL3
+        try_execute "No foreign key support, did not create foreign key constraints", <<-SQL1, <<-SQL2, <<-SQL3
           ALTER TABLE swissmatch_communities
             ADD CONSTRAINT fk_sm_com_0001 FOREIGN KEY (canton_id) REFERENCES swissmatch_cantons(id)
             ADD CONSTRAINT fk_sm_com_0002 FOREIGN KEY (agglomeration_id) REFERENCES swissmatch_communities(id)
