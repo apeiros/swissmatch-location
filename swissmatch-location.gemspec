@@ -1,11 +1,11 @@
 # encoding: utf-8
 
 Gem::Specification.new do |s|
-  s.name                      = "swissmatch"
+  s.name                      = "swissmatch-location"
   s.version                   = "0.0.1"
   s.authors                   = "Stefan Rusterholz"
   s.email                     = "stefan.rusterholz@gmail.com"
-  s.homepage                  = "http://github.com/apeiros/swissmatch"
+  s.homepage                  = "http://github.com/apeiros/swissmatch-location"
 
   s.description               = <<-DESCRIPTION.gsub(/^    /, '').chomp
     Deal with swiss cantons, communities and zip codes, as provided by the swiss postal
@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
     Dir['lib/**/*'] +
     Dir['rake/**/*'] +
     Dir['test/**/*'] +
+    Dir['*.gemspec'] +
     %w[
-      swissmatch.gemspec
       Rakefile
       README.markdown
     ]
