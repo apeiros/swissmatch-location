@@ -319,7 +319,7 @@ module SwissMatch
     # @return [Array<Array<String>>]
     #   A 2 dimensional array representing the tabular data contained in the given file.
     def load_table(path, pattern)
-      File.read(path, :encoding => Encoding::ISO8859_1).
+      File.read(path, :encoding => "ISO-8859-1").
         encode(Encoding::UTF_8).
         scan(Expressions[pattern])
     end
