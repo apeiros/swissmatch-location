@@ -207,4 +207,10 @@ module SwissMatch
   def self.transliterate2(word)
     word.gsub(TransMatch2, Transliteration2).delete("^ A-Za-z").downcase
   end
+
+  # @private
+  # Transliterates a string into the unique transliterated (1 & 2) word list
+  def self.transliterated_words(string)
+    "#{transliterate1(string)} #{transliterate2(string)}".split(" ").uniq
+  end
 end
