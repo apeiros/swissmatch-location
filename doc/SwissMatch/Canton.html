@@ -6,7 +6,7 @@
 <title>
   Class: SwissMatch::Canton
   
-    &mdash; Documentation by YARD 0.7.2
+    &mdash; Documentation by YARD 0.8.2.1
   
 </title>
 
@@ -15,9 +15,11 @@
   <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
-  relpath = '..';
-  if (relpath != '') relpath += '/';
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
 </script>
+
 
   <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
 
@@ -26,36 +28,41 @@
 
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
-    
     <div id="header">
       <div id="menu">
   
-    <a href="../_index.html">Index (C)</a> &raquo; 
+    <a href="../_index.html">Index (C)</a> &raquo;
     <span class='title'><span class='object_link'><a href="../SwissMatch.html" title="SwissMatch (module)">SwissMatch</a></span></span>
      &raquo; 
     <span class="title">Canton</span>
   
-  
+
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
 </div>
 
       <div id="search">
   
-    <a id="class_list_link" href="#">Class List</a>
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
   
-    <a id="method_list_link" href="#">Method List</a>
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
   
-    <a id="file_list_link" href="#">File List</a>
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
   
 </div>
       <div class="clear"></div>
     </div>
-    
+
     <iframe id="search_frame"></iframe>
-    
+
     <div id="content"><h1>Class: SwissMatch::Canton
   
   
@@ -94,16 +101,18 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-Represents a swiss canton.
-</p>
+    
+<p>Represents a swiss canton.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div>
+
+
 
   <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
   <ul class="summary">
@@ -118,7 +127,10 @@ Represents a swiss canton.
   </span>
   
   
-    <span class="note title readonly">readonly</span>
+  
+    
+      <span class="note title readonly">readonly</span>
+    
     
   
   
@@ -127,9 +139,8 @@ Represents a swiss canton.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The two letter abbreviation of the cantons name as used on license plates.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The two letter abbreviation of the cantons name as used on license plates.</p>
 </div></span>
   
 </li>
@@ -162,6 +173,7 @@ The two letter abbreviation of the cantons name as used on license plates.
   
   
   
+  
 
   
     <span class="summary_desc"><div class='inline'></div></span>
@@ -177,6 +189,7 @@ The two letter abbreviation of the cantons name as used on license plates.
 
     
   </span>
+  
   
   
   
@@ -199,6 +212,7 @@ The two letter abbreviation of the cantons name as used on license plates.
     
   </span>
   
+  
     <span class="note title constructor">constructor</span>
   
   
@@ -208,9 +222,8 @@ The two letter abbreviation of the cantons name as used on license plates.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A new instance of Canton.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Canton.</p>
 </div></span>
   
 </li>
@@ -224,6 +237,7 @@ A new instance of Canton.
 
     
   </span>
+  
   
   
   
@@ -253,11 +267,11 @@ A new instance of Canton.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The name of the canton.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The name of the canton.</p>
 </div></span>
   
 </li>
@@ -277,11 +291,11 @@ The name of the canton.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The name of this zip code in all languages (only unique names).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The name of this zip code in all languages (only unique names).</p>
 </div></span>
   
 </li>
@@ -290,7 +304,7 @@ The name of this zip code in all languages (only unique names).
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_hash-instance_method" title="#to_hash (instance method)">- (Object) <strong>to_hash</strong> </a>
+      <a href="#to_hash-instance_method" title="#to_hash (instance method)">- (Hash) <strong>to_hash</strong> </a>
     
 
     
@@ -301,9 +315,12 @@ The name of this zip code in all languages (only unique names).
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>All properties of the canton as a hash.</p>
+</div></span>
   
 </li>
 
@@ -315,23 +332,24 @@ The name of this zip code in all languages (only unique names).
   <h2>Constructor Details</h2>
   
     <div class="method_details first">
-  <p class="signature first" id="initialize-instance_method">
+  <h3 class="signature first" id="initialize-instance_method">
   
     - (<tt><span class='object_link'><a href="" title="SwissMatch::Canton (class)">Canton</a></span></tt>) <strong>initialize</strong>(license_tag, name, name_de, name_fr, name_it, name_rt) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-A new instance of Canton
-</p>
+    
+<p>A new instance of Canton</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Parameters:</h3>
+  <p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -344,9 +362,8 @@ A new instance of Canton
       
       
         &mdash;
-        <div class='inline'><p>
-The two letter abbreviation of the cantons name as used on license plates.
-</p>
+        <div class='inline'>
+<p>The two letter abbreviation of the cantons name as used on license plates.</p>
 </div>
       
     </li>
@@ -361,9 +378,8 @@ The two letter abbreviation of the cantons name as used on license plates.
       
       
         &mdash;
-        <div class='inline'><p>
-The official name of the canton in the local language.
-</p>
+        <div class='inline'>
+<p>The official name of the canton in the local language.</p>
 </div>
       
     </li>
@@ -378,9 +394,8 @@ The official name of the canton in the local language.
       
       
         &mdash;
-        <div class='inline'><p>
-The official name of the canton in german.
-</p>
+        <div class='inline'>
+<p>The official name of the canton in german.</p>
 </div>
       
     </li>
@@ -395,9 +410,8 @@ The official name of the canton in german.
       
       
         &mdash;
-        <div class='inline'><p>
-The official name of the canton in french.
-</p>
+        <div class='inline'>
+<p>The official name of the canton in french.</p>
 </div>
       
     </li>
@@ -412,9 +426,8 @@ The official name of the canton in french.
       
       
         &mdash;
-        <div class='inline'><p>
-The official name of the canton in italian.
-</p>
+        <div class='inline'>
+<p>The official name of the canton in italian.</p>
 </div>
       
     </li>
@@ -429,14 +442,14 @@ The official name of the canton in italian.
       
       
         &mdash;
-        <div class='inline'><p>
-The official name of the canton in rhaeto-romanic.
-</p>
+        <div class='inline'>
+<p>The official name of the canton in rhaeto-romanic.</p>
 </div>
       
     </li>
   
 </ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -458,14 +471,14 @@ The official name of the canton in rhaeto-romanic.
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 26</span>
 
-<span class='kw'>def</span> <span class='id initialize'>initialize</span><span class='lparen'>(</span><span class='id license_tag'>license_tag</span><span class='comma'>,</span> <span class='id name'>name</span><span class='comma'>,</span> <span class='id name_de'>name_de</span><span class='comma'>,</span> <span class='id name_fr'>name_fr</span><span class='comma'>,</span> <span class='id name_it'>name_it</span><span class='comma'>,</span> <span class='id name_rt'>name_rt</span><span class='rparen'>)</span>
-  <span class='ivar'>@license_tag</span>  <span class='op'>=</span> <span class='id license_tag'>license_tag</span>
-  <span class='ivar'>@name</span>         <span class='op'>=</span> <span class='id name'>name</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_license_tag'>license_tag</span><span class='comma'>,</span> <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_name_de'>name_de</span><span class='comma'>,</span> <span class='id identifier rubyid_name_fr'>name_fr</span><span class='comma'>,</span> <span class='id identifier rubyid_name_it'>name_it</span><span class='comma'>,</span> <span class='id identifier rubyid_name_rt'>name_rt</span><span class='rparen'>)</span>
+  <span class='ivar'>@license_tag</span>  <span class='op'>=</span> <span class='id identifier rubyid_license_tag'>license_tag</span>
+  <span class='ivar'>@name</span>         <span class='op'>=</span> <span class='id identifier rubyid_name'>name</span>
   <span class='ivar'>@names</span>        <span class='op'>=</span> <span class='lbrace'>{</span>
-    <span class='symbol'>:de</span> <span class='op'>=&gt;</span> <span class='id name_de'>name_de</span><span class='comma'>,</span>
-    <span class='symbol'>:fr</span> <span class='op'>=&gt;</span> <span class='id name_fr'>name_fr</span><span class='comma'>,</span>
-    <span class='symbol'>:it</span> <span class='op'>=&gt;</span> <span class='id name_it'>name_it</span><span class='comma'>,</span>
-    <span class='symbol'>:rt</span> <span class='op'>=&gt;</span> <span class='id name_rt'>name_rt</span><span class='comma'>,</span>
+    <span class='symbol'>:de</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_name_de'>name_de</span><span class='comma'>,</span>
+    <span class='symbol'>:fr</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_name_fr'>name_fr</span><span class='comma'>,</span>
+    <span class='symbol'>:it</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_name_it'>name_it</span><span class='comma'>,</span>
+    <span class='symbol'>:rt</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_name_rt'>name_rt</span><span class='comma'>,</span>
   <span class='rbrace'>}</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -480,25 +493,26 @@ The official name of the canton in rhaeto-romanic.
     
       
       <span id=""></span>
-      <span id="license_tag-instance_method"></span>
       <div class="method_details first">
-  <p class="signature first" id="license_tag-instance_method">
+  <h3 class="signature first" id="license_tag-instance_method">
   
     - (<tt>String</tt>) <strong>license_tag</strong>  <span class="extras">(readonly)</span>
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The two letter abbreviation of the cantons name as used on license plates.
-</p>
+    
+<p>The two letter abbreviation of the cantons name as used on license plates.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -509,9 +523,8 @@ The two letter abbreviation of the cantons name as used on license plates.
       
       
         &mdash;
-        <div class='inline'><p>
-The two letter abbreviation of the cantons name as used on license plates.
-</p>
+        <div class='inline'>
+<p>The two letter abbreviation of the cantons name as used on license plates.</p>
 </div>
       
     </li>
@@ -531,7 +544,7 @@ The two letter abbreviation of the cantons name as used on license plates.
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 12</span>
 
-<span class='kw'>def</span> <span class='id license_tag'>license_tag</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_license_tag'>license_tag</span>
   <span class='ivar'>@license_tag</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -544,23 +557,26 @@ The two letter abbreviation of the cantons name as used on license plates.
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
-    
+
     
       <div class="method_details first">
-  <p class="signature first" id="eql?-instance_method">
+  <h3 class="signature first" id="eql?-instance_method">
   
     - (<tt>Boolean</tt>) <strong>eql?</strong>(other) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
     
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -574,87 +590,10 @@ The two letter abbreviation of the cantons name as used on license plates.
   
 </ul>
 
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-68
-69
-70</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 68</span>
-
-<span class='kw'>def</span> <span class='id eql?'>eql?</span><span class='lparen'>(</span><span class='id other'>other</span><span class='rparen'>)</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span> <span class='op'>==</span> <span class='id other'>other</span><span class='period'>.</span><span class='id class'>class</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@license_tag</span> <span class='op'>==</span> <span class='id other'>other</span><span class='period'>.</span><span class='id license_tag'>license_tag</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <p class="signature " id="hash-instance_method">
-  
-    - (<tt>Object</tt>) <strong>hash</strong> 
-  
-
-  
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-64
-65
-66</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 64</span>
-
-<span class='kw'>def</span> <span class='id hash'>hash</span>
-  <span class='lbracket'>[</span><span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='comma'>,</span> <span class='ivar'>@license_tag</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id hash'>hash</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <p class="signature " id="inspect-instance_method">
-  
-    - (<tt>String</tt>) <strong>inspect</strong> 
-  
-
-  
-</p><div class="docstring">
-  <div class="discussion">
-    
-
-  </div>
-</div>
-<div class="tags">
-  <h3>Returns:</h3>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-  <h3>See Also:</h3>
+  <p class="tag_title">See Also:</p>
   <ul class="see">
     
-      <li>Object#inspect</li>
+      <li>Object#eql?</li>
     
   </ul>
 
@@ -671,8 +610,8 @@ The two letter abbreviation of the cantons name as used on license plates.
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 74</span>
 
-<span class='kw'>def</span> <span class='id inspect'>inspect</span>
-  <span class='id sprintf'>sprintf</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\#&lt;%s:%014x %s&gt;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id class'>class</span><span class='comma'>,</span> <span class='id object_id'>object_id</span><span class='comma'>,</span> <span class='kw'>self</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_eql?'>eql?</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@license_tag</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_license_tag'>license_tag</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -680,7 +619,112 @@ The two letter abbreviation of the cantons name as used on license plates.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="name-instance_method">
+  <h3 class="signature " id="hash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hash</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Object#hash</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hash'>hash</span>
+  <span class='lbracket'>[</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='ivar'>@license_tag</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_hash'>hash</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="inspect-instance_method">
+  
+    - (<tt>String</tt>) <strong>inspect</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Object#inspect</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_sprintf'>sprintf</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\#&lt;%s:%014x %s&gt;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='id identifier rubyid_object_id'>object_id</span><span class='comma'>,</span> <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
   
     - (<tt>Object</tt>) <strong>name</strong>(language = nil) 
   
@@ -690,18 +734,19 @@ The two letter abbreviation of the cantons name as used on license plates.
     <span class="names"><span id='to_s-instance_method'>to_s</span></span>
     </span>
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The name of the canton. If no language is passed, the local language is
-used.
-</p>
+    
+<p>The name of the canton. If no language is passed, the local language is
+used.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Parameters:</h3>
+  <p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -716,14 +761,14 @@ used.
       
       
         &mdash;
-        <div class='inline'><p>
-One of nil, :de, :fr, :it or :rt
-</p>
+        <div class='inline'>
+<p>One of nil, :de, :fr, :it or :rt</p>
 </div>
       
     </li>
   
 </ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -738,8 +783,8 @@ One of nil, :de, :fr, :it or :rt
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 41</span>
 
-<span class='kw'>def</span> <span class='id name'>name</span><span class='lparen'>(</span><span class='id language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id language'>language</span> <span class='op'>?</span> <span class='ivar'>@names</span><span class='lbracket'>[</span><span class='id language'>language</span><span class='rbracket'>]</span> <span class='op'>:</span> <span class='ivar'>@name</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_language'>language</span> <span class='op'>?</span> <span class='ivar'>@names</span><span class='lbracket'>[</span><span class='id identifier rubyid_language'>language</span><span class='rbracket'>]</span> <span class='op'>:</span> <span class='ivar'>@name</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -747,23 +792,25 @@ One of nil, :de, :fr, :it or :rt
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="names-instance_method">
+  <h3 class="signature " id="names-instance_method">
   
     - (<tt>Array&lt;String&gt;</tt>) <strong>names</strong> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The name of this zip code in all languages (only unique names)
-</p>
+    
+<p>The name of this zip code in all languages (only unique names)</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -774,9 +821,8 @@ The name of this zip code in all languages (only unique names)
       
       
         &mdash;
-        <div class='inline'><p>
-The name of this zip code in all languages (only unique names)
-</p>
+        <div class='inline'>
+<p>The name of this zip code in all languages (only unique names)</p>
 </div>
       
     </li>
@@ -796,8 +842,8 @@ The name of this zip code in all languages (only unique names)
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 47</span>
 
-<span class='kw'>def</span> <span class='id names'>names</span>
-  <span class='ivar'>@names</span><span class='period'>.</span><span class='id values'>values</span><span class='period'>.</span><span class='id uniq'>uniq</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_names'>names</span>
+  <span class='ivar'>@names</span><span class='period'>.</span><span class='id identifier rubyid_values'>values</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -805,20 +851,49 @@ The name of this zip code in all languages (only unique names)
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="to_hash-instance_method">
+  <h3 class="signature " id="to_hash-instance_method">
   
-    - (<tt>Object</tt>) <strong>to_hash</strong> 
+    - (<tt>Hash</tt>) <strong>to_hash</strong> 
   
 
   
-</p><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>All properties of the canton as a hash.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>All properties of the canton as a hash.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-51
-52
 53
 54
 55
@@ -826,12 +901,14 @@ The name of this zip code in all languages (only unique names)
 57
 58
 59
-60</pre>
+60
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/canton.rb', line 53</span>
 
-<span class='kw'>def</span> <span class='id to_hash'>to_hash</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_to_hash'>to_hash</span>
   <span class='lbrace'>{</span>
     <span class='symbol'>:name</span>         <span class='op'>=&gt;</span> <span class='ivar'>@name</span><span class='comma'>,</span>
     <span class='symbol'>:name_de</span>      <span class='op'>=&gt;</span> <span class='ivar'>@names</span><span class='lbracket'>[</span><span class='symbol'>:de</span><span class='rbracket'>]</span><span class='comma'>,</span>
@@ -849,11 +926,11 @@ The name of this zip code in all languages (only unique names)
   </div>
 
 </div>
-    
+
     <div id="footer">
-  Generated on Mon Mar 19 13:16:06 2012 by 
+  Generated on Wed Aug  8 00:53:24 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.2 (ruby-1.9.2).
+  0.8.2.1 (ruby-1.9.3).
 </div>
 
   </body>

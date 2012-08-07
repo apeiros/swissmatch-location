@@ -6,7 +6,7 @@
 <title>
   Module: SwissMatch
   
-    &mdash; Documentation by YARD 0.7.2
+    &mdash; Documentation by YARD 0.8.2.1
   
 </title>
 
@@ -15,9 +15,11 @@
   <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  if (relpath != '') relpath += '/';
+  framesUrl = "frames.html#!" + escape(window.location.href);
 </script>
+
 
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
@@ -26,36 +28,41 @@
 
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
-    
     <div id="header">
       <div id="menu">
   
-    <a href="_index.html">Index (S)</a> &raquo; 
+    <a href="_index.html">Index (S)</a> &raquo;
     
     
     <span class="title">SwissMatch</span>
   
-  
+
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
 </div>
 
       <div id="search">
   
-    <a id="class_list_link" href="#">Class List</a>
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
   
-    <a id="method_list_link" href="#">Method List</a>
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
   
-    <a id="file_list_link" href="#">File List</a>
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
   
 </div>
       <div class="clear"></div>
     </div>
-    
+
     <iframe id="search_frame"></iframe>
-    
+
     <div id="content"><h1>Module: SwissMatch
   
   
@@ -72,8 +79,8 @@
   
   
     <dt class="r1 last">Defined in:</dt>
-    <dd class="r1 last">lib/swissmatch.rb<span class="defines">,<br />
-  lib/swissmatch/name.rb,<br /> lib/swissmatch/canton.rb,<br /> lib/swissmatch/cantons.rb,<br /> lib/swissmatch/address.rb,<br /> lib/swissmatch/zipcode.rb,<br /> lib/swissmatch/version.rb,<br /> lib/swissmatch/zipcodes.rb,<br /> lib/swissmatch/community.rb,<br /> lib/swissmatch/telsearch.rb,<br /> lib/swissmatch/datafiles.rb,<br /> lib/swissmatch/loaderror.rb,<br /> lib/swissmatch/communities.rb,<br /> lib/swissmatch/activerecord.rb,<br /> lib/swissmatch/directoryservice.rb</span>
+    <dd class="r1 last">lib/swissmatch/location.rb<span class="defines">,<br />
+  lib/swissmatch/name.rb,<br /> lib/swissmatch/canton.rb,<br /> lib/swissmatch/zipcode.rb,<br /> lib/swissmatch/cantons.rb,<br /> lib/swissmatch/zipcodes.rb,<br /> lib/swissmatch/datafiles.rb,<br /> lib/swissmatch/community.rb,<br /> lib/swissmatch/loaderror.rb,<br /> lib/swissmatch/communities.rb,<br /> lib/swissmatch/location/version.rb</span>
 </dd>
   
 </dl>
@@ -81,13 +88,11 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-SwissMatch Deal with swiss zip codes, cities, communities and cantons.
-</p>
-<p>
-Notice that all strings passed to SwissMatch are expected to be utf-8. All
-strings returned by SwissMatch are also in utf-8.
-</p>
+    
+<p>SwissMatch Deal with swiss zip codes, cities, communities and cantons.</p>
+
+<p>Notice that all strings passed to SwissMatch are expected to be utf-8. All
+strings returned by SwissMatch are also in utf-8.</p>
 
 
   </div>
@@ -95,34 +100,37 @@ strings returned by SwissMatch are also in utf-8.
 <div class="tags">
   
   <div class="examples">
-    <h3>Examples:</h3>
+    <p class="tag_title">Examples:</p>
     
-      <h4><div class='inline'><p>
-Load the data
-</p>
-</div></h4>
-      <pre class="example code"><span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch</span><span class='tstring_end'>'</span></span>
-<span class='const'>SwissMatch</span><span class='period'>.</span><span class='id load'>load</span>
+      
+        <p class="example_title"><div class='inline'>
+<p>Load the data</p>
+</div></p>
+      
+      <pre class="example code"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch</span><span class='tstring_end'>'</span></span>
+<span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span>
 <span class='comment'># alternatively, just require 'swissmatch/autoload'</span></pre>
     
-      <h4><div class='inline'><p>
-Get the ONRP for a given zip-code + city
-</p>
-</div></h4>
-      <pre class="example code"><span class='id require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch/autoload</span><span class='tstring_end'>'</span></span>
-<span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>Zürich</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id ordering_number'>ordering_number</span> <span class='comment'># =&gt; </span></pre>
+      
+        <p class="example_title"><div class='inline'>
+<p>Get the ONRP for a given zip-code + city</p>
+</div></p>
+      
+      <pre class="example code"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch/autoload</span><span class='tstring_end'>'</span></span>
+<span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>Zürich</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_ordering_number'>ordering_number</span> <span class='comment'># =&gt; </span></pre>
     
   </div>
 
+
 </div><h2>Defined Under Namespace</h2>
 <p class="children">
-   
+  
     
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="SwissMatch/ActiveRecord.html" title="SwissMatch::ActiveRecord (module)">ActiveRecord</a></span>
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="SwissMatch/Location.html" title="SwissMatch::Location (module)">Location</a></span>
     
-   
+  
     
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="SwissMatch/Address.html" title="SwissMatch::Address (class)">Address</a></span>, <span class='object_link'><a href="SwissMatch/Canton.html" title="SwissMatch::Canton (class)">Canton</a></span>, <span class='object_link'><a href="SwissMatch/Cantons.html" title="SwissMatch::Cantons (class)">Cantons</a></span>, <span class='object_link'><a href="SwissMatch/Communities.html" title="SwissMatch::Communities (class)">Communities</a></span>, <span class='object_link'><a href="SwissMatch/Community.html" title="SwissMatch::Community (class)">Community</a></span>, <span class='object_link'><a href="SwissMatch/DataFiles.html" title="SwissMatch::DataFiles (class)">DataFiles</a></span>, <span class='object_link'><a href="SwissMatch/DirectoryService.html" title="SwissMatch::DirectoryService (class)">DirectoryService</a></span>, <span class='object_link'><a href="SwissMatch/LoadError.html" title="SwissMatch::LoadError (class)">LoadError</a></span>, <span class='object_link'><a href="SwissMatch/Name.html" title="SwissMatch::Name (class)">Name</a></span>, <span class='object_link'><a href="SwissMatch/TelSearch.html" title="SwissMatch::TelSearch (class)">TelSearch</a></span>, <span class='object_link'><a href="SwissMatch/ZipCode.html" title="SwissMatch::ZipCode (class)">ZipCode</a></span>, <span class='object_link'><a href="SwissMatch/ZipCodes.html" title="SwissMatch::ZipCodes (class)">ZipCodes</a></span>
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="SwissMatch/Canton.html" title="SwissMatch::Canton (class)">Canton</a></span>, <span class='object_link'><a href="SwissMatch/Cantons.html" title="SwissMatch::Cantons (class)">Cantons</a></span>, <span class='object_link'><a href="SwissMatch/Communities.html" title="SwissMatch::Communities (class)">Communities</a></span>, <span class='object_link'><a href="SwissMatch/Community.html" title="SwissMatch::Community (class)">Community</a></span>, <span class='object_link'><a href="SwissMatch/DataFiles.html" title="SwissMatch::DataFiles (class)">DataFiles</a></span>, <span class='object_link'><a href="SwissMatch/LoadError.html" title="SwissMatch::LoadError (class)">LoadError</a></span>, <span class='object_link'><a href="SwissMatch/Name.html" title="SwissMatch::Name (class)">Name</a></span>, <span class='object_link'><a href="SwissMatch/ZipCode.html" title="SwissMatch::ZipCode (class)">ZipCode</a></span>, <span class='object_link'><a href="SwissMatch/ZipCodes.html" title="SwissMatch::ZipCodes (class)">ZipCodes</a></span>
     
   
 </p>
@@ -134,15 +142,15 @@ Get the ONRP for a given zip-code + city
         <dt id="Transliteration1-constant" class="">Transliteration1 =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Used to transliterate city names
-</p>
+    
+<p>Used to transliterate city names</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div>
         </dt>
         <dd><pre class="code"><span class='lbrace'>{</span>
@@ -165,18 +173,18 @@ Used to transliterate city names
         <dt id="Transliteration2-constant" class="">Transliteration2 =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Used to transliterate city names
-</p>
+    
+<p>Used to transliterate city names</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div>
         </dt>
-        <dd><pre class="code"><span class='const'>Transliteration1</span><span class='period'>.</span><span class='id merge'>merge</span><span class='lparen'>(</span><span class='lbrace'>{</span>
+        <dd><pre class="code"><span class='const'>Transliteration1</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='lbrace'>{</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ä</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ae</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ö</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>oe</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ü</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ue</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
@@ -185,53 +193,39 @@ Used to transliterate city names
         <dt id="TransMatch1-constant" class="">TransMatch1 =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Used to transliterate city names
-</p>
+    
+<p>Used to transliterate city names</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='regexp_beg'>/</span><span class='embexpr_beg'>#{</span><span class='const'>Transliteration1</span><span class='period'>.</span><span class='id keys'>keys</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id k'>k</span><span class='op'>|</span> <span class='const'>Regexp</span><span class='period'>.</span><span class='id escape'>escape</span><span class='lparen'>(</span><span class='id k'>k</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='regexp_end'>/</span></span></pre></dd>
+        <dd><pre class="code"><span class='tstring'><span class='regexp_beg'>/</span><span class='embexpr_beg'>#{</span><span class='const'>Transliteration1</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='op'>|</span> <span class='const'>Regexp</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='regexp_end'>/</span></span></pre></dd>
       
         <dt id="TransMatch2-constant" class="">TransMatch2 =
           <div class="docstring">
   <div class="discussion">
-    <p>
-Used to transliterate city names
-</p>
+    
+<p>Used to transliterate city names</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div>
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='regexp_beg'>/</span><span class='embexpr_beg'>#{</span><span class='const'>Transliteration2</span><span class='period'>.</span><span class='id keys'>keys</span><span class='period'>.</span><span class='id map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id k'>k</span><span class='op'>|</span> <span class='const'>Regexp</span><span class='period'>.</span><span class='id escape'>escape</span><span class='lparen'>(</span><span class='id k'>k</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='regexp_end'>/</span></span></pre></dd>
-      
-        <dt id="Version-constant" class="">Version =
-          <div class="docstring">
-  <div class="discussion">
-    <p>
-The version of this package.
-</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-</div>
-        </dt>
-        <dd><pre class="code"><span class='const'>Gem</span><span class='op'>::</span><span class='const'>Version</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>0.0.1</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span></pre></dd>
+        <dd><pre class="code"><span class='tstring'><span class='regexp_beg'>/</span><span class='embexpr_beg'>#{</span><span class='const'>Transliteration2</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='op'>|</span> <span class='const'>Regexp</span><span class='period'>.</span><span class='id identifier rubyid_escape'>escape</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='regexp_end'>/</span></span></pre></dd>
       
     </dl>
   
+
+
 
 
   <h2>Class Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
@@ -247,33 +241,9 @@ The version of this package.
   </span>
   
   
-    <span class="note title readonly">readonly</span>
+  
     
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'><p>
-The data source used.
-</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#directory_service-class_method" title="directory_service (class method)">+ (SwissMatch::DirectoryService<sup>?</sup>) <strong>directory_service</strong> </a>
-    
-
-    
-  </span>
-  
-  
+      <span class="note title readonly">readonly</span>
     
     
   
@@ -283,9 +253,8 @@ The data source used.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The directory service used to search for addresses.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The data source used.</p>
 </div></span>
   
 </li>
@@ -307,7 +276,7 @@ The directory service used to search for addresses.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#canton-class_method" title="canton (class method)">+ (Object) <strong>canton</strong>(name_or_plate) </a>
+      <a href="#canton-class_method" title="canton (class method)">+ (SwissMatch::Canton) <strong>canton</strong>(name_or_plate) </a>
     
 
     
@@ -318,9 +287,12 @@ The directory service used to search for addresses.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The canton with the given name or license_tag.</p>
+</div></span>
   
 </li>
 
@@ -328,7 +300,7 @@ The directory service used to search for addresses.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#cantons-class_method" title="cantons (class method)">+ (Object) <strong>cantons</strong> </a>
+      <a href="#cantons-class_method" title="cantons (class method)">+ (SwissMatch::Cantons) <strong>cantons</strong> </a>
     
 
     
@@ -339,9 +311,12 @@ The directory service used to search for addresses.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>All known cantons.</p>
+</div></span>
   
 </li>
 
@@ -360,12 +335,12 @@ The directory service used to search for addresses.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A list of unique names matching the parameters (4 digit code, type,
-locale).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A list of unique names matching the parameters (4 digit code, type,
+locale).</p>
 </div></span>
   
 </li>
@@ -385,11 +360,11 @@ locale).
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Zip codes whose name equals the given name.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Zip codes whose name equals the given name.</p>
 </div></span>
   
 </li>
@@ -398,7 +373,7 @@ Zip codes whose name equals the given name.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#communities-class_method" title="communities (class method)">+ (Object) <strong>communities</strong>(name = nil) </a>
+      <a href="#communities-class_method" title="communities (class method)">+ (SwissMatch::Communities) <strong>communities</strong>(name = nil) </a>
     
 
     
@@ -409,9 +384,12 @@ Zip codes whose name equals the given name.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>All communities, or those matching the given name.</p>
+</div></span>
   
 </li>
 
@@ -419,7 +397,7 @@ Zip codes whose name equals the given name.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#community-class_method" title="community (class method)">+ (Object) <strong>community</strong>(key) </a>
+      <a href="#community-class_method" title="community (class method)">+ (SwissMatch::Community) <strong>community</strong>(key) </a>
     
 
     
@@ -430,9 +408,12 @@ Zip codes whose name equals the given name.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The community with the community number.</p>
+</div></span>
   
 </li>
 
@@ -440,7 +421,7 @@ Zip codes whose name equals the given name.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#load-class_method" title="load (class method)">+ (Object) <strong>load</strong>(data_source = nil) </a>
+      <a href="#load-class_method" title="load (class method)">+ (self) <strong>load</strong>(data_source = nil) </a>
     
 
     
@@ -451,9 +432,12 @@ Zip codes whose name equals the given name.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Loads the swissmatch data.</p>
+</div></span>
   
 </li>
 
@@ -472,11 +456,11 @@ Zip codes whose name equals the given name.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Used to transliterate city names.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Used to transliterate city names.</p>
 </div></span>
   
 </li>
@@ -496,11 +480,36 @@ Used to transliterate city names.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Used to transliterate city names.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Used to transliterate city names.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#transliterated_words-class_method" title="transliterated_words (class method)">+ (Object) <strong>transliterated_words</strong>(string) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Transliterates a string into the unique transliterated (1 &amp; 2) word
+list.</p>
 </div></span>
   
 </li>
@@ -520,11 +529,11 @@ Used to transliterate city names.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Returns a single zip code.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a single zip code.</p>
 </div></span>
   
 </li>
@@ -544,11 +553,11 @@ Returns a single zip code.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A list of zip codes with the given code or name.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A list of zip codes with the given code or name.</p>
 </div></span>
   
 </li>
@@ -563,25 +572,26 @@ A list of zip codes with the given code or name.
     
       
       <span id=""></span>
-      <span id="data-class_method"></span>
       <div class="method_details first">
-  <p class="signature first" id="data-class_method">
+  <h3 class="signature first" id="data-class_method">
   
     + (<tt><span class='object_link'><a href="SwissMatch/DataFiles.html" title="SwissMatch::DataFiles (class)">SwissMatch::DataFiles</a></span></tt><sup>?</sup>) <strong>data</strong>  <span class="extras">(readonly)</span>
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The data source used
-</p>
+    
+<p>The data source used</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -592,9 +602,8 @@ The data source used
       
       
         &mdash;
-        <div class='inline'><p>
-The data source used
-</p>
+        <div class='inline'>
+<p>The data source used</p>
 </div>
       
     </li>
@@ -607,70 +616,15 @@ The data source used
       <pre class="lines">
 
 
-38
-39
-40</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 38</span>
-
-<span class='kw'>def</span> <span class='id data'>data</span>
-  <span class='ivar'>@data</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="directory_service=-class_method"></span>
-      <span id="directory_service-class_method"></span>
-      <div class="method_details ">
-  <p class="signature " id="directory_service-class_method">
-  
-    + (<tt><span class='object_link'><a href="SwissMatch/DirectoryService.html" title="SwissMatch::DirectoryService (class)">SwissMatch::DirectoryService</a></span></tt><sup>?</sup>) <strong>directory_service</strong> 
-  
-
-  
-</p><div class="docstring">
-  <div class="discussion">
-    <p>
-The directory service used to search for addresses
-</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <h3>Returns:</h3>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="SwissMatch/DirectoryService.html" title="SwissMatch::DirectoryService (class)">SwissMatch::DirectoryService</a></span></tt>, <tt>nil</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
+41
 42
-43
-44</pre>
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 41</span>
 
-<span class='kw'>def</span> <span class='id directory_service'>directory_service</span>
-  <span class='ivar'>@directory_service</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='ivar'>@data</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -682,44 +636,67 @@ The directory service used to search for addresses
 
   <div id="class_method_details" class="method_details_list">
     <h2>Class Method Details</h2>
-    
+
     
       <div class="method_details first">
-  <p class="signature first" id="canton-class_method">
+  <h3 class="signature first" id="canton-class_method">
   
-    + (<tt>Object</tt>) <strong>canton</strong>(name_or_plate) 
+    + (<tt><span class='object_link'><a href="SwissMatch/Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></tt>) <strong>canton</strong>(name_or_plate) 
   
 
   
-</p><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
 
-
-45
-46
-47</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 45</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id canton'>canton</span><span class='lparen'>(</span><span class='id name_or_plate'>name_or_plate</span><span class='rparen'>)</span>
-  <span class='ivar'>@data</span><span class='period'>.</span><span class='id cantons'>cantons</span><span class='lbracket'>[</span><span class='id name_or_plate'>name_or_plate</span><span class='rbracket'>]</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
+  
+</h3><div class="docstring">
+  <div class="discussion">
     
-      <div class="method_details ">
-  <p class="signature " id="cantons-class_method">
-  
-    + (<tt>Object</tt>) <strong>cantons</strong> 
-  
+<p>The canton with the given name or license_tag</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
-</p><table class="source_code">
+    <li>
+      
+        <span class='name'>name_or_plate</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The name or license_tag of the canton</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SwissMatch/Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The canton with the given name or license_tag</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
@@ -730,10 +707,10 @@ The directory service used to search for addresses
 51</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 49</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id cantons'>cantons</span>
-  <span class='ivar'>@data</span><span class='period'>.</span><span class='id cantons'>cantons</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_canton'>canton</span><span class='lparen'>(</span><span class='id identifier rubyid_name_or_plate'>name_or_plate</span><span class='rparen'>)</span>
+  <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_cantons'>cantons</span><span class='lbracket'>[</span><span class='id identifier rubyid_name_or_plate'>name_or_plate</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -741,24 +718,84 @@ The directory service used to search for addresses
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="cities_for_zip_code-class_method">
+  <h3 class="signature " id="cantons-class_method">
   
-    + (<tt>Array&lt;String&gt;</tt>) <strong>cities_for_zip_code</strong>(code, only_types = nil, locale = nil) 
+    + (<tt><span class='object_link'><a href="SwissMatch/Cantons.html" title="SwissMatch::Cantons (class)">SwissMatch::Cantons</a></span></tt>) <strong>cantons</strong> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-A list of unique names matching the parameters (4 digit code, type,
-locale).
-</p>
+    
+<p>All known cantons</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Parameters:</h3>
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SwissMatch/Cantons.html" title="SwissMatch::Cantons (class)">SwissMatch::Cantons</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>All known cantons</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_cantons'>cantons</span>
+  <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_cantons'>cantons</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cities_for_zip_code-class_method">
+  
+    + (<tt>Array&lt;String&gt;</tt>) <strong>cities_for_zip_code</strong>(code, only_types = nil, locale = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A list of unique names matching the parameters (4 digit code, type,
+locale).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -771,9 +808,8 @@ locale).
       
       
         &mdash;
-        <div class='inline'><p>
-The 4 digit zip code
-</p>
+        <div class='inline'>
+<p>The 4 digit zip code</p>
 </div>
       
     </li>
@@ -790,10 +826,9 @@ The 4 digit zip code
       
       
         &mdash;
-        <div class='inline'><p>
-An array of zip code types (see ZipCode#type) which the returned zip codes
-must match.
-</p>
+        <div class='inline'>
+<p>An array of zip code types (see ZipCode#type) which the returned zip codes
+must match.</p>
 </div>
       
     </li>
@@ -810,16 +845,16 @@ must match.
       
       
         &mdash;
-        <div class='inline'><p>
-Return the names in the given locale, defaults to nil/:native (nil and
-:native are treated the same and will return the native names)
-</p>
+        <div class='inline'>
+<p>Return the names in the given locale, defaults to nil/:native (nil and
+:native are treated the same and will return the native names)</p>
 </div>
       
     </li>
   
 </ul>
-<h3>Returns:</h3>
+
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -830,10 +865,9 @@ Return the names in the given locale, defaults to nil/:native (nil and
       
       
         &mdash;
-        <div class='inline'><p>
-A list of unique names matching the parameters (4 digit code, type,
-locale).
-</p>
+        <div class='inline'>
+<p>A list of unique names matching the parameters (4 digit code, type,
+locale).</p>
 </div>
       
     </li>
@@ -846,39 +880,39 @@ locale).
       <pre class="lines">
 
 
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163</pre>
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 149</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 165</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id cities_for_zip_code'>cities_for_zip_code</span><span class='lparen'>(</span><span class='id code'>code</span><span class='comma'>,</span> <span class='id only_types'>only_types</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id locale'>locale</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id codes'>codes</span> <span class='op'>=</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_code'>by_code</span><span class='lparen'>(</span><span class='id code'>code</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
-  <span class='kw'>return</span> <span class='lbracket'>[</span><span class='rbracket'>]</span> <span class='kw'>unless</span> <span class='id codes'>codes</span>
-  <span class='id codes'>codes</span> <span class='op'>=</span> <span class='id codes'>codes</span><span class='period'>.</span><span class='id select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id code'>code</span><span class='op'>|</span> <span class='id only_types'>only_types</span><span class='period'>.</span><span class='id include?'>include?</span><span class='lparen'>(</span><span class='id code'>code</span><span class='period'>.</span><span class='id type'>type</span><span class='rparen'>)</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='id only_types'>only_types</span>
-  <span class='id names'>names</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id locale'>locale</span>
-    <span class='kw'>when</span> <span class='symbol'>:native</span><span class='comma'>,</span><span class='kw'>nil</span> <span class='kw'>then</span> <span class='id codes'>codes</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name</span><span class='rparen'>)</span>
-    <span class='kw'>when</span> <span class='symbol'>:de</span> <span class='kw'>then</span> <span class='id codes'>codes</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_de</span><span class='rparen'>)</span>
-    <span class='kw'>when</span> <span class='symbol'>:fr</span> <span class='kw'>then</span> <span class='id codes'>codes</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_fr</span><span class='rparen'>)</span>
-    <span class='kw'>when</span> <span class='symbol'>:it</span> <span class='kw'>then</span> <span class='id codes'>codes</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_it</span><span class='rparen'>)</span>
-    <span class='kw'>when</span> <span class='symbol'>:rt</span> <span class='kw'>then</span> <span class='id codes'>codes</span><span class='period'>.</span><span class='id map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_rt</span><span class='rparen'>)</span>
-    <span class='kw'>else</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid locale </span><span class='embexpr_beg'>#{</span><span class='id locale'>locale</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_cities_for_zip_code'>cities_for_zip_code</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_only_types'>only_types</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_locale'>locale</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_codes'>codes</span> <span class='op'>=</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_code'>by_code</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='lbracket'>[</span><span class='rbracket'>]</span> <span class='kw'>unless</span> <span class='id identifier rubyid_codes'>codes</span>
+  <span class='id identifier rubyid_codes'>codes</span> <span class='op'>=</span> <span class='id identifier rubyid_codes'>codes</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_code'>code</span><span class='op'>|</span> <span class='id identifier rubyid_only_types'>only_types</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='id identifier rubyid_only_types'>only_types</span>
+  <span class='id identifier rubyid_names'>names</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id identifier rubyid_locale'>locale</span>
+    <span class='kw'>when</span> <span class='symbol'>:native</span><span class='comma'>,</span><span class='kw'>nil</span> <span class='kw'>then</span> <span class='id identifier rubyid_codes'>codes</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='symbol'>:de</span> <span class='kw'>then</span> <span class='id identifier rubyid_codes'>codes</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_de</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='symbol'>:fr</span> <span class='kw'>then</span> <span class='id identifier rubyid_codes'>codes</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_fr</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='symbol'>:it</span> <span class='kw'>then</span> <span class='id identifier rubyid_codes'>codes</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_it</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='symbol'>:rt</span> <span class='kw'>then</span> <span class='id identifier rubyid_codes'>codes</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name_rt</span><span class='rparen'>)</span>
+    <span class='kw'>else</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid locale </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_locale'>locale</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
 
-  <span class='id names'>names</span><span class='period'>.</span><span class='id uniq'>uniq</span>
+  <span class='id identifier rubyid_names'>names</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -886,23 +920,24 @@ locale).
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="city-class_method">
+  <h3 class="signature " id="city-class_method">
   
     + (<tt>Array&lt;<span class='object_link'><a href="SwissMatch/ZipCode.html" title="SwissMatch::ZipCode (class)">SwissMatch::ZipCode</a></span>&gt;</tt>) <strong>city</strong>(name) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Zip codes whose name equals the given name
-</p>
+    
+<p>Zip codes whose name equals the given name</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Parameters:</h3>
+  <p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -915,15 +950,15 @@ Zip codes whose name equals the given name
       
       
         &mdash;
-        <div class='inline'><p>
-The name for which to return matching zip codes
-</p>
+        <div class='inline'>
+<p>The name for which to return matching zip codes</p>
 </div>
       
     </li>
   
 </ul>
-<h3>Returns:</h3>
+
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -934,9 +969,8 @@ The name for which to return matching zip codes
       
       
         &mdash;
-        <div class='inline'><p>
-Zip codes whose name equals the given name
-</p>
+        <div class='inline'>
+<p>Zip codes whose name equals the given name</p>
 </div>
       
     </li>
@@ -949,15 +983,15 @@ Zip codes whose name equals the given name
       <pre class="lines">
 
 
-135
-136
-137</pre>
+151
+152
+153</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 135</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 151</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id city'>city</span><span class='lparen'>(</span><span class='id name'>name</span><span class='rparen'>)</span>
-  <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_name'>by_name</span><span class='lparen'>(</span><span class='id name'>name</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_city'>city</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
+  <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_name'>by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -965,27 +999,80 @@ Zip codes whose name equals the given name
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="communities-class_method">
+  <h3 class="signature " id="communities-class_method">
   
-    + (<tt>Object</tt>) <strong>communities</strong>(name = nil) 
+    + (<tt><span class='object_link'><a href="SwissMatch/Communities.html" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>) <strong>communities</strong>(name = nil) 
   
 
   
-</p><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>All communities, or those matching the given name</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The name of the communities</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SwissMatch/Communities.html" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>All communities, or those matching the given name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-57
-58
-59</pre>
+73
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 73</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id communities'>communities</span><span class='lparen'>(</span><span class='id name'>name</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='id name'>name</span> <span class='op'>?</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id communities'>communities</span><span class='period'>.</span><span class='id by_name'>by_name</span><span class='lparen'>(</span><span class='id name'>name</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id communities'>communities</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_communities'>communities</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_name'>name</span> <span class='op'>?</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_communities'>communities</span><span class='period'>.</span><span class='id identifier rubyid_by_name'>by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_communities'>communities</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -993,27 +1080,78 @@ Zip codes whose name equals the given name
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="community-class_method">
+  <h3 class="signature " id="community-class_method">
   
-    + (<tt>Object</tt>) <strong>community</strong>(key) 
+    + (<tt><span class='object_link'><a href="SwissMatch/Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>) <strong>community</strong>(key) 
   
 
   
-</p><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The community with the community number</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The community number of the community</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SwissMatch/Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The community with the community number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-53
-54
-55</pre>
+64
+65
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 64</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id community'>community</span><span class='lparen'>(</span><span class='id key'>key</span><span class='rparen'>)</span>
-  <span class='ivar'>@data</span><span class='period'>.</span><span class='id communities'>communities</span><span class='period'>.</span><span class='id by_community_number'>by_community_number</span><span class='lparen'>(</span><span class='id key'>key</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_community'>community</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
+  <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_communities'>communities</span><span class='period'>.</span><span class='id identifier rubyid_by_community_number'>by_community_number</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1021,29 +1159,86 @@ Zip codes whose name equals the given name
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="load-class_method">
+  <h3 class="signature " id="load-class_method">
   
-    + (<tt>Object</tt>) <strong>load</strong>(data_source = nil) 
+    + (<tt>self</tt>) <strong>load</strong>(data_source = nil) 
   
 
   
-</p><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Loads the swissmatch data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data_source</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SwissMatch/DataFiles.html" title="SwissMatch::DataFiles (class)">DataFiles</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A valid data-source.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>self</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Returns self</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-165
-166
-167
-168</pre>
+188
+189
+190
+191
+192
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 165</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 188</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id load'>load</span><span class='lparen'>(</span><span class='id data_source'>data_source</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='ivar'>@data</span> <span class='op'>=</span> <span class='id data_source'>data_source</span> <span class='op'>||</span> <span class='const'>DataFiles</span><span class='period'>.</span><span class='id new'>new</span>
-  <span class='ivar'>@data</span><span class='period'>.</span><span class='id load!'>load!</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_data_source'>data_source</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@data</span> <span class='op'>=</span> <span class='id identifier rubyid_data_source'>data_source</span> <span class='op'>||</span> <span class='const'>DataFiles</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_load!'>load!</span>
+
+  <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1051,38 +1246,40 @@ Zip codes whose name equals the given name
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="transliterate1-class_method">
+  <h3 class="signature " id="transliterate1-class_method">
   
     + (<tt>Object</tt>) <strong>transliterate1</strong>(word) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Used to transliterate city names
-</p>
+    
+<p>Used to transliterate city names</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-207
-208
-209</pre>
+232
+233
+234</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 207</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 232</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id transliterate1'>transliterate1</span><span class='lparen'>(</span><span class='id word'>word</span><span class='rparen'>)</span>
-  <span class='id word'>word</span><span class='period'>.</span><span class='id gsub'>gsub</span><span class='lparen'>(</span><span class='const'>TransMatch1</span><span class='comma'>,</span> <span class='const'>Transliteration1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>^ A-Za-z</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id downcase'>downcase</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_transliterate1'>transliterate1</span><span class='lparen'>(</span><span class='id identifier rubyid_word'>word</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_word'>word</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='const'>TransMatch1</span><span class='comma'>,</span> <span class='const'>Transliteration1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>^ A-Za-z</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1090,38 +1287,40 @@ Used to transliterate city names
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="transliterate2-class_method">
+  <h3 class="signature " id="transliterate2-class_method">
   
     + (<tt>Object</tt>) <strong>transliterate2</strong>(word) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Used to transliterate city names
-</p>
+    
+<p>Used to transliterate city names</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-213
-214
-215</pre>
+238
+239
+240</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 213</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 238</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id transliterate2'>transliterate2</span><span class='lparen'>(</span><span class='id word'>word</span><span class='rparen'>)</span>
-  <span class='id word'>word</span><span class='period'>.</span><span class='id gsub'>gsub</span><span class='lparen'>(</span><span class='const'>TransMatch2</span><span class='comma'>,</span> <span class='const'>Transliteration2</span><span class='rparen'>)</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>^ A-Za-z</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id downcase'>downcase</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_transliterate2'>transliterate2</span><span class='lparen'>(</span><span class='id identifier rubyid_word'>word</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_word'>word</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='const'>TransMatch2</span><span class='comma'>,</span> <span class='const'>Transliteration2</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>^ A-Za-z</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1129,44 +1328,79 @@ Used to transliterate city names
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="zip_code-class_method">
+  <h3 class="signature " id="transliterated_words-class_method">
+  
+    + (<tt>Object</tt>) <strong>transliterated_words</strong>(string) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Transliterates a string into the unique transliterated (1 &amp; 2) word
+list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+244
+245
+246</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 244</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_transliterated_words'>transliterated_words</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_transliterate1'>transliterate1</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_transliterate2'>transliterate2</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_uniq'>uniq</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="zip_code-class_method">
   
     + (<tt><span class='object_link'><a href="SwissMatch/ZipCode.html" title="SwissMatch::ZipCode (class)">SwissMatch::ZipCode</a></span></tt>) <strong>zip_code</strong>(code, city_or_add_on = nil) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Returns a single zip code. A zip code can be uniquely identified by any of:
-</p>
-<ul>
-<li><p>
-Its ordering_number (ONRP, a 4 digit Integer)
-</p>
-</li>
-<li><p>
-Its zip code (4 digit Integer) and add-on (2 digit Integer)
-</p>
-</li>
-<li><p>
-Its zip code (4 digit Integer) and any official name (String)
-</p>
-</li>
-</ul>
-<p>
-The data can be passed in different ways, e.g. all numbers can be passed
+    
+<p>Returns a single zip code. A zip code can be uniquely identified by any of:</p>
+<ul><li>
+<p>Its ordering_number (ONRP, a 4 digit Integer)</p>
+</li><li>
+<p>Its zip code (4 digit Integer) and add-on (2 digit Integer)</p>
+</li><li>
+<p>Its zip code (4 digit Integer) and any official name (String)</p>
+</li></ul>
+
+<p>The data can be passed in different ways, e.g. all numbers can be passed
 either as a String or as an Integer. The identification by zip code and
 add-on can be done by either using a combined 6 digit number (e.g. 800000
-for &#8220;8000 Zürich&#8221;), or by passing 2 arguments, passing the zip
-code and the add-on separately.
-</p>
+for “8000 Zürich”), or by passing 2 arguments, passing the zip code and the
+add-on separately.</p>
+
 <h3>IMPORTANT</h3>
-<p>
-You must be aware, that passing a single 4-digit code to
+
+<p>You must be aware, that passing a single 4-digit code to
 SwissMatch::zip_code uses the ONRP, and NOT the zip-code. The 4 digit zip
-code alone does NOT uniquely identify a zip code.
-</p>
+code alone does NOT uniquely identify a zip code.</p>
 
 
   </div>
@@ -1174,32 +1408,35 @@ code alone does NOT uniquely identify a zip code.
 <div class="tags">
   
   <div class="examples">
-    <h3>Examples:</h3>
+    <p class="tag_title">Examples:</p>
     
-      <h4><div class='inline'><p>
-Get a zip code by ONRP
-</p>
-</div></h4>
-      <pre class="example code"><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>4384</span><span class='rparen'>)</span>           <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;</span></pre>
+      
+        <p class="example_title"><div class='inline'>
+<p>Get a zip code by ONRP</p>
+</div></p>
+      
+      <pre class="example code"><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>4384</span><span class='rparen'>)</span>           <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;</span></pre>
     
-      <h4><div class='inline'><p>
-Get a zip code by 4-digit code and add-on
-</p>
-</div></h4>
-      <pre class="example code"><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='int'>0</span><span class='rparen'>)</span>        <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
-</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>8000</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>00</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>   <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
-</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>800000</span><span class='rparen'>)</span>         <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
-</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>800000</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>       <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;</span></pre>
+      
+        <p class="example_title"><div class='inline'>
+<p>Get a zip code by 4-digit code and add-on</p>
+</div></p>
+      
+      <pre class="example code"><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='int'>0</span><span class='rparen'>)</span>        <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
+</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>8000</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>00</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>   <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
+</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>800000</span><span class='rparen'>)</span>         <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
+</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>800000</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>       <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;</span></pre>
     
-      <h4><div class='inline'><p>
-Get a zip code by 4-digit code and name
-</p>
-</div></h4>
-      <pre class="example code"><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Zürich</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
-</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Zurigo</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;</span></pre>
+      
+        <p class="example_title"><div class='inline'>
+<p>Get a zip code by 4-digit code and name</p>
+</div></p>
+      
+      <pre class="example code"><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Zürich</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;
+</span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='int'>8000</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Zurigo</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># =&gt; #&lt;SwissMatch::ZipCode:003ff996cf8d3c 8000 Zürich&gt;</span></pre>
     
   </div>
-<h3>Parameters:</h3>
+<p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -1212,9 +1449,8 @@ Get a zip code by 4-digit code and name
       
       
         &mdash;
-        <div class='inline'><p>
-The 4 digit zip code as Integer or String
-</p>
+        <div class='inline'>
+<p>The 4 digit zip code as Integer or String</p>
 </div>
       
     </li>
@@ -1231,16 +1467,16 @@ The 4 digit zip code as Integer or String
       
       
         &mdash;
-        <div class='inline'><p>
-Either the 2 digit zip-code add-on as string or integer, or the city name
-as a String in utf-8.
-</p>
+        <div class='inline'>
+<p>Either the 2 digit zip-code add-on as string or integer, or the city name
+as a String in utf-8.</p>
 </div>
       
     </li>
   
 </ul>
-<h3>Returns:</h3>
+
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -1251,9 +1487,8 @@ as a String in utf-8.
       
       
         &mdash;
-        <div class='inline'><p>
-The zip codes with the given code and the given add-on or name.
-</p>
+        <div class='inline'>
+<p>The zip codes with the given code and the given add-on or name.</p>
 </div>
       
     </li>
@@ -1266,32 +1501,32 @@ The zip codes with the given code and the given add-on or name.
       <pre class="lines">
 
 
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128</pre>
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 117</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 133</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id zip_code'>zip_code</span><span class='lparen'>(</span><span class='id code'>code</span><span class='comma'>,</span> <span class='id city_or_add_on'>city_or_add_on</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='kw'>case</span> <span class='id city_or_add_on'>city_or_add_on</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_zip_code'>zip_code</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_city_or_add_on'>city_or_add_on</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_city_or_add_on'>city_or_add_on</span>
     <span class='kw'>when</span> <span class='kw'>nil</span>
-      <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_ordering_number'>by_ordering_number</span><span class='lparen'>(</span><span class='id code'>code</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
+      <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_ordering_number'>by_ordering_number</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>
     <span class='kw'>when</span> <span class='const'>Integer</span><span class='comma'>,</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A\d\d\z</span><span class='regexp_end'>/</span></span>
-      <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_code_and_add_on'>by_code_and_add_on</span><span class='lparen'>(</span><span class='id code'>code</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span> <span class='id city_or_add_on'>city_or_add_on</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
+      <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_code_and_add_on'>by_code_and_add_on</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='comma'>,</span> <span class='id identifier rubyid_city_or_add_on'>city_or_add_on</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>
     <span class='kw'>when</span> <span class='const'>String</span>
-      <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_code_and_name'>by_code_and_name</span><span class='lparen'>(</span><span class='id code'>code</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='comma'>,</span> <span class='id city_or_add_on'>city_or_add_on</span><span class='rparen'>)</span>
+      <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_code_and_name'>by_code_and_name</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='comma'>,</span> <span class='id identifier rubyid_city_or_add_on'>city_or_add_on</span><span class='rparen'>)</span>
     <span class='kw'>else</span>
-      <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid second argument, must be nil, ZipCode#add_on or ZipCode#name</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid second argument, must be nil, ZipCode#add_on or ZipCode#name</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -1300,23 +1535,24 @@ The zip codes with the given code and the given add-on or name.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="zip_codes-class_method">
+  <h3 class="signature " id="zip_codes-class_method">
   
     + (<tt>Array&lt;<span class='object_link'><a href="SwissMatch/ZipCode.html" title="SwissMatch::ZipCode (class)">SwissMatch::ZipCode</a></span>&gt;</tt>) <strong>zip_codes</strong>(code_or_name = nil) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-A list of zip codes with the given code or name.
-</p>
+    
+<p>A list of zip codes with the given code or name.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Parameters:</h3>
+  <p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -1331,16 +1567,16 @@ A list of zip codes with the given code or name.
       
       
         &mdash;
-        <div class='inline'><p>
-Either the 4 digit zip code as Integer or String, or the city name as a
-String in utf-8.
-</p>
+        <div class='inline'>
+<p>Either the 4 digit zip code as Integer or String, or the city name as a
+String in utf-8.</p>
 </div>
       
     </li>
   
 </ul>
-<h3>Returns:</h3>
+
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -1351,9 +1587,8 @@ String in utf-8.
       
       
         &mdash;
-        <div class='inline'><p>
-A list of zip codes with the given code or name.
-</p>
+        <div class='inline'>
+<p>A list of zip codes with the given code or name.</p>
 </div>
       
     </li>
@@ -1366,32 +1601,32 @@ A list of zip codes with the given code or name.
       <pre class="lines">
 
 
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78</pre>
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch.rb', line 67</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/location.rb', line 83</span>
 
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='lparen'>(</span><span class='id code_or_name'>code_or_name</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='kw'>case</span> <span class='id code_or_name'>code_or_name</span>
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='lparen'>(</span><span class='id identifier rubyid_code_or_name'>code_or_name</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_code_or_name'>code_or_name</span>
     <span class='kw'>when</span> <span class='const'>Integer</span><span class='comma'>,</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\A\d{4}\z</span><span class='regexp_end'>/</span></span>
-      <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_code'>by_code</span><span class='lparen'>(</span><span class='id code_or_name'>code_or_name</span><span class='period'>.</span><span class='id to_i'>to_i</span><span class='rparen'>)</span>
+      <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_code'>by_code</span><span class='lparen'>(</span><span class='id identifier rubyid_code_or_name'>code_or_name</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>
     <span class='kw'>when</span> <span class='const'>String</span>
-      <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span><span class='period'>.</span><span class='id by_name'>by_name</span><span class='lparen'>(</span><span class='id code_or_name'>code_or_name</span><span class='rparen'>)</span>
+      <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span><span class='period'>.</span><span class='id identifier rubyid_by_name'>by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_code_or_name'>code_or_name</span><span class='rparen'>)</span>
     <span class='kw'>when</span> <span class='kw'>nil</span>
-      <span class='ivar'>@data</span><span class='period'>.</span><span class='id zip_codes'>zip_codes</span>
+      <span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_zip_codes'>zip_codes</span>
     <span class='kw'>else</span>
-      <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid argument, must be a ZipCode#code (Integer or String) or ZipCode#name (String)</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Invalid argument, must be a ZipCode#code (Integer or String) or ZipCode#name (String)</span><span class='tstring_end'>&quot;</span></span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -1402,11 +1637,11 @@ A list of zip codes with the given code or name.
   </div>
 
 </div>
-    
+
     <div id="footer">
-  Generated on Mon Mar 19 13:16:06 2012 by 
+  Generated on Wed Aug  8 00:53:24 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.2 (ruby-1.9.2).
+  0.8.2.1 (ruby-1.9.3).
 </div>
 
   </body>

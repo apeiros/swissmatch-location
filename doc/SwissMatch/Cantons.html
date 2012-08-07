@@ -6,7 +6,7 @@
 <title>
   Class: SwissMatch::Cantons
   
-    &mdash; Documentation by YARD 0.7.2
+    &mdash; Documentation by YARD 0.8.2.1
   
 </title>
 
@@ -15,9 +15,11 @@
   <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
-  relpath = '..';
-  if (relpath != '') relpath += '/';
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
 </script>
+
 
   <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
 
@@ -26,36 +28,41 @@
 
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
-    
     <div id="header">
       <div id="menu">
   
-    <a href="../_index.html">Index (C)</a> &raquo; 
+    <a href="../_index.html">Index (C)</a> &raquo;
     <span class='title'><span class='object_link'><a href="../SwissMatch.html" title="SwissMatch (module)">SwissMatch</a></span></span>
      &raquo; 
     <span class="title">Cantons</span>
   
-  
+
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
 </div>
 
       <div id="search">
   
-    <a id="class_list_link" href="#">Class List</a>
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
   
-    <a id="method_list_link" href="#">Method List</a>
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
   
-    <a id="file_list_link" href="#">File List</a>
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
   
 </div>
       <div class="clear"></div>
     </div>
-    
+
     <iframe id="search_frame"></iframe>
-    
+
     <div id="content"><h1>Class: SwissMatch::Cantons
   
   
@@ -98,26 +105,21 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-Represents a collection of swiss cantons and provides a query interface.
-</p>
+    
+<p>Represents a collection of swiss cantons and provides a query interface.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div>
 
-  
-  
-  
-  
 
 
-  
-  
-  
+
+
 
   
     <h2>
@@ -141,11 +143,11 @@ Represents a collection of swiss cantons and provides a query interface.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The canton with the given license tag or name (in any language).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The canton with the given license tag or name (in any language).</p>
 </div></span>
   
 </li>
@@ -165,11 +167,11 @@ The canton with the given license tag or name (in any language).
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The canton with the given license tag.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The canton with the given license tag.</p>
 </div></span>
   
 </li>
@@ -189,11 +191,11 @@ The canton with the given license tag.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The canton with the given name (any language).
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The canton with the given name (any language).</p>
 </div></span>
   
 </li>
@@ -213,12 +215,12 @@ The canton with the given name (any language).
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Calls the block once for every SwissMatch::Canton in this
-SwissMatch::Cantons instance, passing that canton as a parameter.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Calls the block once for every SwissMatch::Canton in this
+SwissMatch::Cantons instance, passing that canton as a parameter.</p>
 </div></span>
   
 </li>
@@ -233,6 +235,7 @@ SwissMatch::Cantons instance, passing that canton as a parameter.
     
   </span>
   
+  
     <span class="note title constructor">constructor</span>
   
   
@@ -242,10 +245,31 @@ SwissMatch::Cantons instance, passing that canton as a parameter.
   
 
   
-    <span class="summary_desc"><div class='inline'><p>
-A new instance of Cantons.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Cantons.</p>
 </div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#inspect-instance_method" title="#inspect (instance method)">- (Object) <strong>inspect</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
   
 </li>
 
@@ -264,12 +288,12 @@ A new instance of Cantons.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Calls the block once for every SwissMatch::Canton in this
-SwissMatch::Cantons instance, passing that canton as a parameter.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Calls the block once for every SwissMatch::Canton in this
+SwissMatch::Cantons instance, passing that canton as a parameter.</p>
 </div></span>
   
 </li>
@@ -289,11 +313,11 @@ SwissMatch::Cantons instance, passing that canton as a parameter.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-The number of SwissMatch::Canton objects in this collection.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>The number of SwissMatch::Canton objects in this collection.</p>
 </div></span>
   
 </li>
@@ -313,11 +337,11 @@ The number of SwissMatch::Canton objects in this collection.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.</p>
 </div></span>
   
 </li>
@@ -334,29 +358,31 @@ An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
   
   
   
+  
   <h3 class="inherited">Methods included from <span class='object_link'><a href="../Enumerable.html" title="Enumerable (module)">Enumerable</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="../Enumerable.html#last-instance_method" title="Enumerable#last (method)">#last</a></span></p>
 <div id="constructor_details" class="method_details_list">
   <h2>Constructor Details</h2>
   
     <div class="method_details first">
-  <p class="signature first" id="initialize-instance_method">
+  <h3 class="signature first" id="initialize-instance_method">
   
     - (<tt><span class='object_link'><a href="" title="SwissMatch::Cantons (class)">Cantons</a></span></tt>) <strong>initialize</strong>(cantons) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-A new instance of Cantons
-</p>
+    
+<p>A new instance of Cantons</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Parameters:</h3>
+  <p class="tag_title">Parameters:</p>
 <ul class="param">
   
     <li>
@@ -369,14 +395,14 @@ A new instance of Cantons
       
       
         &mdash;
-        <div class='inline'><p>
-The SwissMatch::Canton objects this SwissMatch::Cantons should contain
-</p>
+        <div class='inline'>
+<p>The SwissMatch::Canton objects this SwissMatch::Cantons should contain</p>
 </div>
       
     </li>
   
 </ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -400,15 +426,15 @@ The SwissMatch::Canton objects this SwissMatch::Cantons should contain
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 17</span>
 
-<span class='kw'>def</span> <span class='id initialize'>initialize</span><span class='lparen'>(</span><span class='id cantons'>cantons</span><span class='rparen'>)</span>
-  <span class='ivar'>@cantons</span>        <span class='op'>=</span> <span class='id cantons'>cantons</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_cantons'>cantons</span><span class='rparen'>)</span>
+  <span class='ivar'>@cantons</span>        <span class='op'>=</span> <span class='id identifier rubyid_cantons'>cantons</span>
   <span class='ivar'>@by_license_tag</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
   <span class='ivar'>@by_name</span>        <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
 
-  <span class='id cantons'>cantons</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id canton'>canton</span><span class='op'>|</span>
-    <span class='ivar'>@by_license_tag</span><span class='lbracket'>[</span><span class='id canton'>canton</span><span class='period'>.</span><span class='id license_tag'>license_tag</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id canton'>canton</span>
-    <span class='id canton'>canton</span><span class='period'>.</span><span class='id names'>names</span><span class='period'>.</span><span class='id each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id name'>name</span><span class='op'>|</span>
-      <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id canton'>canton</span>
+  <span class='id identifier rubyid_cantons'>cantons</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_canton'>canton</span><span class='op'>|</span>
+    <span class='ivar'>@by_license_tag</span><span class='lbracket'>[</span><span class='id identifier rubyid_canton'>canton</span><span class='period'>.</span><span class='id identifier rubyid_license_tag'>license_tag</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_canton'>canton</span>
+    <span class='id identifier rubyid_canton'>canton</span><span class='period'>.</span><span class='id identifier rubyid_names'>names</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span>
+      <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_canton'>canton</span>
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
@@ -422,26 +448,28 @@ The SwissMatch::Canton objects this SwissMatch::Cantons should contain
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
-    
+
     
       <div class="method_details first">
-  <p class="signature first" id="[]-instance_method">
+  <h3 class="signature first" id="[]-instance_method">
   
     - (<tt><span class='object_link'><a href="Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></tt>) <strong>[]</strong>(key) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The canton with the given license tag or name (in any language)
-</p>
+    
+<p>The canton with the given license tag or name (in any language)</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -452,9 +480,8 @@ The canton with the given license tag or name (in any language)
       
       
         &mdash;
-        <div class='inline'><p>
-The canton with the given license tag or name (in any language)
-</p>
+        <div class='inline'>
+<p>The canton with the given license tag or name (in any language)</p>
 </div>
       
     </li>
@@ -474,8 +501,8 @@ The canton with the given license tag or name (in any language)
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 58</span>
 
-<span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id key'>key</span><span class='rparen'>)</span>
-  <span class='ivar'>@by_license_tag</span><span class='lbracket'>[</span><span class='id key'>key</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id key'>key</span><span class='rbracket'>]</span>
+<span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
+  <span class='ivar'>@by_license_tag</span><span class='lbracket'>[</span><span class='id identifier rubyid_key'>key</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id identifier rubyid_key'>key</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -483,23 +510,25 @@ The canton with the given license tag or name (in any language)
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="by_license_tag-instance_method">
+  <h3 class="signature " id="by_license_tag-instance_method">
   
     - (<tt><span class='object_link'><a href="Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></tt>) <strong>by_license_tag</strong>(tag) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The canton with the given license tag.
-</p>
+    
+<p>The canton with the given license tag.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -510,9 +539,8 @@ The canton with the given license tag.
       
       
         &mdash;
-        <div class='inline'><p>
-The canton with the given license tag.
-</p>
+        <div class='inline'>
+<p>The canton with the given license tag.</p>
 </div>
       
     </li>
@@ -532,8 +560,8 @@ The canton with the given license tag.
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 64</span>
 
-<span class='kw'>def</span> <span class='id by_license_tag'>by_license_tag</span><span class='lparen'>(</span><span class='id tag'>tag</span><span class='rparen'>)</span>
-  <span class='ivar'>@by_license_tag</span><span class='lbracket'>[</span><span class='id tag'>tag</span><span class='rbracket'>]</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_by_license_tag'>by_license_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_tag'>tag</span><span class='rparen'>)</span>
+  <span class='ivar'>@by_license_tag</span><span class='lbracket'>[</span><span class='id identifier rubyid_tag'>tag</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -541,23 +569,25 @@ The canton with the given license tag.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="by_name-instance_method">
+  <h3 class="signature " id="by_name-instance_method">
   
     - (<tt><span class='object_link'><a href="Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></tt>) <strong>by_name</strong>(name) 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The canton with the given name (any language)
-</p>
+    
+<p>The canton with the given name (any language)</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -568,9 +598,8 @@ The canton with the given name (any language)
       
       
         &mdash;
-        <div class='inline'><p>
-The canton with the given name (any language)
-</p>
+        <div class='inline'>
+<p>The canton with the given name (any language)</p>
 </div>
       
     </li>
@@ -590,8 +619,8 @@ The canton with the given name (any language)
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 70</span>
 
-<span class='kw'>def</span> <span class='id by_name'>by_name</span><span class='lparen'>(</span><span class='id name'>name</span><span class='rparen'>)</span>
-  <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id name'>name</span><span class='rbracket'>]</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_by_name'>by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
+  <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -599,25 +628,27 @@ The canton with the given name (any language)
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="each-instance_method">
+  <h3 class="signature " id="each-instance_method">
   
     - (<tt>self</tt>) <strong>each</strong> {|canton| ... }
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Calls the block once for every SwissMatch::Canton in this
+    
+<p>Calls the block once for every SwissMatch::Canton in this
 SwissMatch::Cantons instance, passing that canton as a parameter. The order
-is the same as the instance was constructed.
-</p>
+is the same as the instance was constructed.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Yields:</h3>
+  
+<p class="tag_title">Yields:</p>
 <ul class="yield">
   
     <li>
@@ -630,7 +661,7 @@ is the same as the instance was constructed.
     </li>
   
 </ul>
-<h3>Yield Parameters:</h3>
+<p class="tag_title">Yield Parameters:</p>
 <ul class="yieldparam">
   
     <li>
@@ -645,7 +676,7 @@ is the same as the instance was constructed.
     </li>
   
 </ul>
-<h3>Returns:</h3>
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -656,9 +687,8 @@ is the same as the instance was constructed.
       
       
         &mdash;
-        <div class='inline'><p>
-Returns self
-</p>
+        <div class='inline'>
+<p>Returns self</p>
 </div>
       
     </li>
@@ -679,8 +709,8 @@ Returns self
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 38</span>
 
-<span class='kw'>def</span> <span class='id each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id block'>block</span><span class='rparen'>)</span>
-  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id block'>block</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -689,25 +719,73 @@ Returns self
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="reverse_each-instance_method">
+  <h3 class="signature " id="inspect-instance_method">
+  
+    - (<tt>Object</tt>) <strong>inspect</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Object#inspect</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_sprintf'>sprintf</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\#&lt;%s:%x size: %d&gt;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='id identifier rubyid_object_id'>object_id</span><span class='op'>&gt;&gt;</span><span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_size'>size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reverse_each-instance_method">
   
     - (<tt>self</tt>) <strong>reverse_each</strong> {|canton| ... }
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Calls the block once for every SwissMatch::Canton in this
+    
+<p>Calls the block once for every SwissMatch::Canton in this
 SwissMatch::Cantons instance, passing that canton as a parameter. The order
-is the reverse of what the instance was constructed.
-</p>
+is the reverse of what the instance was constructed.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Yields:</h3>
+  
+<p class="tag_title">Yields:</p>
 <ul class="yield">
   
     <li>
@@ -720,7 +798,7 @@ is the reverse of what the instance was constructed.
     </li>
   
 </ul>
-<h3>Yield Parameters:</h3>
+<p class="tag_title">Yield Parameters:</p>
 <ul class="yieldparam">
   
     <li>
@@ -735,7 +813,7 @@ is the reverse of what the instance was constructed.
     </li>
   
 </ul>
-<h3>Returns:</h3>
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -746,9 +824,8 @@ is the reverse of what the instance was constructed.
       
       
         &mdash;
-        <div class='inline'><p>
-Returns self
-</p>
+        <div class='inline'>
+<p>Returns self</p>
 </div>
       
     </li>
@@ -769,8 +846,8 @@ Returns self
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 51</span>
 
-<span class='kw'>def</span> <span class='id reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id block'>block</span><span class='rparen'>)</span>
-  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id block'>block</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id identifier rubyid_reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -779,23 +856,25 @@ Returns self
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="size-instance_method">
+  <h3 class="signature " id="size-instance_method">
   
     - (<tt>Integer</tt>) <strong>size</strong> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-The number of SwissMatch::Canton objects in this collection.
-</p>
+    
+<p>The number of SwissMatch::Canton objects in this collection.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -806,9 +885,8 @@ The number of SwissMatch::Canton objects in this collection.
       
       
         &mdash;
-        <div class='inline'><p>
-The number of SwissMatch::Canton objects in this collection.
-</p>
+        <div class='inline'>
+<p>The number of SwissMatch::Canton objects in this collection.</p>
 </div>
       
     </li>
@@ -828,8 +906,8 @@ The number of SwissMatch::Canton objects in this collection.
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 75</span>
 
-<span class='kw'>def</span> <span class='id size'>size</span>
-  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id size'>size</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_size'>size</span>
+  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -837,23 +915,25 @@ The number of SwissMatch::Canton objects in this collection.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="to_a-instance_method">
+  <h3 class="signature " id="to_a-instance_method">
   
     - (<tt>Array&lt;<span class='object_link'><a href="Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span>&gt;</tt>) <strong>to_a</strong> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
-</p>
+    
+<p>An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
@@ -864,9 +944,8 @@ An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
       
       
         &mdash;
-        <div class='inline'><p>
-An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
-</p>
+        <div class='inline'>
+<p>An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.</p>
 </div>
       
     </li>
@@ -886,8 +965,8 @@ An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/cantons.rb', line 81</span>
 
-<span class='kw'>def</span> <span class='id to_a'>to_a</span>
-  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id dup'>dup</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_to_a'>to_a</span>
+  <span class='ivar'>@cantons</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -897,11 +976,11 @@ An Array with all SwissMatch::Canton objects in this SwissMatch::Cantons.
   </div>
 
 </div>
-    
+
     <div id="footer">
-  Generated on Mon Mar 19 13:16:06 2012 by 
+  Generated on Wed Aug  8 00:53:25 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.2 (ruby-1.9.2).
+  0.8.2.1 (ruby-1.9.3).
 </div>
 
   </body>
