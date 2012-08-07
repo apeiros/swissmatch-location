@@ -130,8 +130,11 @@ module SwissMatch
     #   The name of this zip code in all languages and normalizations (only unique values)
     def transliterated_names
       names.flat_map { |name, ary|
-        SwissMatch.transliterate1(name)+
-        SwissMatch.transliterate2(name)  # TODO: use transliterate gem
+        name = name.to_s # convert from SwissMatch::Name
+        [
+          SwissMatch.transliterate1(name),
+          SwissMatch.transliterate2(name)  # TODO: use transliterate gem
+        ]
       }.uniq
     end
 
