@@ -19,7 +19,7 @@ Usage
 -----
 ### Example usage
 
-    require 'swissmatch/autoload' # use this to automatically load the data
+    require 'swissmatch/location/autoload' # use this to automatically load the data
 
     # Get all zip codes for a given code, the example returns the official name of the first
     SwissMatch.zip_codes(8000).first.name                   # => "Zürich"(de, 0)
