@@ -46,14 +46,19 @@ module SwissMatch
 
     def [](key)
       case key
-        when 100_000..999_999, /\A(\d{4})(\d\d)\z/
-          $1 ? by_code_and_add_on($1.to_i, $2.to_i) : by_code_and_add_on(*key.divmod(100))
+        when /\A(\d{4})(\d\d)\z/
+          by_code_and_add_on($1.to_i, $2.to_i)
+        when 100_000..999_999
+          by_code_and_add_on(*key.divmod(100))
         when 0..9999, /\A\d{4}\z/
           by_code(key.to_i)
         when String
           by_name(key)
         else
-          raise ArgumentError, "Expected a string or an integer between 1000 and 999_999"
+          raise ArgumentError,
+                "Expected a String, an Integer between 1000 and 9999, or an " \
+                "Integer between 100_000 and 999_999, but got #{key.class}:" \
+                "#{key.inspect}"
       end
     end
 
@@ -91,16 +96,21 @@ module SwissMatch
       ZipCodes.new(@zip_codes.reject { |zip_code| zip_code.in_use?(date) })
     end
 
-    # WARNING: the autocompletion API is not yet final
     def autocomplete(string)
-      @autocomplete ||= AutoCompletion.map(@zip_codes) { |zip_code|
+      return ZipCodes.new([]) if string.empty? # shortcut
+
+      @autocomplete ||= AutoCompletion.map_keys(@zip_codes) { |zip_code|
         zip_code.transliterated_names
       }
+      words = SwissMatch.transliterated_words(string)
 
-      t1 = @autocomplete.complete(*SwissMatch.transliterate1(string).split(" "))
-      t2 = @autocomplete.complete(*SwissMatch.transliterate2(string).split(" "))
+      ZipCodes.new(@autocomplete.complete(*words))
+    end
 
-      t1 | t2
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection with zip codes of type 10 and 20.
+    def residential
+      with_type(10, 20)
     end
 
     def with_type(*types)
@@ -119,7 +129,7 @@ module SwissMatch
     end
 
     # @return [SwissMatch::ZipCodes]
-    #   An array with all SwissMatch::ZipCode objects having the given 4 digit code.
+    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects having the given 4 digit code.
     def by_code(code)
       @by_code ||= @zip_codes.group_by { |c| c.code }
       ZipCodes.new(@by_code[code] || [])
@@ -142,7 +152,7 @@ module SwissMatch
     end
 
     # @return [SwissMatch::ZipCodes]
-    #   An array with all SwissMatch::ZipCode objects having the given name.
+    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects having the given name.
     def by_name(name)
       @by_name ||= @zip_codes.each_with_object({}) { |zip_code, hash|
         zip_code.names.map(&:to_s).uniq.each do |name|
@@ -159,7 +169,7 @@ module SwissMatch
     end
 
     # @return [Array<SwissMatch::ZipCode>]
-    #   An Array with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
+    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
     def to_a
       @zip_codes.dup
     end
