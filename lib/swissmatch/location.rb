@@ -30,24 +30,46 @@ require 'swissmatch/zipcodes'
 #     require 'swissmatch/autoload'
 #     SwissMatch.zip_code(8000, 'Zürich').ordering_number # => 
 module SwissMatch
+
+  # This module only contains the version of the swissmatch-location gem
+  module Location
+  end
+
   @data               = nil
   class <<self
     # @return [SwissMatch::DataFiles, nil] The data source used
     attr_reader :data
   end
 
+  # @param [String] name_or_plate
+  #   The name or license_tag of the canton
+  #
+  # @return [SwissMatch::Canton]
+  #   The canton with the given name or license_tag
   def self.canton(name_or_plate)
     @data.cantons[name_or_plate]
   end
 
+  # @return [SwissMatch::Cantons]
+  #   All known cantons
   def self.cantons
     @data.cantons
   end
 
+  # @param [Integer] key
+  #   The community number of the community
+  #
+  # @return [SwissMatch::Community]
+  #   The community with the community number
   def self.community(key)
     @data.communities.by_community_number(key)
   end
 
+  # @param [String] name
+  #   The name of the communities
+  #
+  # @return [SwissMatch::Communities]
+  #   All communities, or those matching the given name
   def self.communities(name=nil)
     name ? @data.communities.by_name(name) : @data.communities
   end
@@ -156,9 +178,18 @@ module SwissMatch
     names.uniq
   end
 
+  # Loads the swissmatch data
+  #
+  # @param [DataFiles] data_source
+  #   A valid data-source.
+  #
+  # @return [self]
+  #   Returns self
   def self.load(data_source=nil)
     @data = data_source || DataFiles.new
     @data.load!
+
+    self
   end
 
   # @private

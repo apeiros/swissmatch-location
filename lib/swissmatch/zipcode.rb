@@ -218,6 +218,12 @@ module SwissMatch
       end
     end
 
+    # @param [Boolean] retain_references
+    #   If set to false, :delivery_by will be set to the ordering number,
+    #   :community to the community_number and :canton to the canton's license_tag.
+    #
+    # @return [Hash]
+    #   All properties of the zip code as a hash.
     def to_hash(retain_references=false)
       delivery_by = retain_references ? @delivery_by : (@delivery_by && @delivery_by.ordering_number)
       community   = retain_references ? @community : (@community && @community.community_number)
@@ -240,10 +246,14 @@ module SwissMatch
       }
     end
 
+    # @private
+    # @see Object#hash
     def hash
       [self.class, @ordering_number].hash
     end
 
+    # @private
+    # @see Object#eql?
     def eql?(other)
       self.class == other.class && @ordering_number == other.ordering_number
     end

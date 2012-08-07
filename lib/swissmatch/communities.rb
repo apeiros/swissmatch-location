@@ -71,5 +71,11 @@ module SwissMatch
     def to_a
       @all.dup
     end
+
+    # @private
+    # @see Object#inspect
+    def inspect
+      sprintf "\#<%s:%x size: %d>", self.class, object_id>>1, size
+    end
   end
 end

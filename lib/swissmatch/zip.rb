@@ -8,8 +8,16 @@ rescue LoadError
   raise "To update the swissmatch datafiles, the rubyzip gem is required, `gem install rubyzip` or add it to your Gemfile."
 end
 
+# @private
+# Patching the rubyzip gem
 module Zip
+
+  # @private
+  # Patching the rubyzip gem
   class ZipCentralDirectory
+
+    # @private
+    # Patching the rubyzip gem
     def read_e_o_c_d(io) #:nodoc:
       buf = get_e_o_c_d(io)
       @numberOfThisDisk                     = ZipEntry::read_zip_short(buf)

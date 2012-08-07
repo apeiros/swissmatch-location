@@ -48,6 +48,8 @@ module SwissMatch
       @names.values.uniq
     end
 
+    # @return [Hash]
+    #   All properties of the canton as a hash.
     def to_hash
       {
         :name         => @name,
@@ -61,10 +63,14 @@ module SwissMatch
 
     alias to_s name
 
+    # @private
+    # @see Object#hash
     def hash
       [self.class, @license_tag].hash
     end
 
+    # @private
+    # @see Object#eql?
     def eql?(other)
       self.class == other.class && @license_tag == other.license_tag
     end

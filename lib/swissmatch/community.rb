@@ -32,7 +32,7 @@ module SwissMatch
     #   The official name of the community
     # @param [SwissMatch::Canton] canton
     #   The canton this community belongs to
-    # @param [SwissMatch::Community]
+    # @param [SwissMatch::Community] agglomeration
     #   The community this community is considered to be an agglomeration of.
     #   Note that a main community will reference itself.
     def initialize(community_number, name, canton, agglomeration)
@@ -44,6 +44,12 @@ module SwissMatch
 
     alias to_s name
 
+    # @param [Boolean] retain_references
+    #   If set to false, :agglomeration will be set to the community_number and
+    #   :canton to the canton's license_tag.
+    #
+    # @return [Hash]
+    #   All properties of the community as a hash.
     def to_hash(retain_references=false)
       if retain_references then
         canton        = @canton
@@ -61,10 +67,14 @@ module SwissMatch
       }
     end
 
+    # @private
+    # @see Object#hash
     def hash
       [self.class, @community_number].hash
     end
 
+    # @private
+    # @see Object#eql?
     def eql?(other)
       self.class == other.class && @community_number == other.community_number
     end
