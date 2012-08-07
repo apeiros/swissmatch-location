@@ -22,7 +22,7 @@ module SwissMatch
     end
 
     def inspect
-      "#{super}(#{@language}, #{@running_number})"
+      "#{super}(#{@language}, #{@sequence_number})"
     end
   end
 end
