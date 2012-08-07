@@ -1,0 +1,1830 @@
+104	1	2	3	Losanna	Losanna
+106	1	2	3	Losanna 2	Losanna 2
+107	1	2	3	Losanna 3	Losanna 3
+110	1	2	3	Losanna 6	Losanna 6
+111	1	2	3	Losanna 7	Losanna 7
+112	1	2	3	Losanna 8	Losanna 8
+114	2	2	3	Losanna 12	Losanna 12
+116	1	2	3	Losanna 14	Losanna 14
+117	1	2	3	Losanna 16	Losanna 16
+118	1	2	3	Losanna 17	Losanna 17
+120	1	2	3	Losanna 20	Losanna 20
+121	1	2	3	Losanna 21	Losanna 21
+122	1	2	3	Losanna 22	Losanna 22
+123	1	2	3	Losanna 23	Losanna 23
+125	1	2	2	Le Chalet-à-Gobet	Le Chalet-à-Gobet
+125	2	2	3	Losanna 25	Losanna 25
+126	1	2	2	Vers-chez-les-Blan	Vers-chez-les-Blanc
+126	2	2	3	Losanna 26	Losanna 26
+127	9	2	2	Montblesson	Montblesson
+127	10	2	3	Losanna 27	Losanna 27
+145	1	2	3	Losanna 1	Losanna 1
+156	2	3	2	Cery	Cery-Fleur-de-Lys
+170	1	3	2	Renges	Renges
+179	1	3	2	Vernand-Dessus	Vernand-Dessus
+180	1	3	2	Vernand-Dessous	Vernand-Dessous
+196	2	3	2	Chardonney-Mtaubio	Chardonney-Montaubion
+197	2	3	2	Possens	Possens
+215	1	3	2	Montheron	Montheron
+221	2	3	2	Les Croisettes	Les Croisettes
+222	1	3	2	Claie-aux-Moines	La Claie-aux-Moines
+227	1	3	2	Châtelard-Lutry	Le Châtelard-sur-Lutry
+227	2	3	2	Bossière	Bossière
+227	3	3	2	Corsy	Corsy
+227	4	3	2	Savuit	Savuit
+228	1	3	2	Treytorrens Lavaux	Treytorrens (Lavaux)
+271	2	3	2	St-Denis	St-Denis
+281	3	2	2	Chardonney-Morges	Chardonney-sur-Morges
+299	1	3	2	La Vaux	La Vaux
+303	2	3	2	Signal-de-Bougy	Signal-de-Bougy
+305	4	3	2	La Fouly VD	La Fouly VD
+309	2	3	2	Bugnaux	Bugnaux
+312	3	3	2	Vincy	Vincy
+329	1	2	1	Genf	Genf
+329	2	2	3	Ginevra	Ginevra
+380	1	2	1	Genf 1	Genf 1
+380	2	2	3	Ginevra 1	Ginevra 1
+381	1	2	1	Genf 2	Genf 2
+381	2	2	3	Ginevra 2	Ginevra 2
+382	1	2	1	Genf 3	Genf 3
+382	2	2	3	Ginevra 3	Ginevra 3
+383	1	2	1	Genf 4	Genf 4
+383	2	2	3	Ginevra 4	Ginevra 4
+384	1	2	1	Genf 6	Genf 6
+384	2	2	3	Ginevra 6	Ginevra 6
+385	1	2	1	Genf 7	Genf 7
+385	2	2	3	Ginevra 7	Ginevra 7
+386	1	2	1	Genf 8	Genf 8
+386	2	2	3	Ginevra 8	Ginevra 8
+388	1	2	1	Genf 10	Genf 10
+388	2	2	3	Ginevra 10	Ginevra 10
+389	1	2	1	Genf 11	Genf 11
+389	2	2	3	Ginevra 11	Ginevra 11
+390	1	2	1	Genf 12	Genf 12
+390	2	2	3	Ginevra 12	Ginevra 12
+391	1	2	1	Genf 13	Genf 13
+391	2	2	3	Ginevra 13	Ginevra 13
+393	1	2	1	Genf 17	Genf 17
+393	2	2	3	Ginevra 17	Ginevra 17
+395	1	2	1	Genf 19	Genf 19
+395	2	2	3	Ginevra 19	Ginevra 19
+396	1	2	1	Genf 20	Genf 20
+396	2	2	3	Ginevra 20	Ginevra 20
+397	1	2	1	Genf 21	Genf 21
+397	2	2	3	Ginevra 21	Ginevra 21
+398	1	2	1	Genf 22	Genf 22
+398	2	2	3	Ginevra 22	Ginevra 22
+399	1	2	1	Genf 23	Genf 23
+399	2	2	3	Ginevra 23	Ginevra 23
+402	1	2	1	Genf 26	Genf 26
+402	2	2	3	Ginevra 26	Ginevra 26
+403	1	2	1	Genf 27	Genf 27
+403	2	2	3	Ginevra 27	Ginevra 27
+404	1	2	1	Genf 28	Genf 28
+404	2	2	3	Ginevra 28	Ginevra 28
+411	1	3	2	Lancy	Lancy
+411	2	3	2	Saconnex-d'Arve	Saconnex-d'Arve
+411	4	3	2	Arare	Arare
+415	3	3	2	Lancy	Lancy
+424	1	3	2	Mategnin	Mategnin
+428	1	3	2	Saconnex	Saconnex
+436	1	3	2	La Capite	La Capite
+436	2	3	2	Bellerive GE	Bellerive GE
+436	3	3	2	La Pallanterie	La Pallanterie
+436	4	3	2	St-Maurice	St-Maurice
+440	1	3	2	Fossard	Fossard
+440	2	3	2	Moillesulaz	Moillesulaz
+440	3	3	2	Villette GE	Villette GE
+443	1	3	2	La Praille	La Praille
+450	1	3	2	Chèvres	Chèvres
+450	2	3	2	Loëx	Loëx
+450	3	3	2	Lully GE	Lully GE
+450	4	3	2	Sézenove	Sézenove
+452	1	3	2	Pinchat	Pinchat
+455	1	3	2	Bossy	Bossy
+455	2	3	2	Vireloup	Vireloup
+456	1	3	2	Mon-Idée	Mon-Idée
+457	1	3	2	Bourdigny	Bourdigny
+457	2	3	2	Choully	Choully
+457	3	3	2	Peissy	Peissy
+457	4	3	2	Peney GE	Peney GE
+458	1	3	2	Cara	Cara
+459	1	3	2	Chevrier	Chevrier
+462	1	3	2	Chevrens	Chevrens
+464	1	3	2	Merlinge	Merlinge
+465	1	3	2	Corsinge	Corsinge
+466	1	3	2	Chougny	Chougny
+466	2	3	2	Pressy	Pressy
+467	1	3	2	Lullier	Lullier
+467	2	3	2	Monniaz	Monniaz
+468	1	3	2	Sierne	Sierne
+470	1	3	2	Bardonnex	Bardonnex
+470	2	3	2	Charrot	Charrot
+470	3	3	2	Landecy	Landecy
+471	1	3	2	Certoux	Certoux
+472	1	3	2	Bois-Bougy	Bois-Bougy
+498	1	3	2	La Givrine	La Givrine
+507	1	3	2	Essertines GE	Essertines GE
+507	2	3	2	Malval	Malval
+510	1	3	2	Avusy	Avusy
+510	2	3	2	Sézegnin	Sézegnin
+515	2	3	2	Pont-Céard	Pont-Céard
+515	3	3	2	Richelien	Richelien
+515	4	3	2	Sauverny	Sauverny
+517	1	3	2	Pregny	Pregny
+518	1	3	2	Colovrex	Colovrex
+518	2	3	2	Les Tuileries	Les Tuileries
+518	3	3	2	Valavran	Valavran
+519	1	3	2	Creux-de-Genthod	Creux-de-Genthod
+519	2	3	2	Malagny	Malagny
+523	2	3	2	Chataigneriaz	Chataigneriaz
+524	1	3	2	Bossey	Bossey
+530	3	3	2	Lussery	Lussery
+531	1	3	2	Cossonay-Gare	Cossonay-Gare
+535	1	3	2	Le Day	Le Day
+535	2	3	2	Le Creux VD	Le Creux VD
+541	2	3	2	Vers-chez-Grosjean	Vers-chez-Grosjean
+545	1	3	2	Esserts-de-Rive	Les Esserts-de-Rive
+545	2	3	2	Le Séchey	Le Séchey
+546	1	3	2	Chez-le-Maître	Chez-le-Maître
+546	3	3	2	La Golisse	La Golisse
+546	4	3	2	Le Rocheray	Le Rocheray
+550	5	3	2	Le Marchairuz	Le Marchairuz
+560	2	3	2	St-Loup	St-Loup
+564	2	3	2	Envy	Envy
+569	4	3	2	Mollendruz	Mollendruz
+592	1	3	2	Noréaz	Noréaz
+607	2	3	2	Nonfoux	Nonfoux
+609	2	3	2	Vuarrengel	Vuarrengel
+616	4	3	2	La Mothe	La Mothe
+633	2	3	2	Corcelettes	Corcelettes
+633	3	3	2	Tuileries-de-Grand	Les Tuileries-de-Grandson
+643	4	3	2	Villaret	Villaret
+658	1	3	2	Peney (Vuiteboeuf)	Peney (Vuiteboeuf)
+664	2	3	2	Chaux-de-Ste-Croix	La Chaux-de-Ste-Croix
+669	2	3	2	La Mauguettaz	La Mauguettaz
+669	3	3	2	Niédens	Niédens
+672	1	3	2	Arrissoules	Arrissoules
+673	5	3	2	Pâquier VD	Pâquier VD
+699	5	3	2	Montborget	Montborget
+699	6	3	2	La Vounaise	La Vounaise
+699	7	3	2	Franex	Franex
+700	1	3	2	Bressonnaz	Bressonnaz
+715	1	2	2	Granges VD	Granges VD
+718	2	3	2	Coumin	Coumin
+733	2	3	2	Ressudens	Ressudens
+736	2	3	2	Etrabloz	Etrabloz
+737	2	3	2	Granges-sous-Trey	Granges-sous-Trey
+742	2	3	2	Granges-Dompierre	Granges-de-Dompierre
+751	4	3	2	Carignan	Carignan
+752	6	3	2	Les Planches	Les Planches
+759	2	3	2	Chandossel	Chandossel
+765	1	3	2	Vallamand-Dessus	Vallamand-Dessus
+765	2	3	2	Vallamand-Dessous	Vallamand-Dessous
+770	2	3	2	Montet (Vully)	Montet (Vully)
+770	3	3	2	La Sauge	La Sauge
+770	4	3	2	Champmartin	Champmartin
+778	6	3	2	Serix	Serix
+780	4	3	2	Eschiens	Eschiens
+780	5	3	2	Villangeaux	Villangeaux
+781	4	3	2	Treize-Cantons	Treize-Cantons
+783	1	3	2	Escherin	Escherin
+784	2	3	2	Le Tronchet	Le Tronchet
+786	1	3	2	Moreillon	Moreillon
+788	1	3	2	Cremières	Cremières
+793	1	3	2	Corcelles FR	Corcelles (Attalens)
+793	2	3	2	Vuarat	Vuarat
+795	1	3	2	Fruence	Fruence
+795	2	3	2	Prayoud	Prayoud
+802	1	3	2	Les Colombettes	Les Colombettes
+811	3	3	2	Pont-en-Ogoz	Pont-en-Ogoz
+811	4	3	2	Villars-d'Avry	Villars-d'Avry
+817	2	3	1	Bellegarde	Bellegarde
+819	2	3	2	La Valsainte	La Valsainte
+831	2	3	2	La Part-Dieu	La Part-Dieu
+836	3	3	2	Montbarry	Montbarry
+836	4	2	2	Le Pâquier FR	Le Pâquier FR
+862	3	3	2	Le Saulgy	Le Saulgy
+862	4	3	2	Villaranon	Villaranon
+867	2	3	2	Arruffens	Arruffens
+867	3	3	2	Drognens	Drognens
+867	4	3	2	Chavannes-Romont	Les Chavannes-sous-Romont
+867	5	3	2	Les Glânes	Les Glânes
+894	2	3	2	Ferlens FR	Ferlens FR
+907	1	3	2	La Rogivue	La Rogivue
+909	8	3	2	Oron	Oron (Gare CFF)
+916	1	2	1	Freiburg	Freiburg
+916	2	2	3	Friborgo	Friborgo
+916	3	3	2	La Glâne	La Glâne
+916	5	3	2	Neuveville	Neuveville
+916	6	3	2	Uebewil	Uebewil
+916	7	3	2	Villars-les-Joncs	Villars-les-Joncs
+916	10	3	2	Daillettes	Daillettes
+918	1	2	1	Freiburg 2	Freiburg 2
+918	2	2	3	Friborgo 2	Friborgo 2
+920	1	2	1	Freiburg 4	Freiburg 4
+920	2	2	3	Friborgo 4	Friborgo 4
+921	1	2	1	Freiburg 5	Freiburg 5
+921	2	2	3	Friborgo 5	Friborgo 5
+923	1	2	1	Freiburg 7	Freiburg 7
+923	2	2	3	Friborgo 7	Friborgo 7
+924	1	2	1	Freiburg 8	Freiburg 8
+924	2	2	3	Friborgo 8	Friborgo 8
+928	1	2	1	Freiburg 1	Freiburg 1
+928	2	2	3	Friborgo 1	Friborgo 1
+941	6	3	1	Eichholz	Eichholz
+943	2	3	1	Neuhaus FR	Neuhaus FR
+944	5	3	1	Ottenleue Bad	Ottenleue Bad
+944	6	3	1	Schwefelberg Bad	Schwefelberg Bad
+944	7	3	1	Selibühl	Selibühl
+945	6	2	2	Lac-Noir	Lac-Noir
+945	7	3	1	Zollhaus	Zollhaus FR
+946	3	3	2	Montécu	Montécu
+947	1	3	2	Corpataux	Corpataux
+950	2	3	2	Sales (Sarine)	Sales (Sarine)
+958	1	3	1	Niedermuhren	Niedermuhren
+960	1	3	1	Benewil	Benewil
+960	3	3	1	Wengliswil	Wengliswil
+966	3	3	2	Römerswil FR	Römerswil FR
+978	2	3	2	Grangeneuve FR	Grangeneuve FR
+978	3	3	2	Hauterive FR	Hauterive FR
+989	2	3	2	Torny-le-Petit	Torny-le-Petit
+990	2	3	2	Nierlet-le-Toit	Nierlet-le-Toit
+996	2	3	2	Macconnens	Macconnens
+997	1	3	2	Cormanon	Cormanon
+1005	2	3	2	Seedorf FR	Seedorf FR
+1011	1	3	2	Corsalettes	Corsalettes
+1020	2	3	1	Coussiberlé	Coussiberlé
+1022	3	2	2	Villars-les-Moines	Villars-les-Moines
+1025	3	3	1	Kleinguschelmuth	Kleinguschelmuth
+1025	5	3	1	Grossguschelmuth	Grossguschelmuth
+1028	3	3	2	Haut-Vully	Haut-Vully
+1031	3	3	2	Cutterwil	Cutterwil
+1034	4	3	2	Breilles	Breilles
+1034	6	3	2	La Sonnaz	La Sonnaz
+1037	3	3	2	Esserts (Lac)	Esserts (Lac)
+1039	1	3	2	Bellechasse	Bellechasse
+1039	2	3	2	Bas-Vully	Bas-Vully
+1039	3	3	2	Nant FR	Nant FR
+1042	2	3	2	Guévaux	Guévaux
+1043	1	3	2	Hauteville (Vevey)	Hauteville (Vevey)
+1043	2	3	2	Nant VD	Nant VD
+1051	5	3	2	Moille-Saulaz	Moille-Saulaz
+1058	1	3	2	Bains-de-l'Alliaz	Bains-de-l'Alliaz
+1058	2	3	2	L'Alliaz	L'Alliaz
+1058	3	3	2	Les Chevalleyres	Les Chevalleyres
+1058	4	3	2	Lally	Lally
+1058	5	3	2	Les Pléiades	Les Pléiades
+1062	1	3	2	Burier	Burier
+1063	1	3	2	Baugy	Baugy
+1063	2	3	2	Planchamp	Planchamp
+1063	3	3	2	Tavel VD	Tavel VD
+1065	1	3	2	Fontanivent	Fontanivent
+1066	1	3	2	Grandchamp VD	Grandchamp VD
+1066	2	3	2	Mont-Fleuri	Mont-Fleuri
+1066	3	3	2	Planches (Mtrx)	Les Planches (Montreux)
+1066	4	3	2	Vuarennes	Vuarennes
+1066	9	3	2	Châtelard VD	Châtelard VD
+1066	10	3	2	Chillon	Chillon
+1072	1	3	2	Sonzier	Sonzier
+1074	1	3	2	Rochers-de-Naye	Rochers-de-Naye
+1080	2	3	2	Les Combes VD	Les Combes VD
+1083	1	3	2	Cornaux VD	Cornaux VD
+1084	1	3	2	Jor	Jor
+1086	1	3	2	Allières	Allières
+1086	2	3	2	Les Cases	Les Cases
+1088	1	3	2	Les Combes VD	Les Combes VD
+1088	2	3	2	Granges-Chât-d'Oex	Granges-près-Château-d'Oex
+1092	1	3	2	Crebelley	Crebelley
+1095	1	3	1	Versvey	Versvey
+1100	1	3	2	Fontanney	Fontanney
+1104	3	3	2	Les Voëttes	Les Voëttes
+1106	5	3	2	Exergillod	Exergillod
+1106	6	3	2	Ormont-Dessous	Ormont-Dessous
+1108	2	3	2	Plambuit	Plambuit
+1109	1	3	2	Cergnat	Cergnat
+1110	1	3	2	Les Aviolats	Les Aviolats
+1110	3	3	2	Le Rosex	Le Rosex
+1111	1	3	2	Col-du-Pillon	Col-du-Pillon
+1111	2	3	2	Les Bovets	Les Bovets
+1111	3	3	2	Ormont-Dessus	Ormont-Dessus
+1112	1	3	2	Antagnes	Antagnes
+1112	2	3	2	Auliens	Auliens
+1112	3	3	2	Villy VD	Villy VD
+1112	9	3	2	Glutières	Glutières
+1112	10	3	2	Salaz	Salaz
+1113	1	3	2	Les Neyres	Les Neyres
+1119	1	3	2	Chemex	Chemex
+1122	1	3	2	Planachaux	Planachaux
+1124	1	3	2	Chiètres-sur-Bex	Chiètres-sur-Bex
+1124	2	3	2	Le Bévieux	Le Bévieux
+1124	6	3	2	Les Dévens	Les Dévens
+1124	7	3	2	Chêne-sur-Bex	Le Chêne-sur-Bex
+1132	2	3	2	Anzeinda	Anzeinda
+1132	3	3	2	Solalex	Solalex
+1132	6	3	2	La Barboleusaz	La Barboleusaz
+1136	1	3	2	Dailly	Dailly
+1136	3	3	2	Epinassey	Epinassey
+1136	6	3	2	Savatan	Savatan
+1139	1	3	2	Daviaz	Daviaz
+1143	10	3	2	Revereulaz	Revereulaz
+1145	1	3	2	Illarsaz	Illarsaz
+1147	1	3	2	Taney	Taney
+1150	1	3	2	La Balmaz	La Balmaz
+1150	2	3	2	La Rasse VS	La Rasse VS
+1152	1	3	2	Miéville	Miéville
+1153	1	3	2	Allesse	Allesse
+1153	3	3	2	Champex-d'Allesse	Champex-d'Allesse
+1154	2	3	2	Les Chênes	Les Chênes
+1154	3	3	2	Vison	Vison
+1155	1	3	2	Mayens-de-Saxon	Mayens-de-Saxon
+1155	2	3	2	Sapinhaut	Sapinhaut
+1155	3	3	2	Tovassière	Tovassière
+1156	2	3	2	Ecône	Ecône
+1162	3	3	2	Villy VS	Villy VS
+1162	5	2	2	Mayens-de-Riddes	Mayens-de-Riddes
+1166	1	3	2	La Forclaz(Trient)	La Forclaz (Trient)
+1166	7	3	2	La Bâtiaz	La Bâtiaz
+1166	8	3	2	Gueuroz	Gueuroz
+1169	5	3	2	Le Brocard	Le Brocard
+1169	6	3	2	Martigny-Combe	Martigny-Combe
+1169	8	3	2	La Fontaine	La Fontaine
+1169	9	3	2	Le Cergneux VS	Le Cergneux VS
+1169	10	3	2	Le Fays	Le Fays
+1169	11	3	2	Le Chanton	Le Chanton
+1169	12	3	2	Plan-Cerisier	Plan-Cerisier
+1169	13	3	2	La Caffe	La Caffe
+1169	14	3	2	Les Rappes	Les Rappes
+1173	2	3	2	Chemin-Dessous	Chemin-Dessous
+1173	3	3	2	Chemin-Dessus	Chemin-Dessus
+1174	2	3	2	Les Jeurs	Les Jeurs
+1175	3	3	2	Sommet-des-Vignes	Sommet-des-Vignes
+1176	2	3	2	Van-d'en-Haut	Van-d'en-Haut
+1176	3	3	2	Le Bioley	Le Bioley
+1176	4	3	2	Van-d'en-Bas	Van-d'en-Bas
+1178	2	3	2	La Creusaz	La Creusaz
+1179	1	3	2	Giétroz	Giétroz
+1180	1	3	2	Branson	Branson
+1180	2	3	2	Châtaignier	Châtaignier
+1180	3	3	2	Mazembroz	Mazembroz
+1180	4	3	2	Saxé	Saxé
+1180	6	3	2	Chiboz	Chiboz
+1182	3	3	2	Le Borgeaud	Le Borgeaud
+1183	6	3	2	Le Martinet	Le Martinet
+1184	4	3	2	Etiez	Etiez
+1190	7	3	2	Bourg-St-Bernard	Bourg-St-Bernard
+1190	8	3	2	Grand-St-Bernard	Grand-St-Bernard
+1191	4	3	2	La Seiloz	La Seiloz
+1191	5	3	2	Les Arlaches	Les Arlaches
+1191	6	3	2	Saleinaz	Saleinaz
+1192	2	3	2	Prayon	Prayon
+1192	3	3	2	Branche	Branche
+1194	1	3	2	Bagnes	Bagnes
+1194	10	3	2	Le Sapey	Le Sapey
+1194	11	3	2	Mayens-de-Bruson	Mayens-de-Bruson
+1195	1	3	2	Médières	Médières
+1198	1	3	2	Som-la-Proz	Som-la-Proz
+1198	9	3	2	Commeire	Commeire
+1198	10	3	2	La Douay	La Douay
+1198	11	3	2	Issert	Issert
+1198	12	3	2	Reppaz	Reppaz
+1198	13	3	2	La Rosière	La Rosière
+1198	14	3	2	Prassurny	Prassurny
+1198	15	3	2	Chez-les-Reuses	Chez-les-Reuses
+1198	17	3	2	Chez-les-Addy	Chez-les-Addy
+1198	18	3	2	Chez-les-Giroud	Chez-les-Giroud
+1198	19	3	2	Maligue	Maligue
+1198	20	3	2	Soulalex	Soulalex
+1198	21	3	2	Verlonnaz	Verlonnaz
+1198	22	3	2	Le Bioley	Le Bioley
+1200	1	3	2	La Muraz	La Muraz
+1200	2	2	2	Sitten	Sitten
+1200	8	3	2	Molignon	Molignon
+1200	9	3	2	Diolly	Diolly
+1200	10	3	2	La Sionne	La Sionne
+1200	11	3	2	Maragnénaz	Maragnénaz
+1200	12	3	2	Montorge	Montorge
+1210	2	3	2	Sensine	Sensine (Conthey)
+1210	3	3	2	Conthey-Bourg	Conthey-Bourg
+1211	8	3	2	Derborence	Derborence
+1211	9	3	2	Premploz	Premploz
+1211	11	3	2	Le Nez	Le Nez
+1211	12	3	2	Mayens-de-My	Mayens-de-My
+1211	13	3	2	Pomeiron	Pomeiron
+1213	1	3	2	Mayens-de-Conthey	Mayens-de-Conthey
+1214	1	3	2	St-Raphaël	St-Raphaël(Grimisuat)
+1215	2	3	2	Mayens-d'Arbaz	Mayens-d'Arbaz
+1217	5	3	2	Mayens-de-Nax	Mayens-de-Nax
+1218	2	3	2	Mayens-de-Mase	Mayens-de-Mase
+1219	5	3	2	Eison	Eison
+1220	2	3	2	Les Prasses	Les Prasses
+1220	3	3	2	Ypresses	Ypresses
+1221	3	3	2	Praz-Jean	Praz-Jean
+1221	4	3	2	La Luette	La Luette
+1224	5	3	2	Ferpècle	Ferpècle
+1225	6	3	2	Cerise	Cerise
+1225	7	3	2	Le Chargeur	Le Chargeur (Dixence)
+1225	8	3	2	Pralong	Pralong
+1225	9	3	2	Prolin	Prolin
+1225	10	3	2	Riod	Riod
+1227	5	3	2	Les Masses	Les Masses
+1228	4	3	2	La Courtaz	La Courtaz
+1228	5	3	2	Le Parfay	Le Parfay
+1228	6	3	2	Le Saillen	Le Saillen
+1228	8	3	2	Pradurant	Pradurant
+1235	4	3	2	Plan-Baar	Plan-Baar
+1236	8	3	2	Coor	Coor
+1237	12	3	2	Le Bleusy	Le Bleusy
+1243	3	3	2	Châtroz	Châtroz
+1243	4	3	2	Vuisse	Vuisse
+1244	1	3	2	Magnot	Magnot
+1245	1	3	2	Châteauneuf (Cont)	Châteauneuf (Conthey)
+1246	18	3	2	Prafirmin	Prafirmin
+1247	19	3	2	Zeuzier	Zeuzier
+1254	2	2	1	Neuenburg	Neuenburg
+1257	1	2	1	Neuenburg 4	Neuenburg 4
+1259	1	2	1	Neuenburg 7	Neuenburg 7
+1260	2	2	1	Neuenburg 8	Neuenburg 8
+1261	6	2	1	Neuenburg 9	Neuenburg 9
+1269	1	2	1	Neuenburg 1	Neuenburg 1
+1275	1	2	1	Neuenburg 2	Neuenburg 2
+1286	2	2	1	Neuenburg 3	Neuenburg 3
+1287	1	2	1	Neuenburg 6	Neuenburg 6
+1291	1	3	2	Grandchamp NE	Grandchamp NE
+1293	1	3	2	Perreux	Perreux
+1298	1	2	2	St-Aubin	St-Aubin
+1303	1	3	2	Vernéaz	Vernéaz
+1309	1	3	2	La Jonchère	La Jonchère
+1309	2	3	2	Malvilliers	Malvilliers
+1310	1	3	2	Landeyeux	Landeyeux
+1313	1	3	2	Petit-Chézard	Petit-Chézard
+1313	2	2	2	Chézard-St-Martin	Chézard-Saint-Martin
+1317	1	3	2	Clémesin	Clémesin
+1318	5	3	2	Les Bugnenets	Les Bugnenets
+1322	1	3	2	Grand-Savagnier	Grand-Savagnier
+1322	2	3	2	Petit-Savagnier	Petit-Savagnier
+1325	1	3	2	Voëns	Voëns
+1327	1	3	2	Epagnier	Epagnier
+1327	2	3	2	Préfargier	Préfargier
+1329	2	3	1	Bethlehem b. Gals	Bethlehem b. Gals
+1336	1	3	2	Plancemont	Plancemont
+1343	1	3	2	Les Bourquins	Les Bourquins
+1343	2	3	2	Les Jeannets	Les Jeannets
+1343	4	3	2	St-Olivier	St-Olivier
+1346	1	3	2	Meudon	Meudon
+1346	2	3	2	Mont-des-Verrières	Mont-des-Verrières
+1347	2	3	2	Bémont NE	Bémont NE
+1350	1	3	2	Le Cernil NE	Le Cernil NE
+1357	1	3	2	Les Grattes	Les Grattes
+1357	2	3	2	La Tourne	La Tourne
+1364	8	3	2	Biaufond	Biaufond
+1364	11	3	2	Valanvron	Valanvron
+1384	1	3	2	Les Coeudres	Les Coeudres
+1384	2	3	2	La Corbatière	La Corbatière
+1385	1	3	2	Martel-Dernier	Martel-Dernier
+1390	1	3	2	La Chaux-d'Abel	La Chaux-d'Abel
+1391	1	3	2	Cerneux-Godat	Cerneux-Godat
+1391	3	3	2	Creux-des-Biches	Le Creux-des-Biches
+1391	4	3	2	Le Peu-Claude	Le Peu-Claude
+1391	5	3	2	Le Boéchet	Le Boéchet
+1392	1	3	2	Entre-deux-Monts	Entre-deux-Monts
+1392	3	3	2	Le Quartier	Le Quartier
+1392	4	3	2	Les Replattes	Les Replattes
+1399	1	3	2	Le Cachot	Le Cachot
+1406	1	2	2	Bienne	Bienne
+1406	2	2	1	Biel BE	Biel BE
+1406	3	2	3	Bienna	Bienna
+1408	1	2	1	Biel BE 3	Biel BE 3
+1408	2	2	2	Bienne 3	Bienne 3
+1409	1	2	1	Biel BE 4	Biel BE 4
+1409	2	2	2	Bienne 4	Bienne 4
+1411	1	2	1	Biel BE 6	Biel BE 6
+1411	2	2	2	Bienne 6	Bienne 6
+1412	1	2	1	Biel BE 7	Biel BE 7
+1412	2	2	2	Bienne 7	Bienne 7
+1413	1	2	1	Biel BE 8	Biel BE 8
+1413	2	2	2	Bienne 8	Bienne 8
+1426	1	2	1	Biel BE 1	Biel BE 1
+1426	2	2	2	Bienne 1	Bienne 1
+1432	2	3	1	Alfermée	Alfermée
+1433	1	2	2	Douanne	Douanne
+1433	2	3	1	Gaicht	Gaicht
+1433	3	3	1	Wingreis	Wingreis
+1434	1	3	1	Chavannes BE	Chavannes BE
+1434	3	3	1	Schafis	Schafis
+1434	7	3	1	Schernelz	Schernelz
+1434	8	2	2	Gléresse	Gléresse
+1436	2	3	2	Twannberg	Twannberg
+1438	2	3	2	Chasseral	Chasseral
+1441	1	3	2	St-Jean BE	St-Jean BE
+1441	2	3	2	St. Johannsen	St. Johannsen
+1442	1	2	2	Macolin	Macolin
+1443	1	2	1	Leubringen	Leubringen
+1450	1	2	2	Granges SO	Granges SO
+1450	2	3	1	Staad (Grenchen)	Staad (Grenchen)
+1450	6	3	1	Grenchenberg	Grenchenberg
+1459	1	3	1	Altreu	Altreu
+1459	2	3	1	Bäriswil SO	Bäriswil b. Selzach
+1459	3	3	1	Haag SO	Haag SO
+1461	1	3	1	Gottstatt	Gottstatt
+1475	2	3	1	Lattrigen	Lattrigen
+1482	1	3	2	La Reuchenette	La Reuchenette
+1482	6	3	2	Montoz (Péry)	Montoz (Péry)
+1484	1	3	2	Sombeval	Sombeval
+1488	2	3	2	Prés-de-Cortébert	Prés-de-Cortébert
+1489	6	2	2	Saint-Imier	Saint-Imier
+1490	1	3	2	Montagne-du-Droit	Montagne-du-Droit
+1497	1	3	2	Convers	Convers
+1502	2	3	2	Moron (Châtelat)	Moron (Châtelat)
+1503	2	3	2	Vacheries-Genevez	Les Vacheries-des-Genevez
+1513	1	3	2	Chaux-de-Tramelan	La Chaux-de-Tramelan
+1513	2	3	2	Le Cernil BE	Le Cernil BE
+1514	2	3	2	Vacheries-Brunier	Les Vacheries-Brunier
+1516	2	3	2	Le Roselet	Le Roselet
+1516	3	3	2	Les Vacheries	Les Vacheries
+1519	1	3	2	Le Peu-Péquignot	Le Peu-Péquignot
+1520	1	3	2	Les Cerlatez	Les Cerlatez
+1522	1	3	2	Belfond	Belfond
+1522	2	3	2	Vautenaivre	Vautenaivre
+1523	1	3	2	Chaindon	Chaindon
+1532	1	3	2	Le Chaluet	Le Chaluet
+1532	2	3	2	Moron (Court)	Moron (Court)
+1533	1	3	2	Montagne-Moutier	Montagne-de-Moutier
+1551	1	3	2	Les Rondez	Les Rondez
+1551	2	2	1	Delsberg	Delsberg
+1557	1	3	2	Bellerive JU	Bellerive JU
+1563	3	3	1	Moulin-Neuf	Moulin-Neuf
+1566	1	3	2	Recolaine	Recolaine
+1570	2	3	2	La Scheulte	La Scheulte
+1572	1	3	2	Envelier	Envelier
+1577	1	3	2	Berlincourt	Berlincourt
+1578	2	3	2	Sceut	Sceut
+1592	2	3	2	Les Rangiers	Les Rangiers
+1592	3	3	2	La Caquerelle	La Caquerelle
+1595	1	3	2	Essertfallon	Essertfallon
+1600	1	3	2	La Motte	La Motte
+1602	1	2	1	Pruntrut	Pruntrut
+1621	1	3	2	Grandgourt	Grandgourt
+1633	1	3	2	Miserez-Dessous	Miserez-Dessous
+1634	1	3	2	Miserez-Dessus	Miserez-Dessus
+1670	4	2	3	Berna	Berna
+1670	5	2	2	Berne	Berne
+1673	1	2	1	Berne 5	Berne 5
+1673	2	2	3	Berna 5	Berna 5
+1674	1	2	1	Berne 6	Berne 6
+1674	2	2	3	Berna 6	Berna 6
+1676	1	2	2	Berne 8	Berne 8
+1676	2	2	3	Berna 8	Berna 8
+1677	1	2	2	Berne 9	Berne 9
+1677	2	2	3	Berna 9	Berna 9
+1680	1	2	2	Berne 13	Berne 13
+1680	2	2	3	Berna 13	Berna 13
+1681	1	2	2	Berne 14	Berne 14
+1681	2	2	3	Berna 14	Berna 14
+1682	1	2	2	Berne 15	Berne 15
+1682	2	2	3	Berna 15	Berna 15
+1686	1	2	2	Berne 22	Berne 22
+1686	2	2	3	Berna 22	Berna 22
+1687	1	2	2	Berne 23	Berne 23
+1687	2	2	3	Berna 23	Berna 23
+1688	1	2	2	Berne 25	Berne 25
+1688	2	2	3	Berna 25	Berna 25
+1691	1	2	2	Berne 31	Berne 31
+1691	2	2	3	Berna 31	Berna 31
+1710	1	2	2	Berne 1	Berne 1
+1710	2	2	3	Berna 1	Berna 1
+1713	9	2	2	Berne 4	Berne 4
+1713	10	2	3	Berna 4	Berna 4
+1718	1	2	2	Berne 10	Berne 10
+1718	2	2	3	Berna 10	Berna 10
+1724	2	3	1	Niederbottigen	Niederbottigen
+1724	3	2	2	Berne	Berne
+1724	4	2	3	Berna	Berna
+1725	1	3	1	Matzenried	Matzenried
+1725	3	2	2	Berne 19	Berne 19
+1725	4	2	3	Berna 19	Berna 19
+1726	2	2	2	Berne 20	Berne 20
+1726	3	2	3	Berna 20	Berna 20
+1727	2	3	1	Riedern b. Bern	Riedern b. Bern
+1727	3	2	2	Berne 27	Berne 27
+1727	4	2	3	Berna 27	Berna 27
+1742	1	3	1	Eymatt	Eymatt
+1743	1	3	1	Illiswil	Illiswil
+1746	1	3	1	Oltigen	Oltigen
+1746	5	3	1	Matzwil	Matzwil
+1746	6	3	1	Ostermanigen	Ostermanigen
+1747	1	3	1	Neubrück	Neubrück BE
+1747	2	3	1	Stuckishaus	Stuckishaus
+1748	1	3	1	Jetzikofen	Jetzikofen
+1748	2	3	1	Oberlindach	Oberlindach
+1751	3	3	1	Möriswil	Möriswil
+1753	1	3	1	Grächwil	Grächwil
+1753	2	3	1	Weissenstein BE	Weissenstein b. Meikirch
+1755	1	3	1	Seftau	Seftau
+1757	1	3	1	Steinibach	Steinibach
+1757	2	3	1	Reichenbach b.Bern	Reichenbach b. Bern
+1757	3	3	1	Rütti	Rütti
+1761	4	3	1	Hofwil	Hofwil
+1762	1	3	1	Bütschwil BE	Bütschwil b. Schüpfen
+1762	2	3	1	Bundkofen	Bundkofen
+1762	3	3	1	Saurenhorn	Saurenhorn
+1762	4	3	1	Schwanden b. Schüp	Schwanden b. Schüpfen
+1762	5	3	1	Ziegelried	Ziegelried
+1763	1	3	1	Eyfeld	Eyfeld b. Bern
+1763	2	3	1	Kappelisacker	Kappelisacker
+1763	3	3	1	Papiermühle	Papiermühle
+1764	1	3	1	Flugbrunnen	Flugbrunnen
+1764	2	3	1	Geristein	Geristein
+1764	3	3	1	Habstetten	Habstetten
+1764	4	3	1	Bantigen	Bantigen
+1767	1	3	1	Deisswil Stettlen	Deisswil b. Stettlen
+1767	2	3	1	Ferenberg b.Stettl	Ferenberg b. Stettlen
+1768	1	3	1	Lindental	Lindental
+1768	2	3	1	Sinneringen	Sinneringen
+1768	5	3	1	Vechigen	Vechigen
+1769	1	3	1	Radelfingen Utzign	Radelfingen b. Utzigen
+1770	1	3	1	Waldau	Waldau
+1774	3	3	1	Melchenbühl	Melchenbühl
+1776	1	3	1	Langenloh	Langenloh
+1776	2	3	1	Vielbringen b.Worb	Vielbringen b. Worb
+1777	1	3	1	Wattenwil b. Worb	Wattenwil b. Worb
+1777	3	3	1	Dentenberg	Dentenberg
+1777	4	3	1	Bangerten b. Worb	Bangerten b. Worb
+1783	1	3	1	Ried b. Worb	Ried b. Worb
+1785	1	3	1	Gurten	Gurten Kulm
+1793	1	3	1	Vorderfultigen	Vorderfultigen
+1814	1	3	1	Belpmoos	Belpmoos
+1823	1	3	1	Hermiswil Kirchth	Hermiswil b. Kirchenthurnen
+1831	1	3	1	Mengestorf	Mengestorf
+1832	1	3	1	Oberried Ndscherli	Oberried b. Niederscherli
+1832	2	3	1	Oberscherli	Oberscherli
+1834	1	3	1	Aekenmatt	Aekenmatt
+1835	1	3	1	Wahlern	Wahlern
+1837	2	3	1	Hirschhorn	Hirschhorn
+1838	2	3	1	Wislisau	Wislisau
+1840	1	3	1	Rohrbach Riggisbg	Rohrbach b. Riggisberg
+1844	1	3	1	Hirschmatt	Hirschmatt (Guggisberg)
+1847	1	3	1	Herzwil	Herzwil
+1848	1	3	1	Liebewil	Liebewil
+1851	1	3	1	Brüggelbach	Brüggelbach
+1851	2	3	1	Bramberg	Bramberg
+1851	3	3	1	Freiburghaus	Freiburghaus
+1853	1	3	1	Fendringen	Fendringen
+1853	2	3	1	Grenchen FR	Grenchen b. Bösingen
+1853	3	3	1	Noflen FR	Noflen FR
+1853	4	3	1	Tuftera	Tuftera
+1853	7	3	1	Richterwil	Richterwil
+1853	8	3	1	Vorstaffels	Vorstaffels
+1853	9	3	1	Gertholz	Gertholz
+1853	10	3	1	Unterbösingen	Unterbösingen
+1853	11	3	1	Hubel	Hubel
+1853	12	3	1	Riederberg	Riederberg
+1853	13	3	1	Engelberg	Engelberg
+1853	14	3	1	Litzistorf	Litzistorf
+1853	15	3	1	Vogelshus	Vogelshus
+1853	16	3	1	Lischera	Lischera
+1853	17	3	1	Hanenhus	Hanenhus
+1853	18	3	1	Haala	Haala
+1853	19	3	1	Rebacher	Rebacher
+1854	1	3	1	Schönenbühl	Schönenbühl
+1858	1	3	1	Dietisberg FR	Dietisberg b. Wünnewil
+1861	1	3	1	Bäriswil b.Tafers	Bäriswil b. Tafers
+1861	2	3	1	Bundtels	Bundtels
+1861	3	3	1	Galmis b.Düdingen	Galmis b. Düdingen
+1861	4	3	1	Garmiswil	Garmiswil
+1861	6	3	1	Heitiwil	Heitiwil
+1861	7	3	1	Jetschwil	Jetschwil
+1861	8	3	1	Mariahilf	Mariahilf
+1861	9	3	1	St. Wolfgang FR	St. Wolfgang FR
+1863	1	3	1	Heggidorn	Heggidorn
+1864	1	3	1	Oberei Mühleberg	Oberei b. Mühleberg
+1864	5	3	1	Buttenried	Buttenried
+1864	6	3	1	Marfeldingen	Marfeldingen
+1864	7	3	1	Fuchsenried	Fuchsenried
+1866	1	3	1	Bärfischenhaus	Bärfischenhaus
+1866	2	3	1	Juchlishaus	Juchlishaus
+1866	3	3	1	Spengelried	Spengelried
+1866	4	3	1	Süri	Süri
+1866	7	3	1	Rüplisried	Rüplisried
+1867	1	3	1	Buch b. Mühleberg	Buch b. Mühleberg
+1867	2	3	1	Mauss	Mauss
+1867	4	3	1	Allenlüften	Allenlüften
+1880	4	3	1	Agrimoine	Agrimoine
+1881	9	3	1	Buchillon	Buchillon
+1885	3	3	1	Monterschu	Monterschu
+1895	4	3	1	St. Petersinsel	St. Petersinsel
+1896	2	3	1	Witzwil	Witzwil
+1897	1	3	1	Hardern	Hardern
+1901	2	3	1	Waltwil	Waltwil
+1901	3	3	1	Scheunenberg	Scheunenberg
+1905	2	3	1	Eichholz b. Messen	Eichholz b. Messen
+1906	1	3	1	Bittwil b. Rappw	Bittwil b. Rapperswil
+1906	2	3	1	Frauchwil	Frauchwil
+1906	3	3	1	Vogelsang BE	Vogelsang b. Rapperswil
+1906	4	3	1	Wierezwil	Wierezwil
+1906	5	3	1	Zimlisberg	Zimlisberg
+1908	3	3	1	Moosaffoltern	Moosaffoltern
+1909	1	3	1	Vorimholz	Vorimholz
+1911	1	3	1	Kosthofen	Kosthofen
+1915	1	3	1	Baggwil	Baggwil
+1915	2	3	1	Aspi b. Seedorf	Aspi b. Seedorf
+1915	3	3	1	Frienisberg	Frienisberg
+1916	1	3	1	Ruchwil	Ruchwil
+1916	3	3	1	Dampfwil	Dampfwil
+1917	1	3	1	Spins	Spins
+1921	2	3	1	Werdthof	Werdthof
+1927	3	3	1	Burg b. Murten	Burg b. Murten
+1927	5	2	2	Morat	Morat
+1928	1	2	1	Merlach	Merlach
+1938	3	3	1	Reiben	Reiben
+1956	1	2	1	Schönbühl	Schönbühl
+1962	1	3	1	Grauenstein	Grauenstein
+1962	3	3	1	Schleumen	Schleumen
+1963	1	3	1	Thorberg	Thorberg
+1992	1	3	1	Bittwil b.Grasswil	Bittwil b. Grasswil
+1999	2	2	2	Berthoud	Berthoud
+2005	1	3	1	Busswil b. Heimisw	Busswil b. Heimiswil
+2015	1	3	1	Bütikofen	Bütikofen
+2018	1	3	1	Rudswil	Rudswil
+2022	2	3	1	Oeschberg	Oeschberg
+2022	3	3	1	St. Niklaus b. Kop	St. Niklaus b. Koppigen
+2025	1	3	1	Landshut	Landshut
+2027	5	3	1	Waldhaus	Waldhaus
+2031	2	3	1	Mungnau	Mungnau
+2031	5	3	1	Unterfrittenbach	Unterfrittenbach
+2036	2	3	1	Thal b. Heimisbach	Thal b. Heimisbach
+2037	1	3	1	Gammenthal	Gammenthal
+2037	2	3	1	Griesbach	Griesbach b. Sumiswald
+2042	1	3	1	Kurzenei	Kurzenei
+2042	2	3	1	Oberei b. Wasen	Oberei b. Wasen
+2045	1	3	1	Waltrigen	Waltrigen
+2051	1	3	1	Ferrenberg b.Wynig	Ferrenberg b. Wynigen
+2054	1	3	1	Juchten	Juchten
+2054	2	3	1	Wäckerschwend	Wäckerschwend
+2056	1	3	1	Herolfingen	Herolfingen
+2059	1	3	1	Möschberg	Möschberg
+2061	1	3	1	Arnisäge	Arnisäge
+2065	2	2	1	Stalden i. E.	Stalden im Emmental
+2065	5	3	1	Ursellen	Ursellen
+2068	1	3	1	Wikartswil	Wikartswil
+2073	4	3	1	Jassbach	Jassbach
+2073	5	3	1	Otterbach	Otterbach
+2073	6	3	1	Schlegwegbad	Schlegwegbad
+2081	1	3	1	Oberhofen i. E.	Oberhofen im Emmental
+2081	2	3	1	Rünkhofen	Rünkhofen
+2082	1	3	1	Steinen b. Signau	Steinen b. Signau
+2088	1	3	1	Moosegg	Moosegg
+2088	2	3	1	Waldhäusern BE	Waldhäusern BE
+2091	2	3	1	Obermatt BE	Obermatt b. Langnau
+2096	1	3	1	Längengrund	Längengrund
+2116	3	3	1	Oberei b. Süderen	Oberei b. Süderen
+2116	4	3	1	Wachseldorn	Wachseldorn
+2117	4	3	1	Aussereriz	Aussereriz
+2127	1	3	1	Unteremberg	Unteremberg
+2127	2	3	1	Glockenthal	Glockenthal
+2127	3	3	1	Hartlisberg	Hartlisberg
+2131	1	3	1	Buchholterberg	Buchholterberg
+2132	1	3	1	Oberlangenegg	Oberlangenegg
+2137	1	3	1	Haltenegg	Haltenegg
+2145	2	3	1	Gwattstutz	Gwattstutz
+2145	3	3	1	Schoren b. Thun	Schoren b. Thun
+2149	1	3	1	Längenschachen	Längenschachen
+2154	1	3	1	Meiersmaad	Meiersmaad
+2156	1	3	1	Beatenbucht	Beatenbucht
+2166	1	3	1	Heustrich-Emdthal	Heustrich-Emdthal
+2170	1	3	1	Kien	Kien
+2175	2	3	1	Hirzboden	Hirzboden
+2176	1	3	1	Bunderbach	Bunderbach
+2177	1	3	1	Mitholz	Mitholz
+2180	1	3	1	Griesalp	Griesalp
+2185	1	3	1	Brodhüsi	Brodhüsi
+2193	1	3	1	Ringoldingen	Ringoldingen
+2197	1	3	1	Eschi	Eschi
+2197	2	3	1	Garstatt	Garstatt
+2197	3	3	1	Reidenbach	Reidenbach
+2200	1	3	1	Grubenwald	Grubenwald
+2200	2	3	1	Mannried	Mannried
+2205	1	3	1	Boden b. Lenk	Boden b. Lenk
+2205	2	3	1	Pöschenried	Pöschenried
+2209	1	3	1	Gruben b. Gstaad	Gruben b. Gstaad
+2217	1	3	1	Breitlauenen	Breitlauenen
+2217	2	3	1	Schynige Platte	Schynige Platte
+2238	1	3	1	Gsteig Interlaken	Gsteig b. Interlaken
+2242	1	3	1	Grund Grindelwald	Grund b. Grindelwald
+2242	2	3	1	Itramen	Itramen
+2242	3	3	1	Schwendi BE	Schwendi b. Grindelwald
+2257	2	3	1	Ebligen	Ebligen
+2257	3	3	1	Giessbach	Giessbach
+2257	4	3	1	Kienholz	Kienholz
+2257	5	3	1	Planalp	Planalp
+2264	1	3	1	Ballenberg	Ballenberg
+2265	1	3	1	Brünigen	Brünigen
+2265	2	3	1	Kaltenbrunnen BE	Kaltenbrunnen b. Meiringen
+2265	3	3	1	Steingletscher	Steingletscher (Sustenpass)
+2265	4	3	1	Reichenbach b. Mei	Reichenbach b. Meiringen
+2265	6	3	1	Willigen	Willigen
+2265	7	3	1	Zaun	Zaun
+2265	18	3	1	Alpbach	Alpbach
+2271	1	3	1	Boden-Aegerstein	Boden-Aegerstein
+2271	2	3	1	Grimsel Hospiz	Grimsel Hospiz
+2271	4	3	1	Handegg	Handegg
+2273	1	2	2	Brigue	Brigue
+2273	2	3	1	Berisal	Berisal
+2273	4	3	1	Simplon Kulm	Simplon Kulm
+2289	2	3	1	Zwischbergen	Zwischbergen
+2291	4	3	1	Saas Bidermatten	Saas Bidermatten
+2300	3	3	1	Fafleralp	Fafleralp
+2300	4	3	1	Ried (Lötschen)	Ried (Lötschen)
+2300	5	3	1	Eisten (Lötschen)	Eisten (Lötschen)
+2300	6	3	1	Weissenried	Weissenried
+2301	1	3	1	Geimen	Geimen
+2302	1	3	1	Mattmark	Mattmark
+2305	1	3	1	Schwarzsee	Schwarzsee VS
+2305	2	3	1	Gornergrat	Gornergrat
+2310	4	3	1	Mattsand	Mattsand
+2313	1	3	1	Ackersand	Ackersand
+2318	1	2	2	Viège	Viège
+2322	2	3	1	Gspon	Gspon
+2337	2	2	1	Ems VS	Ems VS
+2346	3	3	2	Chelin	Chelin
+2346	4	3	2	St-Clément	St-Clément
+2346	5	3	2	Vaas	Vaas
+2346	6	3	2	Valençon	Valençon
+2349	4	3	2	Erdesson	Erdesson
+2349	6	3	2	Loye	Loye
+2349	7	3	2	Daillet	Daillet
+2349	8	3	2	Itravers	Itravers
+2349	9	3	2	Pramagnon	Pramagnon
+2349	10	3	2	Val-de-Réchy	Val-de-Réchy
+2353	6	3	1	Jeizinen	Jeizinen
+2353	7	3	1	Getwing	Getwing
+2358	1	2	2	Loèche-la-Ville	Loèche-la-Ville
+2360	1	2	2	Loèche-les-Bains	Loèche-les-Bains
+2364	2	2	1	Siders	Siders
+2364	6	3	2	Les Pontis	Les Pontis
+2373	1	3	2	Planige	Planige
+2374	2	3	2	Darnona	Darnona
+2374	3	3	2	Anchettes	Anchettes
+2375	2	3	2	St-Maurice-Laques	St-Maurice-de-Laques
+2375	3	3	2	Conzor	Conzor
+2376	2	3	2	Bluche-Randogne	Bluche-Randogne
+2378	2	3	2	Fang	Fang
+2378	3	3	2	Pinsec	Pinsec
+2378	7	3	2	Mayoux	Mayoux
+2378	8	3	2	Soussillon	Soussillon
+2381	1	3	2	Mission	Mission
+2381	5	3	2	Mottec	Mottec
+2383	1	3	2	Moiry VS	Moiry VS
+2386	1	3	2	Diogne	Diogne
+2387	5	2	2	Crans	Crans
+2391	2	3	2	Briey	Briey
+2403	2	3	1	Z'Matt	Z'Matt
+2404	1	3	1	Deisch	Deisch
+2406	5	3	1	Fürgangen	Fürgangen
+2414	6	3	1	Belvedere (Furka)	Belvedere (Furka)
+2414	7	3	1	Gletsch	Gletsch
+2414	8	3	1	Grimsel Passhöhe	Grimsel Passhöhe
+2425	6	3	1	Breiten	Breiten
+2425	7	3	1	Tunetschalp	Tunetschalp
+2426	1	3	1	Eggishorn	Eggishorn
+2431	1	2	3	Basilea	Basilea
+2431	2	2	2	Bâle	Bâle
+2505	2	3	1	Bottmingermühle	Bottmingermühle
+2523	1	3	1	Neuallschwil	Neuallschwil
+2531	1	3	1	St. Chrischona	St. Chrischona
+2533	1	3	1	Freidorf BL	Freidorf BL
+2536	3	3	1	Schweizerhalle	Schweizerhalle
+2545	2	3	1	Oberdornach	Oberdornach
+2553	2	3	1	Angenstein	Angenstein
+2556	1	3	1	Neureinach	Neureinach
+2564	1	3	1	Engi	Engi
+2577	1	3	1	Huggerwald	Huggerwald
+2586	2	3	1	Oberkirch SO	Oberkirch SO
+2589	1	3	1	Wiler SO	Wiler SO
+2605	1	3	1	Riburg	Riburg
+2625	3	3	1	Obersulz	Obersulz
+2632	3	3	1	Büren AG	Büren AG
+2637	3	3	1	Reuenthal	Reuenthal
+2676	1	3	1	Sommerau	Sommerau
+2682	1	3	1	Dietisberg BL	Dietisberg b. Läufelfingen
+2713	1	2	3	Soletta	Soletta
+2713	2	2	2	Soleure	Soleure
+2719	1	2	2	Soleure 1	Soleure 1
+2719	2	2	3	Soletta 1	Soletta 1
+2721	1	2	2	Soleure 2	Soleure 2
+2721	2	2	3	Soletta 2	Soletta 2
+2722	1	2	2	Soleure 3	Soleure 3
+2722	2	2	3	Soletta 3	Soletta 3
+2742	1	3	1	Bleichenberg	Bleichenberg
+2743	1	3	1	St. Niklaus SO	St. Niklaus SO
+2744	1	3	1	Attisholz	Attisholz
+2747	1	3	1	Dettenbühl	Dettenbühl
+2754	1	3	1	Bleichenberg	Bleichenberg
+2766	3	3	1	Buchegg	Buchegg
+2766	4	3	1	Kyburg Bad	Kyburg Bad
+2798	1	3	1	Kleinwangen SO	Kleinwangen b. Olten
+2812	1	3	1	Mahren	Mahren
+2815	1	3	1	Wil b. Starrkirch	Wil b. Starrkirch
+2818	1	3	1	Grod	Grod
+2829	2	3	1	Ifenthal	Ifenthal
+2840	2	3	1	Luterbach-Attishlz	Luterbach-Attisholz
+2842	1	3	1	St. Wolfgang SO	St. Wolfgang SO
+2849	2	3	1	Höngen	Höngen
+2853	3	3	1	Brunnersberg	Brunnersberg
+2861	1	3	1	Adelboden LU	Adelboden b. Wikon
+2863	1	3	1	Hinterwil	Hinterwil b. Uerkheim
+2866	1	3	1	Walliswil AG	Walliswil AG
+2869	1	3	1	Balzenwil	Balzenwil
+2878	1	3	1	Hard-Mumenthal	Hard-Mumenthal
+2878	2	3	1	Meiniswil	Meiniswil
+2878	3	3	1	Mumenthal	Mumenthal
+2895	1	3	1	Mättenbach	Mättenbach
+2895	2	3	1	Wyssbach	Wyssbach
+2896	1	3	1	Lindenholz	Lindenholz
+2907	1	3	1	Schweinbrunnen	Schweinbrunnen
+2938	2	2	1	Niedererlinsbach	Niedererlinsbach
+2938	3	2	1	Obererlinsbach	Obererlinsbach
+2945	1	3	1	Herzberg	Herzberg
+2945	3	3	1	Staffelegg	Staffelegg
+2959	1	3	1	Obermuhen	Obermuhen
+2963	1	3	1	Kirchrued	Kirchrued
+2987	1	3	1	Königsfelden	Königsfelden
+2999	4	3	1	Stalden AG	Stalden b. Brugg
+3005	1	3	1	Ueberthal	Ueberthal
+3008	1	3	1	Birrfeld	Birrfeld
+3026	2	3	1	Wil b. Turgi	Wil b. Turgi
+3026	4	3	1	Ennetturgi	Ennetturgi
+3033	3	3	1	Beznau	Beznau
+3036	1	3	1	Eien	Eien
+3038	1	3	1	Gippingen	Gippingen
+3038	3	3	1	Schlatt b.Leuggern	Schlatt b. Leuggern
+3039	1	3	1	Etzwil	Etzwil
+3055	1	3	1	Reuss	Reuss
+3058	3	3	1	Obersiggenthal	Obersiggenthal
+3060	1	3	1	Obersiggingen	Obersiggingen
+3060	3	3	1	Untersiggingen	Untersiggingen
+3066	1	3	1	Widen Schneisingen	Widen b. Schneisingen
+3067	1	3	1	Vogelsang Lengnau	Vogelsang b. Lengnau
+3075	4	3	1	Vogelrüti	Vogelrüti
+3076	2	3	1	Sulz b. Künten	Sulz b. Künten
+3078	1	3	1	Staretschwil	Staretschwil
+3079	1	3	1	Busslingen	Busslingen
+3088	1	3	1	Büblikon	Büblikon
+3090	1	3	1	Gnadenthal	Gnadenthal
+3121	3	3	1	Büelisacker	Büelisacker
+3127	1	3	1	Althäusern	Althäusern
+3127	2	3	1	Birri	Birri
+3130	1	3	1	Unterrüti	Unterrüti
+3130	2	3	1	Rickenbach AG	Rickenbach AG
+3134	2	3	1	Brunnwil	Brunnwil
+3134	3	3	1	Wiggwil	Wiggwil
+3134	4	3	1	Winterschwil	Winterschwil
+3134	9	3	1	Wallenschwil	Wallenschwil
+3136	2	3	1	Reussegg	Reussegg
+3138	1	3	1	Rüstenschwil	Rüstenschwil
+3148	1	3	1	Alliswil	Alliswil
+3149	2	3	1	Brestenberg	Brestenberg
+3152	1	3	1	Rütihof Gränichen	Rütihof b. Gränichen
+3159	1	3	1	Schwarzenberg Bad	Schwarzenberg Bad
+3174	1	3	1	Rothacker	Rothacker
+3182	1	2	3	Lucerna	Lucerna
+3182	2	2	2	Lucerne	Lucerne
+3185	1	2	2	Lucerne 4	Lucerne 4
+3185	2	2	3	Lucerna 4	Lucerna 4
+3186	1	2	2	Lucerne 5	Lucerne 5
+3186	2	2	3	Lucerna 5	Lucerna 5
+3187	1	2	2	Lucerne 6	Lucerne 6
+3187	2	2	3	Lucerna 6	Lucerna 6
+3188	1	2	2	Lucerne 7	Lucerne 7
+3188	2	2	3	Lucerna 7	Lucerna 7
+3191	1	2	2	Lucerne 10	Lucerne 10
+3191	2	2	3	Lucerna 10	Lucerna 10
+3192	1	2	2	Lucerne 11	Lucerne 11
+3192	2	2	3	Lucerna 11	Lucerna 11
+3195	1	2	2	Lucerne 14	Lucerne 14
+3195	2	2	3	Lucerna 14	Lucerna 14
+3196	1	2	2	Lucerne 15	Lucerne 15
+3196	2	2	3	Lucerna 15	Lucerna 15
+3197	1	2	2	Lucerne 16	Lucerne 16
+3197	2	2	3	Lucerna 16	Lucerna 16
+3215	1	2	2	Lucerne 2	Lucerne 2
+3215	2	2	3	Lucerna 2	Lucerna 2
+3220	3	3	1	Dietschiberg	Dietschiberg
+3230	1	3	1	Gerliswil	Gerliswil
+3230	2	3	1	Sprengi	Sprengi
+3230	5	3	1	Emmenweid	Emmenweid
+3244	1	3	1	Rathausen	Rathausen
+3246	1	3	1	Oberhofen LU	Oberhofen LU
+3246	2	3	1	Pfaffwil	Pfaffwil
+3261	1	3	1	Schoried	Schoried
+3267	1	3	1	Oberwilen	Oberwilen
+3268	1	3	1	Schwendi OW	Schwendi OW
+3278	2	3	1	Kaiserstuhl OW	Kaiserstuhl OW
+3279	1	3	1	Obsee	Obsee
+3286	1	3	1	Blatten (Malters)	Blatten (Malters)
+3297	2	3	1	Twerenegg	Twerenegg
+3302	1	3	1	Käppelimatt	Käppelimatt b. Willisau
+3302	3	3	1	Ostergau	Ostergau
+3316	1	3	1	Flühlen (Luthern)	Flühlen (Luthern)
+3324	1	3	1	Heiligkreuz LU	Heiligkreuz LU
+3328	1	3	1	Fontannen b.Schüpf	Fontannen b. Schüpfheim
+3328	2	3	1	Schwändi LU	Schwändi b. Schüpfheim
+3328	4	3	1	Klusstalden	Klusstalden
+3328	5	3	1	Oberberg LU	Oberberg b. Schüpfheim
+3334	1	3	1	Michlischwand	Michlischwand
+3334	4	3	1	Feldmoos	Feldmoos
+3334	5	3	1	Glichenberg	Glichenberg
+3337	1	3	1	Hilfernthal	Hilfernthal
+3340	2	3	1	Kemmeriboden	Kemmeriboden
+3340	3	3	1	Bumbach	Bumbach
+3355	1	3	1	Bognau	Bognau
+3360	1	3	1	Etzelwil	Etzelwil
+3360	2	3	1	Wetzwil LU	Wetzwil LU
+3368	1	3	1	Wauwilermoos	Wauwilermoos
+3387	1	3	1	Ebersol LU	Ebersol b. Hohenrain
+3396	1	3	1	Richensee	Richensee
+3401	1	3	1	Niederschongau	Niederschongau
+3404	9	2	2	Zoug	Zoug
+3404	10	2	3	Zugo	Zugo
+3418	1	3	1	Bostadel	Bostadel
+3426	1	3	1	Heiligkreuz ZG	Heiligkreuz b. Cham
+3426	2	3	1	Niederwil b. Cham	Niederwil b. Cham
+3426	4	3	1	Kemmatten	Kemmatten
+3430	1	3	1	Blickensdorf	Blickensdorf
+3430	3	3	1	Walterswil ZG	Walterswil ZG
+3438	1	3	1	Rotzloch	Rotzloch
+3447	4	3	1	Klewenalp	Klewenalp
+3449	1	3	1	Treib	Treib
+3455	1	3	1	Altzellen	Altzellen
+3455	2	3	1	Obermatt OW	Obermatt b. Engelberg
+3472	1	3	1	Altmatt	Altmatt
+3483	1	3	1	Hinterthal	Hinterthal
+3486	1	3	1	Oberschönenbuch	Oberschönenbuch
+3487	1	3	1	Ingenbohl	Ingenbohl
+3487	2	3	1	Unterschönenbuch	Unterschönenbuch
+3494	1	3	1	Balm (Klausen)	Balm (Klausen)
+3503	1	3	1	Urigen	Urigen
+3505	1	3	1	Isleten	Isleten-Isenthal
+3514	1	3	1	Golzern	Golzern
+3517	2	3	1	Wiler UR	Wiler b. Gurtnellen
+3521	4	3	1	Göscheneralp	Göscheneralp
+3526	1	3	1	Furkapass	Furkapass
+3534	6	3	3	Artore	Artore
+3534	7	2	1	Bellenz	Bellenz
+3534	8	2	2	Bellinzone	Bellinzone
+3534	9	3	3	Monti di Ravecchia	Monti di Ravecchia
+3543	1	2	2	Bellinzone 1	Bellinzone 1
+3550	2	2	2	Bellinzone 3	Bellinzone 3
+3551	1	2	2	Bellinzone 6	Bellinzone 6
+3552	1	3	3	Pedevilla	Pedevilla
+3555	1	3	3	Progero	Progero
+3556	1	3	3	Gerra Piano	Gerra Piano
+3557	1	3	3	Molinazzo d'Arbedo	Molinazzo d'Arbedo
+3564	1	3	3	Monticello	Monticello
+3571	4	3	3	Paudo	Paudo
+3571	5	3	3	Lôro	Lôro
+3572	3	3	3	Carmena	Carmena
+3572	4	3	3	Vellano	Vellano
+3573	3	3	3	Melera	Melera
+3581	1	3	3	Landarenca	Landarenca
+3583	4	3	3	Sta. Domenica	Sta. Domenica
+3583	5	3	3	Bodio GR	Bodio GR
+3587	5	3	3	S. Bernardino Ospi	S. Bernardino Ospizio
+3588	1	3	3	Piani di Verdabbio	Piani di Verdabbio
+3592	3	3	3	Pian S. Giacomo	Pian S. Giacomo
+3595	1	3	3	Fosano	Fosano
+3595	5	3	3	Alpe di Neggia	Alpe di Neggia
+3599	1	3	3	S. Abbondio	S. Abbondio
+3609	1	3	3	Gaggiole	Gaggiole
+3609	3	3	3	Gordemo	Gordemo
+3610	1	3	3	Medoscio	Medoscio
+3614	1	3	3	Cardada	Cardada
+3623	1	2	3	Solduno	Solduno
+3639	3	3	3	Corbella	Corbella
+3639	4	3	3	Vocaglia	Vocaglia
+3641	2	3	3	Berzona (Verzasca)	Berzona (Verzasca)
+3648	1	3	3	Monte Verità	Monte Verità
+3648	3	3	3	Moscia	Moscia
+3650	1	3	3	Madonna di Ponte	Madonna di Ponte
+3650	3	3	3	Porta (Brissago)	Porta (Brissago)
+3650	4	3	3	Brenscino	Brenscino
+3654	1	3	3	Madonna del Sasso	Madonna del Sasso
+3665	1	3	3	Ponte Brolla	Ponte Brolla
+3668	1	3	3	Corcapolo	Corcapolo
+3678	2	3	3	Collinasca	Collinasca
+3681	4	3	3	Piano di Campo	Piano di Campo
+3683	4	3	3	Foroglio	Foroglio
+3683	5	3	3	Robiei	Robiei (Val Bavona)
+3688	3	3	3	Sornico	Sornico
+3689	5	3	3	Mogno	Mogno
+3689	6	3	3	S. Carlo (Peccia)	S. Carlo (Val Peccia)
+3709	2	3	3	Cumiasca	Cumiasca
+3711	3	3	3	Traversa	Traversa (Marolta)
+3719	1	3	3	Malvaglia Rongie	Malvaglia Rongie
+3719	6	3	3	Malvaglia Chiesa	Malvaglia Chiesa
+3719	7	3	3	Pontirone	Pontirone
+3722	1	3	3	Comprovasco	Comprovasco
+3723	1	3	3	Grumo (Blenio)	Grumo (Blenio)
+3725	1	3	3	Acquacalda	Acquacalda
+3725	8	3	3	Campra	Campra
+3736	1	3	3	Primadengo	Primadengo
+3737	1	3	3	Prodör	Prodör
+3740	1	3	3	Fiesso	Fiesso
+3743	1	3	3	Altanca	Altanca
+3743	3	3	3	Piora	Piora
+3743	4	3	3	Ronco (Quinto)	Ronco (Quinto)
+3745	1	3	3	Catto	Catto
+3745	2	3	3	Deggio	Deggio
+3745	3	3	3	Lurengo	Lurengo
+3747	1	3	3	Fontana (Bedretto)	Fontana (Bedretto)
+3747	3	3	3	Motto Bartola	Motto Bartola
+3747	4	3	3	Nante	Nante
+3747	5	3	3	Valle	Valle
+3749	1	3	3	Ossasco	Ossasco
+3749	3	3	3	Ronco (Bedretto)	Ronco (Bedretto)
+3760	6	3	3	Vigera	Vigera
+3760	7	3	3	Freggio	Freggio
+3761	4	3	3	Figgione	Figgione
+3761	5	3	3	Tengia	Tengia
+3765	1	3	3	Monte Ceneri	Monte Ceneri
+3765	3	3	3	Soresina	Soresina
+3765	4	3	3	Capidogno	Capidogno
+3779	1	3	3	Mte Generoso Vetta	Monte Generoso Vetta
+3782	1	3	3	Bisio	Bisio
+3782	2	3	3	Mezzana	Mezzana
+3798	1	3	3	S. Simone	S. Simone
+3799	1	3	3	Balbio	Balbio
+3799	2	3	3	Fontanella	Fontanella
+3805	4	3	3	Vira (Mezzovico)	Vira (Mezzovico)
+3808	4	3	3	Caprino	Caprino
+3808	5	3	3	Cavallino	Cavallino
+3813	2	3	3	Campora	Campora
+3816	1	3	3	Boscherina	Boscherina
+3819	1	3	3	Gaggiolo	Gaggiolo
+3826	1	3	3	Mte Generoso Bellv	Monte Generoso Bellavista
+3829	1	3	3	Villa Coldrerio	Villa Coldrerio
+3833	4	3	3	Calprino	Calprino
+3850	1	2	3	Paradiso	Paradiso
+3851	4	3	3	S. Salvatore	S. Salvatore
+3851	5	3	3	Monte S. Salvatore	Monte S. Salvatore
+3860	3	3	3	Cadepiano	Cadepiano
+3865	3	3	3	Grumo di Gravesano	Grumo di Gravesano
+3875	4	3	3	Poiana	Poiana
+3878	1	3	3	Casoro	Casoro
+3879	1	3	3	Arbostora	Arbostora
+3879	3	3	3	Olivella	Olivella
+3881	1	3	3	Cappella-Agnuzzo	Cappella-Agnuzzo
+3882	1	3	3	Certenago	Certenago
+3883	1	3	3	Bigogno	Bigogno
+3884	1	3	3	Biogno	Biogno
+3885	1	3	3	Agnuzzo	Agnuzzo
+3888	1	3	3	Lisone	Lisone
+3893	1	3	3	Campestro	Campestro
+3893	3	3	3	Gola di Lago	Gola di Lago
+3905	1	3	3	Lelgio	Lelgio
+3907	3	3	3	Treggia	Treggia
+3910	1	3	3	Valcolla	Valcolla
+3923	1	3	3	La Santa	La Santa
+3927	1	3	3	Soragno	Soragno
+3934	1	3	3	Suvigliana	Suvigliana
+3946	2	3	3	Croglio	Croglio
+3954	4	3	3	Fornasette	Fornasette
+3956	3	3	3	Castello Monteggio	Castello di Monteggio
+3956	4	3	3	Monteggio	Monteggio
+3957	1	3	3	Serocca	Serocca
+3958	1	3	3	Magliasina	Magliasina
+3970	6	2	4	Cuoira	Cuoira
+3970	7	2	4	Cuera	Cuera
+3970	8	2	3	Coira	Coira
+3970	9	2	2	Coire	Coire
+3995	1	3	1	Reichenau	Reichenau
+4009	1	3	1	Kreuz (Malix)	Kreuz (Malix)
+4012	1	3	1	Lenzerheide See	Lenzerheide See
+4014	2	3	1	Zorten	Zorten
+4016	1	3	1	Vazerol	Vazerol
+4028	2	3	1	Fondei	Fondei
+4032	1	3	1	Egschi	Egschi
+4032	2	3	1	Acla (Safien)	Acla (Safien)
+4036	3	3	1	Neukirch (Safien)	Neukirch (Safien)
+4042	1	3	1	Brün	Brün
+4042	2	3	1	Dutjen	Dutjen
+4047	3	3	1	Strada i. O.	Strada im Oberland
+4062	5	3	1	Lunschania	Lunschania
+4074	3	3	1	Valata	Valata (Obersaxen)
+4091	1	2	4	Vuorz	Vuorz
+4091	2	3	1	Waltensbg/Vuorz St	Waltensburg/Vuorz Staziun
+4096	1	2	1	Brigels	Brigels
+4097	1	3	1	Darvella	Darvella
+4097	4	3	1	Lumneins	Lumneins
+4104	1	3	1	Disla	Disla
+4108	3	3	1	Medel (Lucmagn)	Medel (Lucmagn)
+4113	6	3	1	Selva (Tujetsch)	Selva (Tujetsch)
+4113	7	3	1	Tschamut	Tschamut
+4117	1	3	1	Tujetsch	Tujetsch
+4117	8	3	1	Surrein GR	Surrein GR
+4119	3	3	1	Tenigerbad	Tenigerbad
+4133	2	3	1	Ueberlandquart	Ueberlandquart
+4153	2	2	1	St. Antönien Asch	St. Antönien Ascharina
+4163	1	3	1	Dischma	Dischma
+4163	15	3	1	Flüela Hospiz	Flüela Hospiz
+4163	16	3	1	Flüelapass	Flüelapass
+4166	3	2	1	Wolfgang	Wolfgang
+4166	5	3	1	Laret	Laret
+4174	1	3	1	Sertig Dörfli	Sertig Dörfli
+4174	2	2	1	Clavadel	Clavadel
+4182	1	3	1	Luziensteig	Luziensteig
+4182	2	3	1	St. Luzisteig	St. Luzisteig
+4185	1	3	1	Pfäfers Bad	Pfäfers Bad
+4191	3	3	1	Kunkels	Kunkels
+4198	5	3	1	Pizolhütte	Pizolhütte
+4198	6	3	1	Pizol	Pizol
+4200	1	3	1	Sculms	Sculms
+4208	1	3	1	Unterrealta	Unterrealta
+4218	2	3	1	Canova	Canova
+4232	2	3	1	Schauenberg	Schauenberg
+4239	5	3	1	Reischen	Reischen
+4240	2	3	1	Casti	Casti
+4241	2	3	1	Pazen	Pazen
+4248	4	3	1	Splügenpass	Splügenpass
+4262	2	3	1	Solis	Solis
+4283	1	2	4	Bravuogn	Bravuogn
+4290	1	3	1	Jenisberg	Jenisberg
+4300	1	3	1	Spinas	Spinas
+4301	4	3	1	Punt Muragl	Punt Muragl
+4303	1	3	1	Morteratsch	Morteratsch
+4303	9	3	1	Bernina Suot	Bernina Suot
+4307	1	2	1	Sils im Engadin	Sils im Engadin
+4307	2	2	4	Segl	Segl
+4309	1	2	1	Sils im Engadin	Sils im Engadin
+4309	2	2	4	Segl	Segl
+4316	4	3	1	Susauna	Susauna
+4316	5	3	1	Chapella	Chapella
+4319	1	3	1	Il Fuorn	Il Fuorn
+4319	2	3	1	Ova Spin	Ova Spin
+4338	1	3	1	Giarsun	Giarsun
+4338	2	3	1	Guarda Staziun	Guarda Staziun
+4341	1	3	1	Tarasp Kurhaus	Tarasp Kurhaus
+4341	2	3	1	S-charl	S-charl
+4341	3	2	1	Schuls	Schuls
+4346	1	3	1	Val Sinestra	Val Sinestra
+4346	2	3	1	Sur En	Sur En
+4351	2	3	1	Seraplana	Seraplana
+4353	1	3	1	Vinadi	Vinadi
+4356	1	3	1	Laret (Samnaun)	Laret (Samnaun)
+4363	3	3	3	Bondo	Bondo
+4366	1	3	3	Cavaglia	Cavaglia
+4367	2	3	3	Val di Campo	Val di Campo
+4374	10	3	1	Bernina Hospiz	Bernina Hospiz
+4374	11	3	1	La Motta	La Motta
+4375	6	3	3	Privilasco	Privilasco
+4377	5	3	3	Annunziata	Annunziata
+4377	6	3	3	Prada	Prada
+4377	7	3	3	S. Antonio GR	S. Antonio (Poschiavo)
+4380	3	3	3	Cavajone	Cavajone
+4380	4	3	3	Zalende	Zalende
+4384	2	2	2	Zurich	Zurich
+4384	3	2	3	Zurigo	Zurigo
+4384	4	3	1	Zürichhorn	Zürichhorn
+4393	2	2	2	Zurich	Zurich
+4393	3	2	3	Zurigo	Zurigo
+4425	1	2	2	Zurich 1	Zurich 1
+4425	2	2	3	Zurigo 1	Zurigo 1
+4426	1	2	2	Zurich 22	Zurich 22
+4426	2	2	3	Zurigo 22	Zurigo 22
+4429	1	2	2	Zurich	Zurich
+4429	2	2	3	Zurigo	Zurigo
+4430	1	2	2	Zurich 24	Zurich 24
+4430	2	2	3	Zurigo 24	Zurigo 24
+4432	1	2	2	Zurich 26	Zurich 26
+4432	2	2	3	Zurigo 26	Zurigo 26
+4435	1	2	2	Zurich 27	Zurich 27
+4435	2	2	3	Zurigo 27	Zurigo 27
+4440	1	2	2	Zurich 31	Zurich 31
+4440	2	2	3	Zurigo 31	Zurigo 31
+4441	1	2	1	Neumünster	Neumünster
+4441	2	2	2	Zurich 32	Zurich 32
+4441	3	2	3	Zurigo 32	Zurigo 32
+4444	1	2	2	Zurich 33	Zurich 33
+4444	2	2	3	Zurigo 33	Zurigo 33
+4445	1	2	2	Zurich 34	Zurich 34
+4445	2	2	3	Zurigo 34	Zurigo 34
+4447	1	2	2	Zurich 36	Zurich 36
+4447	2	2	3	Zurigo 36	Zurigo 36
+4449	1	2	2	Zurich 37	Zurich 37
+4449	2	2	3	Zurigo 37	Zurigo 37
+4450	1	2	2	Zurich 38	Zurich 38
+4450	2	2	3	Zurigo 38	Zurigo 38
+4453	1	2	2	Zurich 40	Zurich 40
+4453	2	2	3	Zurigo 40	Zurigo 40
+4454	1	2	1	Leimbach ZH	Leimbach ZH
+4454	2	2	2	Zurich 41	Zurich 41
+4454	3	2	3	Zurigo 41	Zurigo 41
+4455	1	2	2	Zurich 42	Zurich 42
+4455	2	2	3	Zurigo 42	Zurigo 42
+4457	2	2	2	Zurich 44	Zurich 44
+4457	3	2	3	Zurigo 44	Zurigo 44
+4459	1	2	2	Zurich 45	Zurich 45
+4459	2	2	3	Zurigo 45	Zurigo 45
+4461	2	2	2	Zurich 46	Zurich 46
+4461	3	2	3	Zurigo 46	Zurigo 46
+4463	2	2	2	Zurich 47	Zurich 47
+4463	3	2	3	Zurigo 47	Zurigo 47
+4464	2	2	2	Zurich 48	Zurich 48
+4464	3	2	3	Zurigo 48	Zurigo 48
+4467	1	2	2	Zurich 49	Zurich 49
+4467	2	2	3	Zurigo 49	Zurigo 49
+4468	2	2	2	Zurich 50	Zurich 50
+4468	3	2	3	Zurigo 50	Zurigo 50
+4470	1	2	1	Schwamendingen	Schwamendingen
+4470	2	2	2	Zurich 51	Zurich 51
+4470	3	2	3	Zurigo 51	Zurigo 51
+4471	1	2	1	Seebach	Seebach
+4471	2	2	2	Zurich 52	Zurich 52
+4471	3	2	3	Zurigo 52	Zurigo 52
+4473	1	2	2	Zurich 53	Zurich 53
+4473	2	2	3	Zurigo 53	Zurigo 53
+4474	1	2	2	Zurich 55	Zurich 55
+4474	2	2	3	Zurigo 55	Zurigo 55
+4476	1	2	2	Zurich 57	Zurich 57
+4476	2	2	3	Zurigo 57	Zurigo 57
+4477	1	2	2	Zurich 58	Zurich 58
+4477	2	2	3	Zurigo 58	Zurigo 58
+4483	1	2	2	Zurich 63	Zurich 63
+4483	2	2	3	Zurigo 63	Zurigo 63
+4485	1	2	2	Zurich 65	Zurich 65
+4485	2	2	3	Zurigo 65	Zurigo 65
+4494	1	2	1	Engstringen	Engstringen
+4495	1	2	1	Engstringen	Engstringen
+4507	1	3	1	Oetlikon	Oetlikon
+4512	1	3	1	Uessikon	Uessikon
+4514	1	3	1	Waltikon	Waltikon
+4515	1	3	1	Aesch b. Maur	Aesch b. Maur
+4515	2	3	1	Limberg	Limberg
+4515	3	3	1	Scheuren (Forch)	Scheuren (Forch)
+4515	5	3	1	Guldenen	Guldenen
+4516	1	3	1	Neuhaus ZH	Neuhaus b. Hinteregg
+4517	1	3	1	Langwies	Langwies b. Egg
+4517	2	3	1	Vollikon	Vollikon
+4518	1	3	1	Emmat	Emmat
+4519	1	3	1	Oberleimbach	Oberleimbach
+4519	2	3	1	Sood-Oberleimbach	Sood-Oberleimbach
+4522	8	3	1	Albis	Albis
+4525	1	3	1	Ringlikon	Ringlikon
+4525	2	2	1	Waldegg b. Uitikon	Waldegg b. Uitikon
+4526	1	3	1	Sellenbüren	Sellenbüren
+4529	2	3	1	Katzenrüti	Katzenrüti
+4531	3	3	1	Mettmenhasli	Mettmenhasli
+4531	4	3	1	Nassenwil	Nassenwil
+4535	1	3	1	Niedersteinmaur	Niedersteinmaur
+4535	2	3	1	Obersteinmaur	Obersteinmaur
+4543	2	3	1	Riedt b. Neerach	Riedt b. Neerach
+4545	1	3	1	Raat b. Windlach	Raat b. Windlach
+4545	2	3	1	Schüpfheim ZH	Schüpfheim b. Windlach
+4546	1	3	1	Eschenmosen	Eschenmosen
+4546	2	3	1	Nussbaumen	Nussbaumen ZH
+4548	1	3	1	Endhöri	Endhöri
+4548	2	3	1	Niederhöri	Niederhöri
+4559	1	2	2	Schaffhouse	Schaffhouse
+4559	2	2	3	Sciaffusa	Sciaffusa
+4565	1	2	2	Schaffhouse 1	Schaffhouse 1
+4565	2	2	3	Sciaffusa 1	Sciaffusa 1
+4566	1	2	2	Schaffhouse 2	Schaffhouse 2
+4566	2	2	3	Sciaffusa 2	Sciaffusa 2
+4567	1	2	1	Buchthalen	Buchthalen
+4567	2	2	2	Schaffhouse 3	Schaffhouse 3
+4567	3	2	3	Sciaffusa 3	Sciaffusa 3
+4568	1	2	2	Schaffhouse 4	Schaffhouse 4
+4568	2	2	3	Sciaffusa 4	Sciaffusa 4
+4569	1	2	2	Schaffhouse 5	Schaffhouse 5
+4569	2	2	3	Sciaffusa 5	Sciaffusa 5
+4571	1	2	1	Herblingen	Herblingen
+4571	2	2	2	Schaffhouse 7	Schaffhouse 7
+4571	3	2	3	Sciaffusa 7	Sciaffusa 7
+4572	1	2	2	Schaffhouse 8	Schaffhouse 8
+4572	2	2	3	Sciaffusa 8	Sciaffusa 8
+4599	1	3	1	Oberwiesen	Oberwiesen
+4605	1	3	1	Alt Paradies	Alt Paradies
+4609	8	3	1	Mettschlatt	Mettschlatt
+4609	9	3	1	Oberschlatt TG	Oberschlatt TG
+4609	12	3	1	Unterschlatt	Unterschlatt
+4614	2	3	1	St. Katharinental	St. Katharinental
+4621	1	3	1	Wiesholz	Wiesholz
+4621	2	3	1	Bibermühle	Bibermühle
+4623	1	3	1	Klingenzell	Klingenzell
+4623	4	3	1	Bornhausen	Bornhausen
+4625	1	3	1	Glarisegg	Glarisegg
+4625	2	3	1	Heretswilen	Heretswilen
+4625	3	3	1	Aufhofen	Aufhofen
+4625	4	3	1	Dietlismühle	Dietlismühle
+4627	1	3	1	Arenenberg	Arenenberg
+4635	1	2	1	Kurzrickenbach	Kurzrickenbach
+4639	5	3	1	Gerlisberg	Gerlisberg
+4640	1	3	1	Baltenswil ZH	Baltenswil ZH
+4641	1	3	1	Neugut Dübendorf	Neugut b. Dübendorf
+4644	1	3	1	Bisikon	Bisikon
+4644	2	3	1	Moosburg	Moosburg
+4644	4	3	1	Rikon b.Effretikon	Rikon b. Effretikon
+4644	6	3	1	Bietenholz	Bietenholz
+4644	7	3	1	Oberkempttal	Oberkempttal
+4645	2	3	1	Eschikon	Eschikon
+4646	1	3	1	Mesikon	Mesikon
+4647	1	3	1	Horben b. Illnau	Horben b. Illnau
+4648	1	3	1	Birchwil	Birchwil (Nürensdorf)
+4648	2	3	1	Breite	Breite
+4648	3	3	1	Oberwil Nürensdorf	Oberwil b. Nürensdorf
+4648	6	3	1	Hakab	Hakab
+4651	2	3	1	Kleinikon	Kleinikon
+4653	1	3	1	First	First
+4653	2	3	1	Luckhausen	Luckhausen
+4654	3	3	1	Ettenhausen Kyburg	Ettenhausen b. Kyburg
+4654	4	3	1	Billikon b. Kyburg	Billikon b. Kyburg
+4657	2	3	1	Ehrikon	Ehrikon
+4659	2	3	1	Irgenhausen	Irgenhausen
+4659	3	3	1	Wallikon	Wallikon b. Pfäffikon
+4660	2	3	1	Oberbalm b. Auslik	Oberbalm b. Auslikon
+4661	1	3	1	Sennhof Russikon	Sennhof b. Russikon
+4661	3	3	1	Wilhof b. Russikon	Wilhof b. Russikon
+4662	1	3	1	Isikon	Isikon
+4662	2	3	1	Unterhittnau	Unterhittnau
+4665	1	3	1	Erlosen	Erlosen
+4665	2	3	1	Girenbad b. Hinwil	Girenbad b. Hinwil
+4665	3	3	1	Hadlikon	Hadlikon
+4665	4	3	1	Ringwil	Ringwil
+4666	3	3	1	Bachtel	Bachtel
+4666	4	3	1	Hasenstrick	Hasenstrick
+4667	1	3	1	Neuthal	Neuthal b. Bäretswil
+4669	3	3	1	Rümikon ZH	Rümikon ZH
+4669	4	3	1	Schottikon	Schottikon
+4669	7	3	1	Tollhausen	Tollhausen
+4669	8	3	1	Fulau	Fulau
+4669	10	3	1	Schnasberg	Schnasberg
+4669	11	3	1	Räterschen	Räterschen
+4671	1	3	1	Dickbuch	Dickbuch
+4671	3	3	1	Huggenberg	Huggenberg
+4671	4	3	1	Jakobsthal	Jakobsthal
+4671	5	3	1	Steig	Steig
+4671	6	3	1	Wenzikon	Wenzikon
+4672	1	3	1	Wittershausen	Wittershausen
+4673	1	3	1	Tänikon	Tänikon
+4674	2	3	1	Maischhausen	Maischhausen
+4676	2	3	1	Holzmannshaus	Holzmannshaus
+4676	3	3	1	Hurnen	Hurnen
+4678	1	3	1	Ifwil TG	Ifwil b. Balterswil
+4678	2	3	1	Itaslen	Itaslen
+4685	1	3	1	Tannegg	Tannegg
+4685	2	3	1	Vogelsang TG	Vogelsang b. Eschlikon
+4685	3	3	1	Schurten TG	Schurten TG
+4706	1	2	1	Oberwinterthur	Oberwinterthur
+4708	9	3	1	Eidberg	Eidberg (Winterthur)
+4708	10	3	1	Gotzenwil	Gotzenwil
+4708	11	3	1	Iberg (Winterthur)	Iberg (Winterthur)
+4710	1	3	1	Dättnau	Dättnau
+4713	1	2	1	Hegi (Winterthur)	Hegi (Winterthur)
+4722	1	3	1	Nussberg	Nussberg
+4722	2	3	1	Oberschlatt ZH	Oberschlatt ZH
+4722	3	3	1	Waltenstein	Waltenstein
+4722	4	3	1	Unterschlatt ZH	Unterschlatt ZH
+4729	1	3	1	Augwil	Augwil
+4744	2	3	1	Mellstorf	Mellstorf
+4751	1	3	1	Laufen am Rheinfal	Laufen am Rheinfall
+4756	2	3	1	Dätwil ZH	Dätwil ZH
+4756	3	3	1	Niederwil	Niederwil ZH
+4759	1	3	1	Goldenberg	Goldenberg
+4770	1	3	1	Neurheinau	Neurheinau
+4772	1	3	1	Ohringen	Ohringen
+4772	3	3	1	Oberohringen	Oberohringen
+4772	4	3	1	Unterohringen	Unterohringen
+4774	1	3	1	Eschlikon ZH	Eschlikon ZH
+4774	2	3	1	Welsikon	Welsikon
+4775	2	3	1	Hausen	Hausen
+4775	3	3	1	Gisenhard	Gisenhard
+4775	4	3	1	Langenmoos	Langenmoos
+4776	1	2	1	Stammheim	Stammheim
+4777	1	2	1	Stammheim	Stammheim
+4780	1	3	1	Gütighausen	Gütighausen
+4783	1	3	1	Girsberg	Girsberg
+4786	2	3	1	Brünggen	Brünggen
+4786	3	3	1	Weissenthal	Weissenthal
+4788	1	3	1	Dettenried	Dettenried
+4790	1	3	1	Langenhard	Langenhard
+4790	3	3	1	Schwändi ZH	Schwändi ZH
+4790	4	3	1	Oberlangenhard	Oberlangenhard
+4790	5	3	1	Unterlangenhard	Unterlangenhard
+4792	1	3	1	Garten	Garten
+4792	2	3	1	Lettenberg	Lettenberg
+4793	1	3	1	Girenbad Turbnthal	Girenbad b. Turbenthal
+4793	3	3	1	Seelmatten	Seelmatten
+4793	4	3	1	Oberhofen ZH	Oberhofen ZH
+4793	5	3	1	Ramsberg	Ramsberg
+4793	6	3	1	Neubrunn	Neubrunn
+4794	1	3	1	Steinen b. Wila	Steinen b. Wila
+4794	3	3	1	Tablat	Tablat
+4794	4	3	1	Schalchen	Schalchen
+4794	6	3	1	Aegetswil	Aegetswil
+4794	8	3	1	Manzenhub	Manzenhub
+4794	9	3	1	Ottenhub	Ottenhub
+4795	1	3	1	Blitterswil	Blitterswil
+4796	5	3	1	Lipperschwendi	Lipperschwendi
+4796	6	3	1	Bliggenswil	Bliggenswil
+4796	7	3	1	Wellenau	Wellenau
+4799	1	3	1	Gibswil	Gibswil
+4799	2	3	1	Raad b. Gibswil	Raad b. Gibswil
+4801	2	3	1	Sitzberg	Sitzberg
+4805	1	3	1	Herten	Herten
+4805	2	3	1	Horgenbach	Horgenbach
+4805	3	3	1	Huben	Huben
+4805	4	3	1	Osterhalden	Osterhalden
+4805	5	3	1	Strass	Strass
+4805	9	3	1	Bühl TG	Bühl b. Frauenfeld
+4805	10	3	1	Dingenhart	Dingenhart
+4805	11	3	1	Erzenholz	Erzenholz
+4805	14	3	1	Niederwil TG	Niederwil TG
+4805	15	3	1	Oberwil TG	Oberwil TG
+4805	16	3	1	Haldenhof	Haldenhof
+4805	17	3	1	Messenriet	Messenriet
+4805	18	3	1	Reuti	Reuti
+4805	19	3	1	Wellenberg	Wellenberg
+4807	2	3	1	Rosenhuben	Rosenhuben
+4816	2	3	1	Ammenhausen	Ammenhausen
+4818	4	3	1	Bulgen	Bulgen
+4818	5	3	1	Sassenloh	Sassenloh
+4820	1	3	1	Unterhörstetten	Unterhörstetten
+4820	2	3	1	Klingenberg	Klingenberg
+4820	3	3	1	Reckenwil	Reckenwil
+4820	4	3	1	Oberhörstetten	Oberhörstetten
+4826	3	3	1	Bänikon	Bänikon
+4826	4	3	1	Fimmelsberg	Fimmelsberg
+4826	5	3	1	Kaltenbrunnen TG	Kaltenbrunnen TG
+4826	6	3	1	Wolfikon TG	Wolfikon TG
+4826	7	3	1	Amlikon	Amlikon
+4826	8	3	1	Griesenberg	Griesenberg
+4826	9	3	1	Strohwilen	Strohwilen
+4826	10	3	1	Bissegg	Bissegg
+4826	11	3	1	Holzhäusern	Holzhäusern
+4829	2	3	1	Oberschneit	Oberschneit
+4829	3	3	1	Egghof	Egghof
+4829	4	3	1	Hagenstal	Hagenstal
+4829	5	3	1	Kappel	Kappel
+4830	4	3	1	Trüttlikon	Trüttlikon
+4830	5	3	1	Dietingen	Dietingen
+4830	6	3	1	Iselisberg	Iselisberg
+4832	2	2	1	Neunforn	Neunforn
+4832	5	3	1	Fahrhof	Fahrhof
+4833	1	2	1	Neunforn	Neunforn
+4834	4	3	1	Kartause Ittingen	Kartause Ittingen
+4835	1	3	1	Horben b. Frfeld	Horben b. Frauenfeld
+4836	2	3	1	Weckingen	Weckingen
+4837	1	3	1	Wilen b. Herdern	Wilen b. Herdern
+4838	1	3	1	Kalchrain	Kalchrain
+4838	2	3	1	Steinegg TG	Steinegg TG
+4841	1	3	1	Buch	Buch
+4847	5	3	1	Bethelhausen	Bethelhausen
+4855	4	3	1	Hasli	Hasli
+4856	2	3	1	Gehrau	Gehrau
+4856	3	3	1	Häusern	Häusern
+4857	1	3	1	Langenhart	Langenhart
+4857	2	3	1	Grüneck	Grüneck
+4862	2	3	1	Büren TG	Büren TG
+4862	3	3	1	Fischbach TG	Fischbach TG
+4862	6	3	1	Helsighausen	Helsighausen
+4869	3	3	1	Boltshausen	Boltshausen
+4871	2	3	1	Engelswilen	Engelswilen
+4872	7	3	1	Schwaderloh	Schwaderloh
+4881	3	3	1	Kehlhof TG	Kehlhof TG
+4881	4	3	1	Ast	Ast
+4884	3	3	1	Dippishausen	Dippishausen
+4884	5	3	1	Bätershausen	Bätershausen
+4885	1	3	1	Dettighofen Oberh	Dettighofen b. Oberhofen
+4890	1	3	1	Ritzisbuhwil	Ritzisbuhwil
+4890	4	3	1	Hagenwil am Nollen	Hagenwil am Nollen
+4891	2	3	1	Olmerswil	Olmerswil
+4893	2	3	1	Biessenhofen	Biessenhofen
+4893	3	3	1	Brüschwil	Brüschwil
+4893	4	3	1	Hatswil	Hatswil
+4893	5	3	1	Hemmerswil	Hemmerswil
+4893	6	3	1	Mühlebach TG	Mühlebach b. Amriswil
+4893	7	3	1	Räuchlisberg	Räuchlisberg
+4902	2	3	1	Hessenreuti	Hessenreuti
+4922	1	3	1	Heimenhofen	Heimenhofen
+4925	1	3	1	Niederaach	Niederaach
+4939	1	3	1	Gfenn	Gfenn
+4939	2	3	1	Hermikon	Hermikon
+4939	3	3	1	Stettbach	Stettbach
+4944	1	3	1	Hegnau	Hegnau
+4944	2	3	1	Kindhausen ZH	Kindhausen ZH
+4944	4	3	1	Zimikon	Zimikon
+4946	1	3	1	Werrikon	Werrikon
+4949	1	3	1	Seegräben	Seegräben
+4951	4	3	1	Nossikon	Nossikon
+4953	1	2	1	Niederuster	Niederuster
+4959	1	3	1	Willikon	Willikon
+4960	1	3	1	Medikon	Medikon
+4960	3	3	1	Emmetschloo	Emmetschloo
+4962	1	2	1	Robenhausen	Robenhausen
+4964	1	3	1	Oberwetzikon	Oberwetzikon
+4965	1	2	1	Kempten	Kempten
+4965	2	3	1	Oberkempten	Oberkempten
+4968	1	3	1	Herschmettlen	Herschmettlen
+4969	1	3	1	Binzikon	Binzikon
+4969	2	3	1	Itzikon	Itzikon
+4970	1	3	1	Fägswil	Fägswil
+4974	1	3	1	Oberdürnten	Oberdürnten
+4975	1	3	1	Hittenberg	Hittenberg
+4977	1	3	1	Hubwies	Hubwies
+4978	1	3	1	Hintergoldingen	Hintergoldingen
+4986	1	3	1	Goldbach ZH	Goldbach ZH
+4986	2	3	1	Itschnach	Itschnach
+4991	1	3	1	Wetzwil ZH	Wetzwil ZH
+4996	1	3	1	Kehlhof ZH	Kehlhof ZH
+4996	2	3	1	Redlikon	Redlikon
+4996	3	3	1	Uelikon	Uelikon (Stäfa)
+4999	1	3	1	Wurmsbach	Wurmsbach
+5002	1	3	1	Dorf b. Schänis	Dorf b. Schänis
+5005	3	3	1	Steg SG	Steg SG
+5006	1	3	1	Hummelwald	Hummelwald
+5008	1	3	1	Uznaberg	Uznaberg
+5009	2	3	1	Bürg	Bürg
+5027	2	3	1	Ennetbühls	Ennetbühls
+5050	1	3	1	Bendlikon	Bendlikon
+5051	1	3	1	Nidelbad	Nidelbad
+5055	1	3	1	Bächau	Bächau
+5058	1	3	1	Käpfnach	Käpfnach
+5058	4	3	1	Arn	Arn
+5063	1	3	1	Spitzen	Spitzen
+5064	1	3	1	Herrlisberg Wädw	Herrlisberg b. Wädenswil
+5072	1	3	1	Biberbrugg	Biberbrugg
+5074	1	3	1	Horgenberg SZ	Horgenberg b. Einsiedeln
+5083	1	3	1	Hoch-Ybrig	Hoch-Ybrig (Weglosen)
+5085	4	3	1	Ibergeregg	Ibergeregg
+5090	1	3	1	Nuolen	Nuolen
+5102	1	3	1	Fli	Fli
+5102	4	3	1	Betlis	Betlis
+5104	1	3	1	Arfenbühl	Arfenbühl
+5121	2	3	1	Vermol	Vermol
+5126	1	2	1	Hochwiese (Flums)	Hochwiese (Flums)
+5127	1	2	1	Saxli (Flums)	Saxli (Flums)
+5128	3	2	1	Portels	Portels
+5129	1	2	1	Grossberg (Flums)	Grossberg (Flums)
+5130	5	2	1	Tannenheim	Tannenheim
+5131	4	2	1	Tannenbodenalp	Tannenbodenalp
+5132	1	3	1	Oberurdorf	Oberurdorf
+5133	1	3	1	Landikon	Landikon
+5145	1	3	1	Rickenbach Ottenb	Rickenbach b. Ottenbach
+5148	1	3	1	Albisbrunn	Albisbrunn
+5148	2	3	1	Türlen	Türlen
+5150	1	2	1	Lunkhofen	Lunkhofen
+5152	1	2	1	Lunkhofen	Lunkhofen
+5156	2	3	1	Rossau	Rossau
+5156	3	3	1	Dachlissen	Dachlissen
+5158	1	3	1	Uttenberg	Uttenberg
+5166	1	3	1	Schönenwerd ZH	Schönenwerd b. Dietikon
+5174	1	3	1	Baltenschwil AG	Baltenschwil AG
+5176	1	3	1	Friedlisberg	Friedlisberg
+5178	1	3	1	Lieli	Lieli
+5178	2	2	1	Oberwil AG	Oberwil AG
+5189	1	2	2	St-Gall	St-Gall
+5189	2	2	3	S. Gallo	S. Gallo
+5204	1	2	2	St-Gall 1	St-Gall 1
+5204	2	2	3	S. Gallo 1	S. Gallo 1
+5208	1	2	2	St-Gall 4	St-Gall 4
+5208	2	2	3	S. Gallo 4	S. Gallo 4
+5210	1	2	2	St-Gall 6	St-Gall 6
+5210	2	2	3	S. Gallo 6	S. Gallo 6
+5211	1	2	2	St-Gall 7	St-Gall 7
+5211	2	2	3	S. Gallo 7	S. Gallo 7
+5212	1	2	2	St-Gall 8	St-Gall 8
+5212	2	2	3	S. Gallo 8	S. Gallo 8
+5213	1	2	2	St-Gall 9	St-Gall 9
+5213	2	2	3	S. Gallo 9	S. Gallo 9
+5214	1	2	2	St-Gall 10	St-Gall 10
+5214	2	2	3	S. Gallo 10	S. Gallo 10
+5215	1	3	1	Notkersegg	Notkersegg
+5215	2	2	2	St-Gall 11	St-Gall 11
+5215	3	2	3	S. Gallo 11	S. Gallo 11
+5216	1	2	2	St-Gall 12	St-Gall 12
+5216	2	2	3	S. Gallo 12	S. Gallo 12
+5217	1	2	2	St-Gall 13	St-Gall 13
+5217	2	2	3	S. Gallo 13	S. Gallo 13
+5218	1	2	2	St-Gall 14	St-Gall 14
+5218	2	2	3	S. Gallo 14	S. Gallo 14
+5219	1	2	1	Winkeln	Winkeln
+5219	2	2	2	St-Gall 15	St-Gall 15
+5219	3	2	3	S. Gallo 15	S. Gallo 15
+5220	1	2	2	St-Gall 16	St-Gall 16
+5220	2	2	3	S. Gallo 16	S. Gallo 16
+5230	1	3	1	Bendlehn	Bendlehn
+5230	5	3	1	Rank	Rank
+5234	1	3	1	Hirschberg	Hirschberg
+5239	1	3	1	Schachen b. Gais	Schachen b. Gais
+5239	2	3	1	Stoss AR	Stoss AR
+5247	1	3	1	Wilen (Herisau)	Wilen (Herisau)
+5253	1	3	1	Wald SG	Wald b. St. Peterzell
+5255	1	3	1	Schwägalp	Schwägalp (Säntis)
+5255	2	3	1	Zürchersmühle	Zürchersmühle
+5265	1	3	1	Magdenau	Magdenau
+5269	1	3	1	Furth	Furth
+5273	2	3	1	Mettendorf SG	Mettendorf SG
+5278	1	3	1	Niederwil b. Waldk	Niederwil b. Waldkirch
+5280	1	3	1	Sorntal b.Hauptwil	Sorntal b. Hauptwil
+5286	1	3	1	Blidegg	Blidegg
+5293	1	3	1	Oberglatt SG	Oberglatt SG
+5293	4	3	1	Alterschwil SG	Alterschwil SG
+5293	5	3	1	Botsberg	Botsberg
+5293	6	3	1	Burgau	Burgau
+5302	2	3	1	Riggenschwil	Riggenschwil
+5306	1	3	1	Sorntal b. Ndbüren	Sorntal b. Niederbüren
+5322	1	3	1	Steineloh	Steineloh
+5335	1	2	1	Tobel AR	Tobel AR
+5336	1	3	1	Schwendi b. Heiden	Schwendi b. Heiden
+5337	3	3	1	Mohren	Mohren
+5338	1	3	1	St. Anton	St. Anton
+5340	1	3	1	Buechen b. Staad	Buechen b. Staad
+5358	1	3	1	Schmitter	Schmitter
+5365	1	3	1	Kobelwald	Kobelwald
+5374	4	3	1	Burgerau	Burgerau
+5374	6	2	1	Räfis	Räfis
+5382	1	3	1	Gasenzen	Gasenzen
+5391	1	3	1	Bendern	Bendern
+5400	1	3	1	Mäls	Mäls
+5409	2	3	1	Weingarten Märwil	Weingarten b. Märwil
+5411	1	3	1	Sonnenberg	Sonnenberg
+5415	1	3	1	Befang	Befang
+5415	2	3	1	Geftenau	Geftenau
+5415	3	3	1	Vorrüti	Vorrüti
+5416	1	3	1	Heiligkreuz TG	Heiligkreuz TG
+5416	4	3	1	Welfensberg	Welfensberg
+5420	2	3	1	Reuti	Reuti
+5423	1	3	1	Laupen SG	Laupen SG
+5425	1	3	1	Dietenwil	Dietenwil
+5428	2	3	1	Rupperswil SG	Rupperswil b. Kirchberg
+5428	3	3	1	Wolfikon SG	Wolfikon SG
+5428	4	3	1	Schalkhusen	Schalkhusen
+5428	5	3	1	Hof	Hof
+5433	1	3	1	Mörikon	Mörikon
+5435	1	3	1	Anetswil	Anetswil
+5435	2	3	1	Wilhof TG	Wilhof TG
+5435	4	3	1	Rosental	Rosental
+5435	5	3	1	Hunzikon	Hunzikon
+5435	6	3	1	Jakobstal	Jakobstal
+5435	7	3	1	Heiterschen	Heiterschen
+5435	8	3	1	Scheuer	Scheuer
+5436	1	3	1	Krillberg	Krillberg
+5437	2	3	1	Weiern	Weiern
+5438	2	3	1	Murkart	Murkart
+5438	5	3	1	Ristenbühl	Ristenbühl
+5438	6	3	1	Halingen	Halingen
+5454	2	3	1	Grämigen	Grämigen
+5460	1	3	1	Wiesen (Mosnang)	Wiesen (Mosnang)
+5464	1	3	1	Bunt	Bunt
+5464	2	3	1	Gurtberg	Gurtberg
+5464	3	3	1	Wasserfluh	Wasserfluh
+5466	3	3	1	Wigetshof	Wigetshof
+5469	1	3	1	Heiterswil	Heiterswil
+5469	3	3	1	Hummelwald	Hummelwald
+5469	4	3	1	Schönenberg SG	Schönenberg b. Wattwil
+5469	5	3	1	Bunt	Bunt
+5472	6	3	1	Wintersberg SG	Wintersberg SG
+5475	1	3	1	Dicken (Nesslau)	Dicken (Nesslau)
+5477	4	3	1	Rietbad	Rietbad
+5482	1	3	1	Starkenbach	Starkenbach
+5484	4	3	1	Oberdorf SG	Oberdorf SG
+5489	1	3	1	Berg FR	Berg FR
+5489	2	3	1	Fillistorf	Fillistorf
+5489	3	3	1	Lanthen	Lanthen
+5491	3	3	1	Beitenwil	Beitenwil
+5720	1	3	1	Geeren	Geeren
+5881	1	3	2	Sermuz	Sermuz
+5894	1	3	1	Gündlikon	Gündlikon
+5894	2	3	1	Zünikon	Zünikon
+5894	3	3	1	Liebensberg	Liebensberg
+5894	4	3	1	Sammelsgrüt	Sammelsgrüt
+5894	5	3	1	Meisberg	Meisberg
+5894	6	3	1	Stegen	Stegen
+5925	1	3	1	St. Niklaus b. Mer	St. Niklaus b. Merzligen
+5927	1	3	1	Kühlewil	Kühlewil
+5979	1	3	1	Veytaux-Chillon	Veytaux-Chillon
+5984	1	3	1	Isenbergschwil	Isenbergschwil
+6034	1	3	3	Ostarietta	Ostarietta
+6050	1	3	2	Moron (Malleray)	Moron (Malleray)
+6156	1	3	2	Montagne-de-Cernie	Montagne-de-Cernier
+6156	3	3	2	Tête-de-Ran	Tête-de-Ran
+6166	1	2	1	Freiburg 9	Freiburg 9
+6166	2	2	3	Friborgo 9	Friborgo 9
+6224	1	2	1	Genf 14	Genf 14
+6224	2	2	3	Ginevra 14	Ginevra 14
+6259	1	3	1	Kalchofen	Kalchofen b. Burgdorf
+6386	1	3	2	Les Masses	Les Masses
+6516	2	2	1	Genf 5 Off	Genf 5
+6516	3	2	3	Ginevra 5	Ginevra 5
+6554	1	2	1	Mehlsecken Reiden	Mehlsecken b. Reiden
+7244	8	3	1	Albis	Albis
+7423	1	2	2	Zurich 66	Zurich 66
+7423	2	2	3	Zurigo 66	Zurigo 66
+7564	1	2	2	Saint-Germain	Saint-Germain (Savièse)
+7569	1	2	2	Saint-Romain	Saint-Romain (Ayant)
+7823	1	2	1	Biel BE 10	Biel BE 10
+7823	2	2	2	Bienne 10	Bienne 10
+7981	1	2	2	Berne 7	Berne 7
+7981	2	2	3	Berna 7	Berna 7
+8006	1	2	2	COT	Centrale des objets trouvés
+8006	2	2	3	COT	COT
