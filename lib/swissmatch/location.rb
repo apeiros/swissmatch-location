@@ -13,6 +13,8 @@ require 'swissmatch/location/version'
 require 'swissmatch/zipcode'
 require 'swissmatch/zipcodes'
 
+
+
 # SwissMatch
 # Deal with swiss zip codes, cities, communities and cantons.
 #
