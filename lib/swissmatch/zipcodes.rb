@@ -19,6 +19,8 @@ module SwissMatch
       reset!
     end
 
+    # @private
+    # Reinitialize all caching instance variables
     def reset!
       @by_ordering_number = nil
       @by_code            = nil
@@ -30,6 +32,14 @@ module SwissMatch
       self
     end
 
+    # Replace the contents of this SwissMatch::ZipCodes collection
+    #
+    # @param [Array<ZipCode>, SwissMatch::ZipCodes] other
+    #   The data to replace this SwissMatch::ZipCodes collection with
+    # @param [Boolean] reset
+    #   Whether caching values should be reset (only set this to false if you know what you do)
+    #
+    # @return [self]
     def replace(other, reset=true)
       case other
         when SwissMatch::ZipCodes
@@ -44,14 +54,56 @@ module SwissMatch
       self
     end
 
-    def [](key)
+    # A convenience method to get one or many zip codes by code, code and add-on, code and city or just
+    # city.
+    # There are various allowed styles to pass those values.
+    # All numeric values can be passed either as Integer or String.
+    # You can pass the code and add-on as six-digit number, or you can pass the code
+    # as four digit number plus either the add-on or name as second parameter. Or you can
+    # pass the code alone, or the name alone.
+    #
+    # @example All usage styles
+    #   zip_codes[805200]           # zip code 8052, add-on 0
+    #   zip_codes["805200"]         # zip code 8052, add-on 0
+    #   zip_codes[8052, 0]          # zip code 8052, add-on 0
+    #   zip_codes["8052", 0]        # zip code 8052, add-on 0
+    #   zip_codes[8052, "0"]        # zip code 8052, add-on 0
+    #   zip_codes["8052", 0]        # zip code 8052, add-on 0
+    #   zip_codes[8052, "Zürich"]   # zip code 8052, add-on 0
+    #   zip_codes["8052", "Zürich"] # zip code 8052, add-on 0
+    #   zip_codes[8052]             # all zip codes with code 8052
+    #   zip_codes["8052"]           # all zip codes with code 8052
+    #   zip_codes["Zürich"]         # all zip codes with name "Zürich"
+    #
+    # @see #by_code_and_add_on  Get a zip code by code and add-on directly
+    # @see #by_code_and_name    Get a zip code by code and name directly
+    # @see #by_name             Get a collection of zip codes by name directly
+    # @see #by_ordering_number  Get a zip code by its ONRP directly (#[] can't do that)
+    #
+    # @param [String, Integer] key
+    #   Either the zip code, zip code and add-on
+    # @return [SwissMatch::ZipCode, SwissMatch::ZipCodes]
+    #   Either a SwissMatch::ZipCodes collection of zip codes or a single SwissMatch::ZipCode, depending on
+    #   the argument you pass.
+    def [](key, add_on=nil)
       case key
         when /\A(\d{4})(\d\d)\z/
           by_code_and_add_on($1.to_i, $2.to_i)
         when 100_000..999_999
           by_code_and_add_on(*key.divmod(100))
         when 0..9999, /\A\d{4}\z/
-          by_code(key.to_i)
+          case add_on
+            when nil
+              by_code(key.to_i)
+            when 0..99, /\A\d+\z/
+              by_code_and_add_on(key.to_i, add_on.to_i)
+            when String
+              by_code_and_name(key.to_i, add_on)
+            else
+              raise ArgumentError,
+                    "Expected a String, an Integer between 0 and 99, or a String containing an integer between 0 and 99, " \
+                    "but got #{key.class}: #{key.inspect}"
+          end
         when String
           by_name(key)
         else
@@ -88,14 +140,22 @@ module SwissMatch
       self
     end
 
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection with zip codes that are currently active/in use.
     def active(date=Date.today, &block)
       ZipCodes.new(@zip_codes.select { |zip_code| zip_code.in_use?(date) })
     end
 
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection with zip codes that are currently inactive/not in use.
+    #   A zip code is not in use if it has been either retired or is only recorded for future use.
     def inactive(date=Date.today, &block)
       ZipCodes.new(@zip_codes.reject { |zip_code| zip_code.in_use?(date) })
     end
 
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection with zip codes having names that match
+    #   the given string (prefix search on all languages)
     def autocomplete(string)
       return ZipCodes.new([]) if string.empty? # shortcut
 
@@ -113,10 +173,14 @@ module SwissMatch
       with_type(10, 20)
     end
 
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection consisting only of zip codes having the given type(s).
     def with_type(*types)
       ZipCodes.new(@zip_codes.select { |zip_code| types.include?(zip_code.type) })
     end
 
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection consisting only of zip codes not having the given type(s).
     def without_type(*types)
       ZipCodes.new(@zip_codes.reject { |zip_code| types.include?(zip_code.type) })
     end
@@ -172,6 +236,11 @@ module SwissMatch
     #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects in this SwissMatch::ZipCodes.
     def to_a
       @zip_codes.dup
+    end
+
+    # @private
+    def inspect
+      sprintf "\#<%s:%x size: %d>", self.class, object_id>>1, size
     end
   end
 end
