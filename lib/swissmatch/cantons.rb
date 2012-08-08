@@ -53,6 +53,36 @@ module SwissMatch
       self
     end
 
+    # @return [SwissMatch::Cantons]
+    #   A SwissMatch::Cantons collection with all SwissMatch::Canton objects for which the block
+    #   returned true (or a trueish value)
+    def select(*args, &block)
+      Cantons.new(@cantons.select(*args, &block))
+    end
+
+    # @return [SwissMatch::Cantons]
+    #   A SwissMatch::Cantons collection with all SwissMatch::Canton objects for which the block
+    #   returned false (or a falseish value)
+    def reject(*args, &block)
+      Cantons.new(@cantons.reject(*args, &block))
+    end
+
+    # @see Enumerable#sort
+    #
+    # @return [SwissMatch::Cantons]
+    #   A SwissMatch::Cantons collection sorted by the block
+    def sort(*args, &block)
+      Cantons.new(@cantons.sort(*args, &block))
+    end
+
+    # @see Enumerable#sort_by
+    #
+    # @return [SwissMatch::Cantons]
+    #   A SwissMatch::Cantons collection sorted by the block
+    def sort_by(*args, &block)
+      Cantons.new(@cantons.sort_by(*args, &block))
+    end
+
     # @return [SwissMatch::Canton]
     #   The canton with the given license tag or name (in any language)
     def [](key)
@@ -69,20 +99,6 @@ module SwissMatch
     #   The canton with the given name (any language)
     def by_name(name)
       @by_name[name]
-    end
-
-    # @return [SwissMatch::Cantons]
-    #   A SwissMatch::Cantons collection with all SwissMatch::Canton objects for which the block
-    #   returned true (or a trueish value)
-    def select(*args, &block)
-      Cantons.new(@cantons.select(*args, &block))
-    end
-
-    # @return [SwissMatch::Cantons]
-    #   A SwissMatch::Cantons collection with all SwissMatch::Canton objects for which the block
-    #   returned false (or a falseish value)
-    def reject(*args, &block)
-      Cantons.new(@cantons.reject(*args, &block))
     end
 
     # @return [Integer] The number of SwissMatch::Canton objects in this collection.

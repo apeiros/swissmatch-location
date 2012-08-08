@@ -32,28 +32,6 @@ module SwissMatch
       self
     end
 
-    # Replace the contents of this SwissMatch::ZipCodes collection
-    #
-    # @param [Array<ZipCode>, SwissMatch::ZipCodes] other
-    #   The data to replace this SwissMatch::ZipCodes collection with
-    # @param [Boolean] reset
-    #   Whether caching values should be reset (only set this to false if you know what you do)
-    #
-    # @return [self]
-    def replace(other, reset=true)
-      case other
-        when SwissMatch::ZipCodes
-          @zip_codes.replace(other.instance_variable_get(:@zip_codes))
-        when Array
-          @zip_codes.replace(other)
-        else
-          raise ArgumentError, "Expected an array or a SwissMatch::ZipCodes, but got #{other.class}"
-      end
-      reset! if reset
-
-      self
-    end
-
     # A convenience method to get one or many zip codes by code, code and add-on, code and city or just
     # city.
     # There are various allowed styles to pass those values.
@@ -141,6 +119,36 @@ module SwissMatch
     end
 
     # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects for which the block
+    #   returned true (or a trueish value)
+    def select(*args, &block)
+      ZipCodes.new(@zip_codes.select(*args, &block))
+    end
+
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects for which the block
+    #   returned false (or a falseish value)
+    def reject(*args, &block)
+      ZipCodes.new(@zip_codes.reject(*args, &block))
+    end
+
+    # @see Enumerable#sort
+    #
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection sorted by the block.
+    def sort(*args, &block)
+      ZipCodes.new(@zip_codes.sort(*args, &block))
+    end
+
+    # @see Enumerable#sort_by
+    #
+    # @return [SwissMatch::ZipCodes]
+    #   A SwissMatch::ZipCodes collection sorted by the block.
+    def sort_by(*args, &block)
+      ZipCodes.new(@zip_codes.sort_by(*args, &block))
+    end
+
+    # @return [SwissMatch::ZipCodes]
     #   A SwissMatch::ZipCodes collection with zip codes that are currently active/in use.
     def active(date=Date.today, &block)
       select { |zip_code| zip_code.in_use?(date) }
@@ -225,20 +233,6 @@ module SwissMatch
         end
       }
       ZipCodes.new(@by_name[name] || [])
-    end
-
-    # @return [SwissMatch::ZipCodes]
-    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects for which the block
-    #   returned true (or a trueish value)
-    def select(*args, &block)
-      ZipCodes.new(@zip_codes.select(*args, &block))
-    end
-
-    # @return [SwissMatch::ZipCodes]
-    #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects for which the block
-    #   returned false (or a falseish value)
-    def reject(*args, &block)
-      ZipCodes.new(@zip_codes.reject(*args, &block))
     end
 
     # @return [Integer] The number of SwissMatch::ZipCode objects in this collection.

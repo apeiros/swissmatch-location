@@ -12,16 +12,24 @@ module SwissMatch
     # @param [Array<SwissMatch::Community>] communities
     #   The SwissMatch::Community objects this SwissMatch::Communities should contain
     def initialize(communities)
-      @all                  = communities
-      @by_community_number  = Hash[communities.map { |c| [c.community_number, c] }]
+      @communities          = communities
+      reset!
+    end
+
+    # @private
+    # Reinitialize all caching instance variables
+    def reset!
+      @by_community_number  = Hash[@communities.map { |c| [c.community_number, c] }]
       @by_name              = {}
-      communities.each do |community|
+      @communities.each do |community|
         @by_name[community.name.to_s] = community
       end
 
-      unless communities.size == @by_name.size
+      unless @communities.size == @by_name.size
         raise "ImplementationError: The author assumed communities to have a unique name, which doesn't seem to be the case anymore"
       end
+
+      self
     end
 
     # Calls the block once for every SwissMatch::Community in this SwissMatch::Communities
@@ -33,7 +41,7 @@ module SwissMatch
     #
     # @return [self] Returns self
     def each(&block)
-      @all.each(&block)
+      @communities.each(&block)
       self
     end
 
@@ -46,8 +54,38 @@ module SwissMatch
     #
     # @return [self] Returns self
     def reverse_each(&block)
-      @all.reverse_each(&block)
+      @communities.reverse_each(&block)
       self
+    end
+
+    # @return [SwissMatch::Communities]
+    #   A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+    #   returned true (or a trueish value)
+    def select(*args, &block)
+      Communities.new(@communities.select(*args, &block))
+    end
+
+    # @return [SwissMatch::Communities]
+    #   A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+    #   returned false (or a falseish value)
+    def reject(*args, &block)
+      Communities.new(@communities.reject(*args, &block))
+    end
+
+    # @see Enumerable#sort
+    #
+    # @return [SwissMatch::Communities]
+    #   A SwissMatch::Communities collection sorted by the block
+    def sort(*args, &block)
+      Communities.new(@communities.sort(*args, &block))
+    end
+
+    # @see Enumerable#sort_by
+    #
+    # @return [SwissMatch::Communities]
+    #   A SwissMatch::Communities collection sorted by the block
+    def sort_by(*args, &block)
+      Communities.new(@communities.sort_by(*args, &block))
     end
 
     # @return [SwissMatch::Community]
@@ -68,29 +106,15 @@ module SwissMatch
       @by_name[name]
     end
 
-    # @return [SwissMatch::Communities]
-    #   A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
-    #   returned true (or a trueish value)
-    def select(*args, &block)
-      Communities.new(@all.select(*args, &block))
-    end
-
-    # @return [SwissMatch::Communities]
-    #   A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
-    #   returned false (or a falseish value)
-    def reject(*args, &block)
-      Communities.new(@all.reject(*args, &block))
-    end
-
     # @return [Integer] The number of SwissMatch::Community objects in this collection.
     def size
-      @all.size
+      @communities.size
     end
 
     # @return [Array<SwissMatch::Community>]
     #   An Array with all SwissMatch::Community objects in this SwissMatch::Communities.
     def to_a
-      @all.dup
+      @communities.dup
     end
 
     # @private
