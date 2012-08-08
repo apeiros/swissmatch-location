@@ -70,11 +70,13 @@ database.</p>
 
 <h2>Installation</h2>
 
-<p><code>gem install swissmatch-location</code></p>
+<p>Install the gem: <code>gem install swissmatch-location</code><br>
+Depending on how you installed rubygems, you have to use <code>sudo</code>:
+<code>sudo gem install swissmatch-location</code><br>
+In Ruby: <code>require &#39;swissmatch/location&#39;</code><br>
+To automatically load the datafiles: <code>require &#39;swissmatch/location/autoload&#39;</code></p>
 
 <h2>Usage</h2>
-
-<h3>Example usage</h3>
 
 <pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>swissmatch/location/autoload</span><span class='tstring_end'>'</span></span> <span class='comment'># use this to automatically load the data
 </span>
@@ -103,24 +105,57 @@ database.</p>
 </span><span class='const'>SwissMatch</span><span class='period'>.</span><span class='id identifier rubyid_community'>community</span><span class='lparen'>(</span><span class='int'>261</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>                          <span class='comment'># =&gt; &quot;Zürich&quot;
 </span></code></pre>
 
-<h3>SwissMatch and Databases</h3>
+<h2>SwissMatch and Rails/Databases</h2>
 
-<p>If you want to load the data into your database, you should look at swissmatch-rails.
-It provides a couple of models and a data loading script.</p>
+<p>If you want to load the data into your database, or use it in a rails project,
+then you should look at swissmatch-rails. It provides a couple of models and
+a data loading script.</p>
 
-<h2>Description</h2>
+<h2>Relevant Classes and Modules</h2>
 
-<p>Deal with swiss zip codes, cantons and communities.</p>
+<ul>
+<li><strong><span class='object_link'><a href="SwissMatch.html" title="SwissMatch (module)">SwissMatch</a></span></strong>
+Convenience methods to access cantons, communities and zip codes</li>
+<li><strong><span class='object_link'><a href="SwissMatch/Cantons.html" title="SwissMatch::Cantons (class)">SwissMatch::Cantons</a></span></strong>
+Swiss canton collection</li>
+<li><strong><span class='object_link'><a href="SwissMatch/Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></strong>
+A swiss canton</li>
+<li><strong><span class='object_link'><a href="SwissMatch/Communities.html" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></strong>
+Swiss communities collection</li>
+<li><strong><span class='object_link'><a href="SwissMatch/Canton.html" title="SwissMatch::Canton (class)">SwissMatch::Canton</a></span></strong>
+A swiss community</li>
+<li><strong><span class='object_link'><a href="SwissMatch/ZipCodes.html" title="SwissMatch::ZipCodes (class)">SwissMatch::ZipCodes</a></span></strong>
+Swiss zip code collection</li>
+<li><strong><span class='object_link'><a href="SwissMatch/ZipCode.html" title="SwissMatch::ZipCode (class)">SwissMatch::ZipCode</a></span></strong>
+A swiss zip code (a zip code can be described and uniquely identified by either code and city, code and add-on or the swiss posts ONRP)</li>
+</ul>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href="https://github.com/apeiros/swissmatch">Main Project</a></li>
+<li><a href="http://rdoc.info/github/apeiros/swissmatch-location/">Online API Documentation</a></li>
+<li><a href="https://github.com/apeiros/swissmatch-location">Public Repository</a></li>
+<li><a href="https://github.com/apeiros/swissmatch-location/issues">Bug Reporting</a></li>
+<li><a href="https://rubygems.org/gems/swissmatch-location">RubyGems Site</a></li>
+<li><a href="http://www.post.ch/match">Swiss Posts MAT[CH]</a></li>
+</ul>
+
+<h2>License</h2>
+
+<p>You can use this code under the <a href="file.LICENSE.html" title="BSD-2-Clause License">BSD-2-Clause License</a>, free of charge.
+If you need a different license, please ask the author.</p>
 
 <h2>Credits</h2>
 
 <ul>
-<li><a href="http://www.awd.ch/">AWD Switzerland</a>, for donating time to work on this gem.</li>
+<li><a href="https://github.com/huerlisi">Simon Hürlimann</a> for contributions</li>
+<li><a href="http://www.awd.ch/">AWD Switzerland</a> for donating time to work on this gem.</li>
 </ul>
 </div></div>
 
     <div id="footer">
-  Generated on Wed Aug  8 00:53:24 2012 by
+  Generated on Wed Aug  8 14:07:13 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
