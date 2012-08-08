@@ -253,8 +253,8 @@ module SwissMatch
         delivery_by           = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
         language              = LanguageCodes[row.at(7).to_i]
         language_alternative  = LanguageCodes[row.at(8).to_i]
-        name                  = Name.new(row.at(4), language)
-        name_short            = Name.new(row.at(5), language)
+        name_short            = Name.new(row.at(4), language)
+        name                  = Name.new(row.at(5), language)
         data                  = [
           onrp,                              # ordering_number
           row.at(1).to_i,                    # type
