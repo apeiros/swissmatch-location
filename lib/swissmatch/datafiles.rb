@@ -264,6 +264,8 @@ module SwissMatch
           [name],                            # names (official + alternative)
           name_short,                        # name_short (official)
           [name_short],                      # names_short (official + alternative)
+          [],                                # PLZ2 type 3 short names (additional region names)
+          [],                                # PLZ2 type 3 names (additional region names)
           cantons.by_license_tag(row.at(6)), # canton
           language,
           language_alternative,
@@ -281,26 +283,30 @@ module SwissMatch
       end
 
       load_table(zip2_file, :zip_2).each do |onrp, rn, type, lang, short, name|
-        next unless type == "2"
         onrp      = onrp.to_i
         lang_code = lang.to_i
         language  = LanguageCodes[lang_code]
         entry     = temporary[onrp]
-        entry[5] << Name.new(name, language, rn.to_i)
-        entry[7] << Name.new(short, language, rn.to_i)
+        if type == "2"
+          entry[5] << Name.new(name, language, rn.to_i)
+          entry[7] << Name.new(short, language, rn.to_i)
+        elsif type == "3"
+          entry[8] << Name.new(name, language, rn.to_i)
+          entry[9] << Name.new(short, language, rn.to_i)
+        end
       end
 
       self_delivered.each do |row|
         temporary[row.at(0)] = ZipCode.new(*row)
       end
       others.each do |row|
-        if row.at(12) then
-          raise "Delivery not found:\n#{row.inspect}" unless tmp = temporary[row.at(12)]
+        if row.at(14) then
+          raise "Delivery not found:\n#{row.inspect}" unless tmp = temporary[row.at(14)]
           if tmp.kind_of?(Array) then
-            @errors << LoadError.new("Invalid reference: onrp #{row.at(0)} delivery by #{row.at(12)}", row)
-            row[12] = nil
+            @errors << LoadError.new("Invalid reference: onrp #{row.at(0)} delivery by #{row.at(14)}", row)
+            row[14] = nil
           else
-            row[12] = tmp
+            row[14] = tmp
           end
         end
         temporary[row.at(0)] = ZipCode.new(*row)

@@ -98,6 +98,8 @@ module SwissMatch
       names,
       name_short,
       names_short,
+      region_names,
+      region_names_short,
       canton,
       language,
       language_alternative,
@@ -118,6 +120,8 @@ module SwissMatch
       @name_short           = name_short.is_a?(Name) ? name_short : Name.new(name_short, language)
       @names                = (names || [@name]).sort_by(&:sequence_number)
       @names_short          = (names_short || [@name_short]).sort_by(&:sequence_number)
+      @region_names         = region_names
+      @region_names_short   = region_names_short
       @canton               = canton
       @sortfile_member      = sortfile_member
       @delivery_by          = delivery_by == :self ? self : delivery_by
@@ -189,6 +193,32 @@ module SwissMatch
     #   All official short names (max. 18 chars) of this zip code.
     def names_short(language=nil)
       language ? @names_short.select { |name| name.language == language } : @names_short
+    end
+
+    # A region name is a name that can be used along a zip code and city, but must not replace
+    # the city. For more information, read the section about the PLZ_P2 file, "Bezeichnungstyp"
+    # with value "3".
+    #
+    # @param [Symbol, nil] language
+    #   One of nil, :de, :fr, :it or :rt
+    #
+    # @return [Array<SwissMatch::Name>]
+    #   All official region names (max. 27 chars) of this zip code.
+    def region_names(language=nil)
+      language ? @region_names.select { |name| name.language == language } : @region_names
+    end
+
+    # A region name is a name that can be used along a zip code and city, but must not replace
+    # the city. For more information, read the section about the PLZ_P2 file, "Bezeichnungstyp"
+    # with value "3".
+    #
+    # @param [Symbol, nil] language
+    #   One of nil, :de, :fr, :it or :rt
+    #
+    # @return [Array<SwissMatch::Name>]
+    #   All official short region names (max. 18 chars) of this zip code.
+    def region_names_short(language=nil)
+      language ? @region_names_short.select { |name| name.language == language } : @region_names_short
     end
 
     # Compare two zip codes by their ordering number (ONRP)
