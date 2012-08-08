@@ -14,7 +14,14 @@ module SwissMatch
     def initialize(communities)
       @all                  = communities
       @by_community_number  = Hash[communities.map { |c| [c.community_number, c] }]
-      @by_name              = communities.group_by(&:name)
+      @by_name              = {}
+      communities.each do |community|
+        @by_name[community.name.to_s] = community
+      end
+
+      unless communities.size == @by_name.size
+        raise "ImplementationError: The author assumed communities to have a unique name, which doesn't seem to be the case anymore"
+      end
     end
 
     # Calls the block once for every SwissMatch::Community in this SwissMatch::Communities
@@ -43,7 +50,7 @@ module SwissMatch
       self
     end
 
-    # @return [Array<SwissMatch::Community>, SwissMatch::Community]
+    # @return [SwissMatch::Community]
     #   The community with the given name or community number.
     def [](key)
       @by_name[key] || @by_community_number[key.to_i]
@@ -55,7 +62,7 @@ module SwissMatch
       @by_community_number[number]
     end
 
-    # @return [Array<SwissMatch::Community>]
+    # @return [SwissMatch::Community]
     #   The community with the given name.
     def by_name(name)
       @by_name[name]
