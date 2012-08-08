@@ -15,20 +15,22 @@ require 'swissmatch/zipcodes'
 
 
 
-# SwissMatch
+# From SwissMatch::Location
 # Deal with swiss zip codes, cities, communities and cantons.
 #
-# Notice that all strings passed to SwissMatch are expected to be utf-8. All strings
-# returned by SwissMatch are also in utf-8.
+# @note
+#   All strings passed to SwissMatch are expected to be utf-8. All strings
+#   returned by SwissMatch are also in utf-8.
 #
 # @example Load the data
 #     require 'swissmatch'
 #     SwissMatch.load
-#     # alternatively, just require 'swissmatch/autoload'
+#     # alternatively, just require 'swissmatch/location/autoload'
 #
 # @example Get the ONRP for a given zip-code + city
-#     require 'swissmatch/autoload'
-#     SwissMatch.zip_code(8000, 'Zürich').ordering_number # => 
+#     require 'swissmatch/location/autoload'
+#     SwissMatch.zip_code(8000, 'Zürich').ordering_number # => 4384
+#     SwissMatch.zip_code(4384).name # => "Zürich"(de, 0)
 module SwissMatch
 
   # This module only contains the version of the swissmatch-location gem
