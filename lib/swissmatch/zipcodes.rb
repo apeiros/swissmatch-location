@@ -241,26 +241,6 @@ module SwissMatch
       ZipCodes.new(@zip_codes.reject(*args, &block))
     end
 
-    # @return [self]
-    #   Removes all zip codes from the collection for which the block did not return a true (or 
-    #   a trueish value)
-    def select!(*args, &block)
-      @zip_codes.select!(*args, &block)
-      reset!
-
-      self
-    end
-
-    # @return [self]
-    #   Removes all zip codes from the collection for which the block did not return a false (or 
-    #   a falseish value)
-    def reject!(*args, &block)
-      @zip_codes.reject!(*args, &block)
-      reset!
-
-      self
-    end
-
     # @return [Integer] The number of SwissMatch::ZipCode objects in this collection.
     def size
       @zip_codes.size
