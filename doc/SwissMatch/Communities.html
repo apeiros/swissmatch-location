@@ -132,7 +132,7 @@ interface.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#%5B%5D-instance_method" title="#[] (instance method)">- (Array&lt;SwissMatch::Community&gt;, SwissMatch::Community) <strong>[]</strong>(key) </a>
+      <a href="#%5B%5D-instance_method" title="#[] (instance method)">- (SwissMatch::Community) <strong>[]</strong>(key) </a>
     
 
     
@@ -178,7 +178,7 @@ interface.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#by_name-instance_method" title="#by_name (instance method)">- (Array&lt;SwissMatch::Community&gt;) <strong>by_name</strong>(name) </a>
+      <a href="#by_name-instance_method" title="#by_name (instance method)">- (SwissMatch::Community) <strong>by_name</strong>(name) </a>
     
 
     
@@ -272,6 +272,53 @@ instance, passing that community as a parameter.</p>
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#reject-instance_method" title="#reject (instance method)">- (SwissMatch::Communities) <strong>reject</strong>(*args, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+returned false (or a falseish value).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reset%21-instance_method" title="#reset! (instance method)">- (Object) <strong>reset!</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Reinitialize all caching instance variables.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#reverse_each-instance_method" title="#reverse_each (instance method)">- (self) <strong>reverse_each</strong> {|community| ... }</a>
     
 
@@ -296,6 +343,30 @@ instance, passing that community as a parameter.</p>
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#select-instance_method" title="#select (instance method)">- (SwissMatch::Communities) <strong>select</strong>(*args, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+returned true (or a trueish value).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#size-instance_method" title="#size (instance method)">- (Integer) <strong>size</strong> </a>
     
 
@@ -311,6 +382,52 @@ instance, passing that community as a parameter.</p>
 
   
     <span class="summary_desc"><div class='inline'><p>The number of SwissMatch::Community objects in this collection.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sort-instance_method" title="#sort (instance method)">- (SwissMatch::Communities) <strong>sort</strong>(*args, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A SwissMatch::Communities collection sorted by the block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sort_by-instance_method" title="#sort_by (instance method)">- (SwissMatch::Communities) <strong>sort_by</strong>(*args, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A SwissMatch::Communities collection sorted by the block.</p>
 </div></span>
   
 </li>
@@ -403,16 +520,14 @@ instance, passing that community as a parameter.</p>
 14
 15
 16
-17
-18</pre>
+17</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 14</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_communities'>communities</span><span class='rparen'>)</span>
-  <span class='ivar'>@all</span>                  <span class='op'>=</span> <span class='id identifier rubyid_communities'>communities</span>
-  <span class='ivar'>@by_community_number</span>  <span class='op'>=</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='id identifier rubyid_communities'>communities</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span> <span class='lbracket'>[</span><span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span class='id identifier rubyid_community_number'>community_number</span><span class='comma'>,</span> <span class='id identifier rubyid_c'>c</span><span class='rbracket'>]</span> <span class='rbrace'>}</span><span class='rbracket'>]</span>
-  <span class='ivar'>@by_name</span>              <span class='op'>=</span> <span class='id identifier rubyid_communities'>communities</span><span class='period'>.</span><span class='id identifier rubyid_group_by'>group_by</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+  <span class='ivar'>@communities</span>          <span class='op'>=</span> <span class='id identifier rubyid_communities'>communities</span>
+  <span class='id identifier rubyid_reset!'>reset!</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -429,7 +544,7 @@ instance, passing that community as a parameter.</p>
       <div class="method_details first">
   <h3 class="signature first" id="[]-instance_method">
   
-    - (<tt>Array&lt;<span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span>&gt;</tt>, <tt><span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>) <strong>[]</strong>(key) 
+    - (<tt><span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>) <strong>[]</strong>(key) 
   
 
   
@@ -450,7 +565,7 @@ instance, passing that community as a parameter.</p>
     <li>
       
       
-        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span>&gt;</tt>, <tt><span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>)</span>
       
       
       
@@ -468,12 +583,12 @@ instance, passing that community as a parameter.</p>
       <pre class="lines">
 
 
-48
-49
-50</pre>
+93
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
   <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id identifier rubyid_key'>key</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='ivar'>@by_community_number</span><span class='lbracket'>[</span><span class='id identifier rubyid_key'>key</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rbracket'>]</span>
@@ -525,12 +640,12 @@ instance, passing that community as a parameter.</p>
       <pre class="lines">
 
 
-54
-55
-56</pre>
+99
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 99</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_by_community_number'>by_community_number</span><span class='lparen'>(</span><span class='id identifier rubyid_number'>number</span><span class='rparen'>)</span>
   <span class='ivar'>@by_community_number</span><span class='lbracket'>[</span><span class='id identifier rubyid_number'>number</span><span class='rbracket'>]</span>
@@ -543,7 +658,7 @@ instance, passing that community as a parameter.</p>
       <div class="method_details ">
   <h3 class="signature " id="by_name-instance_method">
   
-    - (<tt>Array&lt;<span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span>&gt;</tt>) <strong>by_name</strong>(name) 
+    - (<tt><span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>) <strong>by_name</strong>(name) 
   
 
   
@@ -564,7 +679,7 @@ instance, passing that community as a parameter.</p>
     <li>
       
       
-        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span>&gt;</tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="Community.html" title="SwissMatch::Community (class)">SwissMatch::Community</a></span></tt>)</span>
       
       
       
@@ -582,12 +697,12 @@ instance, passing that community as a parameter.</p>
       <pre class="lines">
 
 
-60
-61
-62</pre>
+105
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 60</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 105</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_by_name'>by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span>
@@ -669,16 +784,16 @@ The order is the same as the instance was constructed.</p>
       <pre class="lines">
 
 
-28
-29
-30
-31</pre>
+43
+44
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 28</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
-  <span class='ivar'>@all</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -717,15 +832,134 @@ The order is the same as the instance was constructed.</p>
       <pre class="lines">
 
 
-77
-78
-79</pre>
+122
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inspect'>inspect</span>
   <span class='id identifier rubyid_sprintf'>sprintf</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\#&lt;%s:%x size: %d&gt;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='id identifier rubyid_object_id'>object_id</span><span class='op'>&gt;&gt;</span><span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_size'>size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reject-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>) <strong>reject</strong>(*args, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+returned false (or a falseish value)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+returned false (or a falseish value)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reject'>reject</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='const'>Communities</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_reject'>reject</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reset!-instance_method">
+  
+    - (<tt>Object</tt>) <strong>reset!</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Reinitialize all caching instance variables</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reset!'>reset!</span>
+  <span class='ivar'>@by_community_number</span>  <span class='op'>=</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span> <span class='lbracket'>[</span><span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span class='id identifier rubyid_community_number'>community_number</span><span class='comma'>,</span> <span class='id identifier rubyid_c'>c</span><span class='rbracket'>]</span> <span class='rbrace'>}</span><span class='rbracket'>]</span>
+  <span class='ivar'>@by_name</span>              <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_community'>community</span><span class='op'>|</span>
+    <span class='ivar'>@by_name</span><span class='lbracket'>[</span><span class='id identifier rubyid_community'>community</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_community'>community</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>unless</span> <span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>==</span> <span class='ivar'>@by_name</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ImplementationError: The author assumed communities to have a unique name, which doesn't seem to be the case anymore</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -804,17 +1038,76 @@ The order is the reverse of what the instance was constructed.</p>
       <pre class="lines">
 
 
-41
-42
-43
-44</pre>
+56
+57
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
-  <span class='ivar'>@all</span><span class='period'>.</span><span class='id identifier rubyid_reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_reverse_each'>reverse_each</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="select-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>) <strong>select</strong>(*args, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+returned true (or a trueish value)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+returned true (or a trueish value)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='const'>Communities</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -863,15 +1156,143 @@ The order is the reverse of what the instance was constructed.</p>
       <pre class="lines">
 
 
-65
-66
-67</pre>
+110
+111
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 110</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_size'>size</span>
-  <span class='ivar'>@all</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+  <span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sort-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>) <strong>sort</strong>(*args, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A SwissMatch::Communities collection sorted by the block</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>A SwissMatch::Communities collection sorted by the block</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Enumerable#sort</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sort'>sort</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='const'>Communities</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_sort'>sort</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sort_by-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>) <strong>sort_by</strong>(*args, &amp;block) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A SwissMatch::Communities collection sorted by the block</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="SwissMatch::Communities (class)">SwissMatch::Communities</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>A SwissMatch::Communities collection sorted by the block</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>Enumerable#sort_by</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sort_by'>sort_by</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='const'>Communities</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_sort_by'>sort_by</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -920,15 +1341,15 @@ The order is the reverse of what the instance was constructed.</p>
       <pre class="lines">
 
 
-71
-72
-73</pre>
+116
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/communities.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_a'>to_a</span>
-  <span class='ivar'>@all</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span>
+  <span class='ivar'>@communities</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -940,7 +1361,7 @@ The order is the reverse of what the instance was constructed.</p>
 </div>
 
     <div id="footer">
-  Generated on Wed Aug  8 14:07:14 2012 by
+  Generated on Wed Aug  8 23:56:18 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>

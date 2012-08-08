@@ -652,7 +652,7 @@ digits the add-on).</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">- (ZipCode) <strong>initialize</strong>(ordering_number, type, code, add_on, name, names, name_short, names_short, canton, language, language_alternative, sortfile_member, delivery_by, community, valid_from, valid_until = nil) </a>
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (ZipCode) <strong>initialize</strong>(ordering_number, type, code, add_on, name, names, name_short, names_short, region_names, region_names_short, canton, language, language_alternative, sortfile_member, delivery_by, community, valid_from, valid_until = nil) </a>
     
 
     
@@ -737,6 +737,54 @@ digits the add-on).</p>
 
   
     <span class="summary_desc"><div class='inline'><p>All official short names (max. 18 chars) of this zip code.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#region_names-instance_method" title="#region_names (instance method)">- (Array&lt;SwissMatch::Name&gt;) <strong>region_names</strong>(language = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A region name is a name that can be used along a zip code and city, but must not replace
+the city.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#region_names_short-instance_method" title="#region_names_short (instance method)">- (Array&lt;SwissMatch::Name&gt;) <strong>region_names_short</strong>(language = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>A region name is a name that can be used along a zip code and city, but must not replace
+the city.</p>
 </div></span>
   
 </li>
@@ -870,7 +918,7 @@ automatically provide well localized addresses.</p>
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    - (<tt><span class='object_link'><a href="" title="SwissMatch::ZipCode (class)">ZipCode</a></span></tt>) <strong>initialize</strong>(ordering_number, type, code, add_on, name, names, name_short, names_short, canton, language, language_alternative, sortfile_member, delivery_by, community, valid_from, valid_until = nil) 
+    - (<tt><span class='object_link'><a href="" title="SwissMatch::ZipCode (class)">ZipCode</a></span></tt>) <strong>initialize</strong>(ordering_number, type, code, add_on, name, names, name_short, names_short, region_names, region_names_short, canton, language, language_alternative, sortfile_member, delivery_by, community, valid_from, valid_until = nil) 
   
 
   
@@ -927,7 +975,11 @@ automatically provide well localized addresses.</p>
 124
 125
 126
-127</pre>
+127
+128
+129
+130
+131</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 92</span>
@@ -941,6 +993,8 @@ automatically provide well localized addresses.</p>
   <span class='id identifier rubyid_names'>names</span><span class='comma'>,</span>
   <span class='id identifier rubyid_name_short'>name_short</span><span class='comma'>,</span>
   <span class='id identifier rubyid_names_short'>names_short</span><span class='comma'>,</span>
+  <span class='id identifier rubyid_region_names'>region_names</span><span class='comma'>,</span>
+  <span class='id identifier rubyid_region_names_short'>region_names_short</span><span class='comma'>,</span>
   <span class='id identifier rubyid_canton'>canton</span><span class='comma'>,</span>
   <span class='id identifier rubyid_language'>language</span><span class='comma'>,</span>
   <span class='id identifier rubyid_language_alternative'>language_alternative</span><span class='comma'>,</span>
@@ -961,6 +1015,8 @@ automatically provide well localized addresses.</p>
   <span class='ivar'>@name_short</span>           <span class='op'>=</span> <span class='id identifier rubyid_name_short'>name_short</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Name</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_name_short'>name_short</span> <span class='op'>:</span> <span class='const'>Name</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_name_short'>name_short</span><span class='comma'>,</span> <span class='id identifier rubyid_language'>language</span><span class='rparen'>)</span>
   <span class='ivar'>@names</span>                <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_names'>names</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='ivar'>@name</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sort_by'>sort_by</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:sequence_number</span><span class='rparen'>)</span>
   <span class='ivar'>@names_short</span>          <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_names_short'>names_short</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='ivar'>@name_short</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sort_by'>sort_by</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:sequence_number</span><span class='rparen'>)</span>
+  <span class='ivar'>@region_names</span>         <span class='op'>=</span> <span class='id identifier rubyid_region_names'>region_names</span>
+  <span class='ivar'>@region_names_short</span>   <span class='op'>=</span> <span class='id identifier rubyid_region_names_short'>region_names_short</span>
   <span class='ivar'>@canton</span>               <span class='op'>=</span> <span class='id identifier rubyid_canton'>canton</span>
   <span class='ivar'>@sortfile_member</span>      <span class='op'>=</span> <span class='id identifier rubyid_sortfile_member'>sortfile_member</span>
   <span class='ivar'>@delivery_by</span>          <span class='op'>=</span> <span class='id identifier rubyid_delivery_by'>delivery_by</span> <span class='op'>==</span> <span class='symbol'>:self</span> <span class='op'>?</span> <span class='kw'>self</span> <span class='op'>:</span> <span class='id identifier rubyid_delivery_by'>delivery_by</span>
@@ -1933,12 +1989,12 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-198
-199
-200</pre>
+228
+229
+230</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 198</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 228</span>
 
 <span class='kw'>def</span> <span class='op'>&lt;=&gt;</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
   <span class='ivar'>@ordering_number</span> <span class='op'>&lt;=&gt;</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_ordering_number'>ordering_number</span>
@@ -1992,12 +2048,12 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-257
-258
-259</pre>
+287
+288
+289</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 287</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_eql?'>eql?</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@ordering_number</span> <span class='op'>==</span> <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_ordering_number'>ordering_number</span>
@@ -2038,12 +2094,12 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-251
-252
-253</pre>
+281
+282
+283</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 251</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 281</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_hash'>hash</span>
   <span class='lbracket'>[</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='ivar'>@ordering_number</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_hash'>hash</span>
@@ -2116,22 +2172,22 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219</pre>
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 207</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 237</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_in_use?'>in_use?</span><span class='lparen'>(</span><span class='id identifier rubyid_at'>at</span><span class='op'>=</span><span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='ivar'>@valid_from</span> <span class='kw'>then</span>
@@ -2195,12 +2251,12 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-269
-270
-271</pre>
+299
+300
+301</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 269</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 299</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inspect'>inspect</span>
   <span class='id identifier rubyid_sprintf'>sprintf</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\#&lt;%s:%014x %s&gt;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='id identifier rubyid_object_id'>object_id</span><span class='comma'>,</span> <span class='kw'>self</span>
@@ -2273,12 +2329,12 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-181
-182
-183</pre>
+185
+186
+187</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 181</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 185</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_names'>names</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_language'>language</span> <span class='op'>?</span> <span class='ivar'>@names</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_language'>language</span> <span class='op'>==</span> <span class='id identifier rubyid_language'>language</span> <span class='rbrace'>}</span> <span class='op'>:</span> <span class='ivar'>@names</span>
@@ -2351,15 +2407,175 @@ digits the add-on).</p>
       <pre class="lines">
 
 
-190
-191
-192</pre>
+194
+195
+196</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 194</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_names_short'>names_short</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_language'>language</span> <span class='op'>?</span> <span class='ivar'>@names_short</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_language'>language</span> <span class='op'>==</span> <span class='id identifier rubyid_language'>language</span> <span class='rbrace'>}</span> <span class='op'>:</span> <span class='ivar'>@names_short</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="region_names-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Name.html" title="SwissMatch::Name (class)">SwissMatch::Name</a></span>&gt;</tt>) <strong>region_names</strong>(language = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A region name is a name that can be used along a zip code and city, but must not replace
+the city. For more information, read the section about the PLZ_P2 file, &quot;Bezeichnungstyp&quot;
+with value &quot;3&quot;.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>language</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>One of nil, :de, :fr, :it or :rt</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Name.html" title="SwissMatch::Name (class)">SwissMatch::Name</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>All official region names (max. 27 chars) of this zip code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 207</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_region_names'>region_names</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_language'>language</span> <span class='op'>?</span> <span class='ivar'>@region_names</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_language'>language</span> <span class='op'>==</span> <span class='id identifier rubyid_language'>language</span> <span class='rbrace'>}</span> <span class='op'>:</span> <span class='ivar'>@region_names</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="region_names_short-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="Name.html" title="SwissMatch::Name (class)">SwissMatch::Name</a></span>&gt;</tt>) <strong>region_names_short</strong>(language = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>A region name is a name that can be used along a zip code and city, but must not replace
+the city. For more information, read the section about the PLZ_P2 file, &quot;Bezeichnungstyp&quot;
+with value &quot;3&quot;.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>language</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>One of nil, :de, :fr, :it or :rt</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Name.html" title="SwissMatch::Name (class)">SwissMatch::Name</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>All official short region names (max. 18 chars) of this zip code.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+220
+221
+222</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 220</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_region_names_short'>region_names_short</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_language'>language</span> <span class='op'>?</span> <span class='ivar'>@region_names_short</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_language'>language</span> <span class='op'>==</span> <span class='id identifier rubyid_language'>language</span> <span class='rbrace'>}</span> <span class='op'>:</span> <span class='ivar'>@region_names_short</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2435,12 +2651,12 @@ returned.</p>
       <pre class="lines">
 
 
-154
-155
-156</pre>
+158
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 154</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 158</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_suggested_name'>suggested_name</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@names</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_language'>language</span> <span class='op'>==</span> <span class='id identifier rubyid_language'>language</span> <span class='rbrace'>}</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='ivar'>@name</span>
@@ -2519,12 +2735,12 @@ returned.</p>
       <pre class="lines">
 
 
-172
-173
-174</pre>
+176
+177
+178</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 172</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 176</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_suggested_short_name'>suggested_short_name</span><span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='lparen'>(</span><span class='id identifier rubyid_language'>language</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@short_name</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='id identifier rubyid_name'>name</span><span class='period'>.</span><span class='id identifier rubyid_language'>language</span> <span class='op'>==</span> <span class='id identifier rubyid_language'>language</span> <span class='rbrace'>}</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='ivar'>@short_name</span>
@@ -2598,30 +2814,30 @@ returned.</p>
       <pre class="lines">
 
 
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247</pre>
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 227</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 257</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_hash'>to_hash</span><span class='lparen'>(</span><span class='id identifier rubyid_retain_references'>retain_references</span><span class='op'>=</span><span class='kw'>false</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_delivery_by'>delivery_by</span> <span class='op'>=</span> <span class='id identifier rubyid_retain_references'>retain_references</span> <span class='op'>?</span> <span class='ivar'>@delivery_by</span> <span class='op'>:</span> <span class='lparen'>(</span><span class='ivar'>@delivery_by</span> <span class='op'>&amp;&amp;</span> <span class='ivar'>@delivery_by</span><span class='period'>.</span><span class='id identifier rubyid_ordering_number'>ordering_number</span><span class='rparen'>)</span>
@@ -2691,12 +2907,12 @@ returned.</p>
       <pre class="lines">
 
 
-263
-264
-265</pre>
+293
+294
+295</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 293</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@code</span><span class='rbrace'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='ivar'>@name</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -2748,18 +2964,18 @@ returned.</p>
       <pre class="lines">
 
 
-131
-132
-133
-134
 135
 136
 137
 138
-139</pre>
+139
+140
+141
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'lib/swissmatch/zipcode.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_transliterated_names'>transliterated_names</span>
   <span class='id identifier rubyid_names'>names</span><span class='period'>.</span><span class='id identifier rubyid_flat_map'>flat_map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_ary'>ary</span><span class='op'>|</span>
@@ -2780,7 +2996,7 @@ returned.</p>
 </div>
 
     <div id="footer">
-  Generated on Wed Aug  8 14:07:13 2012 by
+  Generated on Wed Aug  8 23:56:17 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
