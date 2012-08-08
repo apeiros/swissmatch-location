@@ -143,14 +143,14 @@ module SwissMatch
     # @return [SwissMatch::ZipCodes]
     #   A SwissMatch::ZipCodes collection with zip codes that are currently active/in use.
     def active(date=Date.today, &block)
-      ZipCodes.new(@zip_codes.select { |zip_code| zip_code.in_use?(date) })
+      select { |zip_code| zip_code.in_use?(date) }
     end
 
     # @return [SwissMatch::ZipCodes]
     #   A SwissMatch::ZipCodes collection with zip codes that are currently inactive/not in use.
     #   A zip code is not in use if it has been either retired or is only recorded for future use.
     def inactive(date=Date.today, &block)
-      ZipCodes.new(@zip_codes.reject { |zip_code| zip_code.in_use?(date) })
+      reject { |zip_code| zip_code.in_use?(date) }
     end
 
     # @return [SwissMatch::ZipCodes]
@@ -176,13 +176,13 @@ module SwissMatch
     # @return [SwissMatch::ZipCodes]
     #   A SwissMatch::ZipCodes collection consisting only of zip codes having the given type(s).
     def with_type(*types)
-      ZipCodes.new(@zip_codes.select { |zip_code| types.include?(zip_code.type) })
+      select { |zip_code| types.include?(zip_code.type) }
     end
 
     # @return [SwissMatch::ZipCodes]
     #   A SwissMatch::ZipCodes collection consisting only of zip codes not having the given type(s).
     def without_type(*types)
-      ZipCodes.new(@zip_codes.reject { |zip_code| types.include?(zip_code.type) })
+      reject { |zip_code| types.include?(zip_code.type) }
     end
 
     # @return [SwissMatch::ZipCode] 
