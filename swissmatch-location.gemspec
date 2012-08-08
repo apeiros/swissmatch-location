@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     Dir['test/**/*'] +
     Dir['*.gemspec'] +
     %w[
+      LICENSE.txt
       Rakefile
       README.markdown
     ]
