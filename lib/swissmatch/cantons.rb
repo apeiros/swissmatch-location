@@ -71,6 +71,20 @@ module SwissMatch
       @by_name[name]
     end
 
+    # @return [SwissMatch::Cantons]
+    #   A SwissMatch::Cantons collection with all SwissMatch::Canton objects for which the block
+    #   returned true (or a trueish value)
+    def select(*args, &block)
+      Cantons.new(@cantons.select(*args, &block))
+    end
+
+    # @return [SwissMatch::Cantons]
+    #   A SwissMatch::Cantons collection with all SwissMatch::Canton objects for which the block
+    #   returned false (or a falseish value)
+    def reject(*args, &block)
+      Cantons.new(@cantons.reject(*args, &block))
+    end
+
     # @return [Integer] The number of SwissMatch::Canton objects in this collection.
     def size
       @cantons.size
