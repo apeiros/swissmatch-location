@@ -61,6 +61,20 @@ module SwissMatch
       @by_name[name]
     end
 
+    # @return [SwissMatch::Communities]
+    #   A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+    #   returned true (or a trueish value)
+    def select(*args, &block)
+      Communities.new(@all.select(*args, &block))
+    end
+
+    # @return [SwissMatch::Communities]
+    #   A SwissMatch::Communities collection with all SwissMatch::Community objects for which the block
+    #   returned false (or a falseish value)
+    def reject(*args, &block)
+      Communities.new(@all.reject(*args, &block))
+    end
+
     # @return [Integer] The number of SwissMatch::Community objects in this collection.
     def size
       @all.size
