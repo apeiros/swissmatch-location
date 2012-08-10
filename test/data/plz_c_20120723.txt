@@ -1724,24 +1724,15 @@
 5017	Sant'Antonino	TI	5002
 5018	Sant'Antonio	TI	
 5019	Sementina	TI	5002
-5040	Ludiano	TI	
-5041	Malvaglia	TI	
-5046	Semione	TI	
 5048	Acquarossa	TI	
 5049	Blenio	TI	
+5050	Serravalle	TI	
 5061	Airolo	TI	
-5062	Anzonico	TI	
 5063	Bedretto	TI	
 5064	Bodio	TI	
-5066	Calpiogna	TI	
-5067	Campello	TI	
-5068	Cavagnago	TI	
-5070	Chironico	TI	
 5071	Dalpe	TI	
 5072	Faido	TI	
 5073	Giornico	TI	
-5074	Mairengo	TI	
-5075	Osco	TI	
 5076	Personico	TI	
 5077	Pollegio	TI	
 5078	Prato (Leventina)	TI	
@@ -1788,7 +1779,6 @@
 5162	Cadempino	TI	5192
 5163	Cadro	TI	5192
 5167	Canobbio	TI	5192
-5169	Carabietta	TI	5192
 5170	Carona	TI	5192
 5171	Caslano	TI	5192
 5173	Certara	TI	
@@ -2506,5 +2496,3 @@
 7011	Schellenberg	FL	
 7101	Deutschland	DE	
 7301	Italien	IT	
-9998	Deutschland	DE	
-9999	Italien	IT	
