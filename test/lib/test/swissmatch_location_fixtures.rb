@@ -1,6 +1,6 @@
 # encoding: utf-8
 
 require 'swissmatch/location'
-require 'swissmatch/datafiles'
+require 'swissmatch/location/datafiles'
 
-SwissMatch.load(SwissMatch::DataFiles.new(TEST_DATA_DIR))
+SwissMatch::Location.load(SwissMatch::DataFiles.new(TEST_DATA_DIR))
