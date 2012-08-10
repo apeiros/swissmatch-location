@@ -26,7 +26,11 @@ module SwissMatch
       end
 
       unless @communities.size == @by_name.size
-        raise "ImplementationError: The author assumed communities to have a unique name, which doesn't seem to be the case anymore"
+        count=Hash.new(0)
+        @communities.each do |community| count[community.name.to_s] += 1 end
+        non_unique = count.select { |k,v| v > 1 }.map(&:first)
+
+        raise "ImplementationError: The author assumed communities to have a unique name, which doesn't seem to be the case anymore. Non-unique names: #{non_unique.inspect}"
       end
 
       self
