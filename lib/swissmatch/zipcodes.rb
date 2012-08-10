@@ -73,7 +73,7 @@ module SwissMatch
           case add_on
             when nil
               by_code(key.to_i)
-            when 0..99, /\A\d+  \z/
+            when 0..99, /\A\d+\z/
               by_code_and_add_on(key.to_i, add_on.to_i)
             when String
               by_code_and_name(key.to_i, add_on)
