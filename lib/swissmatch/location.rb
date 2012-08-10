@@ -38,7 +38,7 @@ module SwissMatch
     @data               = nil
     class <<self
 
-      # @return [SwissMatch::DataFiles, nil] The data source used
+      # @return [SwissMatch::Location::DataFiles, nil] The data source used
       attr_reader :data
     end
 
@@ -181,7 +181,7 @@ module SwissMatch
 
     # Loads the swissmatch data
     #
-    # @param [DataFiles] data_source
+    # @param [SwissMatch::Location::DataFiles] data_source
     #   A valid data-source.
     #
     # @return [self]
