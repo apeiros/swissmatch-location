@@ -990,8 +990,6 @@
 3182	2	2	2	Lucerne	Lucerne
 3185	1	2	2	Lucerne 4	Lucerne 4
 3185	2	2	3	Lucerna 4	Lucerna 4
-3186	1	2	2	Lucerne 5	Lucerne 5
-3186	2	2	3	Lucerna 5	Lucerna 5
 3187	1	2	2	Lucerne 6	Lucerne 6
 3187	2	2	3	Lucerna 6	Lucerna 6
 3188	1	2	2	Lucerne 7	Lucerne 7
