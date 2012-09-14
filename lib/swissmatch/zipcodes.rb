@@ -218,7 +218,7 @@ module SwissMatch
     #   The SwissMatch::ZipCode with the given 4 digit code and name in any language.
     def by_code_and_name(code, name)
       @by_code_and_name ||= Hash[@zip_codes.flat_map { |c|
-        c.names.map { |name| [[c.code, name], c] }
+        (c.names + c.names_short).map(&:to_s).uniq.map { |name| [[c.code, name], c] }
       }]
       @by_code_and_name[[code,name]]
     end
@@ -227,7 +227,7 @@ module SwissMatch
     #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects having the given name.
     def by_name(name)
       @by_name ||= @zip_codes.each_with_object({}) { |zip_code, hash|
-        zip_code.names.map(&:to_s).uniq.each do |name|
+        (zip_code.names + zip_code.names_short).map(&:to_s).uniq.each do |name|
           hash[name] ||= []
           hash[name] << zip_code
         end
