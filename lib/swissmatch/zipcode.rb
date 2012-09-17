@@ -298,7 +298,7 @@ module SwissMatch
     # @private
     # @see Object#eql?
     def eql?(other)
-      self.class == other.class && @ordering_number == other.ordering_number
+      self.class.eql?(other.class) && @ordering_number.eql?(other.ordering_number)
     end
 
     # @return [String]
