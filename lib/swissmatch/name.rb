@@ -38,6 +38,10 @@ module SwissMatch
       }
     end
 
+    def to_a
+      [to_s, @language, @sequence_number]
+    end
+
     # @private
     # @see Object#inspect
     def inspect
