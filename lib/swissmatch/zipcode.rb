@@ -57,6 +57,12 @@ module SwissMatch
     #   The official name of this zip code (max. 18 characters)
     attr_reader :name_short
 
+    # @note This method exists mostly for internal purposes
+    #
+    # @return [String]
+    #   All names, short and long, as strings, without sequence number nor language.
+    attr_reader :all_names
+
     # @return [Symbol]
     #   The main language in the area of this zip code. One of :de, :fr, :it or :rt.
     attr_reader :language
@@ -74,8 +80,12 @@ module SwissMatch
     attr_reader :delivery_by
 
     # @return [SwissMatch::Community]
-    #   The community this zip code belongs to.
-    attr_reader :community
+    #   The largest community which belongs to this zip code.
+    attr_reader :largest_community
+
+    # @return [SwissMatch::Communities]
+    #   The communities which belong to this zip code.
+    attr_reader :communities
 
     # @return [Date, nil]
     #   The date from which on this zip code starts to be in use
@@ -105,7 +115,7 @@ module SwissMatch
       language_alternative,
       sortfile_member,
       delivery_by,
-      community,
+      largest_community,
       valid_from,
       valid_until = nil
     )
@@ -120,12 +130,14 @@ module SwissMatch
       @name_short           = name_short.is_a?(Name) ? name_short : Name.new(name_short, language)
       @names                = (names || [@name]).sort_by(&:sequence_number)
       @names_short          = (names_short || [@name_short]).sort_by(&:sequence_number)
+      @all_names            = @names.map(&:to_s) | @names_short.map(&:to_s)
       @region_names         = region_names
       @region_names_short   = region_names_short
       @canton               = canton
       @sortfile_member      = sortfile_member
       @delivery_by          = delivery_by == :self ? self : delivery_by
-      @community            = community
+      @largest_community    = largest_community
+      @communities          = Communities.new(largest_community ? [largest_community] : [])
       @valid_from           = valid_from
       @valid_until          = valid_until
     end
@@ -250,14 +262,16 @@ module SwissMatch
 
     # @param [Boolean] retain_references
     #   If set to false, :delivery_by will be set to the ordering number,
-    #   :community to the community_number and :canton to the canton's license_tag.
+    #   :largest_community to the community_number, :communities to their respective
+    #   community numbers and :canton to the canton's license_tag.
     #
     # @return [Hash]
     #   All properties of the zip code as a hash.
     def to_hash(retain_references=false)
-      delivery_by = retain_references ? @delivery_by : (@delivery_by && @delivery_by.ordering_number)
-      community   = retain_references ? @community : (@community && @community.community_number)
-      canton      = retain_references ? @canton : (@canton && @canton.license_tag)
+      delivery_by       = retain_references ? @delivery_by : (@delivery_by && @delivery_by.ordering_number)
+      largest_community = retain_references ? @largest_community : (@largest_community && @largest_community.community_number)
+      communities       = retain_references ? @communities : @communities.map(&:community_number)
+      canton            = retain_references ? @canton : (@canton && @canton.license_tag)
       {
         :ordering_number      => @ordering_number,
         :type                 => @type,
@@ -270,7 +284,8 @@ module SwissMatch
         :language_alternative => @language_alternative,
         :sortfile_member      => @sortfile_member,
         :delivery_by          => delivery_by,
-        :community            => community,
+        :largest_community    => largest_community,
+        :communities          => communities,
         :valid_from           => @valid_from,
         :valid_until          => @valid_until,
       }
