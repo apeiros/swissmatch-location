@@ -76,7 +76,7 @@ module SwissMatch
     # @private
     # @see Object#eql?
     def eql?(other)
-      self.class == other.class && @community_number == other.community_number
+      self.class.eql?(other.class) && @community_number.eql?(other.community_number)
     end
 
     # @return [String]
