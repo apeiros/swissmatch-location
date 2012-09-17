@@ -145,14 +145,12 @@ module SwissMatch
     # @return [Array<String>]
     #   The name of this zip code in all languages and normalizations (only unique values)
     def transliterated_names
-      names.flat_map { |name, ary|
-        name = name.to_s # convert from SwissMatch::Name
-        [
-          SwissMatch.transliterate1(name),
-          SwissMatch.transliterate2(name)  # TODO: use transliterate gem
-        ]
-      }.uniq
+      (
+        @all_names.map { |name| SwissMatch.transliterate1(name) } |
+        @all_names.map { |name| SwissMatch.transliterate2(name) }
+      ).uniq
     end
+
 
     # Since a zip code can - for any given language - have no name, exactly one name,
     # or even multiple names, it is sometimes difficult to write good code to
