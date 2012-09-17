@@ -57,6 +57,21 @@ module SwissMatch
       @data.cantons
     end
 
+    # @param [String] district_number_or_name
+    #   The district_number or name of the district
+    #
+    # @return [SwissMatch::District]
+    #   The district with the given district_number or name
+    def self.district(district_number_or_name)
+      @data.districts[district_number_or_name]
+    end
+
+    # @return [SwissMatch::Districts]
+    #   All known districts
+    def self.districts
+      @data.districts
+    end
+
     # @param [Integer] key
     #   The community number of the community
     #
@@ -202,6 +217,16 @@ module SwissMatch
   # @see SwissMatch::Location::cantons
   def self.cantons(*args, &block)
     SwissMatch::Location.cantons(*args, &block)
+  end
+
+  # @see SwissMatch::Location::district
+  def self.district(*args, &block)
+    SwissMatch::Location.district(*args, &block)
+  end
+
+  # @see SwissMatch::Location::districts
+  def self.districts(*args, &block)
+    SwissMatch::Location.districts(*args, &block)
   end
 
   # @see SwissMatch::Location::community

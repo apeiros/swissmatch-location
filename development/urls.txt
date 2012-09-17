@@ -1,0 +1,4 @@
+Location of zip code files:
+	http://match.post.ch
+Location of community <-> zip code mapping file:
+	http://www.bfs.admin.ch/bfs/portal/de/index/infothek/nomenklaturen/blank/blank/gem_liste/04.Document.82420.xls

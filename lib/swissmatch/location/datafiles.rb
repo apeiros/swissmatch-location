@@ -3,6 +3,15 @@
 
 
 require 'swissmatch/loaderror'
+require 'swissmatch/name'
+require 'swissmatch/canton'
+require 'swissmatch/cantons'
+require 'swissmatch/district'
+require 'swissmatch/districts'
+require 'swissmatch/community'
+require 'swissmatch/communities'
+require 'swissmatch/zipcode'
+require 'swissmatch/zipcodes'
 
 
 
@@ -88,6 +97,9 @@ module SwissMatch
 
       # @return [SwissMatch::Cantons] The loaded swiss cantons
       attr_reader :cantons
+
+      # @return [SwissMatch::Districts] The loaded swiss districts
+      attr_reader :districts
 
       # @return [SwissMatch::Communities] The loaded swiss communities
       attr_reader :communities
@@ -176,7 +188,7 @@ module SwissMatch
       # @return [self]
       #   Returns self.
       def load!
-        @cantons, @communities, @zip_codes = *load
+        @cantons, @districts, @communities, @zip_codes = *load
         self
       end
 
@@ -187,10 +199,11 @@ module SwissMatch
         reset_errors!
 
         cantons     = load_cantons
+        districts   = load_districts(cantons)
         communities = load_communities(cantons)
         zip_codes   = load_zipcodes(cantons, communities)
 
-        [cantons, communities, zip_codes]
+        [cantons, districts, communities, zip_codes]
       end
 
       # @return [SwissMatch::Cantons]
@@ -201,6 +214,20 @@ module SwissMatch
             Canton.new(tag, name, name_de, name_fr, name_it, name_rt)
           }
         )
+      end
+
+      def load_districts(cantons)
+        # File format: GDEKT,GDEBZNR,GDEBZNA
+        path      = Dir.enum_for(:glob, "#{@data_directory}/districts_*.csv").last
+        data      = File.read(path, encoding: Encoding::UTF_8.to_s).scan(/^([^,]*),([^,]*),([^,]*)\n/)
+        districts = data[1..-1].map { |canton_tag, district_number, district_name|
+          district_number = Integer(district_number, 10)
+          canton          = cantons.by_license_tag(canton_tag)
+
+          District.new(district_number, district_name, canton, SwissMatch::Communities.new([]))
+        }
+
+        Districts.new(districts)
       end
 
       # @return [SwissMatch::Communities]
