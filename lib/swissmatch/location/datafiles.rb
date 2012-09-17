@@ -121,8 +121,8 @@ module SwissMatch
         elsif ENV['SWISSMATCH_DATA'] then
           @data_directory = ENV['SWISSMATCH_DATA']
         else
-          data_directory  = File.expand_path('../../../../data/swissmatch', __FILE__)
-          data_directory  = Gem.datadir 'swissmatch' if defined?(Gem) && !File.directory?(data_directory)
+          data_directory  = File.expand_path('../../../../data/swissmatch-location', __FILE__)
+          data_directory  = Gem.datadir 'swissmatch-location' if defined?(Gem) && !File.directory?(data_directory)
           @data_directory = data_directory
         end
       end
