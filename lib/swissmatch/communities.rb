@@ -104,6 +104,12 @@ module SwissMatch
       @by_community_number[number]
     end
 
+    # @return [Array<SwissMatch::Community>]
+    #   The communities with the given community numbers (also known as BFSNR).
+    def by_community_numbers(*numbers)
+      @by_community_number.values_at(*numbers)
+    end
+
     # @return [SwissMatch::Community]
     #   The community with the given name.
     def by_name(name)
