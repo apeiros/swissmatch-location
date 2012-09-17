@@ -30,16 +30,18 @@ module SwissMatch
       # Generates a regular expression, that matches +size+ tab separated fields,
       # delimited by \r\n.
       # @private
-      def self.generate_expression(size)
-        /^#{Array.new(size) { '([^\t]*)' }.join('\t')}\r\n/
+      def self.generate_expression(size, separator, terminator)
+        /^#{Array.new(size) { "([^#{separator}]*)" }.join(eval("'#{separator}'"))}#{terminator}/
       end
 
       # Regular expressions used to parse the different files.
       # @private
       Expressions = {
-        :community  => generate_expression(4),
-        :zip_2      => generate_expression(6),
-        :zip_1      => generate_expression(13),
+        :community    => generate_expression(4, '\t', '\r\n'),
+        :zip_2        => generate_expression(6, '\t', '\r\n'),
+        :zip_1        => generate_expression(13, '\t', '\r\n'),
+        :districts    => generate_expression(3, ',', '\n'),
+        :communities  => generate_expression(10, ',', '\n'),
       }
 
       # @private
@@ -219,7 +221,7 @@ module SwissMatch
       def load_districts(cantons)
         # File format: GDEKT,GDEBZNR,GDEBZNA
         path      = Dir.enum_for(:glob, "#{@data_directory}/districts_*.csv").last
-        data      = File.read(path, encoding: Encoding::UTF_8.to_s).scan(/^([^,]*),([^,]*),([^,]*)\n/)
+        data      = File.read(path, encoding: Encoding::UTF_8.to_s).scan(Expressions[:districts])
         districts = data[1..-1].map { |canton_tag, district_number, district_name|
           district_number = Integer(district_number, 10)
           canton          = cantons.by_license_tag(canton_tag)
@@ -270,13 +272,37 @@ module SwissMatch
         raise "Must load cantons first" unless cantons
         raise "Must load communities first" unless communities
 
-        temporary       = {}
-        self_delivered  = []
-        others          = []
-        zip1_file       = Dir.enum_for(:glob, "#{@data_directory}/plz_p1_*.txt").last
-        zip2_file       = Dir.enum_for(:glob, "#{@data_directory}/plz_p2_*.txt").last
+        temporary         = Hash.new { |h,k| h[k] = [] }
+        community_mapping = {}
+        self_delivered    = []
+        others            = []
+        zip1_file         = Dir.enum_for(:glob, "#{@data_directory}/plz_p1_*.txt").last
+        zip2_file         = Dir.enum_for(:glob, "#{@data_directory}/plz_p2_*.txt").last
+        communities_file  = Dir.enum_for(:glob, "#{@data_directory}/communities_*.csv").last
+
+        # KTKZ,OHW,ORTNAME,GHW,GDENR,GDENAMK,PHW,PLZ4,PLZZ,PLZNAMK
+        communities_data  = File.read(
+          communities_file,
+          encoding: Encoding::UTF_8.to_s
+        ).scan(Expressions[:communities])[1..-1].transpose.values_at(4,7,8)
+        communities_data[0].map!(&:to_i)
+        communities_data[1].map!(&:to_i)
+        communities_data[2].map!(&:to_i)
+        communities_data.transpose.each do |data|
+          temporary[data.last(2)] << data.at(0)
+        end
+
+        temporary.each do |key,coms|
+          # compact, because some communities already no longer exist, so by_community_numbers can
+          # contain nils which must be removed
+          community_mapping[key] = Communities.new(communities.by_community_numbers(*coms.uniq.sort).compact)
+        end
+
+        temporary         = {}
         load_table(zip1_file, :zip_1).each do |row|
           onrp                  = row.at(0).to_i
+          code                  = row.at(2).to_i
+          addon                 = row.at(3).to_i
           delivery_by           = row.at(10).to_i
           delivery_by           = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
           language              = LanguageCodes[row.at(7).to_i]
@@ -286,8 +312,8 @@ module SwissMatch
           data                  = [
             onrp,                              # ordering_number
             row.at(1).to_i,                    # type
-            row.at(2).to_i,                    # code
-            row.at(3).to_i,                    # add_on
+            code,
+            addon,
             name,                              # name (official)
             [name],                            # names (official + alternative)
             name_short,                        # name_short (official)
@@ -300,6 +326,7 @@ module SwissMatch
             row.at(9) == "1",                  # sortfile_member
             delivery_by,                       # delivery_by
             communities.by_community_number(row.at(11).to_i),  # community_number
+            community_mapping[[code, addon]],
             Date.civil(*row.at(12).match(/^(\d{4})(\d\d)(\d\d)$/).captures.map(&:to_i)) # valid_from
           ]
           temporary[onrp] = data

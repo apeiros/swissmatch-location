@@ -116,6 +116,7 @@ module SwissMatch
       sortfile_member,
       delivery_by,
       largest_community,
+      communities,
       valid_from,
       valid_until = nil
     )
@@ -137,7 +138,7 @@ module SwissMatch
       @sortfile_member      = sortfile_member
       @delivery_by          = delivery_by == :self ? self : delivery_by
       @largest_community    = largest_community
-      @communities          = Communities.new(largest_community ? [largest_community] : [])
+      @communities          = communities
       @valid_from           = valid_from
       @valid_until          = valid_until
     end
