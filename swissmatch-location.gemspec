@@ -2,19 +2,18 @@
 
 Gem::Specification.new do |s|
   s.name                      = "swissmatch-location"
-  s.version                   = "0.0.1.201208"
+  s.version                   = "0.1.0.201208"
   s.authors                   = "Stefan Rusterholz"
   s.email                     = "stefan.rusterholz@gmail.com"
   s.homepage                  = "http://github.com/apeiros/swissmatch-location"
 
   s.description               = <<-DESCRIPTION.gsub(/^    /, '').chomp
-    Deal with swiss cantons, communities and zip codes, as provided by the swiss postal
-    service.
+    Deal with swiss zip codes, communities, districts and cantons, using the official swiss post mat[ch] database.
     Additionally handle data updates provided by the swiss postal service.
   DESCRIPTION
 
   s.summary                   = <<-SUMMARY.gsub(/^    /, '').chomp
-    Deal with swiss zip codes, cantons and communities.
+    Deal with swiss zip codes, communities, districts and cantons, using the official swiss post mat[ch] database.
   SUMMARY
 
   s.files                     =
