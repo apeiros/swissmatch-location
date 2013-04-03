@@ -143,6 +143,12 @@ module SwissMatch
       @valid_until          = valid_until
     end
 
+    # @return [String]
+    #   The zip code add-on as 2 digit string, with leading zeros if necessary
+    def two_digit_add_on
+      "%02d" % @add_on
+    end
+
     # @return [Array<String>]
     #   The name of this zip code in all languages and normalizations (only unique values)
     def transliterated_names
