@@ -246,6 +246,12 @@ module SwissMatch
       @zip_codes.dup
     end
 
+    # @return [true, false] Whether this zip code collection contains any zip codes.
+    def empty?
+      @zip_codes.size.zero?
+    end
+    alias blank? empty?
+
     # @private
     # @see Object#inspect
     def inspect
