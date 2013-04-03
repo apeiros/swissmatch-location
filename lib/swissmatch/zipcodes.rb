@@ -203,24 +203,19 @@ module SwissMatch
     # @return [SwissMatch::ZipCodes]
     #   A SwissMatch::ZipCodes collection with all SwissMatch::ZipCode objects having the given 4 digit code.
     def by_code(code)
-      @by_code ||= @zip_codes.group_by { |c| c.code }
-      ZipCodes.new(@by_code[code] || [])
+      ZipCodes.new(by_code_lookup_table[code] || [])
     end
 
     # @return [SwissMatch::ZipCode]
     #   The SwissMatch::ZipCode with the given 4 digit code and given 2 digit code add-on.
     def by_code_and_add_on(code, add_on)
-      @by_full_code ||= Hash[@zip_codes.map { |c| [c.full_code, c] }]
-      @by_full_code[code*100+add_on]
+      by_full_code_lookup_table[code*100+add_on]
     end
 
     # @return [SwissMatch::ZipCode]
     #   The SwissMatch::ZipCode with the given 4 digit code and name in any language.
     def by_code_and_name(code, name)
-      @by_code_and_name ||= Hash[@zip_codes.flat_map { |c|
-        (c.names + c.names_short).map(&:to_s).uniq.map { |name| [[c.code, name], c] }
-      }]
-      @by_code_and_name[[code,name]]
+      by_code_and_name_lookup_table[[code, name]]
     end
 
     # @return [SwissMatch::ZipCodes]
@@ -256,6 +251,21 @@ module SwissMatch
     # @see Object#inspect
     def inspect
       sprintf "\#<%s:%x size: %d>", self.class, object_id>>1, size
+    end
+
+  private
+    def by_code_lookup_table
+      @by_code ||= @zip_codes.group_by { |c| c.code }
+    end
+
+    def by_full_code_lookup_table
+      @by_full_code ||= Hash[@zip_codes.map { |c| [c.full_code, c] }]
+    end
+
+    def by_code_and_name_lookup_table
+      @by_code_and_name ||= Hash[@zip_codes.flat_map { |c|
+        (c.names + c.names_short).map(&:to_s).uniq.map { |name| [[c.code, name], c] }
+      }]
     end
   end
 end
