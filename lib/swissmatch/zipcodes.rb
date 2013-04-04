@@ -196,9 +196,9 @@ module SwissMatch
     #   An array of ZipCode names suitable for presentation of a select.
     def names_for_select(language=nil)
       if language
-        names = base.flat_map { |zip_code| [zip_code.name, zip_code.suggested_name(I18n.language)] }
+        names = flat_map { |zip_code| [zip_code.name, zip_code.suggested_name(I18n.language)] }
       else
-        names = base.map(&:name)
+        names = map(&:name)
       end
 
       names.uniq.sort(&Unicode.method(:strcmp))
