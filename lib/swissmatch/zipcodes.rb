@@ -3,6 +3,7 @@
 
 
 require 'autocompletion'
+require 'unicode'
 
 
 
@@ -173,6 +174,33 @@ module SwissMatch
       words = SwissMatch.transliterated_words(string)
 
       ZipCodes.new(@autocomplete.complete(*words))
+    end
+
+    # @return [Array<String>]
+    #   An array of ZipCode names which match the given string in an autocompletion.
+    #   Sorted alphabetically (Umlaut-aware)
+    def autocompleted_names(string)
+      name_dc = Unicode.downcase(name)
+      base    = autocomplete(name)
+      names   = base.flat_map { |zip_code|
+        zip_code.reverse_name_transliteration_map.select { |transliterated_name, real_names|
+          Unicode.downcase(transliterated_name[0, len]) == name_dc
+        }.values
+      end
+
+      names.uniq.sort(&Unicode.method(:strcmp))
+    end
+
+    # @return [Array<String>]
+    #   An array of ZipCode names suitable for presentation of a select.
+    def names_for_select(language=nil)
+      if language
+        names = base.flat_map { |zip_code| [zip_code.name, zip_code.suggested_name(I18n.language)] }
+      else
+        names = base.map(&:name)
+      end
+
+      names.uniq.sort(&Unicode.method(:strcmp))
     end
 
     # @return [SwissMatch::ZipCodes]
