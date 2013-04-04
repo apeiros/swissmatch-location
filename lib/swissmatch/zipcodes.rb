@@ -179,14 +179,15 @@ module SwissMatch
     # @return [Array<String>]
     #   An array of ZipCode names which match the given string in an autocompletion.
     #   Sorted alphabetically (Umlaut-aware)
-    def autocompleted_names(string)
+    def autocompleted_names(name)
       name_dc = Unicode.downcase(name)
+      len     = name_dc.length
       base    = autocomplete(name)
       names   = base.flat_map { |zip_code|
         zip_code.reverse_name_transliteration_map.select { |transliterated_name, real_names|
           Unicode.downcase(transliterated_name[0, len]) == name_dc
-        }.values
-      end
+        }.values.flatten(1)
+      }
 
       names.uniq.sort(&Unicode.method(:strcmp))
     end
