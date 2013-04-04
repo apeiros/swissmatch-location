@@ -158,6 +158,23 @@ module SwissMatch
       ).uniq
     end
 
+    # @return [Hash<String, String>]
+    #   A map to get the names which match a transliteration
+    def reverse_name_transliteration_map
+      result = {}
+      @all_names.map { |name|
+        trans_name1 = SwissMatch.transliterate1(name)
+        trans_name2 = SwissMatch.transliterate2(name)
+        result[trans_name1] ||= []
+        result[trans_name2] ||= []
+        result[trans_name1] << name
+        result[trans_name2] << name
+      }
+      result.each_value(&:uniq!)
+
+      result
+    end
+
 
     # Since a zip code can - for any given language - have no name, exactly one name,
     # or even multiple names, it is sometimes difficult to write good code to
