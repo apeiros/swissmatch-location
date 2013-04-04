@@ -35,7 +35,8 @@ Gem::Specification.new do |s|
   end
 
   s.add_dependency "rubyzip"
-  s.add_dependency "autocompletion", ">= 0.0.2"
+  s.add_dependency "unicode"
+  s.add_dependency "autocompletion", ">= 0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1")
   s.rubygems_version          = "1.3.1"
