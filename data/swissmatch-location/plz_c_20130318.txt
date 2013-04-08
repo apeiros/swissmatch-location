@@ -176,7 +176,6 @@
 305	Kappelen	BE	
 306	Lyss	BE	306
 307	Meikirch	BE	351
-308	Niederried bei Kallnach	BE	
 309	Radelfingen	BE	
 310	Rapperswil (BE)	BE	
 311	Schüpfen	BE	351
@@ -300,7 +299,6 @@
 545	Mülchi	BE	
 546	Münchenbuchsee	BE	351
 547	Münchringen	BE	
-548	Ruppoldsried	BE	
 549	Schalunen	BE	351
 550	Scheunen	BE	
 551	Urtenen-Schönbühl	BE	351
@@ -367,7 +365,6 @@
 628	Zäziwil	BE	
 629	Oberhünigen	BE	
 630	Allmendingen	BE	351
-631	Trimstein	BE	351
 632	Wichtrach	BE	351
 661	Clavaleyres	BE	
 662	Ferenbalm	BE	
@@ -553,13 +550,12 @@
 996	Wolfisberg	BE	
 1001	Doppleschwand	LU	
 1002	Entlebuch	LU	
-1003	Escholzmatt	LU	
 1004	Flühli	LU	
 1005	Hasle (LU)	LU	
-1006	Marbach (LU)	LU	
 1007	Romoos	LU	
 1008	Schüpfheim	LU	
 1009	Werthenstein	LU	
+1010	Escholzmatt-Marbach	LU	
 1021	Aesch (LU)	LU	
 1022	Altwis	LU	
 1023	Ballwil	LU	
@@ -601,11 +597,9 @@
 1088	Hildisrieden	LU	
 1089	Knutwil	LU	
 1091	Mauensee	LU	
-1092	Neudorf	LU	
 1093	Neuenkirch	LU	
 1094	Nottwil	LU	
 1095	Oberkirch	LU	
-1096	Pfeffikon	LU	
 1097	Rickenbach (LU)	LU	
 1098	Ruswil	LU	
 1099	Schenkon	LU	
@@ -628,7 +622,6 @@
 1135	Luthern	LU	
 1136	Menznau	LU	
 1137	Nebikon	LU	
-1138	Ohmstal	LU	
 1139	Pfaffnau	LU	
 1140	Reiden	LU	
 1142	Roggliswil	LU	
@@ -832,7 +825,6 @@
 2234	La Brillaz	FR	2196
 2235	La Sonnaz	FR	2196
 2243	Barberêche	FR	
-2244	Büchslen	FR	
 2250	Courgevaux	FR	
 2251	Courlevon	FR	
 2254	Courtepin	FR	2196
@@ -911,15 +903,14 @@
 2450	Hessigkofen	SO	
 2452	Küttigkofen	SO	
 2453	Kyburg-Buchegg	SO	
-2454	Lüsslingen	SO	
 2455	Lüterkofen-Ichertswil	SO	
 2456	Lüterswil-Gächliwil	SO	
 2457	Messen	SO	
 2458	Mühledorf (SO)	SO	
-2459	Nennigkofen	SO	
 2461	Schnottwil	SO	
 2462	Tscheppach	SO	
 2463	Unterramsern	SO	
+2464	Lüsslingen-Nennigkofen	SO	
 2471	Bättwil	SO	2701
 2472	Büren (SO)	SO	2701
 2473	Dornach	SO	2701
@@ -950,8 +941,6 @@
 2518	Etziken	SO	
 2519	Gerlafingen	SO	2601
 2520	Halten	SO	2601
-2521	Heinrichswil-Winistorf	SO	
-2522	Hersiwil	SO	
 2523	Horriwil	SO	2601
 2524	Hüniken	SO	
 2525	Kriegstetten	SO	2601
@@ -962,6 +951,7 @@
 2530	Recherswil	SO	2601
 2532	Subingen	SO	2601
 2534	Zuchwil	SO	2601
+2535	Drei Höfe	SO	
 2541	Balm bei Günsberg	SO	2601
 2542	Bellach	SO	2601
 2543	Bettlach	SO	2546
@@ -1095,7 +1085,6 @@
 2894	Titterten	BL	
 2895	Waldenburg	BL	
 2901	Gächlingen	SH	
-2902	Guntmadingen	SH	
 2903	Löhningen	SH	2939
 2904	Neunkirch	SH	
 2914	Büttenhardt	SH	2939
@@ -1191,43 +1180,35 @@
 3311	Amden	SG	
 3312	Benken (SG)	SG	
 3313	Kaltbrunn	SG	
-3314	Rieden	SG	
 3315	Schänis	SG	
 3316	Weesen	SG	
-3331	Ernetschwil	SG	
-3332	Eschenbach (SG)	SG	
-3333	Goldingen	SG	
-3334	Gommiswald	SG	
-3337	St. Gallenkappel	SG	
 3338	Schmerikon	SG	
 3339	Uznach	SG	
 3340	Rapperswil-Jona	SG	
+3341	Gommiswald	SG	
+3342	Eschenbach (SG)	SG	
 3352	Ebnat-Kappel	SG	
-3356	Stein (SG)	SG	
-3358	Nesslau-Krummenau	SG	
 3359	Wildhaus-Alt St. Johann	SG	
+3360	Nesslau	SG	
 3372	Hemberg	SG	
-3373	Krinau	SG	
 3374	Lichtensteig	SG	
 3375	Oberhelfenschwil	SG	
-3377	Wattwil	SG	
 3378	Neckertal	SG	
-3391	Bütschwil	SG	
+3379	Wattwil	SG	
 3392	Kirchberg (SG)	SG	
 3393	Lütisburg	SG	
 3394	Mosnang	SG	
+3395	Bütschwil-Ganterschwil	SG	
 3401	Degersheim	SG	
 3402	Flawil	SG	3203
-3403	Ganterschwil	SG	
 3405	Jonschwil	SG	
-3407	Oberuzwil	SG	3425
-3408	Uzwil	SG	3425
-3421	Bronschhofen	SG	3425
+3407	Oberuzwil	SG	
+3408	Uzwil	SG	
 3422	Niederbüren	SG	
 3423	Niederhelfenschwil	SG	
-3424	Oberbüren	SG	3425
-3425	Wil (SG)	SG	3425
-3426	Zuzwil (SG)	SG	3425
+3424	Oberbüren	SG	
+3426	Zuzwil (SG)	SG	
+3427	Wil (SG)	SG	
 3441	Andwil (SG)	SG	3203
 3442	Gaiserwald	SG	3203
 3443	Gossau (SG)	SG	3203
@@ -1269,19 +1250,9 @@
 3582	Schluein	GR	
 3583	Schnaus	GR	
 3584	Sevgein	GR	
-3586	Valendas	GR	
-3587	Versam	GR	
-3592	Cumbel	GR	
 3593	Duvin	GR	
-3594	Degen	GR	
-3595	Lumbrein	GR	
-3596	Morissen	GR	
 3598	St. Martin	GR	
-3599	Suraua	GR	
 3603	Vals	GR	
-3604	Vignogn	GR	
-3605	Vella	GR	
-3606	Vrin	GR	
 3611	Andiast	GR	
 3612	Obersaxen	GR	
 3613	Pigniu	GR	
@@ -1289,6 +1260,7 @@
 3615	Siat	GR	
 3616	Waltensburg/Vuorz	GR	
 3617	Mundaun	GR	
+3618	Lumnezia	GR	
 3631	Almens	GR	
 3633	Fürstenau	GR	
 3634	Paspels	GR	
@@ -1297,8 +1269,6 @@
 3637	Rothenbrunnen	GR	
 3638	Scharans	GR	
 3640	Sils im Domleschg	GR	
-3651	Safien	GR	
-3652	Tenna	GR	
 3661	Cazis	GR	
 3662	Flerden	GR	
 3663	Masein	GR	
@@ -1306,6 +1276,7 @@
 3669	Tschappina	GR	
 3670	Urmein	GR	
 3671	Tomils	GR	
+3672	Safiental	GR	
 3681	Avers	GR	
 3691	Hinterrhein	GR	
 3693	Nufenen	GR	
@@ -1332,12 +1303,11 @@
 3744	Susch	GR	
 3745	Tarasp	GR	
 3746	Zernez	GR	
-3751	Ramosch	GR	
 3752	Samnaun	GR	
-3753	Tschlin	GR	
 3761	Ftan	GR	
 3762	Scuol	GR	
 3763	Sent	GR	
+3764	Valsot	GR	
 3781	Bever	GR	3787
 3782	Celerina/Schlarigna	GR	3787
 3783	Madulain	GR	
@@ -1381,14 +1351,7 @@
 3901	Chur	GR	3901
 3911	Churwalden	GR	
 3921	Arosa	GR	
-3922	Calfreisen	GR	
-3923	Castiel	GR	
-3924	Langwies	GR	
-3925	Lüen	GR	
 3926	Maladers	GR	
-3927	Molinis	GR	
-3929	Peist	GR	
-3931	St. Peter-Pagig	GR	
 3932	Tschiertschen-Praden	GR	
 3941	Haldenstein	GR	3901
 3945	Trimmis	GR	3901
@@ -1476,15 +1439,12 @@
 4095	Brugg	AG	4021
 4096	Effingen	AG	
 4097	Elfingen	AG	
-4098	Gallenkirch	AG	
 4099	Habsburg	AG	
 4100	Hausen (AG)	AG	4021
-4103	Linn	AG	
 4104	Lupfig	AG	4021
 4105	Mandach	AG	
 4106	Mönthal	AG	
 4107	Mülligen	AG	4021
-4108	Oberbözberg	AG	
 4109	Oberflachs	AG	
 4110	Remigen	AG	
 4111	Riniken	AG	4021
@@ -1493,11 +1453,11 @@
 4114	Schinznach Bad	AG	
 4115	Schinznach Dorf	AG	
 4117	Thalheim (AG)	AG	
-4119	Unterbözberg	AG	
 4120	Veltheim (AG)	AG	
 4121	Villigen	AG	
 4122	Villnachern	AG	
 4123	Windisch	AG	4021
+4124	Bözberg	AG	
 4131	Beinwil am See	AG	
 4132	Birrwil	AG	
 4133	Burg (AG)	AG	
@@ -1676,16 +1636,16 @@
 4716	Bettwiesen	TG	
 4721	Bichelsee-Balterswil	TG	
 4723	Braunau	TG	
-4724	Eschlikon	TG	3425
+4724	Eschlikon	TG	
 4726	Fischingen	TG	
 4741	Lommis	TG	
-4746	Münchwilen (TG)	TG	3425
-4751	Rickenbach (TG)	TG	3425
+4746	Münchwilen (TG)	TG	
+4751	Rickenbach (TG)	TG	
 4756	Schönholzerswilen	TG	
-4761	Sirnach	TG	3425
+4761	Sirnach	TG	
 4776	Tobel-Tägerschen	TG	
 4781	Wängi	TG	
-4786	Wilen (TG)	TG	3425
+4786	Wilen (TG)	TG	
 4791	Wuppenau	TG	
 4801	Berlingen	TG	
 4806	Eschenz	TG	
@@ -2014,31 +1974,24 @@
 5661	Boulens	VD	
 5662	Brenles	VD	
 5663	Bussy-sur-Moudon	VD	
-5664	Chapelle-sur-Moudon	VD	
 5665	Chavannes-sur-Moudon	VD	
 5666	Chesalles-sur-Moudon	VD	
-5667	Correvon	VD	
 5668	Cremin	VD	
 5669	Curtilles	VD	
-5670	Denezy	VD	
 5671	Dompierre (VD)	VD	
 5672	Forel-sur-Lucens	VD	
 5673	Hermenches	VD	
 5674	Lovatens	VD	
 5675	Lucens	VD	
-5676	Martherenges	VD	
 5678	Moudon	VD	
-5679	Neyruz-sur-Moudon	VD	
 5680	Ogens	VD	
-5682	Peyres-Possens	VD	
 5683	Prévonloup	VD	
 5684	Rossenges	VD	
-5685	Saint-Cierges	VD	
 5686	Sarzens	VD	
 5688	Syens	VD	
-5689	Thierrens	VD	
 5690	Villars-le-Comte	VD	
 5692	Vucherens	VD	
+5693	Montanaire	VD	
 5701	Arnex-sur-Nyon	VD	6621
 5702	Arzier	VD	6621
 5703	Bassins	VD	6621
@@ -2152,7 +2105,6 @@
 5903	Bioley-Magnoux	VD	
 5904	Chamblon	VD	5938
 5905	Champvent	VD	
-5906	Chanéaz	VD	
 5907	Chavannes-le-Chêne	VD	
 5908	Chêne-Pâquier	VD	
 5909	Cheseaux-Noréaz	VD	5938
@@ -2180,10 +2132,8 @@
 5937	Vugelles-La Mothe	VD	
 5938	Yverdon-les-Bains	VD	5938
 5939	Yvonand	VD	
-6001	Birgisch	VS	
 6002	Brig-Glis	VS	6002
 6004	Eggerberg	VS	6002
-6006	Mund	VS	
 6007	Naters	VS	6002
 6008	Ried-Brig	VS	6002
 6009	Simplon	VS	
@@ -2222,17 +2172,15 @@
 6101	Agarn	VS	
 6102	Albinen	VS	
 6104	Ergisch	VS	
-6105	Erschmatt	VS	
 6109	Inden	VS	
 6110	Leuk	VS	
 6111	Leukerbad	VS	
 6112	Oberems	VS	
 6113	Salgesch	VS	
-6114	Turtmann	VS	
-6115	Unterems	VS	
 6116	Varen	VS	
 6117	Guttet-Feschel	VS	
 6118	Gampel-Bratsch	VS	
+6119	Turtmann-Unterems	VS	
 6131	Bovernier	VS	
 6132	Charrat	VS	
 6133	Fully	VS	
@@ -2276,7 +2224,6 @@
 6213	Evionnaz	VS	
 6214	Finhaut	VS	
 6215	Massongex	VS	6153
-6216	Mex (VS)	VS	
 6217	Saint-Maurice	VS	
 6218	Salvan	VS	
 6219	Vernayaz	VS	
@@ -2298,7 +2245,6 @@
 6252	Anniviers	VS	
 6261	Arbaz	VS	6266
 6263	Grimisuat	VS	6266
-6264	Salins	VS	6266
 6265	Savièse	VS	6266
 6266	Sion	VS	6266
 6267	Veysonnaz	VS	
@@ -2321,12 +2267,9 @@
 6298	Visperterminen	VS	
 6299	Zeneggen	VS	6002
 6300	Zermatt	VS	
-6401	Auvernier	NE	6458
 6402	Bevaix	NE	6458
-6403	Bôle	NE	6458
 6404	Boudry	NE	6458
 6405	Brot-Dessous	NE	
-6406	Colombier (NE)	NE	6458
 6407	Corcelles-Cormondrèche	NE	6458
 6408	Cortaillod	NE	6458
 6409	Fresens	NE	
@@ -2336,6 +2279,7 @@
 6413	Rochefort	NE	6458
 6414	Saint-Aubin-Sauges	NE	
 6415	Vaumarcus	NE	
+6416	Milvignes	NE	6458
 6421	La Chaux-de-Fonds	NE	6421
 6422	Les Planchettes	NE	
 6423	La Sagne	NE	
@@ -2355,22 +2299,8 @@
 6458	Neuchâtel	NE	6458
 6459	Saint-Blaise	NE	6458
 6461	La Tène	NE	6458
-6471	Boudevilliers	NE	
-6472	Cernier	NE	
-6473	Chézard-Saint-Martin	NE	
-6474	Coffrane	NE	
-6475	Dombresson	NE	
-6476	Engollon	NE	
-6477	Fenin-Vilars-Saules	NE	6458
-6478	Fontainemelon	NE	
-6479	Fontaines (NE)	NE	
-6480	Les Geneveys-sur-Coffrane	NE	
-6481	Les Hauts-Geneveys	NE	
-6482	Montmollin	NE	
-6483	Le Pâquier (NE)	NE	
-6484	Savagnier	NE	6458
 6485	Valangin	NE	
-6486	Villiers	NE	
+6487	Val-de-Ruz	NE	
 6504	La Côte-aux-Fées	NE	
 6511	Les Verrières	NE	
 6512	Val-de-Travers	NE	
@@ -2419,34 +2349,28 @@
 6643	Vernier	GE	6621
 6644	Versoix	GE	6621
 6645	Veyrier	GE	6621
-6701	Bassecourt	JU	
 6702	Boécourt	JU	
 6703	Bourrignon	JU	
 6704	Châtillon (JU)	JU	
 6705	Corban	JU	
 6706	Courchapoix	JU	
-6707	Courfaivre	JU	
 6708	Courrendlin	JU	6711
 6709	Courroux	JU	6711
 6710	Courtételle	JU	
 6711	Delémont	JU	6711
 6712	Develier	JU	6711
 6713	Ederswiler	JU	
-6714	Glovelier	JU	
 6715	Mervelier	JU	
 6716	Mettembert	JU	
-6717	Montsevelier	JU	
 6718	Movelier	JU	
 6719	Pleigne	JU	
 6720	Rebeuvelier	JU	
 6721	Rossemaison	JU	6711
 6722	Saulcy	JU	
-6723	Soulce	JU	
 6724	Soyhières	JU	6711
-6725	Undervelier	JU	
-6726	Vermes	JU	
-6727	Vicques	JU	6711
 6728	Vellerat	JU	
+6729	Haute-Sorne	JU	
+6730	Val Terbi	JU	
 6741	Le Bémont (JU)	JU	
 6742	Les Bois	JU	
 6743	Les Breuleux	JU	
@@ -2464,7 +2388,6 @@
 6773	Beurnevésin	JU	
 6774	Boncourt	JU	
 6775	Bonfol	JU	
-6776	Bressaucourt	JU	
 6778	Bure	JU	
 6781	Coeuve	JU	
 6782	Cornol	JU	
