@@ -272,8 +272,7 @@ module SwissMatch
         raise "Must load cantons first" unless cantons
         raise "Must load communities first" unless communities
 
-        temporary         = Hash.new { |h,k| h[k] = [] }
-        community_mapping = {}
+        community_mapping = Hash.new { |h,k| h[k] = [] }
         self_delivered    = []
         others            = []
         zip1_file         = Dir.enum_for(:glob, "#{@data_directory}/plz_p1_*.txt").last
@@ -289,27 +288,26 @@ module SwissMatch
         communities_data[1].map!(&:to_i)
         communities_data[2].map!(&:to_i)
         communities_data.transpose.each do |data|
-          temporary[data.last(2)] << data.at(0)
-        end
-
-        temporary.each do |key,coms|
-          # compact, because some communities already no longer exist, so by_community_numbers can
-          # contain nils which must be removed
-          community_mapping[key] = Communities.new(communities.by_community_numbers(*coms.uniq.sort).compact)
+          community_mapping[data.last(2)] << data.at(0)
         end
 
         temporary         = {}
         load_table(zip1_file, :zip_1).each do |row|
-          onrp                  = row.at(0).to_i
-          code                  = row.at(2).to_i
-          addon                 = row.at(3).to_i
-          delivery_by           = row.at(10).to_i
-          delivery_by           = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
-          language              = LanguageCodes[row.at(7).to_i]
-          language_alternative  = LanguageCodes[row.at(8).to_i]
-          name_short            = Name.new(row.at(4), language)
-          name                  = Name.new(row.at(5), language)
-          data                  = [
+          onrp                      = row.at(0).to_i
+          code                      = row.at(2).to_i
+          addon                     = row.at(3).to_i
+          delivery_by               = row.at(10).to_i
+          delivery_by               = case delivery_by when 0 then nil; when onrp then :self; else delivery_by; end
+          language                  = LanguageCodes[row.at(7).to_i]
+          language_alternative      = LanguageCodes[row.at(8).to_i]
+          name_short                = Name.new(row.at(4), language)
+          name                      = Name.new(row.at(5), language)
+          largest_community_number  = row.at(11).to_i
+          # compact, because some communities already no longer exist, so by_community_numbers can
+          # contain nils which must be removed
+          community_numbers         = (community_mapping[[code, addon]]|[largest_community_number]).sort
+          communities               = Communities.new(communities.by_community_numbers(*community_numbers).compact)
+          data                      = [
             onrp,                              # ordering_number
             row.at(1).to_i,                    # type
             code,
@@ -325,8 +323,8 @@ module SwissMatch
             language_alternative,
             row.at(9) == "1",                  # sortfile_member
             delivery_by,                       # delivery_by
-            communities.by_community_number(row.at(11).to_i),  # community_number
-            community_mapping[[code, addon]],
+            communities.by_community_number(largest_community_number),  # community_number
+            communities,
             Date.civil(*row.at(12).match(/^(\d{4})(\d\d)(\d\d)$/).captures.map(&:to_i)) # valid_from
           ]
           temporary[onrp] = data
