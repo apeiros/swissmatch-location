@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name                      = "swissmatch-location"
-  s.version                   = "0.1.1.201208"
+  s.version                   = "0.1.1.201304"
   s.authors                   = "Stefan Rusterholz"
   s.email                     = "stefan.rusterholz@gmail.com"
   s.homepage                  = "http://github.com/apeiros/swissmatch-location"
