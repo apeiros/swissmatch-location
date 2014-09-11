@@ -11,7 +11,7 @@ AG,,Abtwil,,4221,Abtwil,,5646,0,Abtwil AG
 SG,,Abtwil,,3442,Gaiserwald,,9030,0,Abtwil SG
 BE,,Achseten,,563,Frutigen,,3725,0,Achseten
 GR,,Acla,,3983,Medel (Lucmagn),,7185,0,Platta
-GR,,Acla (Safien),,3652,Tenna,,7104,0,Versam
+GR,,Acla (Safien),,3672,Safiental,,7104,0,Versam
 VD,,Aclens,,5621,Aclens,,1123,0,Aclens
 TI,,Acquacalda,,5049,Blenio,,6718,0,Olivone
 TI,,Acquarossa,,5048,Acquarossa,,6716,0,Acquarossa
@@ -38,8 +38,8 @@ BE,,Aeschi bei Spiez,,562,Aeschi bei Spiez,,3703,0,Aeschi b. Spiez
 BE,,Aeschiried,,562,Aeschi bei Spiez,,3703,41,Aeschiried
 BE,,Aeschlen bei Oberdiessbach,,619,Oberdiessbach,,3672,2,Aeschlen
 BE,,Aeschlen bei Sigriswil,,938,Sigriswil,,3656,1,Aeschlen ob Gunten
-SO,,Aetigkofen,,2441,Aetigkofen,,4583,2,Aetigkofen
-SO,,Aetingen,,2442,Aetingen,,4587,0,Aetingen
+SO,,Aetigkofen,,2465,Buchegg,,4583,2,Aetigkofen
+SO,,Aetingen,,2465,Buchegg,,4587,0,Aetingen
 AG,,Aettenschwil,,4239,Sins,,5645,0,Aettenschwil
 ZH,,Aeugst am Albis,,1,Aeugst am Albis,,8914,0,Aeugst am Albis
 ZH,,Aeugstertal,,1,Aeugst am Albis,,8914,2,Aeugstertal
@@ -106,16 +106,16 @@ TI,,Altanca,,5079,Quinto,,6776,0,Piotta
 FR,,Altavilla,,2275,Murten,,3280,0,Murten
 ZH,,Altbachs,,81,Bachs,,8164,0,Bachs
 LU,,Altbüron,,1122,Altbüron,,6147,0,Altbüron
-UR,,Altdorf,,1201,Altdorf (UR),,6460,0,Altdorf UR
 SH,,Altdorf,,2920,Thayngen,,8243,0,Altdorf SH
+UR,,Altdorf,,1201,Altdorf (UR),,6460,0,Altdorf UR
 ZH,,Alten,,33,Kleinandelfingen,,8453,0,Alten
 AG,,Altenburg,,4095,Brugg,,5210,0,Windisch
-SG,,Altendorf,,3271,Buchs (SG),,9470,0,Buchs SG
 SZ,,Altendorf,,1341,Altendorf,,8852,0,Altendorf
+SG,,Altendorf,,3271,Buchs (SG),,9470,0,Buchs SG
 TG,,Altenklingen,,4951,Wigoltingen,,8560,0,Märstetten
 SG,,Altenrhein,,3237,Thal,,9423,0,Altenrhein
-FR,,Alterswil,,2291,Alterswil,,1715,0,Alterswil FR
 SG,,Alterswil,,3402,Flawil,,9230,0,Flawil
+FR,,Alterswil,,2291,Alterswil,,1715,0,Alterswil FR
 TG,,Alterswilen,,4666,Kemmental,,8573,2,Alterswilen
 AG,,Althäusern,,4222,Aristau,,5628,0,Aristau
 ZH,,Altikon,,211,Altikon,,8479,0,Altikon
@@ -123,7 +123,7 @@ TG,,Altishausen,,4666,Kemmental,,8573,3,Altishausen
 LU,,Altishofen,,1123,Altishofen,,6246,0,Altishofen
 TG,,Altnau,,4641,Altnau,,8595,0,Altnau
 SO,,Altreu,,2556,Selzach,,2545,0,Selzach
-AG,Q,Altstalden,,4119,Unterbözberg,,5224,0,Unterbözberg
+AG,Q,Altstalden,,4124,Bözberg,,5225,1,Bözberg
 SG,,Altstätten,,3251,Altstätten,,9450,0,Altstätten SG
 ZH,Q,Altstetten,,261,Zürich,!,8000,0,Zürich
 LU,,Altwis,,1022,Altwis,,6286,0,Altwis
@@ -159,10 +159,10 @@ VD,,Antagnes,,5409,Ollon,,1867,0,Ollon VD
 BL,,Anwil,,2841,Anwil,,4469,0,Anwil
 VD,,Anzeinda,,5402,Bex,,1882,0,Gryon
 VS,,Anzère,,6082,Ayent,,1972,0,Anzère
-TI,,Anzonico,,5062,Anzonico,,6748,0,Anzonico
+TI,,Anzonico,,5072,Faido,,6748,0,Anzonico
+AI,,Appenzell,+,3103,Rüte,,9050,0,Appenzell
 AI,,Appenzell,+,3101,Appenzell,,9050,0,Appenzell
 AI,,Appenzell,+,3105,Schwende,,9050,0,Appenzell
-AI,,Appenzell,+,3103,Rüte,,9050,0,Appenzell
 VD,,Apples,,5421,Apples,,1143,0,Apples
 VS,,Aproz,+,6266,Sion,,1994,2,Aproz (Nendaz)
 VS,,Aproz,+,6024,Nendaz,,1994,2,Aproz (Nendaz)
@@ -183,7 +183,7 @@ GR,,Ardez,,3741,Ardez,,7546,0,Ardez
 VS,,Ardon,,6021,Ardon,,1957,0,Ardon
 TG,,Arenenberg,,4851,Salenstein,,8268,0,Mannenbach-Salenst
 NE,,Areuse,,6404,Boudry,,2015,0,Areuse
-GR,,Arezen,,3587,Versam,,7104,3,Arezen
+GR,,Arezen,,3672,Safiental,,7104,3,Arezen
 VS,,Argnoud,,6082,Ayent,,1966,10,Argnou (Ayent)
 BL,,Arisdorf,,2821,Arisdorf,,4422,0,Arisdorf
 AG,,Aristau,,4222,Aristau,,5628,0,Aristau
@@ -192,8 +192,8 @@ ZH,,Arn,,133,Horgen,,8810,0,Horgen
 SG,,Arnegg,,3443,Gossau (SG),,9212,0,Arnegg
 VD,,Arnex-sur-Nyon,,5701,Arnex-sur-Nyon,,1277,1,Arnex-sur-Nyon
 VD,,Arnex-sur-Orbe,,5743,Arnex-sur-Orbe,,1321,0,Arnex-sur-Orbe
-AG,,Arni,,4061,Arni (AG),,8905,3,Arni AG
 BE,,Arni,,602,Arni (BE),,3508,0,Arni BE
+AG,,Arni,,4061,Arni (AG),,8905,3,Arni AG
 BE,,Arnisäge,,602,Arni (BE),,3508,0,Arni BE
 TI,,Arogno,,5144,Arogno,,6822,0,Arogno
 VS,,Arolla,,6083,Evolène,,1986,0,Arolla
@@ -205,7 +205,7 @@ SZ,,Arth,,1362,Arth,,6415,0,Arth
 TI,,Artore,,5002,Bellinzona,!,6500,0,Bellinzona
 VD,,Arveyes,,5409,Ollon,,1884,2,Arveyes
 GR,,Arvigo,,3801,Arvigo,,6543,0,Arvigo
-VS,,Arvillard,,6264,Salins,,1991,2,Arvillard (Salins)
+VS,,Arvillard,,6266,Sion,,1991,2,Arvillard (Salins)
 VD,,Arzier,,5702,Arzier,,1273,0,Arzier
 TI,,Arzo,,5254,Mendrisio,,6864,0,Arzo
 GR,,Ascharina,,3893,St. Antönien,,7245,0,Ascharina
@@ -218,14 +218,14 @@ JU,,Asuel,,6810,La Baroche,,2954,0,Asuel
 GE,,Athenaz,,6604,Avusy,,1285,0,Athenaz (Avusy)
 FR,,Attalens,,2321,Attalens,,1616,0,Attalens
 AG,,Attelwil,,4272,Attelwil,,5056,0,Attelwil
-ZH,,Attikon,,229,Wiesendangen,,8544,0,Attikon
+ZH,,Attikon,,298,Wiesendangen,,8544,0,Attikon
 UR,,Attinghausen,,1203,Attinghausen,,6468,0,Attinghausen
 SO,Q,Attisholz,,2554,Riedholz,,4533,0,Riedholz
 BE,,Attiswil,,971,Attiswil,,4536,0,Attiswil
 AG,,Au,+,4091,Auenstein,,5105,0,Auenstein
-SG,,Au,,3231,Au (SG),,9434,0,Au SG
-TG,,Au,,4726,Fischingen,,8376,2,Au TG
 AG,,Au,+,4120,Veltheim (AG),,5105,0,Auenstein
+TG,,Au,,4726,Fischingen,,8376,2,Au TG
+SG,,Au,,3231,Au (SG),,9434,0,Au SG
 ZH,,Au,,142,Wädenswil,,8804,0,Au ZH
 VD,,Aubonne,,5422,Aubonne,,1170,0,Aubonne
 FR,,Auboranges,,2061,Auboranges,,1673,3,Auboranges
@@ -250,7 +250,7 @@ BE,,Auswil,,322,Auswil,,4944,0,Auswil
 FR,,Autafond,,2172,Autafond,,1782,2,Autafond
 FR,,Autavaux,,2052,Vernay,,1475,0,Autavaux
 FR,,Autigny,,2173,Autigny,,1742,0,Autigny
-NE,,Auvernier,,6401,Auvernier,,2012,0,Auvernier
+NE,,Auvernier,,6416,Milvignes,,2012,0,Auvernier
 AG,,Auw,,4223,Auw,,5644,0,Auw
 TI,,Avegno,,5324,Avegno Gordevio,,6670,0,Avegno
 VS,,Aven,,6023,Conthey,,1976,1,Aven
@@ -274,8 +274,8 @@ BS,Q,Bachletten,,2701,Basel,!,4000,0,Basel
 SG,,Bächli,,3372,Hemberg,,9633,2,Bächli (Hemberg)
 ZH,,Bachs,,81,Bachs,,8164,0,Bachs
 ZH,,Bachtel,,117,Hinwil,,8342,0,Wernetshausen
-LU,,Bad Knutwil,+,1104,Triengen,,6213,0,Knutwil
 LU,,Bad Knutwil,+,1089,Knutwil,,6213,0,Knutwil
+LU,,Bad Knutwil,+,1104,Triengen,,6213,0,Knutwil
 SG,,Bad Ragaz,,3291,Bad Ragaz,,7310,0,Bad Ragaz
 AG,,Bad Zurzach,,4323,Bad Zurzach,,5330,0,Bad Zurzach
 AG,,Baden,,4021,Baden,!,5400,0,Baden
@@ -302,8 +302,8 @@ VS,,Baltschieder,,6281,Baltschieder,,3937,0,Baltschieder
 AG,,Balzenwil,,4279,Murgenthal,,4856,0,Glashütten
 TI,,Banco,,5149,Bedigliora,,6981,16,Banco
 BE,,Bangerten bei Dieterswil,,532,Bangerten,,3256,2,Bangerten
-BE,,Bangerten bei Worb,+,627,Worb,,3076,0,Worb
 BE,,Bangerten bei Worb,+,359,Vechigen,,3076,0,Worb
+BE,,Bangerten bei Worb,+,627,Worb,,3076,0,Worb
 ZH,,Bänikon,,62,Kloten,,8426,0,Lufingen
 TG,,Bänikon,,4881,Amlikon-Bissegg,,8514,0,Amlikon-Bissegg
 ZH,,Bänk,,214,Dägerlen,,8471,5,Bänk (Dägerlen)
@@ -317,8 +317,8 @@ GE,,Bardonnex,,6605,Bardonnex,,1257,0,La Croix-de-Rozon
 ZH,,Bäretswil,,111,Bäretswil,,8344,0,Bäretswil
 BE,,Bärfischenhaus,+,668,Mühleberg,,3204,0,Rosshäusern
 BE,,Bärfischenhaus,+,670,Neuenegg,,3204,0,Rosshäusern
-SH,,Bargen,,2931,Bargen (SH),,8233,0,Bargen SH
 BE,,Bargen,,302,Bargen (BE),,3282,0,Bargen BE
+SH,,Bargen,,2931,Bargen (SH),,8233,0,Bargen SH
 BE,,Bäriswil,,403,Bäriswil,,3323,0,Bäriswil BE
 AG,,Barmelweid,,4005,Erlinsbach (AG),,5017,0,Barmelweid
 SO,,Bärschwil,,2611,Bärschwil,,4252,0,Bärschwil
@@ -326,7 +326,7 @@ SO,,Bärschwil Station,,2611,Bärschwil,,4252,0,Bärschwil
 SH,,Barzheim,,2920,Thayngen,,8241,0,Barzheim
 TG,,Basadingen,,4536,Basadingen-Schlattingen,,8254,0,Basadingen
 BS,,Basel,,2701,Basel,!,4000,0,Basel
-JU,,Bassecourt,,6701,Bassecourt,,2854,0,Bassecourt
+JU,,Bassecourt,,6729,Haute-Sorne,,2854,0,Bassecourt
 VS,,Basse-Nendaz,,6024,Nendaz,,1996,0,Basse-Nendaz
 ZH,,Bassersdorf,,52,Bassersdorf,,8303,0,Bassersdorf
 VD,,Bassins,,5703,Bassins,,1269,0,Bassins
@@ -359,10 +359,10 @@ JU,,Belfond,,6757,Saignelégier,,2354,0,Goumois
 SO,,Bellach,,2542,Bellach,,4512,0,Bellach
 FR,,Bellechasse,,2280,Bas-Vully,,1786,0,Sugiez
 BE,,Bellelay,,706,Saicourt,,2713,0,Bellelay
-GE,,Bellerive,,6616,Collonge-Bellerive,,1222,0,Vésenaz
-VD,,Bellerive,,5464,Vully-les-Lacs,,1585,2,Bellerive VD
-JU,,Bellerive,+,6711,Delémont,,2805,0,Soyhières
 JU,,Bellerive,+,6709,Courroux,,2805,0,Soyhières
+GE,,Bellerive,,6616,Collonge-Bellerive,,1222,0,Vésenaz
+JU,,Bellerive,+,6711,Delémont,,2805,0,Soyhières
+VD,,Bellerive,,5464,Vully-les-Lacs,,1585,2,Bellerive VD
 GE,,Bellevue,,6606,Bellevue,,1293,0,Bellevue
 AG,,Bellikon,,4022,Bellikon,,5454,0,Bellikon
 TI,,Bellinzona,,5002,Bellinzona,!,6500,0,Bellinzona
@@ -378,17 +378,17 @@ AR,,Bendlehn,,3023,Speicher,,9042,0,Speicher
 ZH,,Bendlikon,,135,Kilchberg (ZH),,8802,0,Kilchberg ZH
 VD,,Bénex,,5725,Prangins,,1197,0,Prangins
 ZH,,Benglen,,193,Fällanden,,8121,0,Benglen
+SG,,Benken,,3312,Benken (SG),,8717,0,Benken SG
 ZH,,Benken,,22,Benken (ZH),,8463,0,Benken ZH
 BL,,Benken,,2764,Biel-Benken,,4105,0,Biel-Benken BL
-SG,,Benken,,3312,Benken (SG),,8717,0,Benken SG
 SZ,,Bennau,,1301,Einsiedeln,,8836,0,Bennau
 BL,,Bennwil,,2882,Bennwil,,4431,0,Bennwil
 AG,,Benzenschwil,,4234,Merenschwand,,5636,0,Benzenschwil
 VD,,Bercher,,5512,Bercher,,1038,0,Bercher
-ZH,,Berg,,214,Dägerlen,,8471,4,Berg (Dägerlen)
-TG,,Berg,,4891,Berg (TG),,8572,0,Berg TG
 ZH,,Berg,,115,Gossau (ZH),,8625,0,Gossau ZH
 SG,,Berg,,3211,Berg (SG),,9305,0,Berg SG
+TG,,Berg,,4891,Berg (TG),,8572,0,Berg TG
+ZH,,Berg,,214,Dägerlen,,8471,4,Berg (Dägerlen)
 ZH,,Berg am Irchel,,23,Berg am Irchel,,8415,0,Berg am Irchel
 AG,,Bergdietikon,,4023,Bergdietikon,,8962,0,Bergdietikon
 GR,,Bergün/Bravuogn,,3521,Bergün/Bravuogn,,7482,0,Bergün/Bravuogn
@@ -398,12 +398,12 @@ SH,,Beringen,,2932,Beringen,,8222,0,Beringen
 VS,,Berisal,,6008,Ried-Brig,,3900,0,Brig
 BE,,Berken,,972,Berken,,3376,2,Berken
 FR,,Berlens,,2087,Mézières (FR),,1680,2,Berlens
-JU,,Berlincourt,,6701,Bassecourt,,2854,0,Bassecourt
+JU,,Berlincourt,,6729,Haute-Sorne,,2854,0,Bassecourt
 TG,,Berlingen,,4801,Berlingen,,8267,0,Berlingen
 BE,,Bern,,351,Bern,!,3000,0,Bern
 AG,,Bernau,,4311,Leibstadt,,5325,0,Leibstadt
-SG,,Berneck,+,3233,Berneck,,9442,0,Berneck
 AI,,Berneck,+,3111,Oberegg,,9442,0,Berneck
+SG,,Berneck,+,3233,Berneck,,9442,0,Berneck
 GE,,Bernex,,6607,Bernex,,1233,0,Bernex
 SG,,Bernhardzell,,3444,Waldkirch,,9304,0,Bernhardzell
 GR,,Bernina Suot,,3784,Pontresina,,7504,0,Pontresina
@@ -412,21 +412,21 @@ VD,,Berolle,,5424,Berolle,,1149,0,Berolle
 LU,,Beromünster,,1081,Beromünster,,6215,0,Beromünster
 SG,,Berschis,,3298,Walenstadt,,8892,0,Berschis
 ZH,,Bertschikon,,115,Gossau (ZH),,8614,0,Bertschikon Gossau
-ZH,,Bertschikon bei Attikon,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Bertschikon bei Attikon,,298,Wiesendangen,,8543,0,Bertschikon
 TI,,Berzona,,5137,Isorno,,6661,3,Berzona
-TI,,Besazio,,5243,Besazio,,6863,0,Besazio
+TI,,Besazio,,5254,Mendrisio,,6863,0,Besazio
 AG,,Besenbüren,,4226,Besenbüren,,5627,0,Besenbüren
 FR,,Besencens,,2335,Saint-Martin (FR),,1609,2,Besencens
 TG,,Bethelhausen,,4571,Gachnang,,8546,0,Islikon
 BE,Q,Bethlehem,,351,Bern,!,3000,0,Bern
 SG,,Betlis,,3311,Amden,,8872,0,Weesen
 GL,,Betschwanden,,1631,Glarus Süd,,8777,2,Betschwanden
-VS,,Betten,,6171,Betten,,3991,0,Betten
+VS,,Betten,,6205,Bettmeralp,,3991,0,Betten
 BE,,Bettenhausen,,973,Bettenhausen,,3366,0,Bettenhausen
 VD,,Bettens,,5471,Bettens,,1042,4,Bettens
 BS,,Bettingen,,2702,Bettingen,,4126,0,Bettingen
 SO,,Bettlach,,2543,Bettlach,,2544,0,Bettlach
-VS,,Bettmeralp,,6171,Betten,,3992,0,Bettmeralp
+VS,,Bettmeralp,,6205,Bettmeralp,,3992,0,Bettmeralp
 TG,,Bettwiesen,,4716,Bettwiesen,,9553,0,Bettwiesen
 AG,,Bettwil,,4227,Bettwil,,5618,0,Bettwil
 JU,,Beurnevésin,,6773,Beurnevésin,,2935,0,Beurnevésin
@@ -434,20 +434,20 @@ VS,,Beuson,,6024,Nendaz,,1996,6,Beuson (Nendaz)
 NE,,Bevaix,,6402,Bevaix,,2022,0,Bevaix
 GR,,Bever,,3781,Bever,,7502,0,Bever
 BE,,Bévilard,,682,Bévilard,,2735,2,Bévilard
-ZH,,Bewangen,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Bewangen,,298,Wiesendangen,,8543,0,Bertschikon
 VD,,Bex,,5402,Bex,,1880,0,Bex
-SG,,Bezikon,,3337,St. Gallenkappel,,8735,0,St. Gallenkappel
+SG,,Bezikon,,3342,Eschenbach (SG),,8735,0,St. Gallenkappel
 AG,,Beznau,,4304,Döttingen,,5312,0,Döttingen
 TI,,Biasca,,5281,Biasca,,6710,0,Biasca
 TI,,Biasca Stazione,,5281,Biasca,,6710,0,Biasca
 JU,,Biaufond,,6742,Les Bois,,2336,0,Les Bois
-SZ,,Biberbrugg,+,1301,Einsiedeln,,8836,0,Bennau
 SZ,,Biberbrugg,+,1321,Feusisberg,,8836,0,Bennau
+SZ,,Biberbrugg,+,1301,Einsiedeln,,8836,0,Bennau
 BE,,Biberen,,662,Ferenbalm,,3206,3,Biberen
 SO,,Biberist,,2513,Biberist,,4562,0,Biberist
 SH,,Bibermühle bei Ramsen,,2963,Ramsen,,8262,0,Ramsen
-SO,,Bibern,,2444,Bibern (SO),,4578,0,Bibern SO
 SH,,Bibern,,2920,Thayngen,,8242,0,Bibern SH
+SO,,Bibern,,2465,Buchegg,,4578,0,Bibern SO
 AG,,Biberstein,,4002,Biberstein,,5023,0,Biberstein
 TG,,Bichelsee,,4721,Bichelsee-Balterswil,,8363,0,Bichelsee
 SG,,Bichwil,,3407,Oberuzwil,,9248,0,Bichwil
@@ -483,7 +483,7 @@ VD,,Bioley-Magnoux,,5903,Bioley-Magnoux,,1407,4,Bioley-Magnoux
 VD,,Bioley-Orjulaz,,5513,Bioley-Orjulaz,,1042,3,Bioley-Orjulaz
 FR,,Bionnens,,2102,Ursy,,1670,2,Bionnens
 ZH,,Birchwil,,64,Nürensdorf,,8309,0,Nürensdorf
-VS,,Birgisch,,6001,Birgisch,,3903,1,Birgisch
+VS,,Birgisch,,6007,Naters,,3903,1,Birgisch
 ZH,,Birmensdorf,,242,Birmensdorf (ZH),,8903,0,Birmensdorf ZH
 AG,,Birmenstorf,,4024,Birmenstorf (AG),,5413,0,Birmenstorf AG
 TI,,Bironico,,5238,Monteceneri,,6804,0,Bironico
@@ -512,7 +512,7 @@ BE,,Blausee,,564,Kandergrund,,3717,0,Blausee-Mitholz
 SO,,Bleichenberg,,2513,Biberist,,4562,0,Biberist
 BE,,Bleienbach,,324,Bleienbach,,3368,0,Bleienbach
 TG,,Bleiken,,4506,Sulgen,,8583,0,Sulgen
-BE,,Bleiken bei Oberdiessbach,,604,Bleiken b. Oberdiessbach,,3674,0,Bleiken
+BE,,Bleiken bei Oberdiessbach,,619,Oberdiessbach,,3674,0,Bleiken
 FR,,Blessens,,2097,Rue,,1675,2,Blessens
 ZG,,Blickensdorf,,1701,Baar,,6340,0,Baar
 TG,,Blidegg,,4511,Zihlschlacht-Sitterdorf,,9220,0,Bischofszell
@@ -531,11 +531,11 @@ JU,,Boécourt,,6702,Boécourt,,2856,0,Boécourt
 VD,,Bofflens,,5747,Bofflens,,1353,0,Bofflens
 VD,,Bogis-Bossey,,5705,Bogis-Bossey,,1279,2,Bogis-Bossey
 LU,,Bognau,,1091,Mauensee,,6216,0,Mauensee
-TI,,Bogno,,5155,Bogno,,6951,19,Bogno
-AG,,Bohler,+,4135,Gontenschwil,,6221,0,Rickenbach LU
+TI,,Bogno,,5192,Lugano,,6951,19,Bogno
 LU,,Bohler,+,1097,Rickenbach (LU),,6221,0,Rickenbach LU
+AG,,Bohler,+,4135,Gontenschwil,,6221,0,Rickenbach LU
 VD,,Bois-Bougy,,5724,Nyon,,1260,0,Nyon
-NE,,Bôle,,6403,Bôle,,2014,0,Bôle
+NE,,Bôle,,6416,Milvignes,,2014,0,Bôle
 SO,,Bolken,,2514,Bolken,,4556,2,Bolken
 BE,,Boll,,359,Vechigen,,3067,0,Boll
 AG,,Boll bei Wohlen,,4082,Wohlen (AG),,5610,0,Wohlen AG
@@ -578,7 +578,7 @@ TG,,Bottighofen,,4643,Bottighofen,,8598,0,Bottighofen
 BL,,Bottmingen,,2767,Bottmingen,,4103,0,Bottmingen
 AG,,Böttstein,,4303,Böttstein,,5315,0,Böttstein
 VS,,Botyre,,6082,Ayent,,1966,8,Botyre (Ayent)
-NE,,Boudevilliers,,6471,Boudevilliers,,2043,0,Boudevilliers
+NE,,Boudevilliers,,6487,Val-de-Ruz,,2043,0,Boudevilliers
 NE,,Boudry,,6404,Boudry,,2017,0,Boudry
 VD,,Bougy-Villars,,5426,Bougy-Villars,,1172,0,Bougy-Villars
 VD,,Boulens,,5661,Boulens,,1063,3,Boulens
@@ -612,8 +612,8 @@ GR,,Breil/Brigels,,3981,Breil/Brigels,,7165,0,Breil/Brigels
 FR,,Breilles,,2243,Barberêche,,1783,0,Pensier
 ZH,,Breite,,64,Nürensdorf,,8309,0,Nürensdorf
 BS,Q,Breite,,2701,Basel,!,4000,0,Basel
-LU,,Breiten,,1151,Willisau,,6130,0,Willisau
 VS,,Breiten,,6203,Mörel-Filet,,3983,0,Mörel
+LU,,Breiten,,1151,Willisau,,6130,0,Willisau
 SO,,Breitenbach,,2613,Breitenbach,,4226,0,Breitenbach
 BE,,Breitenegg,,424,Wynigen,,3474,0,Rüedisbach
 TG,,Breitenloo,,4506,Sulgen,,9214,2,Kradolf
@@ -627,9 +627,9 @@ VD,,Brenles,,5662,Brenles,,1683,0,Brenles
 TI,,Breno,,5237,Alto Malcantone,,6937,0,Breno
 VD,,Brent,,5886,Montreux,,1817,0,Brent
 BE,,Brenzikofen,,606,Brenzikofen,,3671,0,Brenzikofen
-JU,,Bressaucourt,,6776,Bressaucourt,,2904,0,Bressaucourt
-VD,,Bressonnaz,+,5688,Syens,,1510,0,Moudon
+JU,,Bressaucourt,,6790,Fontenais,,2904,0,Bressaucourt
 VD,,Bressonnaz,+,5803,Vulliens,,1510,0,Moudon
+VD,,Bressonnaz,+,5688,Syens,,1510,0,Moudon
 VD,,Bressonnaz,+,5678,Moudon,,1510,0,Moudon
 VD,,Bretaye,,5409,Ollon,,1884,0,Villars-sur-Ollon
 VD,,Bretigny-sur-Morrens,,5515,Bretigny-sur-Morrens,,1053,2,Bretigny-Morrens
@@ -650,13 +650,13 @@ LU,,Briseck,,1150,Zell (LU),,6144,0,Zell LU
 BL,,Brislach,,2782,Brislach,,4225,0,Brislach
 TI,,Brissago,,5097,Brissago,,6614,0,Brissago
 UR,,Bristen,,1216,Silenen,,6475,0,Bristen
-SO,,Brittern,,2442,Aetingen,,4588,1,Brittern
+SO,,Brittern,,2465,Buchegg,,4588,1,Brittern
 AG,,Brittnau,,4274,Brittnau,,4805,0,Brittnau
 FR,,Broc,,2124,Broc,,1636,0,Broc
 FR,,Broc-Fabrique,,2124,Broc,,1636,0,Broc
 BE,,Brodhüsi,,769,Wimmis,,3752,0,Wimmis
 TI,,Broglio,,5323,Lavizzara,,6693,0,Broglio
-SG,,Bronschhofen,,3421,Bronschhofen,,9552,0,Bronschhofen
+SG,,Bronschhofen,,3427,Wil (SG),,9552,0,Bronschhofen
 TI,,Brontallo,,5323,Lavizzara,,6692,1,Brontallo
 NE,,Brot-Dessous,,6405,Brot-Dessous,,2149,3,Brot-Dessous
 NE,,Brot-Dessus,,6433,Brot-Plamboz,,2318,0,Brot-Plamboz
@@ -666,10 +666,10 @@ AG,,Brugg,,4095,Brugg,,5200,0,Brugg AG
 BE,,Brügg,,733,Brügg,,2555,0,Brügg BE
 BE,,Brüggelbach,,670,Neuenegg,,3176,0,Neuenegg
 SG,Q,Bruggen,,3203,St. Gallen,!,9000,0,St. Gallen
-SO,,Brügglen,,2446,Brügglen,,4582,0,Brügglen
+SO,,Brügglen,,2465,Buchegg,,4582,0,Brügglen
 AI,,Brülisau,+,3105,Schwende,,9058,0,Brülisau
 AI,,Brülisau,+,3103,Rüte,,9058,0,Brülisau
-GR,,Brün,,3586,Valendas,,7122,0,Valendas
+GR,,Brün,,3672,Safiental,,7122,0,Valendas
 AG,,Brunegg,,4193,Brunegg,,5505,0,Brunegg
 ZH,,Brünggen,,175,Kyburg,,8483,0,Kollbrunn
 BE,,Brünig,,785,Meiringen,,3860,4,Brünig
@@ -678,8 +678,8 @@ FR,,Brünisried,,2292,Brünisried,,1719,0,Brünisried
 SG,,Brunnadern,,3378,Neckertal,,9125,0,Brunnadern
 SZ,,Brunnen,,1364,Ingenbohl,,6440,0,Brunnen
 SO,,Brunnenthal,,2457,Messen,,3307,0,Brunnenthal
-SO,,Brunnersberg,+,2426,Laupersdorf,,4717,0,Mümliswil
 SO,,Brunnersberg,+,2427,Matzendorf,,4717,0,Mümliswil
+SO,,Brunnersberg,+,2426,Laupersdorf,,4717,0,Mümliswil
 AG,,Brunnwil,,4224,Beinwil (Freiamt),,5637,0,Beinwil (Freiamt)
 TI,,Brusata,,5260,Novazzano,,6883,0,Novazzano
 TG,,Brüschwil,,4416,Hefenhofen,,8580,0,Amriswil
@@ -701,7 +701,7 @@ TG,,Buch bei Märwil,,4711,Affeltrangen,,9562,2,Buch b. Märwil
 BE,,Buch bei Mühleberg,,668,Mühleberg,,3205,0,Gümmenen
 TG,,Buchackern,,4476,Erlen,,8586,7,Buchackern
 SH,,Buchberg,,2933,Buchberg,,8454,0,Buchberg
-SO,,Buchegg,,2453,Kyburg-Buchegg,,4586,0,Kyburg-Buchegg
+SO,,Buchegg,,2465,Buchegg,,4586,0,Kyburg-Buchegg
 SG,,Büchel,,3256,Rüthi (SG),,9464,0,Rüthi (Rheintal)
 BE,,Buchen,,932,Horrenbach-Buchen,,3623,3,Buchen BE
 GR,,Buchen im Prättigau,,3891,Luzein,,7223,0,Buchen
@@ -710,11 +710,11 @@ BE,,Buchholterberg,,923,Buchholterberg,,3615,0,Heimenschwand
 BE,Q,Buchholz,,942,Thun,!,3600,0,Thun
 VD,,Buchillon,,5623,Buchillon,,1164,0,Buchillon
 LU,,Buchrain,,1052,Buchrain,,6033,0,Buchrain
-AG,,Buchs,,4003,Buchs (AG),,5033,0,Buchs AG
-SG,,Buchs,,3271,Buchs (SG),,9470,0,Buchs SG
 LU,,Buchs,,1125,Dagmersellen,,6211,1,Buchs LU
+SG,,Buchs,,3271,Buchs (SG),,9470,0,Buchs SG
+AG,,Buchs,,4003,Buchs (AG),,5033,0,Buchs AG
 ZH,,Buchs,,83,Buchs (ZH),,8107,0,Buchs ZH
-FR,,Büchslen,,2244,Büchslen,,3215,2,Büchslen
+FR,,Büchslen,,2275,Murten,,3215,2,Büchslen
 SH,,Buchthalen,,2939,Schaffhausen,,8203,0,Schaffhausen
 BL,,Buckten,,2843,Buckten,,4446,0,Buckten
 SG,,Buechen bei Staad,,3237,Thal,,9422,0,Staad SG
@@ -733,7 +733,7 @@ BE,,Bumbach,,906,Schangnau,,6197,0,Schangnau
 BE,Q,Bümpliz,,351,Bern,!,3000,0,Bern
 BE,,Bundkofen,,311,Schüpfen,,3054,0,Schüpfen
 FR,,Bundtels,,2293,Düdingen,,3186,0,Düdingen
-SG,,Bunt,,3377,Wattwil,,9630,0,Wattwil
+SG,,Bunt,,3379,Wattwil,,9630,0,Wattwil
 AG,,Bünzen,,4229,Bünzen,,5624,0,Bünzen
 NW,,Buochs,,1502,Buochs,,6374,0,Buochs
 ZG,,Buonas,,1707,Risch,,6343,2,Buonas
@@ -744,11 +744,11 @@ AG,,Büren,,4164,Gansingen,,5272,0,Gansingen
 TG,,Büren,,4846,Raperswilen,,8558,0,Raperswilen
 BE,,Büren an der Aare,,383,Büren an der Aare,,3294,0,Büren an der Aare
 NW,,Büren nid dem Bach,,1508,Oberdorf (NW),,6382,0,Büren NW
-BE,,Büren zum Hof,,534,Büren zum Hof,,3313,0,Büren zum Hof
+BE,,Büren zum Hof,,538,Fraubrunnen,,3313,0,Büren zum Hof
 BE,,Bürenberg,,442,Romont (BE),,2603,0,Péry
-AG,,Burg,,4133,Burg (AG),,5736,0,Burg AG
 TG,,Burg,,4946,Weinfelden,,8570,0,Weinfelden
-SG,,Bürg,,3332,Eschenbach (SG),,8732,0,Neuhaus SG
+AG,,Burg,,4133,Burg (AG),,5736,0,Burg AG
+SG,,Bürg,,3342,Eschenbach (SG),,8732,0,Neuhaus SG
 FR,,Burg bei Murten,,2275,Murten,,3280,0,Murten
 BL,,Burg im Leimental,,2783,Burg im Leimental,,4117,0,Burg im Leimental
 SO,,Burgäschi,,2511,Aeschi (SO),,4556,3,Burgäschi
@@ -789,7 +789,7 @@ FR,,Bussy,,2004,Bussy (FR),,1541,0,Bussy FR
 VD,,Bussy-Chardonney,,5625,Bussy-Chardonney,,1136,0,Bussy-Chardonney
 VD,,Bussy-sur-Moudon,,5663,Bussy-sur-Moudon,,1514,0,Bussy-sur-Moudon
 BE,,Bütikofen,,412,Kirchberg (BE),,3422,0,Kirchberg BE
-SG,,Bütschwil,,3391,Bütschwil,,9606,0,Bütschwil
+SG,,Bütschwil,,3395,Bütschwil-Ganterschwil,,9606,0,Bütschwil
 SH,,Büttenhardt,,2914,Büttenhardt,,8236,0,Büttenhardt
 BE,,Buttenried,,668,Mühleberg,,3203,0,Mühleberg
 NE,,Buttes,,6512,Val-de-Travers,,2115,0,Buttes
@@ -807,21 +807,21 @@ TI,,Cademario,,5161,Cademario,,6936,0,Cademario
 TI,,Cadempino,,5162,Cadempino,,6814,3,Cadempino
 TI,,Cadenazzo,,5003,Cadenazzo,,6593,0,Cadenazzo
 TI,,Cadepiano,,5192,Lugano,,6917,0,Barbengo
-TI,,Cadro,,5163,Cadro,,6965,0,Cadro
+TI,,Cadro,,5192,Lugano,,6965,0,Cadro
 TI,,Cagiallo,,5226,Capriasca,,6955,0,Cagiallo
 TI,,Calezzo,,5397,Centovalli,,6655,0,Intragna
-GR,,Calfreisen,,3922,Calfreisen,,7027,3,Calfreisen
+GR,,Calfreisen,,3921,Arosa,,7027,3,Calfreisen
 TI,,Calonico,,5072,Faido,,6746,1,Calonico
-TI,,Calpiogna,,5066,Calpiogna,,6760,2,Calpiogna
+TI,,Calpiogna,,5072,Faido,,6760,2,Calpiogna
 TI,,Calprino,,5210,Paradiso,,6900,0,Lugano
 GR,,Cama,,3831,Cama,,6557,0,Cama
-GR,,Camana,,3651,Safien,,7107,0,Safien Platz
+GR,,Camana,,3672,Safiental,,7107,0,Safien Platz
 TI,,Camedo,,5397,Centovalli,,6659,0,Camedo
 TI,,Camignolo,,5238,Monteceneri,,6803,0,Camignolo
 GR,,Camischolas,,3986,Tujetsch,,7187,0,Camischolas
 TI,,Camorino,,5004,Camorino,,6528,0,Camorino
 GR,,Campascio,,3551,Brusio,,7748,0,Campascio
-TI,,Campello,,5067,Campello,,6760,3,Campello
+TI,,Campello,,5072,Faido,,6760,3,Campello
 TI,,Camperio,,5049,Blenio,,6718,1,Camperio
 TI,,Campestro,,5226,Capriasca,,6950,0,Tesserete
 GR,,Campliun,,3987,Trun,,7166,0,Trun
@@ -830,7 +830,7 @@ TI,,Campo (Vallemaggia),,5307,Campo (Vallemaggia),,6684,0,Campo (VM)
 GR,,Campocologno,,3551,Brusio,,7744,0,Campocologno
 TI,,Campra,,5049,Blenio,,6718,0,Olivone
 GR,,Campsut,,3681,Avers,,7446,0,Campsut-Cröt
-GR,,Camuns,,3599,Suraua,,7113,0,Camuns
+GR,,Camuns,,3618,Lumnezia,,7113,0,Camuns
 TI,,Caneggio,,5269,Breggia,,6837,0,Caneggio
 TI,,Canobbio,,5167,Canobbio,,6952,0,Canobbio
 GR,,Canols,,3506,Vaz/Obervaz,,7077,0,Valbella
@@ -839,16 +839,16 @@ TI,,Capolago,,5254,Mendrisio,,6825,0,Capolago
 TI,,Caprino,,5192,Lugano,,6823,0,Pugerna
 GE,,Cara,,6635,Presinge,,1243,0,Presinge
 TI,,Carabbia,,5192,Lugano,,6913,0,Carabbia
-TI,,Carabietta,,5169,Carabietta,,6919,0,Carabietta
+TI,,Carabietta,,5236,Collina d'Oro,,6919,0,Carabietta
 TI,,Carasso,,5002,Bellinzona,!,6500,0,Bellinzona
 TI,,Cardada,,5113,Locarno,!,6600,0,Locarno
 TI,,Carena,,5018,Sant'Antonio,,6584,0,Carena
-TI,,Carì,,5067,Campello,,6760,4,Carì
+TI,,Carì,,5072,Faido,,6760,4,Carì
 FR,,Carignan,,2045,Vallon,,1565,0,Missy
 TI,,Carmena,,5018,Sant'Antonio,,6583,0,S. Antonio
-TI,,Carona,,5170,Carona,,6914,0,Carona
+TI,,Carona,,5192,Lugano,,6914,0,Carona
 GE,,Carouge,,6608,Carouge (GE),,1227,0,Carouge GE
-GR,,Carrera,,3586,Valendas,,7122,2,Carrera
+GR,,Carrera,,3672,Safiental,,7122,2,Carrera
 VD,,Carrouge,,5782,Carrouge (VD),,1084,0,Carrouge VD
 GE,,Cartigny,,6609,Cartigny,,1236,0,Cartigny
 GR,,Casaccia,,3792,Bregaglia,,7602,0,Casaccia
@@ -864,31 +864,31 @@ GR,,Castasegna,,3792,Bregaglia,,7608,0,Castasegna
 TI,,Castel S. Pietro,,5249,Castel San Pietro,,6874,0,Castel San Pietro
 TI,,Castelrotto,,5178,Croglio,,6980,0,Castelrotto
 GR,,Casti,,3703,Casti-Wergenstein,,7433,0,Donat
-GR,,Castiel,,3923,Castiel,,7027,0,Castiel
+GR,,Castiel,,3921,Arosa,,7027,0,Castiel
 TI,,Castione,,5001,Arbedo-Castione,,6532,0,Castione
-GR,,Castrisch,,3571,Castrisch,,7126,0,Castrisch
+GR,,Castrisch,,3619,Ilanz/Glion,,7126,0,Castrisch
 TI,,Castro,,5048,Acquarossa,,6723,2,Castro
 TI,,Catto,,5079,Quinto,,6777,0,Quinto
 GR,,Cauco,,3806,Cauco,,6546,0,Cauco
 VD,,Caux,,5886,Montreux,,1824,0,Caux
 GR,,Cavaglia,,3561,Poschiavo,,7742,0,Poschiavo
-TI,,Cavagnago,,5068,Cavagnago,,6749,1,Cavagnago
+TI,,Cavagnago,,5072,Faido,,6749,1,Cavagnago
 GR,,Cavajone,,3551,Brusio,,7748,0,Campascio
 TI,,Cavallino,,5192,Lugano,,6823,0,Pugerna
 GR,,Cavardiras,,3982,Disentis/Mustér,,7182,0,Cavardiras
 TI,,Cavergno,,5310,Cevio,,6690,0,Cavergno
 TI,,Caviano,,5398,Gambarogno,,6578,0,Caviano
-TI,,Cavigliano,,5099,Cavigliano,,6654,0,Cavigliano
+TI,,Cavigliano,,5396,Terre di Pedemonte,,6654,0,Cavigliano
 GR,,Cazis,,3661,Cazis,,7408,0,Cazis
 GR,,Celerina/Schlarigna,,3782,Celerina/Schlarigna,,7505,0,Celerina
 GE,,Céligny,,6610,Céligny,,1298,0,Céligny
 TI,,Cerentino,,5309,Cerentino,,6683,0,Cerentino
 VD,,Cergnat,,5410,Ormont-Dessous,,1863,0,Le Sépey
 JU,,Cerneux-Godat,,6742,Les Bois,,2336,0,Les Bois
-FR,,Cerniat,,2126,Cerniat (FR),,1654,0,Cerniat FR
+FR,,Cerniat,,2163,Val-de-Charmey,,1654,0,Cerniat FR
 VD,,Cerniaz,,5831,Valbroye,,1682,5,Cerniaz VD
-NE,,Cernier,,6472,Cernier,,2053,0,Cernier
-TI,,Certara,,5173,Certara,,6959,2,Certara
+NE,,Cernier,,6487,Val-de-Ruz,,2053,0,Cernier
+TI,,Certara,,5192,Lugano,,6959,2,Certara
 TI,,Certenago,,5236,Collina d'Oro,,6926,0,Montagnola
 GE,,Certoux,,6632,Perly-Certoux,,1258,0,Perly
 TI,,Cevio,,5310,Cevio,,6675,0,Cevio
@@ -900,8 +900,8 @@ BE,,Chaindon,,703,Reconvilier,,2732,0,Reconvilier
 VS,,Chalais,,6232,Chalais,,3966,0,Chalais
 ZG,,Cham,,1702,Cham,,6330,0,Cham
 GE,,Chambésy,,6634,Pregny-Chambésy,,1292,0,Chambésy
-FR,,Chamblioux,+,2198,Granges-Paccot,,1763,0,Granges-Paccot
 FR,,Chamblioux,+,2197,Givisiez,,1763,0,Granges-Paccot
+FR,,Chamblioux,+,2198,Granges-Paccot,,1763,0,Granges-Paccot
 VD,,Chamblon,,5904,Chamblon,,1436,2,Chamblon
 NE,,Chambrelien,+,6404,Boudry,,2019,2,Chambrelien
 NE,,Chambrelien,+,6413,Rochefort,,2019,2,Chambrelien
@@ -914,8 +914,8 @@ NE,,Champ-du-Moulin,+,6404,Boudry,,2149,0,Champ-du-Moulin
 NE,,Champ-du-Moulin,+,6405,Brot-Dessous,,2149,0,Champ-du-Moulin
 VS,,Champéry,,6151,Champéry,,1874,0,Champéry
 VS,,Champex,,6034,Orsières,,1938,0,Champex-Lac
-GR,,Champfèr,+,3787,St. Moritz,,7512,0,Champfèr
 GR,,Champfèr,+,3790,Silvaplana,,7512,0,Champfèr
+GR,,Champfèr,+,3787,St. Moritz,,7512,0,Champfèr
 VS,,Champlan,,6263,Grimisuat,,1971,2,Champlan
 VD,,Champmartin,,5456,Cudrefin,,1588,0,Cudrefin
 VS,,Champoussin,,6157,Val-d'Illiez,,1873,2,Champoussin
@@ -927,21 +927,21 @@ VS,,Champzabé,,6248,Sierre,,3976,2,Champzabé
 VS,,Champzabé,,6234,Chermignon,,3976,0,Noës
 GR,,Chamues-ch,,3785,La Punt-Chamues-ch,,7522,0,La Punt-Chamues-ch
 GE,,Chancy,,6611,Chancy,,1284,0,Chancy
+VS,,Chandolin,,6265,Savièse,,1965,7,Chandolin Savièse
 VS,,Chandolin,,6252,Anniviers,,3961,23,Chandolin
-VS,,Chandolin,,6265,Savièse,,1965,7,Chandolin-Savièse
 FR,,Chandon,,2024,Léchelles,,1773,2,Chandon
 VS,,Chandonne,,6033,Liddes,,1945,5,Chandonne (Liddes)
 FR,,Chandossel,,2279,Villarepos,,1583,0,Villarepos
-VD,,Chanéaz,,5906,Chanéaz,,1409,0,Chanéaz
+VD,,Chanéaz,,5693,Montanaire,,1409,0,Chanéaz
 GR,,Chapella,,3788,S-chanf,,7526,0,Cinuos-chel
 FR,,Chapelle (Broye),,2009,Cheiry,,1534,2,Chapelle (Broye)
 FR,,Chapelle (Glâne),,2066,Chapelle (Glâne),,1608,4,Chapelle (Glâne)
-VD,,Chapelle-sur-Moudon,,5664,Chapelle-sur-Moudon,,1063,0,Chapelle-s-Moudon
+VD,,Chapelle-sur-Moudon,,5693,Montanaire,,1063,0,Chapelle-s-Moudon
 SG,,Chapf,,3442,Gaiserwald,,9032,0,Engelburg
 BL,,Chäppeli,,2775,Therwil,,4153,0,Reinach BL
 VD,,Chardonne,,5882,Chardonne,,1803,0,Chardonne
 VD,,Chardonney,,5804,Jorat-Menthue,,1041,22,Montaubion-Chardon
-FR,,Charmey,,2127,Charmey,,1637,0,Charmey (Gruyère)
+FR,,Charmey,,2163,Val-de-Charmey,,1637,0,Charmey (Gruyère)
 JU,,Charmoille,,6810,La Baroche,,2947,0,Charmoille
 VS,,Charrat,,6132,Charrat,,1906,0,Charrat
 GE,,Charrot,,6605,Bardonnex,,1257,0,La Croix-de-Rozon
@@ -1004,20 +1004,20 @@ VD,,Chexbres,,5601,Chexbres,,1071,0,Chexbres
 FR,,Cheyres,,2010,Cheyres,,1468,0,Cheyres
 VD,,Chez le Maìtre,,5872,Le Chenit,,1347,0,Le Sentier
 VS,,Chez Petit,,6033,Liddes,,1945,11,Chez Petit(Liddes)
-NE,,Chézard,,6473,Chézard-Saint-Martin,,2054,0,Chézard-St-Martin
+NE,,Chézard,,6487,Val-de-Ruz,,2054,0,Chézard-St-Martin
 JU,,Chez-Basuel,,6808,Clos du Doubs,,2883,0,Montmelon
 NE,,Chez-le-Bart,,6410,Gorgier,,2025,0,Chez-le-Bart
 VS,,Chez-les-Addy,,6034,Orsières,,1937,0,Orsières
 VS,,Chez-les-Reuse,,6034,Orsières,,1937,0,Orsières
 VD,,Chez-Meylan,,5872,Le Chenit,,1348,0,Le Brassus
 TI,,Chiasso,,5250,Chiasso,,6830,0,Chiasso
-TI,,Chiesa,,5041,Malvaglia,,6713,0,Malvaglia
+TI,,Chiesa,,5050,Serravalle,,6713,0,Malvaglia
 TI,,Chiggiogna,,5072,Faido,,6764,0,Chiggiogna
 VD,,Chigny,,5628,Chigny,,1134,2,Chigny
 ZH,,Chilenfeld,,10,Obfelden,,8912,0,Obfelden
 VS,,Chippis,,6235,Chippis,,3965,0,Chippis
 TG,,Chirchberg,,4611,Thundorf,,8512,0,Thundorf
-TI,,Chironico,,5070,Chironico,,6747,0,Chironico
+TI,,Chironico,,5072,Faido,,6747,0,Chironico
 VS,,Choëx,,6153,Monthey,,1871,0,Choëx
 JU,,Choindez,,6708,Courrendlin,,2830,0,Courrendlin
 GE,,Chougny,,6642,Vandoeuvres,,1253,0,Vandoeuvres
@@ -1027,7 +1027,7 @@ BE,,Chramershus,,958,Trachselwald,,3453,0,Heimisbach
 BE,,Chuderhüsi,,904,Röthenbach im Emmental,,3538,0,Röthenbach i. E.
 GR,,Chur,,3901,Chur,,7000,0,Chur
 GR,,Churwalden,,3911,Churwalden,,7075,0,Churwalden
-TI,,Cimadera,,5174,Cimadera,,6959,4,Cimadera
+TI,,Cimadera,,5192,Lugano,,6959,4,Cimadera
 TI,,Cimalmotto,,5307,Campo (Vallemaggia),,6684,1,Cimalmotto
 TI,,Cimo,,5151,Bioggio,,6992,1,Cimo
 GR,,Cinuos-chel,,3788,S-chanf,,7526,0,Cinuos-chel
@@ -1038,10 +1038,10 @@ TI,,Claro,,5282,Claro,,6702,0,Claro
 GR,,Clavadel,,3851,Davos,,7272,0,Davos Clavadel
 BE,,Clavaleyres,,661,Clavaleyres,,1595,2,Clavaleyres
 VS,,Clèbes,,6024,Nendaz,,1993,2,Clèbes (Nendaz)
-NE,,Clémesin,,6486,Villiers,,2057,0,Villiers
+NE,,Clémesin,,6487,Val-de-Ruz,,2057,0,Villiers
 GR,,Clugin,,3701,Andeer,,7442,0,Clugin
 JU,,Coeuve,,6781,Coeuve,,2932,0,Coeuve
-NE,,Coffrane,,6474,Coffrane,,2207,0,Coffrane
+NE,,Coffrane,,6487,Val-de-Ruz,,2207,0,Coffrane
 TI,,Coglio,,5317,Maggia,,6678,3,Coglio
 VD,,Coinsins,,5710,Coinsins,,1267,2,Coinsins
 GE,,Cointrin,+,6643,Vernier,,1216,0,Cointrin
@@ -1049,7 +1049,7 @@ GE,,Cointrin,+,6630,Meyrin,,1216,0,Cointrin
 VS,,Col-des-Planches,,6036,Vollèges,,1927,0,Chemin
 TI,,Coldrerio,,5251,Coldrerio,,6877,0,Coldrerio
 VD,,Col-du-Pillon,,5411,Ormont-Dessus,,1865,0,Les Diablerets
-TI,,Colla,,5229,Valcolla,,6951,18,Colla
+TI,,Colla,,5192,Lugano,,6951,18,Colla
 GE,,Collex,,6615,Collex-Bossy,,1239,0,Collex
 TI,,Collinasca,,5309,Cerentino,,6683,0,Cerentino
 VS,,Collombey,,6152,Collombey-Muraz,,1868,0,Collombey
@@ -1058,8 +1058,8 @@ GE,,Collonge,,6616,Collonge-Bellerive,,1245,0,Collonge-Bellerive
 VS,,Collonges,,6211,Collonges,,1903,0,Collonges
 GR,,Cologna,,3561,Poschiavo,,7742,0,Poschiavo
 GE,,Cologny,,6617,Cologny,,1223,0,Cologny
+NE,,Colombier,,6416,Milvignes,,2013,0,Colombier NE
 VD,,Colombier,,5634,Echichens,,1114,0,Colombier VD
-NE,,Colombier,,6406,Colombier (NE),,2013,0,Colombier NE
 TI,,Comano,,5176,Comano,,6949,0,Comano
 VD,,Combremont-le-Grand,,5831,Valbroye,,1535,0,Combremont-Grand
 VD,,Combremont-le-Petit,,5831,Valbroye,,1536,0,Combremont-Petit
@@ -1086,8 +1086,8 @@ VD,,Corbeyrier,,5404,Corbeyrier,,1856,0,Corbeyrier
 FR,,Corbières,,2129,Corbières,,1647,0,Corbières
 TI,,Corcapolo,,5397,Centovalli,,6655,0,Intragna
 VD,,Corcelettes,,5561,Grandson,,1422,0,Grandson
-NE,,Corcelles,,6407,Corcelles-Cormondrèche,,2035,0,Corcelles NE
 BE,,Corcelles,,687,Corcelles (BE),,2747,0,Corcelles BE
+NE,,Corcelles,,6407,Corcelles-Cormondrèche,,2035,0,Corcelles NE
 FR,,Corcelles,,2321,Attalens,,1616,0,Attalens
 VD,,Corcelles-le-Jorat,,5785,Corcelles-le-Jorat,,1082,0,Corcelles-le-Jorat
 VD,,Corcelles-près-Concise,,5555,Corcelles-près-Concise,,1426,1,Corcelles-Concise
@@ -1109,8 +1109,8 @@ NE,,Cornaux,,6451,Cornaux,,2087,0,Cornaux NE
 VD,Q,Cornes de Cerf,,5604,Forel (Lavaux),,1072,0,Forel (Lavaux)
 JU,,Cornol,,6782,Cornol,,2952,0,Cornol
 FR,,Corpataux,,2184,Corpataux-Magnedens,,1727,0,Corpataux-Magneden
-VD,,Corrençon,,5685,Saint-Cierges,,1410,5,St-Cierges
-VD,,Correvon,,5667,Correvon,,1410,2,Correvon
+VD,,Corrençon,,5693,Montanaire,,1410,5,St-Cierges
+VD,,Correvon,,5693,Montanaire,,1410,2,Correvon
 FR,,Corsalettes,,2200,Grolley,,1772,0,Grolley
 VD,,Corseaux,,5883,Corseaux,,1802,0,Corseaux
 FR,,Corserey,,2185,Corserey,,1747,0,Corserey
@@ -1129,16 +1129,16 @@ VD,,Cossonay-Ville,,5477,Cossonay,,1304,0,Cossonay-Ville
 VD,,Cottens,,5478,Cottens (VD),,1116,0,Cottens VD
 FR,,Cottens,,2186,Cottens (FR),,1741,0,Cottens FR
 VD,,Cotterd,,5464,Vully-les-Lacs,,1585,3,Cotterd
-VS,,Cotterg,,6031,Bagnes,,1934,2,Cotterg(Le Châble)
+VS,,Cotterg,,6031,Bagnes,,1934,0,Le Châble VS
 FR,,Coumin,,2009,Cheiry,,1529,0,Cheiry
 JU,,Courcelon,,6709,Courroux,,2823,0,Courcelon
 JU,,Courchapoix,,6706,Courchapoix,,2825,0,Courchapoix
 JU,,Courchavon,,6783,Courchavon,,2922,0,Courchavon
-JU,,Courfaivre,,6707,Courfaivre,,2853,0,Courfaivre
+JU,,Courfaivre,,6729,Haute-Sorne,,2853,0,Courfaivre
 JU,,Courgenay,,6784,Courgenay,,2950,0,Courgenay
 FR,,Courgevaux,,2250,Courgevaux,,1796,0,Courgevaux
 FR,,Courlevon,,2251,Courlevon,,1795,0,Courlevon
-FR,,Cournillens,,2272,Misery-Courtion,,1784,2,Cournillens
+FR,,Cournillens,,2272,Misery-Courtion,,1721,5,Cournillens
 JU,,Courrendlin,,6708,Courrendlin,,2830,0,Courrendlin
 JU,,Courroux,,6709,Courroux,,2822,0,Courroux
 BE,,Court,,690,Court,,2738,0,Court
@@ -1153,11 +1153,11 @@ FR,,Courtion,,2272,Misery-Courtion,,1721,4,Courtion
 FR,,Cousset,,2029,Montagny (FR),,1774,0,Cousset
 FR,,Coussiberlé,,2251,Courlevon,,1795,0,Courlevon
 NE,,Couvet,,6512,Val-de-Travers,,2108,0,Couvet
-TI,,Cozzo,,5229,Valcolla,,6951,20,Cozzo
+TI,,Cozzo,,5192,Lugano,,6951,20,Cozzo
 TI,,Crana,,5136,Onsernone,,6611,17,Crana
 VD,,Crans-près-Céligny,,5713,Crans-près-Céligny,,1299,0,Crans-près-Céligny
-VS,,Crans-sur-Sierre,+,6234,Chermignon,,3963,0,Crans-Montana
 VS,,Crans-sur-Sierre,+,6240,Lens,,3963,0,Crans-Montana
+VS,,Crans-sur-Sierre,+,6234,Chermignon,,3963,0,Crans-Montana
 VD,,Crassier,,5714,Crassier,,1263,0,Crassier
 GR,,Crasta,,3782,Celerina/Schlarigna,,7505,0,Celerina
 VD,,Crebelley,,5408,Noville,,1845,0,Noville
@@ -1182,10 +1182,10 @@ VD,,Cuarnens,,5479,Cuarnens,,1148,4,Cuarnens
 VD,,Cuarny,,5911,Cuarny,,1404,0,Cuarny
 VD,,Cudrefin,,5456,Cudrefin,,1588,0,Cudrefin
 TI,,Cugnasco,,5138,Cugnasco-Gerra,,6516,0,Cugnasco
-FR,,Cugy,,2011,Cugy (FR),,1482,0,Cugy FR
 VD,,Cugy,,5516,Cugy (VD),,1053,0,Cugy VD
+FR,,Cugy,,2011,Cugy (FR),,1482,0,Cugy FR
 VD,,Cully,,5613,Bourg-en-Lavaux,,1096,0,Cully
-GR,,Cumbel,,3592,Cumbel,,7142,0,Cumbel
+GR,,Cumbel,,3618,Lumnezia,,7142,0,Cumbel
 TI,,Cumiasca,,5048,Acquarossa,,6722,0,Corzoneso
 GR,,Cumpadials,,3985,Sumvitg,,7176,0,Cumpadials
 GR,,Cunter,,3532,Cunter,,7452,0,Cunter
@@ -1194,7 +1194,7 @@ TI,,Cureggia,,5192,Lugano,,6963,2,Cureggia
 TI,,Cureglia,,5180,Cureglia,,6944,0,Cureglia
 TI,,Curio,,5181,Curio,,6986,3,Curio
 VD,,Curtilles,,5669,Curtilles,,1521,0,Curtilles
-TI,,Curtina,,5229,Valcolla,,6959,3,Curtina
+TI,,Curtina,,5192,Lugano,,6959,3,Curtina
 FR,,Cutterwil,,2175,Belfaux,,1782,0,Belfaux
 ZH,,Dachlissen,,9,Mettmenstetten,,8932,0,Mettmenstetten
 ZH,,Dachsen,,25,Dachsen,,8447,0,Dachsen
@@ -1219,8 +1219,8 @@ GR,,Danis,,3981,Breil/Brigels,,7163,0,Danis
 GE,,Dardagny,,6620,Dardagny,,1283,1,Dardagny
 GR,,Dardin,,3981,Breil/Brigels,,7164,0,Dardin
 BE,,Därligen,,575,Därligen,,3707,0,Därligen
-VS,,Darnona,+,6249,Venthône,,3973,0,Venthône
 VS,,Darnona,+,6244,Randogne,,3973,0,Venthône
+VS,,Darnona,+,6249,Venthône,,3973,0,Venthône
 TI,Q,Daro,,5002,Bellinzona,!,6500,0,Bellinzona
 BE,,Därstetten,,761,Därstetten,,3763,0,Därstetten
 GR,,Darvella,,3987,Trun,,7166,0,Trun
@@ -1232,20 +1232,20 @@ TI,,Davesco,,5192,Lugano,,6964,0,Davesco-Soragno
 VS,,Daviaz,,6215,Massongex,,1891,11,Vérossaz
 GR,,Davos Dorf,,3851,Davos,,7260,0,Davos Dorf
 GR,,Davos Platz,,3851,Davos,,7270,0,Davos Platz
-GR,,Degen,,3594,Degen,,7145,0,Degen
+GR,,Degen,,3618,Lumnezia,,7145,0,Degen
 AG,,Degermoos,,4312,Lengnau (AG),,5426,0,Lengnau AG
 SG,,Degersheim,,3401,Degersheim,,9113,0,Degersheim
 TI,,Deggio,,5079,Quinto,,6777,0,Quinto
 VS,,Deisch,,6177,Grengiols,,3993,0,Grengiols
 BE,,Deisswil bei Münchenbuchsee,,535,Deisswil b. Münchenbuch.,,3053,2,Deisswil Mbuchsee
-BE,,Deisswil bei Stettlen,+,358,Stettlen,,3066,0,Stettlen
 BE,,Deisswil bei Stettlen,+,363,Ostermundigen,,3066,0,Stettlen
+BE,,Deisswil bei Stettlen,+,358,Stettlen,,3066,0,Stettlen
 SO,,Deitingen,,2516,Deitingen,,4543,0,Deitingen
 JU,,Delémont,,6711,Delémont,,2800,0,Delémont
 FR,,Delley,,2051,Delley-Portalban,,1567,0,Delley
 VD,,Démoret,,5912,Démoret,,1415,2,Démoret
 VD,,Denens,,5631,Denens,,1135,0,Denens
-VD,,Denezy,,5670,Denezy,,1410,3,Denezy
+VD,,Denezy,,5693,Montanaire,,1410,3,Denezy
 VD,,Denges,,5632,Denges,,1026,2,Denges
 AG,,Densbüren,,4004,Densbüren,,5026,0,Densbüren
 BE,,Dentenberg,,359,Vechigen,,3076,0,Worb
@@ -1254,15 +1254,15 @@ SO,,Derendingen,,2517,Derendingen,,4552,0,Derendingen
 BE,,Detligen,,309,Radelfingen,,3036,0,Detligen
 BE,,Dettenbühl,,995,Wiedlisbach,,4537,0,Wiedlisbach
 ZH,,Dettenried,,180,Weisslingen,,8484,2,Neschwil
-TG,,Dettighofen,,4683,Lengwil,,8574,0,Lengwil-Oberhofen
 TG,,Dettighofen,,4841,Pfyn,,8505,2,Dettighofen
+TG,,Dettighofen,,4683,Lengwil,,8574,4,Dettighofen Lengw.
 JU,,Develier,,6712,Develier,,2802,0,Develier
 ZH,,Dickbuch,,222,Hofstetten (ZH),,8354,0,Hofstetten ZH
 SG,,Dicken bei Degersheim,,3378,Neckertal,,9115,0,Dicken
 OW,,Diechtersmatt,,1403,Giswil,,6074,0,Giswil
 BL,,Diegten,,2884,Diegten,,4457,0,Diegten
 ZH,,Dielsdorf,,86,Dielsdorf,,8157,0,Dielsdorf
-SG,,Diemberg,,3332,Eschenbach (SG),,8733,0,Eschenbach SG
+SG,,Diemberg,,3342,Eschenbach (SG),,8733,0,Eschenbach SG
 BE,,Diemerswil,,536,Diemerswil,,3053,3,Diemerswil
 BE,,Diemtigen,,762,Diemtigen,,3754,0,Diemtigen
 BL,,Diepflingen,,2845,Diepflingen,,4442,0,Diepflingen
@@ -1270,11 +1270,11 @@ SG,,Diepoldsau,,3234,Diepoldsau,,9444,0,Diepoldsau
 LU,,Dierikon,,1053,Dierikon,,6036,0,Dierikon
 GL,,Diesbach,,1631,Glarus Süd,,8777,0,Diesbach GL
 BE,,Diessbach bei Büren,,385,Diessbach bei Büren,,3264,0,Diessbach b. Büren
-BE,,Diesse,,721,Diesse,,2517,0,Diesse
+BE,,Diesse,,726,Plateau de Diesse,,2517,0,Diesse
 TG,,Diessenhofen,,4545,Diessenhofen,,8253,0,Diessenhofen
 SG,,Dietenwil,,3423,Niederhelfenschwil,,9526,0,Zuckenriet
 BE,,Dieterswil,,310,Rapperswil (BE),,3256,0,Dieterswil
-SG,,Dietfurt,,3391,Bütschwil,,9615,0,Dietfurt
+SG,,Dietfurt,,3395,Bütschwil-Ganterschwil,,9615,0,Dietfurt
 ZH,,Dietikon,,243,Dietikon,,8953,0,Dietikon
 TG,,Dietingen,,4616,Uesslingen-Buch,,8524,0,Uesslingen
 FR,,Dietisberg,,2309,Wünnewil-Flamatt,,3184,0,Wünnewil
@@ -1287,9 +1287,10 @@ ZH,,Diezikon,,120,Wald (ZH),,8637,0,Laupen ZH
 GR,,Digg,,3734,Trin,,7014,0,Trin
 TG,,Dingenhart,,4591,Matzingen,,8500,0,Frauenfeld
 ZH,,Dinhard,,216,Dinhard,,8474,0,Dinhard
-TI,,Dino,,5224,Sonvico,,6967,0,Dino
+TI,,Dino,,5192,Lugano,,6967,0,Dino
 AG,,Dintikon,,4194,Dintikon,,5606,0,Dintikon
 VS,,Diogne,,6243,Montana,,3963,3,Montana
+VS,,Diolly,,6265,Savièse,,1965,10,Diolly (Savièse)
 TG,,Dippishausen,,4666,Kemmental,,8573,0,Siegershausen
 GR,,Dischma,,3851,Davos,,7260,0,Davos Dorf
 GR,,Disentis/Mustér,,3982,Disentis/Mustér,,7180,0,Disentis/Mustér
@@ -1297,13 +1298,13 @@ GR,,Disla,,3982,Disentis/Mustér,,7180,0,Disentis/Mustér
 BL,,Dittingen,,2784,Dittingen,,4243,0,Dittingen
 VD,,Dizy,,5481,Dizy,,1304,2,Dizy
 GR,,Domat/Ems,,3722,Domat/Ems,,7013,0,Domat/Ems
-NE,,Dombresson,,6475,Dombresson,,2056,0,Dombresson
+NE,,Dombresson,,6487,Val-de-Ruz,,2056,0,Dombresson
 FR,,Domdidier,,2013,Domdidier,,1564,0,Domdidier
 VD,,Dommartin,,5540,Montilliez,,1041,21,Dommartin
 VD,,Dompierre,,5671,Dompierre (VD),,1682,3,Dompierre VD
 FR,,Dompierre,,2014,Dompierre (FR),,1563,0,Dompierre FR
 GR,,Donat,,3705,Donat,,7433,0,Donat
-VD,,Donatyre,,5451,Avenches,,1582,0,Donatyre
+VD,,Donatyre,,5451,Avenches,,1580,3,Donatyre
 TI,,Dongio,,5048,Acquarossa,,6715,0,Dongio
 VD,,Donneloye,,5913,Donneloye,,1407,0,Donneloye
 TG,,Donzhausen,,4506,Sulgen,,8583,2,Donzhausen
@@ -1324,7 +1325,7 @@ TG,,Dozwil,,4406,Dozwil,,8582,0,Dozwil
 VS,,Dranse,,6033,Liddes,,1945,4,Dranse (Liddes)
 SG,,Dreien,,3394,Mosnang,,9612,0,Dreien
 FR,,Drognens,,2099,Siviriez,,1680,0,Romont FR
-VS,,Drône,,6265,Savièse,,1965,8,Drône VS
+VS,,Drône,,6265,Savièse,,1965,8,Drône (Savièse)
 TI,,Drossa,,5238,Monteceneri,,6809,0,Medeglia
 ZH,,Dübendorf,,191,Dübendorf,,8600,0,Dübendorf
 FR,,Düdingen,,2293,Düdingen,,3186,0,Düdingen
@@ -1341,12 +1342,12 @@ BE,Q,Dürrenast,,942,Thun,!,3600,0,Thun
 BE,,Dürrenroth,,952,Dürrenroth,,3465,0,Dürrenroth
 ZH,,Dürstelen,,173,Hittnau,,8335,0,Hittnau
 TG,,Dussnang,,4726,Fischingen,,8374,0,Dussnang
-GR,,Duvin,,3593,Duvin,,7112,0,Duvin
+GR,,Duvin,,3619,Ilanz/Glion,,7112,0,Duvin
 GE,,Eaumorte,+,6603,Avully,,1236,0,Cartigny
 GE,,Eaumorte,+,6604,Avusy,,1236,0,Cartigny
 LU,,Ebersecken,,1126,Ebersecken,,6245,0,Ebersecken
-LU,,Ebersol,,1032,Hohenrain,,6276,0,Hohenrain
 SG,,Ebersol,,3378,Neckertal,,9122,2,Ebersol
+LU,,Ebersol,,1032,Hohenrain,,6276,0,Hohenrain
 TG,,Eberswil,,4486,Hauptwil-Gottshaus,,9220,0,Bischofszell
 ZH,,Ebertswil,,4,Hausen am Albis,,8925,0,Ebertswil
 LU,,Ebikon,,1054,Ebikon,,6030,0,Ebikon
@@ -1362,21 +1363,21 @@ VD,,Eclagnens,,5541,Goumoëns,,1376,2,Eclagnens
 VD,,Eclépens,,5482,Eclépens,,1312,0,Eclépens
 VS,,Ecône,,6139,Riddes,,1908,0,Riddes
 VD,,Ecoteaux,,5805,Oron,,1612,0,Ecoteaux
-FR,,Ecublens,,2072,Ecublens (FR),,1673,4,Ecublens FR
 VD,,Ecublens,,5635,Ecublens (VD),,1024,0,Ecublens VD
+FR,,Ecublens,,2072,Ecublens (FR),,1673,4,Ecublens FR
 FR,,Ecuvillens,,2233,Hauterive (FR),,1730,0,Ecuvillens
 JU,,Ederswiler,,6713,Ederswiler,,2813,0,Ederswiler
 OW,,Edisried,,1406,Sachseln,,6073,0,Flüeli-Ranft
 ZG,,Edlibach,,1704,Menzingen,,6313,2,Edlibach
 AG,,Effingen,,4096,Effingen,,5078,0,Effingen
 ZH,,Effretikon,,174,Illnau-Effretikon,,8307,0,Effretikon
-AG,Q,Egenwil,,4119,Unterbözberg,,5224,0,Unterbözberg
+AG,Q,Egenwil,,4124,Bözberg,,5225,1,Bözberg
 SO,,Egerkingen,,2401,Egerkingen,,4622,0,Egerkingen
 SZ,,Egg,,1301,Einsiedeln,,8847,0,Egg SZ
 SG,,Egg bei Flawil,,3402,Flawil,,9231,0,Egg (Flawil)
 ZH,,Egg bei Zürich,,192,Egg,,8132,0,Egg b. Zürich
 GR,,Egga,,3612,Obersaxen,,7133,0,Obersaxen Affeier
-VS,,Egga,,6171,Betten,,3991,0,Betten
+VS,,Egga,,6205,Bettmeralp,,3991,0,Betten
 AG,,Eggenwil,,4066,Eggenwil,,5445,0,Eggenwil
 VS,,Eggerberg,,6004,Eggerberg,,3939,0,Eggerberg
 SG,,Eggersriet,,3212,Eggersriet,,9034,0,Eggersriet
@@ -1388,12 +1389,12 @@ ZH,,Eglisau,,55,Eglisau,,8193,0,Eglisau
 AG,,Egliswil,,4195,Egliswil,,5704,0,Egliswil
 TG,,Egnach,,4411,Egnach,,9322,0,Egnach
 LU,,Egolzwil,,1127,Egolzwil,,6243,0,Egolzwil
-GR,,Egschi,,3652,Tenna,,7104,0,Versam
+GR,,Egschi,,3672,Safiental,,7104,0,Versam
 ZH,,Ehrikon,,182,Wildberg,,8489,0,Wildberg
-LU,,Eich,,1084,Eich,,6205,0,Eich
 SO,,Eich,,2572,Däniken,,4658,0,Däniken SO
+LU,,Eich,,1084,Eich,,6205,0,Eich
 SG,,Eichberg,,3252,Eichberg,,9453,0,Eichberg
-BE,,Eichholz bei Messen,+,548,Ruppoldsried,,3254,0,Messen
+BE,,Eichholz bei Messen,+,310,Rapperswil (BE),,3254,0,Messen
 SO,,Eichholz bei Messen,+,2457,Messen,,3254,0,Messen
 ZH,,Eidberg,,230,Winterthur,!,8400,0,Winterthur
 AG,,Eien,,4303,Böttstein,,5314,0,Kleindöttingen
@@ -1439,13 +1440,13 @@ GL,,Engi,,1631,Glarus Süd,,8765,0,Engi
 SO,,Engi,,2621,Nunningen,,4208,0,Nunningen
 TG,,Engishofen,,4476,Erlen,,8586,8,Engishofen
 BE,,Englisberg,,888,Wald (BE),,3086,2,Englisberg
-NE,,Engollon,,6476,Engollon,,2063,2,Engollon
+NE,,Engollon,,6487,Val-de-Ruz,,2063,2,Engollon
 TG,,Engwang,,4951,Wigoltingen,,8556,2,Engwang
 TG,,Engwilen,,4701,Wäldi,,8564,2,Engwilen
 GL,,Ennenda,,1632,Glarus,,8755,0,Ennenda
 TG,,Ennetaach,,4476,Erlen,,8586,9,Ennetaach
 AG,,Ennetbaden,,4026,Ennetbaden,,5408,0,Ennetbaden
-SG,,Ennetbühl,,3358,Nesslau-Krummenau,,9651,0,Ennetbühl
+SG,,Ennetbühl,,3360,Nesslau,,9651,0,Ennetbühl
 GL,,Ennetbühls,,1632,Glarus,,8755,0,Ennenda
 NW,,Ennetbürgen,,1505,Ennetbürgen,,6373,0,Ennetbürgen
 GL,,Ennetlinth,,1631,Glarus Süd,,8756,0,Mitlödi
@@ -1454,7 +1455,7 @@ AG,,Ennetturgi,,4044,Untersiggenthal,,5300,0,Turgi
 FR,,Enney,,2162,Bas-Intyamon,,1667,0,Enney
 LU,,Entlebuch,,1002,Entlebuch,,6162,0,Entlebuch
 NE,,Entre-deux-Monts,,6423,La Sagne,,2400,0,Le Locle
-JU,,Envelier,,6726,Vermes,,2829,0,Vermes
+JU,,Envelier,,6730,Val Terbi,,2829,0,Vermes
 VD,,Envy,,5761,Romainmôtier-Envy,,1323,0,Romainmôtier
 NE,,Epagnier,,6461,La Tène,,2074,0,Marin-Epagnier
 FR,,Epagny,,2135,Gruyères,,1663,3,Epagny
@@ -1485,17 +1486,17 @@ SO,,Erlinsbach (SO),,2503,Erlinsbach (SO),,5015,0,Erlinsbach SO
 ZH,,Erlosen,,117,Hinwil,,8340,0,Hinwil
 TG,,Ermatingen,,4646,Ermatingen,,8272,0,Ermatingen
 LU,,Ermensee,,1025,Ermensee,,6294,0,Ermensee
-SG,,Ermenswil,,3332,Eschenbach (SG),,8734,0,Ermenswil
+SG,,Ermenswil,,3342,Eschenbach (SG),,8734,0,Ermenswil
 VS,,Ernen,,6056,Ernen,,3995,0,Ernen
-SG,,Ernetschwil,,3331,Ernetschwil,,8725,0,Ernetschwil
-VS,,Erschmatt,,6105,Erschmatt,,3957,0,Erschmatt
+SG,,Ernetschwil,,3341,Gommiswald,,8725,0,Ernetschwil
+VS,,Erschmatt,,6110,Leuk,,3957,0,Erschmatt
 SO,,Erschwil,,2615,Erschwil,,4228,0,Erschwil
 BE,,Ersigen,,405,Ersigen,,3423,0,Ersigen
 SZ,,Erste Altmatt,,1370,Rothenthurm,,6418,0,Rothenthurm
 UR,,Erstfeld,,1206,Erstfeld,,6472,0,Erstfeld
 TG,,Erzenholz,,4566,Frauenfeld,,8500,0,Frauenfeld
 LU,,Eschenbach,,1026,Eschenbach (LU),,6274,0,Eschenbach LU
-SG,,Eschenbach,,3332,Eschenbach (SG),,8733,0,Eschenbach SG
+SG,,Eschenbach,,3342,Eschenbach (SG),,8733,0,Eschenbach SG
 ZH,,Eschenmosen,,53,Bülach,,8180,0,Bülach
 TG,,Eschenz,,4806,Eschenz,,8264,0,Eschenz
 BE,,Eschert,,692,Eschert,,2743,0,Eschert
@@ -1505,7 +1506,7 @@ TG,,Eschikofen,,4590,Hüttlingen,,8553,5,Eschikofen
 ZH,,Eschikon,,176,Lindau,,8315,0,Lindau
 ZH,,Eschlikon,,216,Dinhard,,8474,0,Dinhard
 TG,,Eschlikon,,4724,Eschlikon,,8360,0,Eschlikon TG
-LU,,Escholzmatt,,1003,Escholzmatt,,6182,0,Escholzmatt
+LU,,Escholzmatt,,1010,Escholzmatt-Marbach,,6182,0,Escholzmatt
 FR,,Esmonts,,2102,Ursy,,1670,3,Esmonts
 FR,,Essert,,2220,Le Mouret,,1724,2,Essert FR
 VD,,Essertes,,5788,Essertes,,1078,0,Essertes
@@ -1530,7 +1531,7 @@ BL,,Ettingen,,2768,Ettingen,,4107,0,Ettingen
 LU,,Ettiswil,,1128,Ettiswil,,6218,0,Ettiswil
 SZ,,Etzel,,1301,Einsiedeln,,8847,0,Egg SZ
 SZ,,Etzel Kulm,,1321,Feusisberg,,8835,0,Feusisberg
-BE,,Etzelkofen,,537,Etzelkofen,,3306,0,Etzelkofen
+BE,,Etzelkofen,,538,Fraubrunnen,,3306,0,Etzelkofen
 LU,,Etzelwil,,1100,Schlierbach,,6231,0,Schlierbach
 AG,,Etzgen,,4184,Mettauertal,,5275,0,Etzgen
 SO,,Etziken,,2518,Etziken,,4554,0,Etziken
@@ -1543,8 +1544,8 @@ BE,,Evilard,,372,Evilard,,2533,0,Evilard
 VS,,Evionnaz,,6213,Evionnaz,,1902,0,Evionnaz
 VS,,Evolène,,6083,Evolène,,1983,0,Evolène
 VD,,Exergillod,,5409,Ollon,,1866,0,La Forclaz VD
-BE,,Ey bei Kirchberg,+,404,Burgdorf,,3400,0,Burgdorf
 BE,,Ey bei Kirchberg,+,412,Kirchberg (BE),,3400,0,Burgdorf
+BE,,Ey bei Kirchberg,+,404,Burgdorf,,3400,0,Burgdorf
 BE,,Eyfeld,,362,Ittigen,,3063,0,Ittigen
 VS,,Eyholz,,6297,Visp,,3930,2,Eyholz
 BE,,Eymatt,,351,Bern,!,3000,0,Bern
@@ -1555,16 +1556,16 @@ AG,,Fahr,,4048,Würenlos,,8109,0,Kloster Fahr
 TG,,Fahrhof,,4601,Neunforn,,8525,0,Niederneunforn
 BE,,Fahrni,,925,Fahrni,,3617,0,Fahrni b. Thun
 AG,,Fahrwangen,,4196,Fahrwangen,,5615,0,Fahrwangen
-ZH,,Fahrweid,+,244,Geroldswil,,8951,0,Fahrweid
 ZH,,Fahrweid,+,249,Unterengstringen,,8951,0,Fahrweid
 ZH,,Fahrweid,+,251,Weiningen (ZH),,8951,0,Fahrweid
+ZH,,Fahrweid,+,244,Geroldswil,,8951,0,Fahrweid
 JU,,Fahy,,6789,Fahy,,2916,0,Fahy
 TI,,Faido,,5072,Faido,,6760,0,Faido
 TI,,Faido Stazione,,5072,Faido,,6760,0,Faido
 GR,,Fajauna,,3962,Schiers,,7226,2,Fajauna
 GR,,Falera,,3572,Falera,,7153,0,Falera
 ZH,,Fällanden,,193,Fällanden,,8117,0,Fällanden
-ZH,,Faltigberg,,120,Wald (ZH),,8639,0,Faltigberg
+ZH,,Faltigberg,,120,Wald (ZH),,8636,0,Wald ZH
 GR,,Fanas,,3961,Grüsch,,7215,0,Fanas
 VS,,Fang,,6252,Anniviers,,3961,21,Vissoie
 BE,,Fankhaus (Trub),,908,Trub,,3557,0,Fankhaus (Trub)
@@ -1580,8 +1581,8 @@ ZH,,Fehraltorf,,172,Fehraltorf,,8320,0,Fehraltorf
 SO,,Fehren,,2616,Fehren,,4232,0,Fehren
 AG,,Fehrenthal,,4313,Leuggern,,5316,0,Leuggern
 TG,,Felben,,4561,Felben-Wellhausen,,8552,0,Felben-Wellhausen
-TG,,Feldbach,,4864,Steckborn,,8266,0,Steckborn
 ZH,,Feldbach,,153,Hombrechtikon,,8714,0,Feldbach
+TG,,Feldbach,,4864,Steckborn,,8266,0,Steckborn
 SO,,Feldbrunnen,,2544,Feldbrunnen-St. Niklaus,,4532,0,Feldbrunnen
 GR,,Feldis/Veulden,,3671,Tomils,,7404,0,Feldis/Veulden
 ZH,,Feldmeilen,,156,Meilen,,8706,0,Meilen
@@ -1593,7 +1594,7 @@ ZH,,Felsenegg,,13,Stallikon,,8143,0,Stallikon
 VD,,Fenalet-sur-Bex,,5402,Bex,,1880,3,Fenalet-sur-Bex
 FR,,Fendringen,,2295,Bösingen,,3178,0,Bösingen
 VD,,Fenil-sur-Corsier,,5884,Corsier-sur-Vevey,,1809,0,Fenil-sur-Corsier
-NE,,Fenin,,6477,Fenin-Vilars-Saules,,2063,3,Fenin
+NE,,Fenin,,6487,Val-de-Ruz,,2063,3,Fenin
 AG,,Fenkrieden,,4239,Sins,,5645,2,Fenkrieden
 VS,,Ferden,,6195,Ferden,,3916,0,Ferden
 BE,,Ferenbalm,,662,Ferenbalm,,3206,1,Ferenbalm
@@ -1636,8 +1637,8 @@ ZG,,Finstersee,,1704,Menzingen,,6313,3,Finstersee
 LU,,Finsterwald,,1002,Entlebuch,,6162,3,Finsterwald LU
 VS,,Fionnay,,6031,Bagnes,,1948,1,Fionnay
 ZH,,First,,174,Illnau-Effretikon,,8307,2,Ottikon b.Kemptth.
-LU,,Fischbach,,1129,Fischbach,,6145,0,Fischbach LU
 TG,,Fischbach,,4846,Raperswilen,,8558,0,Raperswilen
+LU,,Fischbach,,1129,Fischbach,,6145,0,Fischbach LU
 AG,,Fischbach,,4067,Fischbach-Göslikon,,5525,0,Fischbach-Göslikon
 ZH,,Fischenthal,,114,Fischenthal,,8497,0,Fischenthal
 TG,,Fischingen,,4726,Fischingen,,8376,0,Fischingen
@@ -1667,12 +1668,12 @@ ZH,Q,Fluntern,,261,Zürich,!,8000,0,Zürich
 ZH,,Flurlingen,,29,Flurlingen,,8247,0,Flurlingen
 SG,,Fly,+,3316,Weesen,,8872,0,Weesen
 SG,,Fly,+,3311,Amden,,8872,0,Weesen
-GR,,Fondei,,3924,Langwies,,7057,0,Langwies
+GR,,Fondei,,3921,Arosa,,7057,0,Langwies
 FR,,Font,,2015,Estavayer-le-Lac,,1473,0,Font
 VS,,Fontaine Dessous,,6033,Liddes,,1945,3,Fontaine Dessous
 VS,,Fontaine Dessus,,6033,Liddes,,1945,2,Fontaine Dessus
-NE,,Fontainemelon,,6478,Fontainemelon,,2052,0,Fontainemelon
-NE,,Fontaines,,6479,Fontaines (NE),,2046,0,Fontaines NE
+NE,,Fontainemelon,,6487,Val-de-Ruz,,2052,0,Fontainemelon
+NE,,Fontaines,,6487,Val-de-Ruz,,2046,0,Fontaines NE
 VD,,Fontaines-sur-Grandson,,5557,Fontaines-sur-Grandson,,1421,0,Fontaines-Grandson
 GR,,Fontana,,3745,Tarasp,,7553,0,Tarasp
 TI,,Fontanella,,5257,Morbio Inferiore,,6834,0,Morbio Inferiore
@@ -1680,10 +1681,10 @@ VD,,Fontanezier,,5571,Tévenon,,1423,2,Fontanezier
 LU,,Fontannen bei Wolhusen,,1107,Wolhusen,,6110,2,Fontannen
 VD,,Fontanney,,5401,Aigle,,1860,0,Aigle
 JU,,Fontenais,,6790,Fontenais,,2902,0,Fontenais
-VS,,Fontenelle,,6031,Bagnes,,1934,4,Fontenelle
+VS,,Fontenelle,,6031,Bagnes,,1934,0,Le Châble VS
 SG,,Fontnas,,3276,Wartau,,9476,2,Fontnas
-ZH,,Forch,+,154,Küsnacht (ZH),,8127,0,Forch
 ZH,,Forch,+,195,Maur,,8127,0,Forch
+ZH,,Forch,+,154,Küsnacht (ZH),,8127,0,Forch
 VD,,Forchex,,5409,Ollon,,1867,0,Ollon VD
 FR,,Forel,,2052,Vernay,,1475,2,Forel FR
 VD,,Forel (Lavaux),,5604,Forel (Lavaux),,1072,0,Forel (Lavaux)
@@ -1710,7 +1711,7 @@ BE,,Frauchwil,,310,Rapperswil (BE),,3255,0,Rapperswil BE
 TG,,Frauenfeld,,4566,Frauenfeld,,8500,0,Frauenfeld
 BE,,Frauenkappelen,,663,Frauenkappelen,,3202,0,Frauenkappelen
 GR,,Frauenkirch,,3851,Davos,,7276,0,Davos Frauenkirch
-TI,,Freggio,,5075,Osco,,6763,0,Osco
+TI,,Freggio,,5072,Faido,,6763,0,Osco
 JU,,Fregiécourt,,6810,La Baroche,,2953,2,Fregiécourt
 BE,,Freiburghaus,,670,Neuenegg,,3176,0,Neuenegg
 TG,,Freidorf,,4431,Roggwil (TG),,9306,0,Freidorf TG
@@ -1731,7 +1732,7 @@ ZG,,Friesencham,,1702,Cham,,6332,0,Hagendorn
 BE,,Frieswil,,312,Seedorf (BE),,3035,0,Frieswil
 GR,,Friggahüs,,3612,Obersaxen,,7136,0,Obers Friggahüs
 TG,,Friltschen,,4921,Bussnang,,9504,0,Friltschen
-BE,,Frinvillier,,447,Vauffelin,,2535,0,Frinvillier
+BE,,Frinvillier,,449,Sauge,,2535,0,Frinvillier
 BE,,Frittenbach,+,905,Rüderswil,,3436,0,Zollbrück
 BE,,Frittenbach,+,903,Lauperswil,,3436,0,Zollbrück
 SO,,Froburg,,2500,Trimbach,,4634,0,Wisen SO
@@ -1762,7 +1763,7 @@ SH,,Gächlingen,,2901,Gächlingen,,8214,0,Gächlingen
 SO,,Gächliwil,,2456,Lüterswil-Gächliwil,,4584,3,Gächliwil
 TG,,Gachnang,,4571,Gachnang,,8547,0,Gachnang
 GR,,Gadenstätt,,3891,Luzein,,7244,0,Gadenstätt
-BE,,Gadmen,,781,Gadmen,,3863,0,Gadmen
+BE,,Gadmen,,784,Innertkirchen,,3863,0,Gadmen
 TI,,Gaggio,,5151,Bioggio,,6934,0,Bioggio
 TI,,Gaggiole,,5108,Gordola,,6596,0,Gordola
 TI,,Gaggiolo,,5266,Stabio,,6855,0,Stabio
@@ -1771,7 +1772,7 @@ BE,,Gaicht,,756,Twann-Tüscherz,,2513,0,Twann
 AR,,Gais,,3022,Gais,,9056,0,Gais
 SG,,Gaiserwald,,3442,Gaiserwald,,9030,0,Abtwil SG
 SZ,,Galgenen,,1342,Galgenen,,8854,2,Galgenen
-AG,,Gallenkirch,,4098,Gallenkirch,,5224,2,Gallenkirch
+AG,,Gallenkirch,,4124,Bözberg,,5225,1,Bözberg
 FR,,Galmiz,,2259,Galmiz,,3285,0,Galmiz
 BE,,Gals,,494,Gals,,3238,0,Gals
 AG,,Galten,,4164,Gansingen,,5272,0,Gansingen
@@ -1786,7 +1787,7 @@ VS,,Gamsen,,6002,Brig-Glis,,3900,2,Gamsen
 TI,,Gandria,,5192,Lugano,,6978,0,Gandria
 SO,,Gänsbrunnen,,2423,Gänsbrunnen,,4716,1,Gänsbrunnen
 AG,,Gansingen,,4164,Gansingen,,5272,0,Gansingen
-SG,,Ganterschwil,,3403,Ganterschwil,,9608,0,Ganterschwil
+SG,,Ganterschwil,,3395,Bütschwil-Ganterschwil,,9608,0,Ganterschwil
 VS,,Gärlich,,6193,Bürchen,,3935,0,Bürchen
 FR,,Garmiswil,,2293,Düdingen,,3186,0,Düdingen
 BE,,Garstatt,,791,Boltigen,,3766,0,Boltigen
@@ -1797,7 +1798,7 @@ SG,,Gasenzen,,3272,Gams,,9473,0,Gams
 SG,,Gassaura,,3294,Pfäfers,,7317,0,Valens
 ZH,,Gattikon,,141,Thalwil,,8136,0,Gattikon
 AG,,Gebenstorf,,4029,Gebenstorf,,5412,0,Gebenstorf
-SG,,Gebertingen,,3331,Ernetschwil,,8725,2,Gebertingen
+SG,,Gebertingen,,3341,Gommiswald,,8725,2,Gebertingen
 SG,,Gebhardswil,,3424,Oberbüren,,9203,0,Niederwil SG
 ZH,,Geeren,,191,Dübendorf,,8044,0,Zürich
 TG,,Gehrau,,4951,Wigoltingen,,8554,3,Bonau
@@ -1838,7 +1839,7 @@ ZH,,Gfenn,,191,Dübendorf,,8600,0,Dübendorf
 AG,,Gfill,,4282,Rothrist,,4852,0,Rothrist
 TI,,Ghirone,,5049,Blenio,,6720,2,Ghirone
 GR,,Giarsun,,3742,Guarda,,7545,0,Guarda
-ZH,,Gibswil-Ried,,114,Fischenthal,,8498,0,Gibswil-Ried
+ZH,,Gibswil-Ried,,114,Fischenthal,,8498,0,Gibswil
 BL,,Giebenach,,2826,Giebenach,,4304,0,Giebenach
 BE,,Giessbach,,573,Brienz (BE),,3855,0,Brienz BE
 SG,,Giessen,,3312,Benken (SG),,8717,0,Benken SG
@@ -1882,7 +1883,7 @@ FR,,Gletterens,,2022,Gletterens,,1544,0,Gletterens
 VD,,Glion,,5886,Montreux,,1823,0,Glion
 VS,,Glis,,6002,Brig-Glis,,3902,0,Glis
 BE,,Glockenthal,,939,Steffisburg,,3612,0,Steffisburg
-JU,,Glovelier,,6714,Glovelier,,2855,0,Glovelier
+JU,,Glovelier,,6729,Haute-Sorne,,2855,0,Glovelier
 VS,,Gluringen,,6075,Reckingen-Gluringen,,3998,1,Gluringen
 VD,,Glutières,,5409,Ollon,,1867,0,Ollon VD
 AG,,Gnadenthal,,4072,Niederwil (AG),,5524,2,Nesselnbach
@@ -1896,14 +1897,14 @@ SZ,,Goldau,,1362,Arth,,6410,0,Goldau
 BE,,Goldbach,,406,Hasle bei Burgdorf,,3432,0,Lützelflüh-Goldb
 ZH,,Goldbach,,154,Küsnacht (ZH),,8700,0,Küsnacht ZH
 BE,,Goldern,,783,Hasliberg,,6085,0,Hasliberg Goldern
-SG,,Goldingen,,3333,Goldingen,,8638,0,Goldingen
+SG,,Goldingen,,3342,Eschenbach (SG),,8638,0,Goldingen
 BE,,Goldiwil,,942,Thun,,3624,0,Goldiwil (Thun)
 BE,,Goldswil bei Interlaken,,590,Ringgenberg (BE),,3805,0,Goldswil
 TI,,Golino,,5397,Centovalli,,6656,0,Golino
 VD,,Gollion,,5484,Gollion,,1124,0,Gollion
 UR,,Golzern,,1216,Silenen,,6475,0,Bristen
 BE,,Gomerkinden,,406,Hasle bei Burgdorf,,3415,2,Schafhausen i. E.
-SG,,Gommiswald,,3334,Gommiswald,,8737,0,Gommiswald
+SG,,Gommiswald,,3341,Gommiswald,,8737,0,Gommiswald
 BE,,Gondiswil,,326,Gondiswil,,4955,0,Gondiswil
 VS,,Gondo,,6011,Zwischbergen,,3907,4,Gondo
 AI,,Gonten,,3102,Gonten,,9108,0,Gonten
@@ -1921,11 +1922,11 @@ VS,,Gornergrat,,6300,Zermatt,,3920,0,Zermatt
 UR,,Göschenen,,1208,Göschenen,,6487,0,Göschenen
 UR,,Göscheneralp,,1208,Göschenen,,6487,0,Göschenen
 AG,,Göslikon,,4067,Fischbach-Göslikon,,5525,0,Fischbach-Göslikon
-SG,,Gossau,,3443,Gossau (SG),,9200,0,Gossau SG
 ZH,,Gossau,,115,Gossau (ZH),,8625,0,Gossau ZH
+SG,,Gossau,,3443,Gossau (SG),,9200,0,Gossau SG
 VD,,Gossens,,5913,Donneloye,,1407,2,Gossens
 ZH,,Gössikon,,160,Zumikon,,8126,0,Zumikon
-SO,,Gossliwil,,2449,Gossliwil,,4579,0,Gossliwil
+SO,,Gossliwil,,2465,Buchegg,,4579,0,Gossliwil
 TG,,Götighofen,,4506,Sulgen,,8583,1,Götighofen
 VS,,Gottefrey,,6141,Saxon,,1907,0,Saxon
 BS,Q,Gotthelf,,2701,Basel,!,4000,0,Basel
@@ -1944,10 +1945,10 @@ VS,,Grächen,,6285,Grächen,,3925,0,Grächen
 BE,,Grächwil,,307,Meikirch,,3045,0,Meikirch
 NW,,Grafenort,+,1511,Wolfenschiessen,,6388,0,Grafenort
 OW,,Grafenort,+,1402,Engelberg,,6388,0,Grafenort
-BE,,Grafenried,,539,Grafenried,,3308,0,Grafenried
+BE,,Grafenried,,538,Fraubrunnen,,3308,0,Grafenried
 ZH,,Grafstal,,176,Lindau,,8310,1,Grafstal
 TG,,Graltshausen,,4891,Berg (TG),,8572,3,Graltshausen
-SG,,Grämigen,,3391,Bütschwil,,9601,0,Lütisburg Station
+SG,,Grämigen,,3395,Bütschwil-Ganterschwil,,9601,0,Lütisburg Station
 TI,,Grancia,,5186,Grancia,,6916,0,Grancia
 VD,,Grancy,,5485,Grancy,,1117,0,Grancy
 VD,,Grand Mont,,5587,Le Mont-sur-Lausanne,,1052,0,Mont-sur-Lausanne
@@ -1958,7 +1959,7 @@ VD,,Grandevent,,5560,Grandevent,,1421,2,Grandevent
 JU,,Grandfontaine,,6792,Grandfontaine,,2908,0,Grandfontaine
 JU,,Grandgourt,,6807,Basse-Allaine,,2923,0,Courtemaîche
 GE,,Grand-Lancy,,6628,Lancy,,1212,0,Grand-Lancy
-NE,,Grand-Savagnier,,6484,Savagnier,,2065,0,Savagnier
+NE,,Grand-Savagnier,,6487,Val-de-Ruz,,2065,0,Savagnier
 FR,,Grandsivaz,,2029,Montagny (FR),,1775,3,Grandsivaz
 VD,,Grandson,,5561,Grandson,,1422,0,Grandson
 VS,,Grand-St-Bernard,,6032,Bourg-Saint-Pierre,,1946,0,Bourg-St-Pierre
@@ -1993,7 +1994,7 @@ TI,,Gresso,,5109,Gresso,,6611,16,Gresso
 VD,,Gressy,,5938,Yverdon-les-Bains,,1432,2,Gressy
 SG,,Gretschins,,3276,Wartau,,9479,2,Gretschins
 SO,,Gretzenbach,,2576,Gretzenbach,,5014,0,Gretzenbach
-TI,,Gribbio,,5070,Chironico,,6747,0,Chironico
+TI,,Gribbio,,5072,Faido,,6747,0,Chironico
 BE,,Griesalp,,567,Reichenbach im Kandertal,,3723,0,Kiental
 BE,,Griesbach,,957,Sumiswald,,3454,0,Sumiswald
 TG,,Griesenberg,,4881,Amlikon-Bissegg,,8514,0,Amlikon-Bissegg
@@ -2047,9 +2048,9 @@ BE,,Gümligen,,356,Muri bei Bern,,3073,0,Gümligen
 BE,,Gümmenen,,668,Mühleberg,,3205,0,Gümmenen
 BS,Q,Gundeldingen,,2701,Basel,!,4000,0,Basel
 TG,,Gündelhart,,4816,Homburg,,8507,0,Hörhausen
-ZH,,Gundetswil,,212,Bertschikon,,8543,1,Gundetswil
+ZH,,Gundetswil,,298,Wiesendangen,,8543,1,Gundetswil
 ZH,,Gündisau,,178,Russikon,,8322,2,Gündisau
-ZH,,Gündlikon,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Gündlikon,,298,Wiesendangen,,8543,0,Bertschikon
 BE,,Gündlischwand,,578,Gündlischwand,,3815,2,Gündlischwand
 LU,,Güniken,,1032,Hohenrain,,6276,0,Hohenrain
 SO,,Günsberg,,2547,Günsberg,,4524,0,Günsberg
@@ -2058,14 +2059,13 @@ BE,,Gunten,,938,Sigriswil,,3654,0,Gunten
 TG,,Gunterschwil,,4701,Wäldi,,8564,8,Gunterswilen
 TG,,Guntershausen bei Aadorf,,4551,Aadorf,,8357,0,Guntershausen
 TG,,Guntershausen bei Birwinken,,4891,Berg (TG),,8572,4,Guntershausen Berg
-SH,,Guntmadingen,,2902,Guntmadingen,,8223,0,Guntmadingen
+SH,,Guntmadingen,,2932,Beringen,,8223,0,Guntmadingen
 SO,,Gunzgen,,2578,Gunzgen,,4617,0,Gunzgen
 LU,,Gunzwil,,1081,Beromünster,,6222,0,Gunzwil
 BE,,Gurbrü,,665,Gurbrü,,3208,0,Gurbrü
 FR,,Gurmels,,2262,Gurmels,,3212,0,Gurmels
 BE,,Gurnigel,,879,Riggisberg,,3099,0,Rüti b. Riggisberg
-SG,,Gurtberg,+,3373,Krinau,,9620,0,Lichtensteig
-SG,,Gurtberg,+,3377,Wattwil,,9620,0,Lichtensteig
+SG,,Gurtberg,,3379,Wattwil,,9620,0,Lichtensteig
 BE,,Gurten Kulm,,355,Köniz,,3084,0,Wabern
 UR,,Gurtnellen,,1209,Gurtnellen,,6482,0,Gurtnellen
 BE,,Gurzelen,,867,Gurzelen,,3663,0,Gurzelen
@@ -2102,8 +2102,8 @@ ZH,,Hakab,,64,Nürensdorf,,8309,0,Nürensdorf
 TG,,Halden,,4471,Bischofszell,,9223,1,Halden
 SG,,Halden,,3442,Gaiserwald,,9032,0,Engelburg
 GR,,Haldenstein,,3941,Haldenstein,,7023,0,Haldenstein
-UR,,Haldi bei Schattdorf,+,1213,Schattdorf,,6469,0,Haldi b.Schattdorf
 UR,,Haldi bei Schattdorf,+,1205,Bürglen (UR),,6469,0,Haldi b.Schattdorf
+UR,,Haldi bei Schattdorf,+,1213,Schattdorf,,6469,0,Haldi b.Schattdorf
 TG,,Halingen,,4591,Matzingen,,9548,0,Matzingen
 SH,,Hallau,,2971,Hallau,,8215,0,Hallau
 AG,,Hallwil,,4197,Hallwil,,5705,0,Hallwil
@@ -2114,8 +2114,8 @@ LU,,Hämikon,,1030,Hitzkirch,,6289,2,Hämikon
 BE,,Hämlismatt,,602,Arni (BE),,3508,0,Arni BE
 BE,,Handegg,,782,Guttannen,,3864,0,Guttannen
 TG,,Happerswil,,4901,Birwinken,,8585,2,Happerswil
-BE,,Hard,,311,Schüpfen,,3054,0,Schüpfen
 SG,,Hard,,3254,Oberriet (SG),,9463,0,Oberriet SG
+BE,,Hard,,311,Schüpfen,,3054,0,Schüpfen
 BE,,Hardern,,306,Lyss,,3250,0,Lyss
 TG,,Harenwilen,,4590,Hüttlingen,,8553,2,Harenwilen
 SO,,Härkingen,,2402,Härkingen,,4624,0,Härkingen
@@ -2129,8 +2129,8 @@ AI,,Haslen,,3104,Schlatt-Haslen,,9054,0,Haslen AI
 BE,,Hasle-Rüegsau,,406,Hasle bei Burgdorf,,3415,1,Hasle b. Burgdorf
 TG,,Hasli,,4951,Wigoltingen,,8554,0,Müllheim-Wigoltgn
 BE,,Hasli,,881,Rümligen,,3132,0,Riggisberg
-ZH,,Hasliberg,,90,Niederhasli,,8156,0,Oberhasli
 BE,,Hasliberg,,783,Hasliberg,,6085,0,Hasliberg Goldern
+ZH,,Hasliberg,,90,Niederhasli,,8156,0,Oberhasli
 TG,,Hatswil,,4416,Hefenhofen,,8580,0,Amriswil
 TG,,Hattenhausen,,4701,Wäldi,,8564,7,Hattenhausen
 GL,,Hätzingen,,1631,Glarus Süd,,8775,2,Hätzingen
@@ -2152,9 +2152,9 @@ BE,,Häutligen,,609,Häutligen,,3510,9,Häutligen
 FR,,Haut-Vully,,2281,Haut-Vully,,1789,0,Lugnorre
 ZH,,Hedingen,,5,Hedingen,,8908,0,Hedingen
 SG,,Heerbrugg,+,3231,Au (SG),,9435,0,Heerbrugg
-SG,,Heerbrugg,+,3233,Berneck,,9435,0,Heerbrugg
 SG,,Heerbrugg,+,3232,Balgach,,9435,0,Heerbrugg
 SG,,Heerbrugg,+,3238,Widnau,,9435,0,Heerbrugg
+SG,,Heerbrugg,+,3233,Berneck,,9435,0,Heerbrugg
 TG,,Hefenhausen,,4701,Wäldi,,8564,0,Hefenhausen
 TG,,Hefenhofen,,4416,Hefenhofen,,8580,7,Hefenhofen
 BE,,Heggidorn,,668,Mühleberg,,3202,0,Frauenkappelen
@@ -2162,23 +2162,23 @@ ZH,,Hegi,,230,Winterthur,!,8400,0,Winterthur
 ZH,,Hegnau,,199,Volketswil,,8604,0,Volketswil
 AR,,Heiden,,3032,Heiden,,9410,0,Heiden
 BE,,Heiligenschwendi,,927,Heiligenschwendi,,3625,0,Heiligenschwendi
-LU,,Heiligkreuz,,1005,Hasle (LU),,6166,0,Hasle LU
-TG,,Heiligkreuz,,4791,Wuppenau,,9515,0,Hosenruck
 SG,Q,Heiligkreuz,+,3203,St. Gallen,!,9000,0,St. Gallen
 SG,,Heiligkreuz,,3293,Mels,,8888,0,Heiligkreuz (Mels)
+LU,,Heiligkreuz,,1005,Hasle (LU),,6166,0,Hasle LU
 SG,,Heiligkreuz,+,3204,Wittenbach,!,9000,0,St. Gallen
+TG,,Heiligkreuz,,4791,Wuppenau,,9515,0,Hosenruck
 BE,,Heimberg,,928,Heimberg,,3627,0,Heimberg
 BE,,Heimenhausen,,977,Heimenhausen,,3373,2,Heimenhausen
 TG,,Heimenhofen,,4901,Birwinken,,8586,2,Andwil TG
 BE,,Heimenschwand,,923,Buchholterberg,,3615,0,Heimenschwand
 BE,,Heimisbach,,958,Trachselwald,,3453,0,Heimisbach
 BE,,Heimiswil,,407,Heimiswil,,3412,0,Heimiswil
-SO,,Heinrichswil,,2521,Heinrichswil-Winistorf,,4558,2,Heinrichswil
+SO,,Heinrichswil,,2535,Drei Höfe,,4558,2,Heinrichswil
 ZH,,Heisch,,4,Hausen am Albis,,8915,0,Hausen am Albis
 FR,,Heitenried,,2296,Heitenried,,1714,0,Heitenried
 AG,,Heitersberg,,4040,Spreitenbach,,8957,0,Spreitenbach
 TG,,Heiterschen,,4781,Wängi,,9545,0,Wängi
-SG,,Heiterswil,,3377,Wattwil,,9630,0,Wattwil
+SG,,Heiterswil,,3379,Wattwil,,9630,0,Wattwil
 FR,,Heitiwil,,2293,Düdingen,,3186,0,Düdingen
 TG,,Heldswil,,4495,Hohentannen,,9216,0,Heldswil
 BE,,Helgisried,,880,Rüeggisberg,,3155,0,Helgisried
@@ -2210,7 +2210,7 @@ LU,,Herlisberg,,1039,Römerswil,,6028,0,Herlisberg
 GE,,Hermance,,6625,Hermance,,1248,0,Hermance
 ZH,,Hermatswil,,177,Pfäffikon,,8330,41,Hermatswil
 VD,,Hermenches,,5673,Hermenches,,1513,0,Hermenches
-AG,,Hermetschwil-Staffeln,,4069,Hermetschwil-Staffeln,,5626,0,Hermetschwil-Staff
+AG,,Hermetschwil-Staffeln,,4063,Bremgarten (AG),,5626,0,Hermetschwil-Staff
 ZH,,Hermikon,,191,Dübendorf,,8600,0,Dübendorf
 BE,,Hermiswil,,978,Hermiswil,,3475,1,Hermiswil
 BE,,Hermiswil bei Kirchenthurnen,,881,Rümligen,,3132,0,Riggisberg
@@ -2221,7 +2221,7 @@ BE,,Herrenschwanden,,354,Kirchlindach,,3037,0,Herrenschwanden
 ZH,,Herrliberg,,152,Herrliberg,,8704,0,Herrliberg
 BL,,Hersberg,,2827,Hersberg,,4423,0,Hersberg
 ZH,,Herschmettlen,,115,Gossau (ZH),,8626,0,Ottikon
-SO,,Hersiwil,,2522,Hersiwil,,4558,0,Hersiwil
+SO,,Hersiwil,,2535,Drei Höfe,,4558,0,Hersiwil
 AG,,Hertenstein,,4038,Obersiggenthal,,5415,1,Hertenstein AG
 LU,,Hertenstein,,1069,Weggis,,6353,0,Weggis
 AG,,Herzberg,,4004,Densbüren,,5025,0,Asp
@@ -2230,7 +2230,7 @@ BE,,Herzogenbuchsee,,979,Herzogenbuchsee,,3360,0,Herzogenbuchsee
 BE,,Herzwil,,355,Köniz,,3172,0,Niederwangen BE
 ZH,,Heslibach,,154,Küsnacht (ZH),,8700,0,Küsnacht ZH
 TG,,Hessenreuti,,4506,Sulgen,,8583,0,Sulgen
-SO,,Hessigkofen,,2450,Hessigkofen,,4577,0,Hessigkofen
+SO,,Hessigkofen,,2465,Buchegg,,4577,0,Hessigkofen
 AG,,Hettenschwil,,4313,Leuggern,,5317,0,Hettenschwil
 BE,,Hettiswil bei Hindelbank,,414,Krauchthal,,3325,0,Hettiswil
 ZH,,Hettlingen,,221,Hettlingen,,8442,0,Hettlingen
@@ -2238,7 +2238,7 @@ BE,,Heubach,,853,Rüschegg,,3154,0,Rüschegg Heubach
 ZH,,Heusberg,,196,Mönchaltorf,,8607,0,Aathal-Seegräben
 BE,,Heustrich,,562,Aeschi bei Spiez,,3711,0,Emdthal
 LU,,Hildisrieden,,1088,Hildisrieden,,6024,0,Hildisrieden
-LU,,Hilfernthal,,1003,Escholzmatt,,6192,0,Wiggen
+LU,,Hilfernthal,,1010,Escholzmatt-Marbach,,6192,0,Wiggen
 AG,,Hilfikon,,4080,Villmergen,,5613,0,Hilfikon
 BE,,Hilterfingen,,929,Hilterfingen,,3652,0,Hilterfingen
 SO,,Himmelried,,2618,Himmelried,,4204,0,Himmelried
@@ -2249,7 +2249,7 @@ ZH,,Hinteregg,,192,Egg,,8132,2,Hinteregg
 SG,,Hinterforst,+,3251,Altstätten,,9452,0,Hinterforst
 SG,,Hinterforst,+,3252,Eichberg,,9452,0,Hinterforst
 BE,,Hinterfultigen,,880,Rüeggisberg,,3089,0,Hinterfultigen
-SG,,Hintergoldingen,,3333,Goldingen,,8638,0,Goldingen
+SG,,Hintergoldingen,,3342,Eschenbach (SG),,8638,0,Goldingen
 SG,Q,Hinterhof,,3219,Untereggen,,9033,0,Untereggen
 BE,,Hinterkappelen,,360,Wohlen bei Bern,,3032,0,Hinterkappelen
 LU,,Hintermoos,,1147,Wikon,,6260,3,Hintermoos
@@ -2275,13 +2275,13 @@ SO,,Hochwald,,2475,Hochwald,,4146,0,Hochwald
 SG,,Hochwiese,,3292,Flums,,8893,0,Flums Hochwiese
 SZ,,Hoch-Ybrig,+,1375,Unteriberg,,8842,0,Unteriberg
 SZ,,Hoch-Ybrig,+,1368,Oberiberg,,8842,0,Unteriberg
-ZH,,Hof,,69,Wallisellen,,8304,0,Wallisellen
 SG,,Hof,,3216,Rorschacherberg,,9404,0,Rorschacherberg
 TG,,Hof,,4436,Romanshorn,,8590,0,Romanshorn
-SG,,Hof bei Uznach,,3331,Ernetschwil,,8730,0,Uznach
+ZH,,Hof,,69,Wallisellen,,8304,0,Wallisellen
+SG,,Hof bei Uznach,,3341,Gommiswald,,8730,0,Uznach
 BE,,Hofen,,344,Ursenbach,,4943,0,Oeschenbach
 SH,,Hofen,,2920,Thayngen,,8242,1,Hofen SH
-BE,,Höfen,,930,Höfen,,3631,0,Höfen b. Thun
+BE,,Höfen,,770,Stocken-Höfen,,3631,0,Höfen b. Thun
 TG,,Hofen bei Sirnach,,4761,Sirnach,,8370,0,Sirnach
 SG,,Hoffeld,,3378,Neckertal,,9114,0,Hoffeld
 LU,,Hofstatt,,1135,Luthern,,6154,0,Hofstatt
@@ -2299,8 +2299,8 @@ SO,,Holderbank,,2425,Holderbank (SO),,4718,0,Holderbank SO
 AG,,Holderbank,,4199,Holderbank (AG),,5113,0,Holderbank AG
 BL,,Hölstein,,2886,Hölstein,,4434,0,Hölstein
 TG,,Holzenstein,,4436,Romanshorn,,8590,0,Romanshorn
-TG,,Holzhäusern,,4701,Wäldi,,8558,0,Raperswilen
 ZG,,Holzhäusern,,1707,Risch,,6343,4,Holzhäusern ZG
+TG,,Holzhäusern,,4701,Wäldi,,8558,0,Raperswilen
 AG,,Holziken,,4136,Holziken,,5043,0,Holziken
 VS,,Holzji,,6002,Brig-Glis,,3902,0,Glis
 TG,,Holzmannshaus,,4746,Münchwilen (TG),,8360,0,Eschlikon TG
@@ -2343,8 +2343,8 @@ ZH,,Humlikon,,32,Humlikon,,8457,0,Humlikon
 AR,,Hundwil,,3002,Hundwil,,9064,0,Hundwil
 ZG,,Hünenberg,,1703,Hünenberg,,6331,0,Hünenberg
 TG,,Hungerbüel,,4441,Salmsach,,8599,0,Salmsach
-BE,,Hünibach,+,929,Hilterfingen,,3626,0,Hünibach
 BE,,Hünibach,+,942,Thun,,3626,0,Hünibach
+BE,,Hünibach,+,929,Hilterfingen,,3626,0,Hünibach
 SO,,Hüniken,,2524,Hüniken,,4554,2,Hüniken
 ZH,,Hünikon,,223,Neftenbach,,8412,2,Hünikon
 ZH,,Hüntwangen,,61,Hüntwangen,,8194,0,Hüntwangen
@@ -2369,7 +2369,7 @@ SO,,Ifenthal,,2491,Hauenstein-Ifenthal,,4633,0,Hauenstein
 BE,,Iffwil,,541,Iffwil,,3305,0,Iffwil
 TG,,Ifwil,,4721,Bichelsee-Balterswil,,8362,0,Balterswil
 GR,,Igis,,3955,Landquart,,7206,0,Igis
-GR,,Ilanz,,3574,Ilanz,,7130,0,Ilanz
+GR,,Ilanz,,3619,Ilanz/Glion,,7130,0,Ilanz
 BE,,Ilfis,,902,Langnau im Emmental,,3550,0,Langnau i. E.
 VS,,Illarsaz,,6152,Collombey-Muraz,,1893,0,Muraz (Collombey)
 SZ,,Illgau,,1363,Illgau,,6434,0,Illgau
@@ -2392,7 +2392,7 @@ SZ,,Innerthal,,1343,Innerthal,,8858,0,Innerthal
 BE,,Innertkirchen,,784,Innertkirchen,,3862,0,Innertkirchen
 GR,,Innertobel,,3612,Obersaxen,,7136,0,Obers Friggahüs
 BE,,Ins,,496,Ins,,3232,0,Ins
-TI,,Insone,,5229,Valcolla,,6951,8,Insone
+TI,,Insone,,5192,Lugano,,6951,8,Insone
 BE,,Interlaken,,581,Interlaken,,3800,0,Interlaken
 TI,,Intragna,,5397,Centovalli,,6655,0,Intragna
 UR,,Intschi,,1209,Gurtnellen,,6476,0,Intschi
@@ -2482,8 +2482,8 @@ BE,,Kandergrund,,564,Kandergrund,,3716,0,Kandergrund
 BE,,Kandersteg,,565,Kandersteg,,3718,0,Kandersteg
 BL,,Känerkinden,,2850,Känerkinden,,4447,0,Känerkinden
 ZH,,Käpfnach,,133,Horgen,,8810,0,Horgen
-TG,,Kappel,,4816,Homburg,,8508,0,Homburg
 SO,,Kappel,,2580,Kappel (SO),,4616,0,Kappel SO
+TG,,Kappel,,4816,Homburg,,8508,0,Homburg
 ZH,,Kappel am Albis,,6,Kappel am Albis,,8926,0,Kappel am Albis
 BE,,Kappelen,,305,Kappelen,,3273,0,Kappelen
 BE,,Kappelenring,,360,Wohlen bei Bern,,3032,0,Hinterkappelen
@@ -2494,8 +2494,8 @@ LU,,Kastanienbaum,,1058,Horw,,6047,0,Kastanienbaum
 ZH,,Katzenrüti,,97,Rümlang,,8153,0,Rümlang
 ZH,,Katzensee,,96,Regensdorf,,8105,2,Watt
 BE,,Kaufdorf,,869,Kaufdorf,,3126,0,Kaufdorf
-ZH,,Kefikon,+,212,Bertschikon,,8543,2,Kefikon ZH
 TG,,Kefikon,+,4571,Gachnang,,8546,2,Kefikon TG
+ZH,,Kefikon,+,298,Wiesendangen,,8543,2,Kefikon ZH
 TG,,Kehlhof,,4891,Berg (TG),,8572,0,Berg TG
 ZH,,Kehlhof,,158,Stäfa,,8712,0,Stäfa
 BE,,Kehrsatz,,870,Kehrsatz,,3122,0,Kehrsatz
@@ -2513,7 +2513,7 @@ FR,,Kerzers,,2265,Kerzers,,3210,0,Kerzers
 TG,,Kesswil,,4426,Kesswil,,8593,0,Kesswil
 SO,,Kestenholz,,2403,Kestenholz,,4703,0,Kestenholz
 SO,,Kienberg,,2492,Kienberg,,4468,0,Kienberg
-BE,,Kienersrüti,,871,Kienersrüti,,3628,2,Kienersrüti
+BE,,Kienersrüti,,885,Uttigen,,3628,0,Uttigen
 BE,,Kienholz,,573,Brienz (BE),,3855,0,Brienz BE
 BE,,Kiental,,567,Reichenbach im Kandertal,,3723,0,Kiental
 BE,,Kiesen,,611,Kiesen,,3629,0,Kiesen
@@ -2521,12 +2521,12 @@ ZH,,Kilchberg,,135,Kilchberg (ZH),,8802,0,Kilchberg ZH
 BL,,Kilchberg,,2851,Kilchberg (BL),,4496,0,Kilchberg BL
 LU,,Kilchbühl,,1102,Sempach,,6204,0,Sempach
 AG,,Killwangen,,4030,Killwangen,,8956,0,Killwangen
-AG,,Kindhausen,,4023,Bergdietikon,,8962,0,Bergdietikon
 ZH,,Kindhausen,,199,Volketswil,,8604,0,Volketswil
+AG,,Kindhausen,,4023,Bergdietikon,,8962,0,Bergdietikon
 VS,,Kippel,,6197,Kippel,,3917,0,Kippel
 BE,,Kirchberg,,412,Kirchberg (BE),,3422,0,Kirchberg BE
 SG,,Kirchberg,,3392,Kirchberg (SG),,9533,0,Kirchberg SG
-AG,Q,Kirchbözberg,,4119,Unterbözberg,,5224,0,Unterbözberg
+AG,Q,Kirchbözberg,,4124,Bözberg,,5225,1,Bözberg
 ZH,Q,Kirchdinhard,,216,Dinhard,,8474,0,Dinhard
 AG,,Kirchdorf,,4038,Obersiggenthal,,5416,0,Kirchdorf AG
 BE,,Kirchdorf,,872,Kirchdorf (BE),,3116,0,Kirchdorf BE
@@ -2538,7 +2538,7 @@ BE,,Kirchlindach,,354,Kirchlindach,,3038,0,Kirchlindach
 AG,,Kirchrued,,4142,Schlossrued,,5044,0,Schlossrued
 TG,,Klarsreuti,,4901,Birwinken,,8585,10,Klarsreuti
 ZH,,Kleinandelfingen,,33,Kleinandelfingen,,8451,0,Kleinandelfingen
-ZH,,Kleinbäretswil,,111,Bäretswil,,8498,0,Gibswil-Ried
+ZH,,Kleinbäretswil,,111,Bäretswil,,8498,0,Gibswil
 FR,,Kleinbösingen,,2266,Kleinbösingen,,3213,2,Kleinbösingen
 BE,,Kleindietwil,,332,Madiswil,,4936,0,Kleindietwil
 AG,,Kleindöttingen,,4303,Böttstein,,5314,0,Kleindöttingen
@@ -2585,11 +2585,11 @@ SO,,Kriegstetten,,2525,Kriegstetten,,4566,0,Kriegstetten
 LU,,Kriens,,1059,Kriens,,6010,0,Kriens
 SG,,Kriessern,,3254,Oberriet (SG),,9451,0,Kriessern
 TG,,Krillberg,,4781,Wängi,,9546,0,Tuttwil
-SG,,Krinau,,3373,Krinau,,9622,0,Krinau
+SG,,Krinau,,3379,Wattwil,,9622,0,Krinau
 SG,,Kronbühl,,3204,Wittenbach,,9300,0,Wittenbach
 BE,,Kröschenbrunnen,,908,Trub,,3555,0,Trubschachen
 LU,,Krummbach,,1085,Geuensee,,6232,0,Geuensee
-SG,,Krummenau,,3358,Nesslau-Krummenau,,9643,0,Krummenau
+SG,,Krummenau,,3360,Nesslau,,9643,0,Krummenau
 GR,,Küblis,,3882,Küblis,,7240,0,Küblis
 TG,,Kugelshofen,,4811,Herdern,,8506,0,Lanzenneunforn
 BE,,Kühlewil,,888,Wald (BE),,3086,0,Zimmerwald
@@ -2603,9 +2603,9 @@ TG,,Kurzrickenbach,,4671,Kreuzlingen,,8280,0,Kreuzlingen
 ZH,,Küsnacht,,154,Küsnacht (ZH),,8700,0,Küsnacht ZH
 SZ,,Küssnacht am Rigi,,1331,Küssnacht (SZ),,6403,0,Küssnacht am Rigi
 AG,,Küttigen,,4008,Küttigen,,5024,0,Küttigen
-SO,,Küttigkofen,,2452,Küttigkofen,,4581,0,Küttigkofen
+SO,,Küttigkofen,,2465,Buchegg,,4581,0,Küttigkofen
 ZH,,Kyburg,,175,Kyburg,,8314,0,Kyburg
-SO,,Kyburg,,2453,Kyburg-Buchegg,,4586,0,Kyburg-Buchegg
+SO,,Kyburg,,2465,Buchegg,,4586,0,Kyburg-Buchegg
 VS,,La Balmaz,,6213,Evionnaz,,1902,0,Evionnaz
 VD,,La Barboleusaz,,5405,Gryon,,1882,0,Gryon
 VS,,La Bâtiaz,,6136,Martigny,,1920,0,Martigny
@@ -2615,23 +2615,23 @@ GE,,La Capite,+,6614,Choulex,,1222,0,Vésenaz
 GE,,La Capite,+,6616,Collonge-Bellerive,,1222,0,Vésenaz
 NE,,La Châtagne,,6432,La Brévine,,2406,3,La Châtagne
 VD,,La Chaux (Cossonay),,5474,La Chaux (Cossonay),,1308,0,La Chaux-Cossonay
-BE,,La Chaux-d'Abel,+,445,Sonvilier,,2333,0,La Ferrière
 BE,,La Chaux-d'Abel,+,435,La Ferrière,,2333,0,La Ferrière
+BE,,La Chaux-d'Abel,+,445,Sonvilier,,2333,0,La Ferrière
 NE,,La Chaux-de-Fonds,,6421,La Chaux-de-Fonds,!,2300,0,La Chaux-de-Fonds
 JU,,La Chaux-des-Breuleux,,6744,La Chaux-des-Breuleux,,2345,3,Chaux-des-Breuleux
 VD,,La Chaux-de-Ste-Croix,,5568,Sainte-Croix,,1454,0,L'Auberson
 NE,,La Chaux-du-Milieu,,6435,La Chaux-du-Milieu,,2405,0,La Chaux-du-Milieu
 VD,,La Chiésaz,,5888,Saint-Légier-La Chiésaz,,1806,0,St-Légier-Chiésaz
-BE,,La Cibourg,+,435,La Ferrière,,2333,2,La Cibourg
-NE,,La Cibourg,+,6421,La Chaux-de-Fonds,,2300,8,La Cibourg
 BE,,La Cibourg,+,441,Renan (BE),,2616,2,La Cibourg
+NE,,La Cibourg,+,6421,La Chaux-de-Fonds,,2300,8,La Cibourg
+BE,,La Cibourg,+,435,La Ferrière,,2333,2,La Cibourg
 VD,,La Comballaz,,5410,Ormont-Dessous,,1862,2,La Comballaz
 VD,,La Conversion,,5606,Lutry,,1093,0,La Conversion
 NE,,La Corbatière,,6423,La Sagne,,2314,0,La Sagne NE
 FR,,La Corbaz,,2235,La Sonnaz,,1782,4,La Corbaz
 NE,,La Côte-aux-Fées,,6504,La Côte-aux-Fées,,2117,0,La Côte-aux-Fées
-VD,,La Coudre,,5486,L'Isle,,1148,9,La Coudre
 NE,Q,La Coudre,,6458,Neuchâtel,!,2000,0,Neuchâtel
+VD,,La Coudre,,5486,L'Isle,,1148,9,La Coudre
 VS,,La Crettaz,,6214,Finhaut,,1920,0,Martigny
 VS,,La Creusaz,,6218,Salvan,,1923,0,Les Marécottes
 VS,,La Croix,,6137,Martigny-Combe,,1921,0,Martigny-Croix
@@ -2640,13 +2640,13 @@ GE,,La Croix-de-Rozon,,6605,Bardonnex,,1257,0,La Croix-de-Rozon
 VD,,La Cure,,5727,Saint-Cergue,,1265,0,La Cure
 VS,,La Doey,,6220,Vérossaz,,1891,11,Vérossaz
 VS,,La Douay,,6034,Orsières,,1937,0,Orsières
-FR,,La Faye,+,2197,Givisiez,,1763,0,Granges-Paccot
 FR,,La Faye,+,2198,Granges-Paccot,,1763,0,Granges-Paccot
+FR,,La Faye,+,2197,Givisiez,,1763,0,Granges-Paccot
 BE,,La Ferrière,,435,La Ferrière,,2333,0,La Ferrière
 VS,,La Fontaine,,6137,Martigny-Combe,,1921,0,Martigny-Croix
 VS,,La Forclaz,,6083,Evolène,,1985,1,La Forclaz VS
-VD,,La Forclaz,,5410,Ormont-Dessous,,1866,0,La Forclaz VD
 VS,,La Forclaz,,6142,Trient,,1920,0,Martigny
+VD,,La Forclaz,,5410,Ormont-Dessous,,1866,0,La Forclaz VD
 VS,,La Fouly,,6034,Orsières,,1944,0,La Fouly VS
 VS,,La Garde,,6035,Sembrancher,,1933,4,La Garde
 VD,,La Givrine,,5727,Saint-Cergue,,1264,0,St-Cergue
@@ -2654,18 +2654,17 @@ VD,,La Golisse,,5872,Le Chenit,,1347,0,Le Sentier
 GE,,La Gradelle,,6617,Cologny,,1224,0,Chêne-Bougeries
 BE,,La Heutte,,436,La Heutte,,2604,0,La Heutte
 NE,,La Jaluse,,6436,Le Locle,,2400,0,Le Locle
-NE,,La Jonchère,,6471,Boudevilliers,,2043,0,Boudevilliers
+NE,,La Jonchère,,6487,Val-de-Ruz,,2043,0,Boudevilliers
 FR,,La Joux,,2113,Vuisternens-dev-Romont,,1697,0,La Joux FR
-NE,,La Joux-du-Plâne,+,6475,Dombresson,,2058,0,Le Pâquier NE
-NE,,La Joux-du-Plâne,+,6473,Chézard-Saint-Martin,,2058,0,Le Pâquier NE
+NE,,La Joux-du-Plâne,,6487,Val-de-Ruz,,2058,0,Le Pâquier NE
 VD,,La Lécherette,,5841,Château-d'Oex,,1660,4,La Lécherette
 VS,,La Luette,,6087,Saint-Martin (VS),,1982,0,Euseigne
 FR,,La Magne,,2113,Vuisternens-dev-Romont,,1687,2,La Magne
 VD,,La Mauguettaz,,5939,Yvonand,,1462,0,Yvonand
-VS,,La Montoz,,6031,Bagnes,,1947,4,La Montoz
+VS,,La Montoz,,6031,Bagnes,,1947,5,Champsec
 VD,,La Mothe,,5937,Vugelles-La Mothe,,1431,0,Vugelles-La Mothe
 JU,,La Motte,,6808,Clos du Doubs,,2889,0,Ocourt
-VS,,La Muraz,,6265,Savièse,,1950,0,Sion
+VS,,La Muraz,,6265,Savièse,,1965,11,La Muraz (Savièse)
 FR,,La Neirigue,,2113,Vuisternens-dev-Romont,,1686,2,La Neirigue
 BE,,La Neuveville,,723,La Neuveville,,2520,0,La Neuveville
 GE,,La Pallanterie,,6616,Collonge-Bellerive,,1222,0,Vésenaz
@@ -2677,8 +2676,8 @@ GE,,La Praille,+,6608,Carouge (GE),,1227,0,Carouge GE
 BE,,La Praye,,724,Nods,,2523,0,Lignières
 VD,,La Praz,,5758,La Praz,,1148,6,La Praz
 GR,,La Punt,,3785,La Punt-Chamues-ch,,7522,0,La Punt-Chamues-ch
-VS,,La Rasse,+,6217,Saint-Maurice,,1902,0,Evionnaz
 VS,,La Rasse,+,6213,Evionnaz,,1902,0,Evionnaz
+VS,,La Rasse,+,6217,Saint-Maurice,,1902,0,Evionnaz
 VD,,La Rippe,,5726,La Rippe,,1278,0,La Rippe
 VD,,La Robellaz,,5520,Essertines-sur-Yverdon,,1417,0,Essertines-Yverdon
 FR,,La Roche,,2149,La Roche,,1634,0,La Roche FR
@@ -2689,8 +2688,8 @@ VS,,La Rosière,,6034,Orsières,,1937,0,Orsières
 FR,,La Rougève,,2336,Semsales,,1623,0,Semsales
 VD,,La Russille,,5750,Les Clées,,1356,2,La Russille
 VS,,La Sage,,6083,Evolène,,1985,0,La Sage
-VD,,La Sagne,,5568,Sainte-Croix,,1450,2,La Sagne VD
 NE,,La Sagne,,6423,La Sagne,,2314,0,La Sagne NE
+VD,,La Sagne,,5568,Sainte-Croix,,1450,2,La Sagne VD
 NE,,La Sagne-Eglise,,6423,La Sagne,,2314,0,La Sagne NE
 VD,Q,La Sallaz,,5586,Lausanne,!,1000,0,Lausanne
 VD,,La Sarraz,,5498,La Sarraz,,1315,0,La Sarraz
@@ -2702,38 +2701,38 @@ VS,,La Tour,,6083,Evolène,,1984,1,La Tour VS
 VD,,La Tour-de-Peilz,,5889,La Tour-de-Peilz,,1814,0,La Tour-de-Peilz
 FR,,La Tour-de-Trême,,2125,Bulle,,1635,0,La Tour-de-Trême
 NE,,La Tourne,,6413,Rochefort,,2019,0,Rochefort
-FR,,La Tsintre,,2127,Charmey,,1637,0,Charmey (Gruyère)
-FR,,La Valsainte,,2126,Cerniat (FR),,1654,0,Cerniat FR
+FR,,La Tsintre,,2163,Val-de-Charmey,,1637,0,Charmey (Gruyère)
+FR,,La Valsainte,,2163,Val-de-Charmey,,1654,0,Cerniat FR
 VS,,La Vernaz,,6081,Les Agettes,,1992,2,La Vernaz
-VS,,La Verrerie,,6136,Martigny,,1904,0,Vernayaz
 FR,,La Verrerie,,2338,La Verrerie,,1624,0,La Verrerie
+VS,,La Verrerie,,6136,Martigny,,1904,0,Vernayaz
 FR,,La Vounaise,,2034,Murist,,1489,0,Murist
 VD,,La Vraconnaz,,5568,Sainte-Croix,,1454,2,La Vraconnaz
-NE,,La Vue-des-Alpes,,6479,Fontaines (NE),,2052,2,La Vue-des-Alpes
+NE,,La Vue-des-Alpes,,6487,Val-de-Ruz,,2052,2,La Vue-des-Alpes
 GR,,Laax,,3575,Laax,,7031,0,Laax GR
 VD,,L'Abbaye,,5871,L'Abbaye,,1344,0,L'Abbaye
 VD,,L'Abergement,,5741,L'Abergement,,1355,0,L'Abergement
+AR,,Lachen,,3037,Walzenhausen,,9428,0,Walzenhausen
 SG,Q,Lachen,,3203,St. Gallen,!,9000,0,St. Gallen
 SZ,,Lachen,,1344,Lachen,,8853,0,Lachen SZ
-AR,,Lachen,,3037,Walzenhausen,,9428,0,Walzenhausen
 GE,,Laconnex,,6627,Laconnex,,1287,0,Laconnex
-GR,,Ladir,,3576,Ladir,,7155,0,Ladir
+GR,,Ladir,,3619,Ilanz/Glion,,7155,0,Ladir
 GR,,Lain,,3506,Vaz/Obervaz,,7082,0,Vaz/Obervaz
 JU,,Lajoux,,6750,Lajoux (JU),,2718,0,Lajoux JU
 VS,,Lalden,,6286,Lalden,,3931,1,Lalden
 VD,,L'Allex,,5402,Bex,,1880,0,Bex
 VD,,L'Alliaz,,5881,Blonay,,1807,0,Blonay
 VD,,Lally,,5881,Blonay,,1807,0,Blonay
-BE,,Lamboing,,722,Lamboing,,2516,0,Lamboing
+BE,,Lamboing,,726,Plateau de Diesse,,2516,0,Lamboing
 TI,,Lamone,,5189,Lamone,,6814,2,Lamone
 BL,,Lampenberg,,2887,Lampenberg,,4432,0,Lampenberg
 TG,,Lamperswil,,4951,Wigoltingen,,8556,4,Lamperswil TG
-VS,,Lana,,6083,Evolène,,1983,2,Lana (Evolène)
+VS,,Lana,,6083,Evolène,,1983,2,Lanna
 GE,,Lancy,,6628,Lancy,,1212,0,Grand-Lancy
 GR,,Landarenca,,3801,Arvigo,,6545,0,Selma
 GE,,Landecy,,6605,Bardonnex,,1257,0,La Croix-de-Rozon
 BE,,Landerswil,,309,Radelfingen,,3036,0,Detligen
-NE,,Landeyeux,,6471,Boudevilliers,,2046,0,Fontaines NE
+NE,,Landeyeux,,6487,Val-de-Ruz,,2046,0,Fontaines NE
 ZH,,Landikon,,242,Birmensdorf (ZH),,8903,0,Birmensdorf ZH
 BE,,Landiswil,,613,Landiswil,,3434,1,Landiswil
 GR,,Landquart,,3955,Landquart,,7302,0,Landquart
@@ -2741,7 +2740,7 @@ GR,,Landquart-Fabriken,,3955,Landquart,,7302,0,Landquart
 TG,,Landschlacht,,4691,Münsterlingen,,8597,0,Landschlacht
 BE,,Landshut,,552,Utzenstorf,,3427,0,Utzenstorf
 ZH,,Langenberg,,136,Langnau am Albis,,8135,0,Langnau am Albis
-LU,,Längenbold,,1065,Root,,6039,0,Root Längenbold
+LU,,Längenbold,,1065,Root,,6039,0,Root D4
 BL,,Langenbruck,,2888,Langenbruck,,4438,0,Langenbruck
 BE,,Längenbühl,,948,Forst-Längenbühl,,3636,0,Längenbühl
 SO,,Langendorf,,2550,Langendorf,,4513,0,Langendorf
@@ -2758,7 +2757,7 @@ ZH,,Langnau am Albis,,136,Langnau am Albis,,8135,0,Langnau am Albis
 LU,,Langnau bei Reiden,,1140,Reiden,,6262,0,Langnau b. Reiden
 BE,,Langnau im Emmental,,902,Langnau im Emmental,,3550,0,Langnau i. E.
 TG,,Langrickenbach,,4681,Langrickenbach,,8585,4,Langrickenbach
-GR,,Langwies,,3924,Langwies,,7057,0,Langwies
+GR,,Langwies,,3921,Arosa,,7057,0,Langwies
 ZH,,Langwiesen,,27,Feuerthalen,,8246,0,Langwiesen
 TG,,Lanterswil,,4921,Bussnang,,9503,2,Lanterswil
 GR,,Lantsch/Lenz,,3513,Lantsch/Lenz,,7083,0,Lantsch/Lenz
@@ -2780,9 +2779,9 @@ AG,,Laufenburg,,4170,Laufenburg,,5080,0,Laufenburg
 ZH,,Laufen-Uhwiesen,,34,Laufen-Uhwiesen,,8248,0,Uhwiesen
 AG,,Lauffohr,,4095,Brugg,,5200,0,Brugg AG
 SG,,Läui,,3274,Sennwald,,9466,0,Sennwald
-SG,,Laupen,+,3423,Niederhelfenschwil,,9524,0,Zuzwil SG
 BE,,Laupen,,667,Laupen,,3177,0,Laupen BE
 ZH,,Laupen,,120,Wald (ZH),,8637,0,Laupen ZH
+SG,,Laupen,+,3423,Niederhelfenschwil,,9524,0,Zuzwil SG
 SG,,Laupen,+,3426,Zuzwil (SG),,9524,0,Zuzwil SG
 SO,,Laupersdorf,,2426,Laupersdorf,,4712,0,Laupersdorf
 BE,,Lauperswil,,903,Lauperswil,,3438,0,Lauperswil
@@ -2817,7 +2816,7 @@ VS,,Le Cergneux,,6137,Martigny-Combe,,1921,0,Martigny-Croix
 NE,,Le Cerneux-Péquignot,,6434,Le Cerneux-Péquignot,,2414,0,Cerneux-Péquignot
 JU,,Le Cerneux-Veusil,,6753,Muriaux,,2345,2,Le Cerneux-Veusil
 BE,,Le Cernil,,446,Tramelan,,2722,0,Les Reussilles
-VS,,Le Châble,,6031,Bagnes,,1934,2,Cotterg(Le Châble)
+VS,,Le Châble,,6031,Bagnes,,1934,0,Le Châble VS
 VD,,Le Chalet-à-Gobet,,5586,Lausanne,,1000,25,Lausanne 25
 BE,,Le Chaluet,,690,Court,,2738,0,Court
 VS,,Le Chargeur,,6084,Hérémence,,1987,0,Hérémence
@@ -2826,8 +2825,7 @@ VS,,Le Châtelard,,6214,Finhaut,,1925,1,Le Châtelard VS
 FR,,Le Châtelard-près-Romont,,2067,Le Châtelard,,1689,0,Châtelard-p-Romont
 VD,,Le Chenit,,5872,Le Chenit,,1347,0,Le Sentier
 NE,,Le Col-des-Roches,,6436,Le Locle,,2400,0,Le Locle
-NE,,Le Côty,+,6483,Le Pâquier (NE),,2058,0,Le Pâquier NE
-NE,,Le Côty,+,6475,Dombresson,,2054,2,Les Vieux-Prés
+NE,,Le Côty,,6487,Val-de-Ruz,,2058,0,Le Pâquier NE
 VD,,Le Coudray,,5746,Bavois,,1372,0,Bavois
 NE,,Le Crêt,,6423,La Sagne,,2314,0,La Sagne NE
 NE,,Le Crêt-du-Locle,,6421,La Chaux-de-Fonds,,2322,0,Le Crêt-du-Locle
@@ -2836,7 +2834,7 @@ NE,,Le Crozot,,6436,Le Locle,,2400,2,Le Prévoux
 VD,,Le Day,,5764,Vallorbe,,1337,0,Vallorbe
 VD,,Le Dézaley,,5607,Puidoux,,1071,1,Rivaz
 VS,,Le Fays,,6137,Martigny-Combe,,1921,0,Martigny-Croix
-VS,,Le Fregnoley,,6031,Bagnes,,1947,6,Le Fregnoley
+VS,,Le Fregnoley,,6031,Bagnes,,1947,5,Champsec
 BE,,Le Fuet,,706,Saicourt,,2712,0,Le Fuet
 GE,,Le Grand-Saconnex,,6623,Le Grand-Saconnex,,1218,0,Le Grand-Saconnex
 BE,,Le Jeanbrenin,,431,Corgémont,,2720,0,Tramelan
@@ -2851,21 +2849,21 @@ VD,,Le Marchairuz,,5872,Le Chenit,,1348,0,Le Brassus
 VS,,Le Martinet,,6031,Bagnes,,1947,0,Versegères
 VD,,Le Mont-Pèlerin,,5882,Chardonne,,1801,0,Le Mont-Pèlerin
 VD,,Le Mont-sur-Lausanne,,5587,Le Mont-sur-Lausanne,,1052,0,Mont-sur-Lausanne
-VS,,Le Morgnes,,6031,Bagnes,,1948,4,Le Morgnes
+VS,,Le Morgnes,,6031,Bagnes,,1948,0,Lourtier
 FR,,Le Mouret,+,2194,Ferpicloz,,1724,0,Le Mouret
 FR,,Le Mouret,+,2220,Le Mouret,,1724,0,Le Mouret
 VD,,Le Muids,,5702,Arzier,,1273,2,Le Muids
 JU,,Le Noirmont,,6754,Le Noirmont,,2340,0,Le Noirmont
 FR,,Le Pafuet,,2220,Le Mouret,,1724,8,Bonnefontaine
-NE,,Le Pâquier,,6483,Le Pâquier (NE),,2058,0,Le Pâquier NE
 FR,,Le Pâquier,,2145,Le Pâquier (FR),,1661,0,Pâquier-Montbarry
-VS,,Le Parfay,,6264,Salins,,1991,0,Salins
+NE,,Le Pâquier,,6487,Val-de-Ruz,,2058,0,Le Pâquier NE
+VS,,Le Parfay,,6266,Sion,,1991,0,Salins
 FR,,Le Péage,,2280,Bas-Vully,,1788,0,Praz (Vully)
 GE,Q,Le Petit-Saconnex,,6621,Genève,!,1200,0,Genève
 JU,,Le Peuchapatte,,6753,Muriaux,,2345,0,Les Breuleux
 JU,,Le Peu-Claude,,6742,Les Bois,,2336,0,Les Bois
 JU,,Le Peu-Péquinot,,6754,Le Noirmont,,2340,0,Le Noirmont
-VS,,Le Planchamp,,6031,Bagnes,,1948,3,Le Planchamp
+VS,,Le Planchamp,,6031,Bagnes,,1948,0,Lourtier
 VD,,Le Pont,,5871,L'Abbaye,,1342,0,Le Pont
 BE,,Le Pré-Carrel,,438,Orvin,,2534,0,Orvin
 JU,,Le Prédame,,6748,Les Genevez (JU),,2714,2,Le Prédame
@@ -2878,7 +2876,7 @@ JU,,Le Roselet,,6753,Muriaux,,2345,0,Les Breuleux
 VD,,Le Rosex,,5411,Ormont-Dessus,,1864,0,Vers-l'Eglise
 VS,,Le Sapey,,6031,Bagnes,,1934,0,Le Châble VS
 FR,,Le Saulgy,,2099,Siviriez,,1678,0,Siviriez
-VD,,Le Séchey,,5873,Le Lieu,,1345,0,Le Lieu
+VD,,Le Séchey,,5873,Le Lieu,,1345,1,Le Séchey
 VD,,Le Sentier,,5872,Le Chenit,,1347,0,Le Sentier
 VD,,Le Sépey,,5410,Ormont-Dessous,,1863,0,Le Sépey
 VD,,Le Solliat,,5872,Le Chenit,,1347,1,Le Solliat
@@ -2888,23 +2886,23 @@ VD,,Le Vaud,,5731,Le Vaud,,1261,33,Le Vaud
 FR,,Léchelles,,2024,Léchelles,,1773,0,Léchelles
 GR,,Leggia,,3833,Leggia,,6556,0,Leggia
 AG,,Leibstadt,,4311,Leibstadt,,5325,0,Leibstadt
+AG,,Leimbach,,4137,Leimbach (AG),,5733,0,Leimbach AG
 TG,,Leimbach,,4911,Bürglen (TG),,8584,0,Leimbach TG
 ZH,,Leimbach,,261,Zürich,,8041,0,Zürich
-AG,,Leimbach,,4137,Leimbach (AG),,5733,0,Leimbach AG
 BE,,Leimiswil,,332,Madiswil,,4935,0,Leimiswil
 BE,,Leissigen,,585,Leissigen,,3706,0,Leissigen
 TI,,Lelgio,,5226,Capriasca,,6951,12,Odogno
 SG,,Lenggenwil,,3423,Niederhelfenschwil,,9525,0,Lenggenwil
 AG,,Lengnau,,4312,Lengnau (AG),,5426,0,Lengnau AG
 BE,,Lengnau,,387,Lengnau (BE),,2543,0,Lengnau BE
-TG,,Lengwil,,4683,Lengwil,,8574,0,Lengwil-Oberhofen
+TG,,Lengwil,,4683,Lengwil,,8574,3,Lengwil
 BE,,Lenk im Simmental,,792,Lenk,,3775,0,Lenk im Simmental
 VS,,Lens,,6240,Lens,,1978,0,Lens
 FR,,Lentigny,,2234,La Brillaz,,1745,0,Lentigny
 AG,,Lenzburg,,4201,Lenzburg,,5600,0,Lenzburg
 GR,,Lenzerheide See,,3506,Vaz/Obervaz,,7077,0,Valbella
 GR,,Lenzerheide/Lai,,3506,Vaz/Obervaz,,7078,0,Lenzerheide/Lai
-SG,,Lenzikon,,3332,Eschenbach (SG),,8732,0,Neuhaus SG
+SG,,Lenzikon,,3342,Eschenbach (SG),,8732,0,Neuhaus SG
 TI,,Leontica,,5048,Acquarossa,,6716,2,Leontica
 BE,Q,Lerchenfeld,,942,Thun,!,3600,0,Thun
 GE,,Les Acacias,,6608,Carouge (GE),,1227,4,Les Acacias
@@ -2920,7 +2918,7 @@ JU,,Les Bois,,6742,Les Bois,,2336,0,Les Bois
 VD,,Les Bovets,,5411,Ormont-Dessus,,1865,0,Les Diablerets
 NE,,Les Brenets,,6431,Les Brenets,,2416,0,Les Brenets
 JU,,Les Breuleux,,6743,Les Breuleux,,2345,0,Les Breuleux
-NE,,Les Bugnenets,,6483,Le Pâquier (NE),,2058,0,Le Pâquier NE
+NE,,Les Bugnenets,,6487,Val-de-Ruz,,2058,0,Le Pâquier NE
 JU,,Les Cerlatez,,6757,Saignelégier,,2350,0,Saignelégier
 VD,,Les Charbonnières,,5873,Le Lieu,,1343,0,Les Charbonnières
 FR,,Les Chavannes-sous-Romont,,2096,Romont (FR),,1680,0,Romont FR
@@ -2944,23 +2942,22 @@ NE,Q,Les Eplatures,,6421,La Chaux-de-Fonds,!,2300,0,La Chaux-de-Fonds
 VS,,Les Evouettes,,6154,Port-Valais,,1897,3,Les Evouettes
 NE,,Les Frêtes,,6431,Les Brenets,,2416,0,Les Brenets
 FR,,Les Friques,,2041,Saint-Aubin (FR),,1566,2,Les Friques
-NE,,Les Geneveys-sur-Coffrane,,6480,Les Geneveys-s-Coffrane,,2206,0,Geneveys-Coffrane
+NE,,Les Geneveys-sur-Coffrane,,6487,Val-de-Ruz,,2206,0,Geneveys-Coffrane
 JU,,Les Genevez,,6748,Les Genevez (JU),,2714,0,Les Genevez JU
 VS,,Les Giettes,+,6153,Monthey,,1871,2,Les Giettes
 VS,,Les Giettes,+,6215,Massongex,,1871,2,Les Giettes
-VD,,Les Granges,,5841,Château-d'Oex,,1660,0,Château-d'Oex
 VS,,Les Granges,,6218,Salvan,,1922,1,Granges (Salvan)
+VD,,Les Granges,,5841,Château-d'Oex,,1660,0,Château-d'Oex
 NE,,Les Grattes,,6413,Rochefort,,2019,0,Rochefort
 VS,,Les Haudères,,6083,Evolène,,1984,0,Les Haudères
-NE,,Les Hauts-Geneveys,,6481,Les Hauts-Geneveys,,2208,0,Les Hauts-Geneveys
+NE,,Les Hauts-Geneveys,,6487,Val-de-Ruz,,2208,0,Les Hauts-Geneveys
 VS,,Les Jeurs,,6142,Trient,,1929,0,Trient
-NE,,Les Joux-Derrière,,6421,La Chaux-de-Fonds,,2325,2,Les Joux-Derrière
-NE,,Les Loges,+,6478,Fontainemelon,,2052,0,Fontainemelon
-NE,,Les Loges,+,6479,Fontaines (NE),,2052,0,Fontainemelon
+NE,,Les Joux-Derrière,,6421,La Chaux-de-Fonds,,2300,0,La Chaux-de-Fonds
+NE,,Les Loges,,6487,Val-de-Ruz,,2052,0,Fontainemelon
 VS,,Les Marécottes,,6218,Salvan,,1923,0,Les Marécottes
 VS,,Les Masses,,6084,Hérémence,,1987,0,Hérémence
-VS,,Les Mayens-de-Sion,+,6081,Les Agettes,,1992,1,Les Mayens-de-Sion
 VS,,Les Mayens-de-Sion,+,6089,Vex,,1992,1,Les Mayens-de-Sion
+VS,,Les Mayens-de-Sion,+,6081,Les Agettes,,1992,1,Les Mayens-de-Sion
 VD,,Les Monts-de-Corsier,,5884,Corsier-sur-Vevey,,1808,0,Monts-de-Corsier
 VD,,Les Monts-de-Pully,,5590,Pully,,1068,0,Les Monts-de-Pully
 VD,,Les Mosses,,5410,Ormont-Dessous,,1862,0,Les Mosses
@@ -2969,18 +2966,18 @@ VS,,Les Moulins,,6033,Liddes,,1945,8,Les Moulins VS
 VS,,Les Neyres,,6152,Collombey-Muraz,,1868,0,Collombey
 FR,,Les Paccots,,2325,Châtel-Saint-Denis,,1619,0,Les Paccots
 NE,,Les Petits-Ponts,,6433,Brot-Plamboz,,2318,0,Brot-Plamboz
-VS,,Les Places,,6031,Bagnes,,1947,3,Les Places
-VD,,Les Planches,,5410,Ormont-Dessous,,1863,0,Le Sépey
-VD,,Les Planches,,5886,Montreux,,1820,0,Montreux
+VS,,Les Places,,6031,Bagnes,,1947,0,Versegères
 FR,,Les Planches,,2052,Vernay,,1475,0,Autavaux
+VD,,Les Planches,,5410,Ormont-Dessous,,1863,0,Le Sépey
 VD,,Les Planches,,5587,Le Mont-sur-Lausanne,,1052,0,Mont-sur-Lausanne
+VD,,Les Planches,,5886,Montreux,,1820,0,Montreux
 NE,,Les Planchettes,,6422,Les Planchettes,,2325,0,Les Planchettes
 VD,,Les Plans-sur-Bex,,5402,Bex,,1880,4,Les Plans-sur-Bex
 JU,,Les Pommerats,,6757,Saignelégier,,2353,0,Les Pommerats
 BE,,Les Pontins,,443,Saint-Imier,,2610,3,Les Pontins
 FR,,Les Ponts,,2155,Vaulruz,,1627,0,Vaulruz
 NE,,Les Ponts-de-Martel,,6437,Les Ponts-de-Martel,,2316,0,Ponts-de-Martel
-VD,,Les Posses-sur-Bex,,5402,Bex,,1882,2,Les Posses-sur-Bex
+VD,,Les Posses-sur-Bex,,5402,Bex,,1880,5,Les Posses-sur-Bex
 VS,,Les Prasses,,6089,Vex,,1981,0,Vex
 BE,,Les Prés-d'Orvin,,438,Orvin,,2534,2,Les Prés-d'Orvin
 JU,,Les Rangiers,,6810,La Baroche,,2954,0,Asuel
@@ -3003,8 +3000,7 @@ JU,,Les Vacheries-Genevez,,6748,Les Genevez (JU),,2714,2,Le Prédame
 VS,,Les Valettes,,6131,Bovernier,,1932,2,Les Valettes
 VS,,Les Vérines,,6022,Chamoson,,1955,2,Les Vérines
 NE,,Les Verrières,,6511,Les Verrières,,2126,0,Les Verrières
-NE,,Les Vieux-Prés,+,6475,Dombresson,,2054,2,Les Vieux-Prés
-NE,,Les Vieux-Prés,+,6473,Chézard-Saint-Martin,,2054,2,Les Vieux-Prés
+NE,,Les Vieux-Prés,,6487,Val-de-Ruz,,2054,2,Les Vieux-Prés
 VD,,Les Voëttes,,5410,Ormont-Dessous,,1862,2,La Comballaz
 VD,,Les Vullierens,,5551,Bonvillars,,1424,0,Champagne
 FR,,Lessoc,,2121,Haut-Intyamon,,1669,2,Lessoc
@@ -3024,17 +3020,17 @@ GR,,Li Curt,,3561,Poschiavo,,7745,0,Li Curt
 SG,,Libingen,,3394,Mosnang,,9614,0,Libingen
 SG,,Lichtensteig,,3374,Lichtensteig,,9620,0,Lichtensteig
 VS,,Liddes,,6033,Liddes,,1945,0,Liddes
-FR,,Liderrey,,2127,Charmey,,1637,0,Charmey (Gruyère)
+FR,,Liderrey,,2163,Val-de-Charmey,,1637,0,Charmey (Gruyère)
 BE,,Liebefeld,,355,Köniz,,3097,0,Liebefeld
 TG,,Liebenfels,,4811,Herdern,,8506,0,Lanzenneunforn
-ZH,,Liebensberg,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Liebensberg,,298,Wiesendangen,,8543,0,Bertschikon
 BE,,Liebewil,,355,Köniz,,3173,0,Oberwangen b. Bern
 FR,,Liebistorf,,2262,Gurmels,,3213,0,Liebistorf
 AG,,Liebrüti,,4252,Kaiseraugst,,4303,0,Kaiseraugst
 BL,,Liedertswil,,2890,Liedertswil,,4436,2,Liedertswil
 FR,,Lieffrens,,2113,Vuisternens-dev-Romont,,1688,2,Lieffrens
-LU,,Lieli,,1032,Hohenrain,,6277,2,Lieli
 AG,,Lieli,,4074,Oberwil-Lieli,,8966,0,Oberwil-Lieli
+LU,,Lieli,,1032,Hohenrain,,6277,2,Lieli
 SG,,Lienz,,3251,Altstätten,,9464,2,Lienz
 BL,,Liesberg,,2788,Liesberg,,4253,0,Liesberg
 BL,,Liesberg Dorf,,2788,Liesberg,,4254,0,Liesberg Dorf
@@ -3043,19 +3039,19 @@ VS,,Liez,,6087,Saint-Martin (VS),,1969,2,Liez (St-Martin)
 BE,,Ligerz,,740,Ligerz,,2514,0,Ligerz
 VD,,Lignerolle,,5755,Lignerolle,,1357,0,Lignerolle
 NE,,Lignières,,6456,Lignières,,2523,0,Lignières
-TI,,Ligornetto,,5253,Ligornetto,,6853,0,Ligornetto
+TI,,Ligornetto,,5254,Mendrisio,,6853,0,Ligornetto
 ZH,,Limberg,,154,Küsnacht (ZH),,8127,0,Forch
-BE,,Limpach,,542,Limpach,,3317,0,Limpach
+BE,,Limpach,,538,Fraubrunnen,,3317,0,Limpach
 ZH,,Lindau,,176,Lindau,,8315,0,Lindau
-AG,,Linden,+,4286,Uerkheim,,4812,0,Mühlethal
 BE,,Linden,,614,Linden,,3673,0,Linden
 AG,,Linden,+,4289,Zofingen,,4812,0,Mühlethal
+AG,,Linden,+,4286,Uerkheim,,4812,0,Mühlethal
 ZG,,Lindencham,,1702,Cham,,6332,0,Hagendorn
 BE,,Lindenholz,,332,Madiswil,,4935,0,Leimiswil
 BE,,Lindenthal bei Boll,,359,Vechigen,,3067,0,Boll
 SG,,Lindenwis,,3442,Gaiserwald,,9032,0,Engelburg
 TI,,Linescio,,5315,Linescio,,6682,0,Linescio
-AG,,Linn,,4103,Linn,,5224,3,Linn
+AG,,Linn,,4124,Bözberg,,5225,1,Bözberg
 GL,,Linthal,,1631,Glarus Süd,,8783,0,Linthal
 ZH,,Lippenschwendi,,171,Bauma,,8494,0,Bauma
 TG,,Lipperswil,,4701,Wäldi,,8564,5,Lipperswil
@@ -3064,7 +3060,7 @@ VD,,L'Isle,,5486,L'Isle,,1148,0,L'Isle
 TI,,Lisone,,5161,Cademario,,6936,0,Cademario
 LU,,Littau,,1061,Luzern,,6014,0,Luzern
 TG,,Littenheid,,4761,Sirnach,,9573,0,Littenheid
-GR,,Litzirüti,,3924,Langwies,,7058,0,Litzirüti
+GR,,Litzirüti,,3921,Arosa,,7058,0,Litzirüti
 FR,,Litzistorf,,2295,Bösingen,,3178,0,Bösingen
 BE,,Lobsigen,,312,Seedorf (BE),,3268,0,Lobsigen
 VS,,Loc,,6244,Randogne,,3960,3,Loc
@@ -3076,8 +3072,8 @@ TI,,Lodrino,,5285,Lodrino,,6527,0,Lodrino
 GE,,Loëx,,6607,Bernex,,1233,0,Bernex
 GR,,Logiano,,3822,Mesocco,,6563,0,Mesocco
 GR,,Lohn,,3707,Lohn (GR),,7433,3,Lohn GR
-SH,,Lohn,,2917,Lohn (SH),,8235,0,Lohn SH
 SO,,Lohn,,2526,Lohn-Ammannsegg,,4573,0,Lohn-Ammannsegg
+SH,,Lohn,,2917,Lohn (SH),,8235,0,Lohn SH
 SH,,Löhningen,,2903,Löhningen,,8224,0,Löhningen
 BE,,Lohnstorf,,874,Lohnstorf,,3127,2,Lohnstorf
 SG,,Lömmenschwil,,3201,Häggenschwil,,9308,0,Lömmenschwil
@@ -3113,9 +3109,9 @@ GL,,Luchsingen,,1631,Glarus Süd,,8775,1,Luchsingen
 ZH,,Luckhausen,,174,Illnau-Effretikon,,8307,2,Ottikon b.Kemptth.
 TI,,Lucomagno,,5049,Blenio,,7185,0,Platta
 ZH,,Ludetswil,,178,Russikon,,8322,0,Madetswil
-TI,,Ludiano,,5040,Ludiano,,6721,0,Ludiano
+TI,,Ludiano,,5050,Serravalle,,6721,0,Ludiano
 ZH,,Ludretikon,,141,Thalwil,,8800,0,Thalwil
-GR,,Lüen,,3925,Lüen,,7027,1,Lüen
+GR,,Lüen,,3921,Arosa,,7027,1,Lüen
 ZH,,Lufingen,,63,Lufingen,,8426,0,Lufingen
 TI,,Lugaggia,,5226,Capriasca,,6953,0,Lugaggia
 TI,,Lugano,,5192,Lugano,,6900,0,Lugano
@@ -3123,10 +3119,10 @@ JU,,Lugnez,,6793,Lugnez,,2933,3,Lugnez
 FR,,Lugnorre,,2281,Haut-Vully,,1789,0,Lugnorre
 VD,,Luins,,5858,Luins,,1184,0,Luins
 GE,,Lullier,,6626,Jussy,,1254,0,Jussy
-GE,,Lully,,6607,Bernex,,1223,0,Cologny
 VD,,Lully,,5639,Lully (VD),,1132,0,Lully VD
+GE,,Lully,,6607,Bernex,,1223,0,Cologny
 FR,,Lully,,2025,Lully (FR),,1470,2,Lully FR
-GR,,Lumbrein,,3595,Lumbrein,,7148,0,Lumbrein
+GR,,Lumbrein,,3618,Lumnezia,,7148,0,Lumbrein
 TI,,Lumino,,5010,Lumino,,6533,0,Lumino
 GR,,Lumneins,,3987,Trun,,7166,0,Trun
 GR,,Lunden,,3962,Schiers,,7222,0,Mittellunden
@@ -3138,7 +3134,7 @@ TI,,Lurengo,,5079,Quinto,,6777,0,Quinto
 FR,,Lurtigen,,2270,Lurtigen,,3215,3,Lurtigen
 BE,,Lüscherz,,497,Lüscherz,,2576,0,Lüscherz
 VD,,Lussery,,5487,Lussery-Villars,,1307,0,Lussery-Villars
-SO,,Lüsslingen,,2454,Lüsslingen,,4574,1,Lüsslingen
+SO,,Lüsslingen,,2464,Lüsslingen-Nennigkofen,,4574,1,Lüsslingen
 FR,,Lussy,,2116,La Folliaz,,1690,2,Lussy FR
 VD,,Lussy-sur-Morges,,5640,Lussy-sur-Morges,,1167,0,Lussy-sur-Morges
 TG,,Lustdorf,,4611,Thundorf,,8512,2,Lustdorf
@@ -3155,12 +3151,12 @@ VD,,Lutry,,5606,Lutry,,1095,0,Lutry
 BE,,Lütschental,,586,Lütschental,,3816,0,Lütschental
 BE,,Lützelflüh,,955,Lützelflüh,,3432,0,Lützelflüh-Goldb
 AR,,Lutzenberg,,3033,Lutzenberg,,9426,0,Lutzenberg
-GR,,Luven,,3577,Luven,,7141,0,Luven
+GR,,Luven,,3619,Ilanz/Glion,,7141,0,Luven
 GR,,Luzein,,3891,Luzein,,7242,0,Luzein
 LU,,Luzern,,1061,Luzern,!,6000,0,Luzern
 BE,,Lyss,,306,Lyss,,3250,0,Lyss
 BE,,Lyssach,,415,Lyssach,,3421,0,Lyssach
-VS,,Mâche,,6084,Hérémence,,1987,1,Mâche
+VS,,Mâche,,6084,Hérémence,,1987,0,Hérémence
 UR,,Maderanerthal,,1216,Silenen,,6475,0,Bristen
 ZH,,Madetswil,,178,Russikon,,8322,0,Madetswil
 BE,,Madiswil,,332,Madiswil,,4934,0,Madiswil
@@ -3178,28 +3174,28 @@ BE,,Magglingen/Macolin,,372,Evilard,,2532,0,Magglingen/Macolin
 TI,,Magliasina,+,5171,Caslano,,6987,0,Caslano
 TI,,Magliasina,+,5193,Magliaso,,6987,0,Caslano
 TI,,Magliaso,,5193,Magliaso,,6983,0,Magliaso
-TI,,Maglio di Colla,,5229,Valcolla,,6959,0,Maglio di Colla
+TI,,Maglio di Colla,,5192,Lugano,,6959,0,Maglio di Colla
 FR,,Magnedens,,2184,Corpataux-Magnedens,,1727,2,Magnedens
 VS,,Magnot,,6025,Vétroz,,1963,0,Vétroz
 GR,,Magun,,3705,Donat,,7442,0,Clugin
 SO,,Mahren,,2493,Lostorf,,4654,0,Lostorf
 GR,,Maienfeld,,3953,Maienfeld,,7304,0,Maienfeld
-TI,,Mairengo,,5074,Mairengo,,6763,1,Mairengo
+TI,,Mairengo,,5072,Faido,,6763,1,Mairengo
 TG,,Maischhusen,,4551,Aadorf,,8357,0,Guntershausen
 BL,,Maisprach,,2853,Maisprach,,4464,0,Maisprach
 GR,,Maladers,,3926,Maladers,,7026,0,Maladers
 GE,,Malagny,,6622,Genthod,,1294,0,Genthod
-SG,,Malans,,3276,Wartau,,9479,1,Malans SG
 GR,,Malans,,3954,Malans,,7208,0,Malans GR
+SG,,Malans,,3276,Wartau,,9479,1,Malans SG
 VD,,Malapalud,,5511,Assens,,1042,0,Assens
 GR,,Malix,,3911,Churwalden,,7074,0,Malix
 BE,,Malleray,,697,Malleray,,2735,4,Malleray
 VD,Q,Malley,,5586,Lausanne,!,1000,0,Lausanne
 GR,,Maloja,,3792,Bregaglia,,7516,0,Maloja
 LU,,Malters,,1062,Malters,,6102,0,Malters
-TI,,Malvaglia,,5041,Malvaglia,,6713,0,Malvaglia
+TI,,Malvaglia,,5050,Serravalle,,6713,0,Malvaglia
 GE,,Malval,,6620,Dardagny,,1283,1,Dardagny
-NE,,Malvilliers,,6471,Boudevilliers,,2043,0,Boudevilliers
+NE,,Malvilliers,,6487,Val-de-Ruz,,2043,0,Boudevilliers
 BE,,Mamishaus,,855,Schwarzenburg,,3152,0,Mamishaus
 TG,,Mammern,,4826,Mammern,,8265,0,Mammern
 AG,,Mandach,,4105,Mandach,,5318,0,Mandach
@@ -3211,8 +3207,8 @@ TI,,Manno,,5194,Manno,,6928,0,Manno
 BE,,Mannried,,794,Zweisimmen,,3770,0,Zweisimmen
 ZH,,Manzenhub,,181,Wila,,8492,0,Wila
 VD,,Maracon,,5790,Maracon,,1613,0,Maracon
-LU,,Marbach,,1006,Marbach (LU),,6196,0,Marbach LU
 SG,,Marbach,,3253,Marbach (SG),,9437,0,Marbach SG
+LU,,Marbach,,1010,Escholzmatt-Marbach,,6196,0,Marbach LU
 VD,,Marchissy,,5430,Marchissy,,1261,32,Marchissy
 BE,,Marfeldingen,,668,Mühleberg,,3203,0,Mühleberg
 FR,,Mariahilf,,2293,Düdingen,,3186,0,Düdingen
@@ -3228,11 +3224,11 @@ TG,,Märstetten,,4941,Märstetten,,8560,0,Märstetten
 TG,,Märstetten Station,,4941,Märstetten,,8560,0,Märstetten
 NE,,Martel-Dernier,,6437,Les Ponts-de-Martel,,2316,0,Ponts-de-Martel
 ZH,,Marthalen,,35,Marthalen,,8460,0,Marthalen
-VD,,Martherenges,,5676,Martherenges,,1063,2,Martherenges
+VD,,Martherenges,,5693,Montanaire,,1063,2,Martherenges
 VS,,Martigny,,6136,Martigny,,1920,0,Martigny
 VS,,Martigny-Combe,,6137,Martigny-Combe,,1921,0,Martigny-Croix
-GR,,Martina,,3753,Tschlin,,7560,0,Martina
-VS,,Martisberg,,6178,Martisberg,,3994,2,Martisberg
+GR,,Martina,,3764,Valsot,,7560,0,Martina
+VS,,Martisberg,,6205,Bettmeralp,,3994,2,Martisberg
 TG,,Märwil,,4711,Affeltrangen,,9562,0,Märwil
 TI,,Marzano,,5049,Blenio,,6718,0,Olivone
 GR,Q,Masans,,3901,Chur,,7000,0,Chur
@@ -3297,10 +3293,10 @@ GE,,Meinier,,6629,Meinier,,1252,0,Meinier
 BE,,Meinisberg,,390,Meinisberg,,2554,0,Meinisberg
 BE,,Meiniswil,,321,Aarwangen,,4912,0,Aarwangen
 BE,,Meiringen,,785,Meiringen,,3860,0,Meiringen
-ZH,,Meisberg,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Meisberg,,298,Wiesendangen,,8543,0,Bertschikon
 AG,,Meisterschwanden,,4202,Meisterschwanden,,5616,0,Meisterschwanden
-AI,,Meistersrüte,+,3103,Rüte,,9050,5,Appenzell Meister.
 AI,,Meistersrüte,+,3101,Appenzell,,9050,5,Appenzell Meister.
+AI,,Meistersrüte,+,3103,Rüte,,9050,5,Appenzell Meister.
 TI,,Melano,,5197,Melano,,6818,0,Melano
 BE,,Melchenbühl,,356,Muri bei Bern,,3073,0,Gümligen
 BE,,Melchnau,,333,Melchnau,,4917,0,Melchnau
@@ -3318,14 +3314,14 @@ TI,,Mendrisio,,5254,Mendrisio,,6850,0,Mendrisio
 BE,,Mengestorf,,355,Köniz,,3144,0,Gasel
 FR,,Ménières,,2027,Ménières,,1533,0,Ménières
 LU,,Menzberg,,1136,Menznau,,6125,0,Menzberg
-ZH,,Menzengrüt,,229,Wiesendangen,,8546,3,Menzengrüt
+ZH,,Menzengrüt,,298,Wiesendangen,,8546,3,Menzengrüt
 AG,,Menziken,,4139,Menziken,,5737,0,Menziken
 ZG,,Menzingen,,1704,Menzingen,,6313,0,Menzingen
 LU,,Menznau,,1136,Menznau,,6122,0,Menznau
 TI,,Menzonio,,5323,Lavizzara,,6692,0,Menzonio
 AG,,Merenschwand,,4234,Merenschwand,,5634,0,Merenschwand
 TI,,Mergoscia,,5117,Mergoscia,,6647,0,Mergoscia
-TI,,Meride,,5255,Meride,,6866,0,Meride
+TI,,Meride,,5254,Mendrisio,,6866,0,Meride
 SH,,Merishausen,,2936,Merishausen,,8232,0,Merishausen
 BE,,Merligen,,938,Sigriswil,,3658,0,Merligen
 GE,,Merlinge,,6629,Meinier,,1251,0,Gy
@@ -3344,9 +3340,9 @@ JU,,Mettembert,,6716,Mettembert,,2806,0,Mettembert
 SG,,Mettendorf,,3443,Gossau (SG),,9200,0,Gossau SG
 TG,,Mettendorf,,4590,Hüttlingen,,8553,3,Mettendorf TG
 LU,,Mettenwil,,1093,Neuenkirch,,6204,0,Sempach
-TG,,Mettlen,,4921,Bussnang,,9517,0,Mettlen
 BE,,Mettlen,,886,Wattenwil,,3665,0,Wattenwil
 LU,,Mettlen,,1026,Eschenbach (LU),,6034,0,Inwil
+TG,,Mettlen,,4921,Bussnang,,9517,0,Mettlen
 ZH,,Mettmenhasli,,90,Niederhasli,,8155,0,Niederhasli
 LU,Q,Mettmenschongau,,1041,Schongau,,6288,0,Schongau
 ZH,,Mettmenstetten,,9,Mettmenstetten,,8932,0,Mettmenstetten
@@ -3354,13 +3350,13 @@ TG,,Mettschlatt,,4546,Schlatt (TG),,8252,0,Schlatt TG
 SO,,Metzerlen,,2477,Metzerlen-Mariastein,,4116,0,Metzerlen
 NE,,Meudon,,6511,Les Verrières,,2126,0,Les Verrières
 VD,,Mex,,5489,Mex (VD),,1031,0,Mex VD
-VS,,Mex,,6216,Mex (VS),,1890,1,Mex VS
+VS,,Mex,,6217,Saint-Maurice,,1890,1,Mex VS
 FR,,Meyriez,,2271,Meyriez,,3280,2,Meyriez
 GE,,Meyrin,,6630,Meyrin,,1217,0,Meyrin
 VD,,Mézery,,5585,Jouxtens-Mézery,,1008,2,Jouxtens-Mézery
 VD,,Mézery-près-Donneloye,,5913,Donneloye,,1407,3,Mézery-Donneloye
-VD,,Mézières,,5791,Mézières (VD),,1083,0,Mézières VD
 FR,,Mézières,,2087,Mézières (FR),,1684,0,Mézières FR
+VD,,Mézières,,5791,Mézières (VD),,1083,0,Mézières VD
 TG,,Meziken,,4746,Münchwilen (TG),,9542,0,Münchwilen TG
 TI,,Mezzana,+,5242,Balerna,,6828,0,Balerna
 TI,,Mezzana,+,5251,Coldrerio,,6828,0,Balerna
@@ -3370,22 +3366,22 @@ FR,,Middes,,2115,Torny,,1749,0,Middes
 JU,,Miécourt,,6810,La Baroche,,2946,0,Miécourt
 VS,,Miège,,6241,Miège,,3972,0,Miège
 VD,,Mies,,5723,Mies,,1295,1,Mies
-VS,,Miéville,,6219,Vernayaz,,1904,0,Vernayaz
 NE,,Miéville,,6423,La Sagne,,2314,0,La Sagne NE
+VS,,Miéville,,6219,Vernayaz,,1904,0,Vernayaz
 VS,,Miex,,6159,Vouvry,,1896,2,Miex
 TI,,Miglieglia,,5200,Miglieglia,,6986,2,Miglieglia
 BE,,Milken,,855,Schwarzenburg,,3157,0,Milken
 TI,,Minusio,,5118,Minusio,,6648,0,Minusio
-GR,,Miralago,+,3551,Brusio,,7743,2,Miralago
 GR,,Miralago,+,3561,Poschiavo,,7743,2,Miralago
+GR,,Miralago,+,3551,Brusio,,7743,2,Miralago
 GR,,Miraniga,,3612,Obersaxen,,7135,0,Obersaxen Giraniga
 BE,,Mirchel,,615,Mirchel,,3532,2,Mirchel
 GR,,Misanenga,,3612,Obersaxen,,7133,0,Obersaxen Affeier
 JU,,Miserez-Dessous,,6810,La Baroche,,2946,0,Miécourt
 JU,,Miserez-Dessus,,6810,La Baroche,,2947,0,Charmoille
-VS,,Misériez,,6264,Salins,,1991,5,Misériez (Salins)
+VS,,Misériez,,6266,Sion,,1991,5,Misériez (Salins)
 FR,,Misery,,2272,Misery-Courtion,,1721,1,Misery
-VS,,Mission,,6252,Anniviers,,3961,24,Ayer
+VS,,Mission,,6252,Anniviers,,3961,27,Mission
 VD,,Missy,,5821,Missy,,1565,0,Missy
 BE,,Mitholz,,564,Kandergrund,,3717,0,Blausee-Mitholz
 GL,,Mitlödi,,1631,Glarus Süd,,8756,0,Mitlödi
@@ -3403,10 +3399,10 @@ TI,,Molare,,5072,Faido,,6760,1,Molare
 TI,,Moleno,,5012,Moleno,,6524,0,Moleno
 FR,,Moléson-Village,,2135,Gruyères,,1663,4,Moléson-s-Gruyères
 VS,,Molignon,,6266,Sion,,1950,0,Sion
-TI,Q,Molinazzo d'Arbedo,+,5002,Bellinzona,!,6500,0,Bellinzona
 TI,,Molinazzo d'Arbedo,+,5001,Arbedo-Castione,,6517,0,Arbedo
+TI,Q,Molinazzo d'Arbedo,+,5002,Bellinzona,!,6500,0,Bellinzona
 TI,,Molinazzo di Monteggio,,5202,Monteggio,,6995,0,Molinazzo
-GR,,Molinis,,3927,Molinis,,7056,0,Molinis
+GR,,Molinis,,3921,Arosa,,7056,0,Molinis
 VD,,Mollendruz,,5491,Mont-la-Ville,,1148,5,Mont-la-Ville
 VS,,Mollens,,6242,Mollens (VS),,3974,0,Mollens VS
 VD,,Mollens,,5431,Mollens (VD),,1146,0,Mollens VD
@@ -3432,15 +3428,15 @@ BE,,Montagne-de-Courtlary,,434,Courtelary,,2608,2,Mtgne-Courtelary
 BE,,Montagne-de-Moutier,,700,Moutier,,2740,0,Moutier
 BE,,Montagne-de-Romont,,442,Romont (BE),,2536,0,Plagne
 BE,,Montagne-Sonvilier,,445,Sonvilier,,2615,2,Montagne-Sonvilier
-VS,,Montagnier,,6031,Bagnes,,1934,5,Montagnier
+VS,,Montagnier,,6031,Bagnes,,1934,0,Le Châble VS
 TI,,Montagnola,,5236,Collina d'Oro,,6926,0,Montagnola
 VS,,Montagnon,,6135,Leytron,,1912,3,Montagnon (Leytron
 FR,,Montagny-la-Ville,,2029,Montagny (FR),,1776,0,Montagny-la-Ville
 FR,,Montagny-les-Monts,,2029,Montagny (FR),,1774,2,Montagny-les-Monts
 VD,,Montagny-près-Yverdon,,5922,Montagny-près-Yverdon,,1442,0,Montagny-Yverdon
 NE,,Montalchez,,6411,Montalchez,,2027,2,Montalchez
-VS,,Montana,+,6243,Montana,,3963,3,Montana
 VS,,Montana,+,6244,Randogne,,3963,3,Montana
+VS,,Montana,+,6243,Montana,,3963,3,Montana
 VS,,Montana-Village,,6243,Montana,,3963,3,Montana
 VD,,Montaubion,,5804,Jorat-Menthue,,1041,22,Montaubion-Chardon
 JU,,Montavon,,6702,Boécourt,,2857,0,Montavon
@@ -3458,10 +3454,10 @@ TI,,Monte Ceneri,,5238,Monteceneri,,6802,0,Rivera
 TI,,Monte di Comino,,5397,Centovalli,,6655,2,Verdasio
 TI,,Monte Genereso,,5219,Rovio,,6825,0,Capolago
 GR,,Monte Laura,,3834,Roveredo (GR),,6549,0,Laura
-TI,,Monte San Salvatore,,5170,Carona,,6900,0,Lugano
+TI,,Monte San Salvatore,,5192,Lugano,,6900,0,Lugano
 FR,,Montécu,,2220,Le Mouret,,1724,8,Bonnefontaine
 TI,,Monteggio,,5202,Monteggio,,6998,0,Termine
-VS,,Monteiller-Savièse,,6265,Savièse,,1965,9,Monteiller-Savièse
+VS,,Monteiller-Savièse,,6265,Savièse,,1965,9,Monteiller
 JU,,Montenol,,6808,Clos du Doubs,,2884,0,Montenol
 FR,,Monterschu,,2262,Gurmels,,3212,0,Gurmels
 VD,,Montet,,5456,Cudrefin,,1588,0,Cudrefin
@@ -3490,13 +3486,13 @@ SG,,Montlingen,,3254,Oberriet (SG),,9462,0,Montlingen
 VD,,Montmagny,,5464,Vully-les-Lacs,,1587,0,Montmagny
 JU,,Montmelon,,6808,Clos du Doubs,,2883,0,Montmelon
 NE,,Montmirail,,6461,La Tène,,2075,1,Thielle
-NE,,Montmollin,,6482,Montmollin,,2037,0,Montmollin
+NE,,Montmollin,,6487,Val-de-Ruz,,2037,0,Montmollin
 BE,,Montoz-de-Court,,690,Court,,2738,0,Court
 VD,,Montpreveyres,,5792,Montpreveyres,,1081,0,Montpreveyres
-NE,,Mont-Racine,,6480,Les Geneveys-s-Coffrane,,2206,0,Geneveys-Coffrane
+NE,,Mont-Racine,,6487,Val-de-Ruz,,2206,0,Geneveys-Coffrane
 VD,,Montreux,,5886,Montreux,,1820,0,Montreux
 VD,,Montricher,,5492,Montricher,,1147,0,Montricher
-JU,,Montsevelier,,6717,Montsevelier,,2828,0,Montsevelier
+JU,,Montsevelier,,6730,Val Terbi,,2828,0,Montsevelier
 BE,,Mont-Soleil,,443,Saint-Imier,,2610,2,Mont-Soleil
 VD,,Mont-sur-Rolle,,5859,Mont-sur-Rolle,,1185,0,Mont-sur-Rolle
 BE,,Mont-Tramelan,,437,Mont-Tramelan,,2723,0,Mont-Tramelan
@@ -3517,9 +3513,9 @@ VD,,Morges,,5642,Morges,,1110,0,Morges
 VS,,Morgins,,6156,Troistorrents,,1875,0,Morgins
 BE,,Mörigen,,742,Mörigen,,2572,2,Mörigen
 AG,,Möriken,,4203,Möriken-Wildegg,,5103,2,Möriken AG
-SG,,Mörikon,+,3421,Bronschhofen,,9543,0,St. Margarethen TG
+SG,,Mörikon,+,3427,Wil (SG),,9543,0,St. Margarethen TG
 TG,,Mörikon,+,4746,Münchwilen (TG),,9543,0,St. Margarethen TG
-GR,,Morissen,,3596,Morissen,,7143,0,Morissen
+GR,,Morissen,,3618,Lumnezia,,7143,0,Morissen
 BE,,Möriswil,,360,Wohlen bei Bern,,3043,0,Uettligen
 FR,,Morlens,,2102,Ursy,,1674,3,Morlens
 OW,,Mörlialp,,1403,Giswil,,6074,0,Giswil
@@ -3550,41 +3546,41 @@ TI,,Mugena,,5237,Alto Malcantone,,6939,1,Mugena
 TI,,Muggio,,5269,Breggia,,6838,0,Muggio
 AG,,Muhen,,4009,Muhen,,5037,0,Muhen
 AG,,Mühlau,,4235,Mühlau,,5642,0,Mühlau
-VS,,Mühlebach,,6056,Ernen,,3995,3,Mühlebach (Goms)
 TG,,Mühlebach,,4683,Lengwil,,8580,0,Amriswil
+VS,,Mühlebach,,6056,Ernen,,3995,3,Mühlebach (Goms)
 BE,,Mühleberg,,668,Mühleberg,,3203,0,Mühleberg
+SO,,Mühledorf,,2465,Buchegg,,4583,0,Mühledorf SO
 BE,,Mühledorf,,875,Mühledorf (BE),,3116,2,Mühledorf BE
-SO,,Mühledorf,,2458,Mühledorf (SO),,4583,0,Mühledorf SO
 GL,,Mühlehorn,,1630,Glarus Nord,,8874,0,Mühlehorn
 AG,,Mühlethal,,4289,Zofingen,,4812,0,Mühlethal
 BE,,Mühlethurnen,,876,Mühlethurnen,,3127,0,Mühlethurnen
 BE,,Mühleweg im Emmental,,959,Walterswil (BE),,3464,0,Schmidigen-Mühlew
 SG,,Mühlrüti,,3394,Mosnang,,9613,0,Mühlrüti
 AR,,Mühltobel,,3038,Wolfhalden,,9427,0,Wolfhalden
-BE,,Mülchi,,545,Mülchi,,3317,1,Mülchi
+BE,,Mülchi,,538,Fraubrunnen,,3317,1,Mülchi
 GR,,Muldain,,3506,Vaz/Obervaz,,7082,0,Vaz/Obervaz
 GR,,Mulegns,,3534,Mulegns,,7455,0,Mulegns
-BE,,Mülenen,+,567,Reichenbach im Kandertal,,3711,2,Mülenen
 BE,,Mülenen,+,562,Aeschi bei Spiez,,3711,2,Mülenen
+BE,,Mülenen,+,567,Reichenbach im Kandertal,,3711,2,Mülenen
 SO,,Müli,,2427,Matzendorf,,4713,0,Matzendorf
 GR,,Mulin,,3734,Trin,,7016,0,Trin Mulin
-FR,,Mülital,+,2309,Wünnewil-Flamatt,,3185,0,Schmitten FR
 FR,,Mülital,+,2305,Schmitten (FR),,3185,0,Schmitten FR
+FR,,Mülital,+,2309,Wünnewil-Flamatt,,3185,0,Schmitten FR
 TG,,Müllberg,,4846,Raperswilen,,8558,0,Raperswilen
-TG,,Müllheim,,4951,Wigoltingen,,8554,0,Müllheim-Wigoltgn
 TG,,Müllheim,,4831,Müllheim,,8555,0,Müllheim Dorf
+TG,,Müllheim,,4951,Wigoltingen,,8554,0,Müllheim-Wigoltgn
 AG,,Mülligen,,4107,Mülligen,,5243,0,Mülligen
 BE,,Mumenthal,,321,Aarwangen,,4912,0,Aarwangen
 SO,,Mümliswil,,2428,Mümliswil-Ramiswil,,4717,0,Mümliswil
-GR,,Mumpé Medel,,3982,Disentis/Mustér,,7183,0,Mompé Medel
+GR,,Mumpé Medel,,3982,Disentis/Mustér,,7183,0,Mumpé Medel
 AG,,Mumpf,,4255,Mumpf,,4322,0,Mumpf
 BE,,Münchenbuchsee,,546,Münchenbuchsee,,3053,0,Münchenbuchsee
 BL,,Münchenstein,,2769,Münchenstein,,4142,0,Münchenstein
 BE,,Münchenwiler,,669,Münchenwiler,,1797,0,Münchenwiler
-BE,,Münchringen,,547,Münchringen,,3303,2,Münchringen
-AG,,Münchwilen,,4172,Münchwilen (AG),,4333,0,Münchwilen AG
+BE,,Münchringen,,540,Jegenstorf,,3303,2,Münchringen
 TG,,Münchwilen,,4746,Münchwilen (TG),,9542,0,Münchwilen TG
-VS,,Mund,,6006,Mund,,3903,0,Mund
+AG,,Münchwilen,,4172,Münchwilen (AG),,4333,0,Münchwilen AG
+VS,,Mund,,6007,Naters,,3903,0,Mund
 BE,,Mungnau,,903,Lauperswil,,3436,0,Zollbrück
 BE,,Münsingen,,616,Münsingen,,3110,0,Münsingen
 VS,,Münster,,6074,Münster-Geschinen,,3985,0,Münster VS
@@ -3595,10 +3591,10 @@ SG,,Muolen,,3202,Muolen,,9313,0,Muolen
 SZ,,Muotathal,,1367,Muotathal,,6436,0,Muotathal
 VD,,Mur,+,5464,Vully-les-Lacs,,1787,2,Mur (Vully) VD
 FR,,Mur,+,2281,Haut-Vully,,1787,1,Mur (Vully) FR
-GR,,Mura,,3651,Safien,,7109,0,Thalkirch
+GR,,Mura,,3672,Safiental,,7109,0,Thalkirch
 TI,,Muralto,,5120,Muralto,,6600,2,Muralto
-VS,,Muraz,,6248,Sierre,,3960,5,Muraz (Sierre)
 VS,,Muraz,,6152,Collombey-Muraz,,1893,0,Muraz (Collombey)
+VS,,Muraz,,6248,Sierre,,3960,5,Muraz (Sierre)
 SG,,Murg,,3295,Quarten,,8877,0,Murg
 AG,,Murgenthal,,4279,Murgenthal,,4853,0,Murgenthal
 AG,,Muri,,4236,Muri (AG),,5630,0,Muri AG
@@ -3614,77 +3610,77 @@ SG,,Müselbach,,3392,Kirchberg (SG),,9602,2,Müselbach
 GR,,Müstair,,3847,Val Müstair,,7537,0,Müstair
 LU,,Müswangen,,1030,Hitzkirch,,6289,0,Müswangen
 VD,,Mutrux,,5563,Mutrux,,1428,2,Mutrux
-AG,,Mutschellen,+,4081,Widen,,8967,0,Widen
-AG,,Mutschellen,+,4062,Berikon,,8965,0,Berikon
-AG,,Mutschellen,+,4075,Rudolfstetten-Friedlisb.,,8964,0,Rudolfstetten
 AG,,Mutschellen,+,4083,Zufikon,,5621,0,Zufikon
+AG,,Mutschellen,+,4075,Rudolfstetten-Friedlisb.,,8964,0,Rudolfstetten
+AG,,Mutschellen,+,4062,Berikon,,8965,0,Berikon
+AG,,Mutschellen,+,4081,Widen,,8967,0,Widen
 GR,,Mutschnengia,,3983,Medel (Lucmagn),,7185,0,Platta
 GR,,Mutten,,3503,Mutten,,7431,1,Mutten
 BL,,Muttenz,,2770,Muttenz,,4132,0,Muttenz
 TI,,Muzzano,,5205,Muzzano,,6933,0,Muzzano
 GL,,Näfels,,1630,Glarus Nord,,8752,0,Näfels
 ZH,,Nänikon,,198,Uster,,8606,0,Nänikon
-VD,,Nant,,5884,Corsier-sur-Vevey,,1804,0,Corsier-sur-Vevey
 FR,,Nant,,2280,Bas-Vully,,1786,0,Sugiez
+VD,,Nant,,5884,Corsier-sur-Vevey,,1804,0,Corsier-sur-Vevey
 TI,,Nante,,5061,Airolo,,6780,0,Airolo
 SG,,Nassen,,3378,Neckertal,,9123,0,Nassen
-ZH,,Nassenwil,,90,Niederhasli,,8155,0,Niederhasli
+ZH,,Nassenwil,,90,Niederhasli,,8155,1,Nassenwil
 VS,,Naters,,6007,Naters,,3904,0,Naters
 VS,,Nax,,6090,Mont-Noble,,1973,0,Nax
 VD,,Naz,,5540,Montilliez,,1041,26,Naz
 LU,,Nebikon,,1137,Nebikon,,6244,0,Nebikon
-SG,,Necker,+,3375,Oberhelfenschwil,,9126,0,Necker
 SG,,Necker,+,3378,Neckertal,,9126,0,Necker
+SG,,Necker,+,3375,Oberhelfenschwil,,9126,0,Necker
 ZH,,Neerach,,88,Neerach,,8173,0,Neerach
 ZH,,Neftenbach,,223,Neftenbach,,8413,0,Neftenbach
 TI,,Neggio,,5206,Neggio,,6991,0,Neggio
 FR,,Neirivue,,2121,Haut-Intyamon,,1669,4,Neirivue
 VS,,Némiaz,,6022,Chamoson,,1955,3,Némiaz (Chamoson)
-SO,,Nennigkofen,,2459,Nennigkofen,,4574,0,Nennigkofen
+SO,,Nennigkofen,,2464,Lüsslingen-Nennigkofen,,4574,0,Nennigkofen
 BL,,Nenzlingen,,2789,Nenzlingen,,4224,0,Nenzlingen
 ZH,,Neschwil,,180,Weisslingen,,8484,2,Neschwil
 AG,,Nesselnbach,,4072,Niederwil (AG),,5524,2,Nesselnbach
-BE,,Nessental,,781,Gadmen,,3863,0,Gadmen
-SG,,Nesslau,,3358,Nesslau-Krummenau,,9650,0,Nesslau
+BE,,Nessental,,784,Innertkirchen,,3863,0,Gadmen
+SG,,Nesslau,,3360,Nesslau,,9650,0,Nesslau
 GL,,Netstal,,1632,Glarus,,8754,0,Netstal
-SG,,Neu St. Johann,,3358,Nesslau-Krummenau,,9652,0,Neu St. Johann
-ZG,,Neuägeri,+,1704,Menzingen,,6314,1,Neuägeri
-ZG,,Neuägeri,+,1709,Unterägeri,,6314,1,Neuägeri
+SG,,Neu St. Johann,,3360,Nesslau,,9652,0,Neu St. Johann
 ZG,,Neuägeri,+,1701,Baar,,6314,1,Neuägeri
+ZG,,Neuägeri,+,1709,Unterägeri,,6314,1,Neuägeri
+ZG,,Neuägeri,+,1704,Menzingen,,6314,1,Neuägeri
 BL,,Neuallschwil,,2762,Allschwil,,4123,0,Allschwil
 ZH,,Neubachs,,81,Bachs,,8164,0,Bachs
-BE,,Neubrück,+,351,Bern,!,3000,0,Bern
 BE,,Neubrück,+,353,Bremgarten bei Bern,,3037,0,Herrenschwanden
+BE,,Neubrück,+,351,Bern,!,3000,0,Bern
 ZH,,Neubrunn,,228,Turbenthal,,8488,0,Turbenthal
 NE,,Neuchâtel,,6458,Neuchâtel,!,2000,0,Neuchâtel
 SG,,Neuchlen,,3443,Gossau (SG),,9200,0,Gossau SG
-SG,,Neudietfurt,,3391,Bütschwil,,9615,0,Dietfurt
-LU,,Neudorf,,1092,Neudorf,,6025,0,Neudorf
+SG,,Neudietfurt,,3395,Bütschwil-Ganterschwil,,9615,0,Dietfurt
 SG,Q,Neudorf,,3203,St. Gallen,!,9000,0,St. Gallen
+LU,,Neudorf,,1081,Beromünster,,6025,0,Neudorf
 SO,,Neuendorf,,2404,Neuendorf,,4623,0,Neuendorf
 BE,,Neuenegg,,670,Neuenegg,,3176,0,Neuenegg
 AG,,Neuenhof,,4034,Neuenhof,,5432,0,Neuenhof
 LU,,Neuenkirch,,1093,Neuenkirch,,6206,0,Neuenkirch
 BL,,Neuewelt,,2769,Münchenstein,,4142,0,Münchenstein
 BE,Q,Neufeld,,942,Thun,!,3600,0,Thun
-ZH,,Neugut,+,191,Dübendorf,,8304,0,Wallisellen
 ZH,,Neugut,+,69,Wallisellen,,8304,0,Wallisellen
-SG,,Neuhaus,,3332,Eschenbach (SG),,8732,0,Neuhaus SG
+ZH,,Neugut,+,191,Dübendorf,,8304,0,Wallisellen
+SG,,Neuhaus,,3342,Eschenbach (SG),,8732,0,Neuhaus SG
 ZH,,Neuhaus bei Hinteregg,,192,Egg,,8132,2,Hinteregg
 SH,,Neuhausen am Rheinfall,,2937,Neuhausen am Rheinfall,,8212,0,Neuhausen
 ZG,,Neuheim,,1705,Neuheim,,6345,0,Neuheim
 TG,,Neukirch,,4411,Egnach,,9315,0,Neukirch (Egnach)
-GR,,Neukirch,,3651,Safien,,7107,0,Safien Platz
+GR,,Neukirch,,3672,Safiental,,7107,0,Safien Platz
 TG,,Neukirch an der Thur,,4501,Kradolf-Schönenberg,,9217,0,Neukirch
 BL,,Neumünchenstein,,2769,Münchenstein,,4142,0,Münchenstein
 SH,,Neunkirch,,2904,Neunkirch,,8213,0,Neunkirch
 TG,,Neuparadies,,4546,Schlatt (TG),,8252,0,Schlatt TG
 ZH,,Neurheinau,,38,Rheinau,,8462,0,Rheinau
-AG,Q,Neustalden,,4119,Unterbözberg,,5224,0,Unterbözberg
+AG,Q,Neustalden,,4124,Bözberg,,5225,1,Bözberg
 ZH,,Neuthal,,111,Bäretswil,,8344,0,Bäretswil
 TG,,Neuwilen,,4666,Kemmental,,8566,0,Neuwilen
 FR,,Neyruz,,2211,Neyruz (FR),,1740,0,Neyruz FR
-VD,,Neyruz-sur-Moudon,,5679,Neyruz-sur-Moudon,,1515,1,Neyruz-sur-Moudon
+VD,,Neyruz-sur-Moudon,,5693,Montanaire,,1515,1,Neyruz-sur-Moudon
 BE,,Nidau,,743,Nidau,,2560,0,Nidau
 ZH,,Nidelbad,,139,Rüschlikon,,8803,0,Rüschlikon
 SG,,Niderdorf,,3443,Gossau (SG),,9200,0,Gossau SG
@@ -3718,13 +3714,13 @@ BE,,Niederönz,,982,Niederönz,,3362,0,Niederönz
 BE,,Niederösch,,417,Niederösch,,3424,0,Niederösch
 NW,,Niederrickenbach,,1508,Oberdorf (NW),,6383,2,Niederrickenbach
 BE,,Niederried bei Interlaken,,588,Niederried b. Interlaken,,3853,0,Niederried Interl
-BE,,Niederried bei Kallnach,,308,Niederried bei Kallnach,,3283,2,Niederried b. Kall
+BE,,Niederried bei Kallnach,,304,Kallnach,,3283,2,Niederried b. Kall
 AG,,Niederrohrdorf,,4035,Niederrohrdorf,,5443,0,Niederrohrdorf
 BE,,Niederscherli,,355,Köniz,,3145,0,Niederscherli
 LU,Q,Niederschongau,,1041,Schongau,,6288,0,Schongau
 ZH,,Niedersteinmaur,,101,Steinmaur,,8162,0,Steinmaur
 SG,,Niederstetten,,3408,Uzwil,,9249,1,Niederstetten
-BE,,Niederstocken,,764,Niederstocken,,3632,2,Niederstocken
+BE,,Niederstocken,,770,Stocken-Höfen,,3632,2,Niederstocken
 AR,,Niederteufen,,3024,Teufen (AR),,9052,0,Niederteufen
 GL,,Niederurnen,,1630,Glarus Nord,,8867,0,Niederurnen
 SG,,Niederuzwil,,3408,Uzwil,,9244,0,Niederuzwil
@@ -3732,22 +3728,22 @@ VS,,Niederwald,,6064,Niederwald,,3989,4,Niederwald
 BE,,Niederwangen bei Bern,,355,Köniz,,3172,0,Niederwangen BE
 ZH,,Niederweningen,,91,Niederweningen,,8166,0,Niederweningen
 BE,,Niederwichtrach,,632,Wichtrach,,3114,0,Wichtrach
-TG,,Niederwil,,4571,Gachnang,,8500,0,Frauenfeld
-LU,,Niederwil,,1097,Rickenbach (LU),,6221,0,Rickenbach LU
-ZH,,Niederwil,,21,Adlikon,,8452,0,Adlikon
-AG,,Niederwil,,4072,Niederwil (AG),,5524,0,Niederwil AG
 SO,,Niederwil,,2554,Riedholz,,4523,0,Niederwil SO
+LU,,Niederwil,,1097,Rickenbach (LU),,6221,0,Rickenbach LU
+AG,,Niederwil,,4072,Niederwil (AG),,5524,0,Niederwil AG
+TG,,Niederwil,,4571,Gachnang,,8500,0,Frauenfeld
 SG,,Niederwil,,3424,Oberbüren,,9203,0,Niederwil SG
+ZH,,Niederwil,,21,Adlikon,,8452,0,Adlikon
 FR,,Nierlet-les-Bois,,2217,Ponthaux,,1772,1,Nierlet-les-Bois
 FR,,Nierlet-le-Toit,,2211,Neyruz (FR),,1740,0,Neyruz FR
 BE,,Niesen Kulm,,567,Reichenbach im Kandertal,,3711,2,Mülenen
 VS,,Niouc,,6252,Anniviers,,3960,4,Niouc
 TI,,Niva (Vallemaggia),,5307,Campo (Vallemaggia),,6683,2,Niva (Vallemaggia)
-TI,,Nivo,,5070,Chironico,,6746,2,Nivo
+TI,,Nivo,,5072,Faido,,6746,2,Nivo
 BE,,Nods,,724,Nods,,2518,0,Nods
 VS,,Noës,,6248,Sierre,,3976,0,Noës
-FR,,Noflen,,2295,Bösingen,,3178,0,Bösingen
 BE,,Noflen,,878,Noflen,,3116,3,Noflen BE
+FR,,Noflen,,2295,Bösingen,,3178,0,Bösingen
 ZH,,Nohl,,34,Laufen-Uhwiesen,,8212,4,Nohl
 NE,,Noiraigue,,6512,Val-de-Travers,,2103,0,Noiraigue
 NE,,Noirvaux,,6504,La Côte-aux-Fées,,2115,0,Buttes
@@ -3789,7 +3785,7 @@ SO,,Oberbalmberg,,2541,Balm bei Günsberg,,4524,3,Oberbalmberg
 BE,,Oberbipp,,983,Oberbipp,,4538,0,Oberbipp
 BE,,Oberbort,,843,Saanen,,3780,0,Gstaad
 BE,,Oberbottigen,,351,Bern,!,3000,0,Bern
-AG,,Oberbözberg,,4108,Oberbözberg,,5225,0,Oberbözberg
+AG,,Oberbözberg,,4124,Bözberg,,5225,1,Bözberg
 SO,,Oberbuchsiten,,2406,Oberbuchsiten,,4625,0,Oberbuchsiten
 LU,,Oberbuonas,,1064,Meierskappel,,6344,0,Meierskappel
 SG,,Oberbüren,,3424,Oberbüren,,9245,0,Oberbüren
@@ -3797,11 +3793,11 @@ BE,,Oberburg,,418,Oberburg,,3414,0,Oberburg
 TG,,Oberbussnang,,4921,Bussnang,,9565,2,Oberbussnang
 BE,,Oberbütschel,,880,Rüeggisberg,,3088,2,Oberbütschel
 BE,,Oberdiessbach,,619,Oberdiessbach,,3672,0,Oberdiessbach
-NW,,Oberdorf,,1508,Oberdorf (NW),,6370,41,Oberdorf NW
-SO,,Oberdorf,,2553,Oberdorf (SO),,4515,0,Oberdorf SO
-BL,,Oberdorf,,2892,Oberdorf (BL),,4436,0,Oberdorf BL
 NW,,Oberdorf,,1501,Beckenried,,6375,0,Beckenried
 SG,,Oberdorf,,3443,Gossau (SG),,9200,0,Gossau SG
+SO,,Oberdorf,,2553,Oberdorf (SO),,4515,0,Oberdorf SO
+BL,,Oberdorf,,2892,Oberdorf (BL),,4436,0,Oberdorf BL
+NW,,Oberdorf,,1508,Oberdorf (NW),,6370,41,Oberdorf NW
 ZH,,Oberdorf bei Regensdorf,,96,Regensdorf,,8105,2,Watt
 ZH,,Oberdürnten,,113,Dürnten,,8635,0,Dürnten
 AI,,Oberegg,,3111,Oberegg,,9413,0,Oberegg
@@ -3814,13 +3810,13 @@ VS,,Oberems,,6112,Oberems,,3948,1,Oberems
 ZH,,Oberengstringen,,245,Oberengstringen,,8102,0,Oberengstringen
 AG,,Oberentfelden,,4010,Oberentfelden,,5036,0,Oberentfelden
 SG,,Oberfar,,3231,Au (SG),,9434,0,Au SG
-AG,,Oberflachs,,4109,Oberflachs,,5108,0,Oberflachs
+AG,,Oberflachs,,4125,Schinznach,,5108,0,Oberflachs
 AG,,Oberfrick,,4165,Gipf-Oberfrick,,5073,0,Gipf-Oberfrick
 BE,,Oberfrittenbach,,902,Langnau im Emmental,,3551,0,Oberfrittenbach
 SO,,Obergerlafingen,,2528,Obergerlafingen,,4564,0,Obergerlafingen
 VS,,Obergesteln,,6076,Obergoms,,3988,2,Obergesteln
-SG,,Oberglatt,,3402,Flawil,,9230,0,Flawil
 ZH,,Oberglatt,,92,Oberglatt,,8154,0,Oberglatt ZH
+SG,,Oberglatt,,3402,Flawil,,9230,0,Flawil
 BE,,Obergoldbach,,613,Landiswil,,3434,0,Obergoldbach
 SO,,Obergösgen,,2497,Obergösgen,,4653,0,Obergösgen
 SH,,Oberhallau,,2972,Oberhallau,,8216,0,Oberhallau
@@ -3828,20 +3824,20 @@ ZH,,Oberhasli,,90,Niederhasli,,8156,0,Oberhasli
 SG,,Oberhelfenschwil,,3375,Oberhelfenschwil,,9621,0,Oberhelfenschwil
 ZH,,Oberhittnau,,173,Hittnau,,8335,0,Hittnau
 AG,,Oberhof,,4173,Oberhof,,5062,0,Oberhof
-TG,,Oberhofen,,4746,Münchwilen (TG),,9542,0,Münchwilen TG
-ZH,,Oberhofen,,228,Turbenthal,,8488,0,Turbenthal
 AG,,Oberhofen,,4184,Mettauertal,,5273,0,Oberhofen AG
+ZH,,Oberhofen,,228,Turbenthal,,8488,0,Turbenthal
+TG,,Oberhofen,,4746,Münchwilen (TG),,9542,0,Münchwilen TG
 BE,,Oberhofen am Thunersee,,934,Oberhofen am Thunersee,,3653,0,Oberhofen Thun'see
-TG,,Oberhofen bei Kreuzlingen,,4683,Lengwil,,8574,0,Lengwil-Oberhofen
+TG,,Oberhofen bei Kreuzlingen,,4683,Lengwil,,8574,2,Oberhofen TG
 BE,,Oberhofen im Emmental,,605,Bowil,,3533,0,Bowil
-SG,,Oberholz,,3333,Goldingen,,8636,0,Wald ZH
+SG,,Oberholz,,3342,Eschenbach (SG),,8636,0,Wald ZH
 ZH,Q,Oberhöri,,60,Höri,,8181,0,Höri
 TG,,Oberhörstetten,,4816,Homburg,,8508,0,Homburg
 BE,,Oberhünigen,,629,Oberhünigen,,3504,2,Oberhünigen
 SZ,,Oberiberg,,1368,Oberiberg,,8843,0,Oberiberg
-LU,,Oberkirch,,1095,Oberkirch,,6208,0,Oberkirch LU
 SO,,Oberkirch,+,2621,Nunningen,,4234,0,Zullwil
 SO,,Oberkirch,+,2622,Zullwil,,4234,0,Zullwil
+LU,,Oberkirch,,1095,Oberkirch,,6208,0,Oberkirch LU
 AG,,Oberkulm,,4140,Oberkulm,,5727,0,Oberkulm
 BE,,Oberlangenegg,,935,Oberlangenegg,,3616,0,Schwarzenegg
 ZH,,Oberleimbach,,131,Adliswil,,8134,0,Adliswil
@@ -3867,9 +3863,9 @@ BE,,Oberried bei Niederscherli,,355,Köniz,,3145,0,Niederscherli
 ZH,,Oberrieden,,137,Oberrieden,,8942,0,Oberrieden
 SG,,Oberriet,,3254,Oberriet (SG),,9463,0,Oberriet SG
 FR,,Oberriet,,2220,Le Mouret,,1724,5,Oberried FR
+SG,,Oberrindal,+,3405,Jonschwil,,9604,1,Oberrindal
 SG,,Oberrindal,+,3407,Oberuzwil,,9604,1,Oberrindal
 SG,,Oberrindal,+,3393,Lütisburg,,9604,1,Oberrindal
-SG,,Oberrindal,+,3405,Jonschwil,,9604,1,Oberrindal
 AG,,Oberrohrdorf,,4037,Oberrohrdorf,,5452,0,Oberrohrdorf
 BE,,Oberruntigen,,309,Radelfingen,,3036,0,Detligen
 AG,,Oberrüti,,4237,Oberrüti,,5647,0,Oberrüti
@@ -3888,7 +3884,7 @@ BE,,Obersteckholz,,334,Obersteckholz,,4924,0,Obersteckholz
 SG,,Obersteinach,,3217,Steinach,,9323,0,Steinach
 ZH,,Obersteinmaur,,101,Steinmaur,,8162,0,Steinmaur
 SG,,Oberstetten,,3408,Uzwil,,9249,2,Oberstetten
-BE,,Oberstocken,,765,Oberstocken,,3632,3,Oberstocken
+BE,,Oberstocken,,770,Stocken-Höfen,,3632,3,Oberstocken
 ZH,Q,Oberstrass,,261,Zürich,!,8000,0,Zürich
 AG,,Obersulz,,4170,Laufenburg,,5085,0,Sulz AG
 SG,,Oberterzen,,3295,Quarten,,8884,0,Oberterzen
@@ -3904,8 +3900,8 @@ ZH,,Oberweningen,,93,Oberweningen,,8165,2,Oberweningen
 ZH,Q,Oberwetzikon,,121,Wetzikon (ZH),!,8620,0,Wetzikon ZH
 BE,,Oberwichtrach,,632,Wichtrach,,3114,0,Wichtrach
 SH,,Oberwiesen,,2952,Schleitheim,,8226,0,Schleitheim
-AG,,Oberwil,,4074,Oberwil-Lieli,,8966,0,Oberwil-Lieli
 BL,,Oberwil,,2771,Oberwil (BL),,4104,0,Oberwil BL
+AG,,Oberwil,,4074,Oberwil-Lieli,,8966,0,Oberwil-Lieli
 TG,,Oberwil,,4571,Gachnang,,8500,0,Frauenfeld
 BE,,Oberwil bei Büren,,391,Oberwil bei Büren,,3298,0,Oberwil b. Büren
 ZH,,Oberwil bei Dägerlen,,214,Dägerlen,,8471,3,Oberwil (Dägerlen)
@@ -3915,8 +3911,8 @@ BE,,Oberwil im Simmental,,766,Oberwil im Simmental,,3765,0,Oberwil i. S.
 OW,,Oberwilen,,1407,Sarnen,,6062,0,Wilen (Sarnen)
 ZH,,Oberwinterthur,,230,Winterthur,,8404,0,Winterthur
 AG,,Oberzeihen,,4183,Zeihen,,5079,0,Zeihen
-BE,,Oberzollikofen,+,546,Münchenbuchsee,,3052,0,Zollikofen
 BE,Q,Oberzollikofen,+,361,Zollikofen,,3052,0,Zollikofen
+BE,,Oberzollikofen,+,546,Münchenbuchsee,,3052,0,Zollikofen
 ZH,,Obfelden,,10,Obfelden,,8912,0,Obfelden
 TI,,Obino,,5249,Castel San Pietro,,6874,0,Castel San Pietro
 OW,,Obsee,,1405,Lungern,,6078,0,Lungern
@@ -3939,15 +3935,15 @@ GR,,Ofenpass,,3847,Val Müstair,,7530,0,Zernez
 AG,,Oftringen,,4280,Oftringen,,4665,0,Oftringen
 VD,,Ogens,,5680,Ogens,,1045,0,Ogens
 TI,,Oggio,,5226,Capriasca,,6955,1,Oggio
-LU,,Ohmstal,,1138,Ohmstal,,6143,0,Ohmstal
+LU,,Ohmstal,,1143,Schötz,,6143,0,Ohmstal
 ZH,,Ohringen,,227,Seuzach,,8472,0,Seuzach
 VD,,Oleyres,,5451,Avenches,,1580,2,Oleyres
 TI,,Olivella,,5233,Vico Morcote,,6922,0,Morcote
 TI,,Olivone,,5049,Blenio,,6718,0,Olivone
-VS,,Ollon,,6234,Chermignon,,3971,2,Ollon VS
 VD,,Ollon,,5409,Ollon,,1867,0,Ollon VD
-BL,,Olsberg,+,2821,Arisdorf,,4305,0,Olsberg
+VS,,Ollon,,6234,Chermignon,,3971,2,Ollon VS
 AG,,Olsberg,+,4257,Olsberg,,4305,0,Olsberg
+BL,,Olsberg,+,2821,Arisdorf,,4305,0,Olsberg
 SO,,Olten,,2581,Olten,,4600,0,Olten
 BE,,Oltigen,,309,Radelfingen,,3036,0,Detligen
 BL,,Oltingen,,2855,Oltingen,,4494,0,Oltingen
@@ -3964,7 +3960,7 @@ VD,,Orbe,,5757,Orbe,,1350,0,Orbe
 TI,,Orenno,,5013,Monte Carasso,,6513,0,Monte Carasso
 VD,,Orges,,5924,Orges,,1430,0,Orges
 TI,,Origlio,,5208,Origlio,,6945,0,Origlio
-TI,,Orino,,5041,Malvaglia,,6713,0,Malvaglia
+TI,,Orino,,5050,Serravalle,,6713,0,Malvaglia
 BL,,Ormalingen,,2856,Ormalingen,,4466,0,Ormalingen
 VS,,Ormône,,6265,Savièse,,1965,5,Ormône (Savièse)
 VD,,Ormont-Dessous,,5410,Ormont-Dessous,,1862,0,Les Mosses
@@ -3980,9 +3976,9 @@ BE,,Ortschwaben,+,354,Kirchlindach,,3042,0,Ortschwaben
 BE,,Ortschwaben,+,307,Meikirch,,3042,0,Ortschwaben
 BE,,Orvin,,438,Orvin,,2534,0,Orvin
 VD,,Orzens,,5925,Orzens,,1413,0,Orzens
-BE,,Oschwand,+,985,Ochlenberg,,3476,0,Oschwand
 BE,,Oschwand,+,988,Seeberg,,3476,0,Oschwand
-TI,,Osco,,5075,Osco,,6763,0,Osco
+BE,,Oschwand,+,985,Ochlenberg,,3476,0,Oschwand
+TI,,Osco,,5072,Faido,,6763,0,Osco
 TI,,Osogna,,5286,Osogna,,6703,0,Osogna
 TI,,Osogna Stazione,,5286,Osogna,,6703,0,Osogna
 GR,,Ospizio Bernina,,3561,Poschiavo,,7710,0,Ospizio Bernina
@@ -4010,7 +4006,7 @@ VD,,Oulens-sous-Echallens,,5529,Oulens-sous-Echallens,,1377,0,Oulens-Echallens
 VD,,Oulens-sur-Lucens,,5675,Lucens,,1522,9,Oulens-sur-Lucens
 JU,,Outremont,,6808,Clos du Doubs,,2950,0,Courgenay
 VS,,Ovronnaz,,6135,Leytron,,1911,0,Ovronnaz
-GR,,Pagig,,3931,St. Peter-Pagig,,7028,1,Pagig
+GR,,Pagig,,3921,Arosa,,7028,1,Pagig
 VD,,Pailly,,5530,Pailly,,1416,0,Pailly
 TI,,Palagnedra,,5397,Centovalli,,6657,0,Palagnedra
 VS,,Palasuit,,6033,Liddes,,1945,10,Palasuit (Liddes)
@@ -4040,11 +4036,11 @@ TI,,Peccia,,5323,Lavizzara,,6695,0,Peccia
 TI,,Pedemonte,,5013,Monte Carasso,,6513,0,Monte Carasso
 TI,,Pedevilla,,5005,Giubiasco,,6512,0,Giubiasco
 TI,,Pedrinate,,5250,Chiasso,,6832,0,Pedrinate
-GR,,Peiden,,3599,Suraua,,7110,0,Peiden
-GR,,Peiden Bas,,3599,Suraua,,7112,0,Duvin
-GR,,Peiden Dorf,,3599,Suraua,,7112,0,Duvin
+GR,,Peiden,,3618,Lumnezia,,7110,0,Peiden
+GR,,Peiden Bas,,3618,Lumnezia,,7112,0,Duvin
+GR,,Peiden Dorf,,3618,Lumnezia,,7112,0,Duvin
 GE,,Peissy,,6638,Satigny,,1242,0,Satigny
-GR,,Peist,,3929,Peist,,7029,0,Peist
+GR,,Peist,,3921,Arosa,,7029,0,Peist
 GE,,Peney,,6638,Satigny,,1242,0,Satigny
 VD,,Peney (Vuiteboeuf),,5766,Vuiteboeuf,,1445,0,Vuiteboeuf
 VD,,Peney-le-Jorat,,5804,Jorat-Menthue,,1059,0,Peney-le-Jorat
@@ -4052,8 +4048,8 @@ FR,,Pensier,,2243,Barberêche,,1783,0,Pensier
 VD,,Penthalaz,,5495,Penthalaz,,1305,0,Penthalaz
 VD,,Penthaz,,5496,Penthaz,,1303,0,Penthaz
 VD,,Penthéréaz,,5531,Penthéréaz,,1375,0,Penthéréaz
-LU,,Perlen,+,1065,Root,,6035,0,Perlen
 LU,,Perlen,+,1052,Buchrain,,6035,0,Perlen
+LU,,Perlen,+,1065,Root,,6035,0,Perlen
 GE,,Perly,,6632,Perly-Certoux,,1258,0,Perly
 BE,,Perrefitte,,701,Perrefitte,,2742,0,Perrefitte
 NE,,Perreux,,6404,Boudry,,2017,0,Boudry
@@ -4066,8 +4062,8 @@ VS,,Petit Vichères,,6033,Liddes,,1945,12,Petit Vichères
 BE,,Petit-Champoz,,683,Champoz,,2740,0,Moutier
 GE,,Petit-Lancy,,6628,Lancy,,1213,0,Petit-Lancy
 NE,,Petit-Martel,,6437,Les Ponts-de-Martel,,2316,2,Petit-Martel
-NE,,Petit-Savagnier,,6484,Savagnier,,2065,0,Savagnier
-VD,,Peyres-Possens,,5682,Peyres-Possens,,1063,4,Peyres-Possens
+NE,,Petit-Savagnier,,6487,Val-de-Ruz,,2065,0,Savagnier
+VD,,Peyres-Possens,,5693,Montanaire,,1063,4,Peyres-Possens
 SG,,Pfäfers,,3294,Pfäfers,,7312,0,Pfäfers
 SG,,Pfäfers Bad,,3294,Pfäfers,,7310,0,Bad Ragaz
 FR,,Pfaffenholz,,2309,Wünnewil-Flamatt,,3184,0,Wünnewil
@@ -4076,12 +4072,12 @@ SZ,,Pfäffikon,,1322,Freienbach,,8808,0,Pfäffikon SZ
 ZH,,Pfäffikon,,177,Pfäffikon,,8330,0,Pfäffikon ZH
 LU,,Pfaffnau,,1139,Pfaffnau,,6264,0,Pfaffnau
 LU,,Pfaffwil,,1033,Inwil,,6034,0,Inwil
-LU,,Pfeffikon,,1096,Pfeffikon,,5735,0,Pfeffikon LU
+LU,,Pfeffikon,,1097,Rickenbach (LU),,5735,0,Pfeffikon LU
 BL,,Pfeffingen,,2772,Pfeffingen,,4148,0,Pfeffingen
 ZH,,Pfungen,,224,Pfungen,,8422,0,Pfungen
 TG,,Pfyn,,4841,Pfyn,,8505,0,Pfyn
 GR,,Pian San Giacomo,,3822,Mesocco,,6563,0,Mesocco
-TI,,Piandera Paese,,5229,Valcolla,,6959,5,Piandera Paese
+TI,,Piandera Paese,,5192,Lugano,,6959,5,Piandera Paese
 TI,,Pianezzo,,5014,Pianezzo,,6582,0,Pianezzo
 GR,,Piani di Verbabbio,+,3836,Verdabbio,,6557,0,Cama
 GR,,Piani di Verbabbio,+,3831,Cama,,6557,0,Cama
@@ -4092,7 +4088,7 @@ FR,,Pierrafortscha,,2216,Pierrafortscha,,1723,4,Pierrafortscha
 BE,,Pierrefeu,,433,Cortébert,,2608,2,Mtgne-Courtelary
 BE,,Pieterlen,,392,Pieterlen,,2542,0,Pieterlen
 GR,,Pignia,,3701,Andeer,,7443,0,Pignia
-GR,,Pigniu,,3613,Pigniu,,7156,1,Pigniu
+GR,,Pigniu,,3619,Ilanz/Glion,,7156,1,Pigniu
 VD,,Piguet-Dessous,,5872,Le Chenit,,1348,0,Le Brassus
 VD,,Piguet-Dessus,,5872,Le Chenit,,1348,0,Le Brassus
 OW,,Pilatus Kulm,,1401,Alpnach,,6010,2,Pilatus Kulm
@@ -4102,12 +4098,12 @@ VS,,Pinsec,,6252,Anniviers,,3961,21,Vissoie
 TI,,Piodina,,5097,Brissago,,6614,0,Brissago
 TI,,Piora,,5079,Quinto,,6776,0,Piotta
 TI,,Piotta,,5079,Quinto,,6776,0,Piotta
-GR,,Pitasch,,3578,Pitasch,,7111,0,Pitasch
+GR,,Pitasch,,3619,Ilanz/Glion,,7111,0,Pitasch
 SG,,Pizol,,3297,Vilters-Wangs,,7323,0,Wangs
 VD,,Pizy,,5422,Aubonne,,1174,2,Pizy
 TI,,Pizzamiglio,,5268,Vacallo,,6833,0,Vacallo
 FR,,Plaffeien,,2299,Plaffeien,,1716,0,Plaffeien
-BE,,Plagne,,440,Plagne,,2536,0,Plagne
+BE,,Plagne,,449,Sauge,,2536,0,Plagne
 GE,Q,Plainpalais,,6621,Genève,!,1200,0,Genève
 NE,,Plamboz,,6433,Brot-Plamboz,,2314,0,La Sagne NE
 VD,,Plambuit,,5409,Ollon,,1867,3,Panex
@@ -4137,8 +4133,8 @@ FR,,Pont (Veveyse),,2337,Le Flon,,1699,2,Pont (Veveyse)
 VS,,Pont-de-la-Morge,+,6266,Sion,,1962,0,Pont-de-la-Morge
 VS,,Pont-de-la-Morge,+,6023,Conthey,,1962,0,Pont-de-la-Morge
 VD,,Pont-de-la-Tine,,5410,Ormont-Dessous,,1863,0,Le Sépey
-TI,,Ponte Brolla,+,5130,Tegna,,6652,0,Tegna
 TI,,Ponte Brolla,+,5113,Locarno,,6652,0,Tegna
+TI,,Ponte Brolla,+,5396,Terre di Pedemonte,,6652,0,Tegna
 TI,,Ponte Capriasca,,5212,Ponte Capriasca,,6946,0,Ponte Capriasca
 TI,,Ponte Cremenaga,,5202,Monteggio,,6996,0,Ponte Cremenaga
 TI,,Ponte Tresa,,5213,Ponte Tresa,,6988,0,Ponte Tresa
@@ -4170,13 +4166,13 @@ VS,,Pramagnon,,6238,Grône,,3979,0,Grône
 VD,,Prangins,,5725,Prangins,,1197,0,Prangins
 FR,,Praratoud,,2044,Surpierre,,1528,2,Praratoud
 FR,,Praroman,,2220,Le Mouret,,1724,0,Le Mouret
-VS,,Prarreyer,,6031,Bagnes,,1947,2,Prarreyer
+VS,,Prarreyer,,6031,Bagnes,,1947,0,Versegères
 VS,,Prassurny,,6034,Orsières,,1937,0,Orsières
 TI,,Prato,,5323,Lavizzara,,6694,0,Prato-Sornico
 TI,,Prato (Leventina),,5078,Prato (Leventina),,6773,0,Prato (Leventina)
 BL,,Pratteln,,2831,Pratteln,,4133,0,Pratteln
 GR,,Pratval,,3635,Pratval,,7415,2,Pratval
-VS,,Pravidondaz,,6264,Salins,,1991,3,Pravidondaz
+VS,,Pravidondaz,,6266,Sion,,1991,3,Pravidondaz
 VS,,Prayon,,6034,Orsières,,1944,0,La Fouly VS
 FR,,Prayoud,,2325,Châtel-Saint-Denis,,1618,0,Châtel-St-Denis
 FR,,Praz,,2280,Bas-Vully,,1788,0,Praz (Vully)
@@ -4187,21 +4183,21 @@ GR,,Preda,,3521,Bergün/Bravuogn,,7482,1,Preda
 NE,,Préfargier,,6461,La Tène,,2074,0,Marin-Epagnier
 TI,,Pregassona,,5192,Lugano,,6963,0,Pregassona
 GE,,Pregny,,6634,Pregny-Chambésy,,1292,0,Chambésy
-BE,,Prêles,,725,Prêles,,2515,0,Prêles
+BE,,Prêles,,726,Plateau de Diesse,,2515,0,Prêles
 VD,,Premier,,5759,Premier,,1324,0,Premier
 VS,,Premploz,,6023,Conthey,,1976,0,Erde
 TI,,Preonzo,,5015,Preonzo,,6523,0,Preonzo
 BE,,Prés-de-Cortébert,,433,Cortébert,,2608,2,Mtgne-Courtelary
 GE,,Presinge,,6635,Presinge,,1243,0,Presinge
-GE,,Pressy,+,6642,Vandoeuvres,,1253,0,Vandoeuvres
 GE,,Pressy,+,6614,Choulex,,1253,0,Vandoeuvres
+GE,,Pressy,+,6642,Vandoeuvres,,1253,0,Vandoeuvres
 VD,,Préverenges,,5643,Préverenges,,1028,0,Préverenges
 FR,,Prévondavaux,,2038,Prévondavaux,,1410,4,Prévondavaux
 VD,,Prévonloup,,5683,Prévonloup,,1682,0,Prévonloup
 FR,,Prez-vers-Noréaz,,2221,Prez-vers-Noréaz,,1746,0,Prez-vers-Noréaz
 FR,,Prez-vers-Siviriez,,2099,Siviriez,,1677,0,Prez-vers-Siviriez
 VD,,Prilly,,5589,Prilly,,1008,0,Prilly
-TI,,Primadengo,,5066,Calpiogna,,6760,2,Calpiogna
+TI,,Primadengo,,5072,Faido,,6760,2,Calpiogna
 FR,,Pringy,,2135,Gruyères,,1663,2,Pringy
 GR,,Privilasco,,3561,Poschiavo,,7741,0,S. Carlo GR
 VS,,Produit,,6135,Leytron,,1912,2,Produit (Leytron)
@@ -4229,7 +4225,7 @@ SG,,Quarten,,3295,Quarten,,8883,0,Quarten
 TI,,Quartino,,5398,Gambarogno,,6572,0,Quartino
 SG,,Quinten,,3295,Quarten,,8878,0,Quinten
 TI,,Quinto,,5079,Quinto,,6777,0,Quinto
-ZH,,Raad,,120,Wald (ZH),,8498,0,Gibswil-Ried
+ZH,,Raad,,120,Wald (ZH),,8498,0,Gibswil
 ZH,,Raat bei Windlach,,100,Stadel,,8175,0,Windlach
 GR,,Rabius,,3985,Sumvitg,,7172,0,Rabius
 BE,,Radelfingen bei Aarberg,,309,Radelfingen,,3271,0,Radelfingen
@@ -4241,7 +4237,7 @@ OW,,Ramersberg,,1407,Sarnen,,6060,2,Ramersberg
 ZH,,Rämismühle,,231,Zell (ZH),,8487,1,Rämismühle
 SO,,Ramiswil,,2428,Mümliswil-Ramiswil,,4719,0,Ramiswil
 BL,,Ramlinsburg,,2832,Ramlinsburg,,4433,0,Ramlinsburg
-GR,,Ramosch,,3751,Ramosch,,7556,0,Ramosch
+GR,,Ramosch,,3764,Valsot,,7556,0,Ramosch
 BL,,Ramsach Bad,,2847,Häfelfingen,,4448,0,Läufelfingen
 ZH,,Ramsberg,,228,Turbenthal,,8488,0,Turbenthal
 BE,,Ramsei,,955,Lützelflüh,,3435,0,Ramsei
@@ -4251,10 +4247,10 @@ TI,,Rancate,,5254,Mendrisio,,6862,0,Rancate
 VD,,Rances,,5760,Rances,,1439,0,Rances
 VS,,Randa,,6287,Randa,,3928,0,Randa
 VS,,Randogne,,6244,Randogne,,3975,0,Randogne
-BE,,Ranflüh,+,905,Rüderswil,,3439,0,Ranflüh
 BE,,Ranflüh,+,955,Lützelflüh,,3439,0,Ranflüh
+BE,,Ranflüh,+,905,Rüderswil,,3439,0,Ranflüh
 SG,,Rans,,3275,Sevelen,,9475,0,Sevelen
-TI,,Ranzo,+,5398,Gambarogno,,6577,0,Ranzo
+TI,,Ranzo,,5398,Gambarogno,,6577,0,Ranzo
 TG,,Raperswilen,,4846,Raperswilen,,8558,0,Raperswilen
 SG,,Rapperswil,,3340,Rapperswil-Jona,,8640,0,Rapperswil SG
 BE,,Rapperswil,,310,Rapperswil (BE),,3255,0,Rapperswil BE
@@ -4276,7 +4272,7 @@ VS,,Réchy,,6232,Chalais,,3966,1,Réchy
 TG,,Reckenwil,,4816,Homburg,,8508,0,Homburg
 VS,,Reckingen,,6075,Reckingen-Gluringen,,3998,0,Reckingen VS
 JU,,Réclère,,6809,Haute-Ajoie,,2912,2,Réclère
-JU,,Recolaine,,6727,Vicques,,2824,0,Vicques
+JU,,Recolaine,,6730,Val Terbi,,2824,0,Vicques
 BE,,Reconvilier,,703,Reconvilier,,2732,0,Reconvilier
 ZH,,Regensberg,,95,Regensberg,,8158,0,Regensberg
 ZH,,Regensdorf,,96,Regensdorf,,8105,0,Regensdorf
@@ -4330,8 +4326,8 @@ AG,,Rheinfelden,,4258,Rheinfelden,,4310,0,Rheinfelden
 TG,,Rheinklingen,,4871,Wagenhausen,,8259,3,Rheinklingen
 AG,,Rheinsulz,,4170,Laufenburg,,5084,0,Rheinsulz
 FR,,Riaz,,2148,Riaz,,1632,0,Riaz
-TI,,Riazzino,+,5112,Lavertezzo,,6595,0,Riazzino
 TI,,Riazzino,+,5138,Cugnasco-Gerra,,6595,0,Riazzino
+TI,,Riazzino,+,5112,Lavertezzo,,6595,0,Riazzino
 AG,,Riburg,,4254,Möhlin,,4313,0,Möhlin
 BE,,Richenbach,,761,Därstetten,,3763,0,Därstetten
 LU,,Richensee,,1030,Hitzkirch,,6285,0,Hitzkirch
@@ -4339,30 +4335,30 @@ LU,,Richenthal,,1140,Reiden,,6263,0,Richenthal
 BE,,Richigen,,627,Worb,,3078,0,Richigen
 ZH,,Richterswil,,138,Richterswil,,8805,0,Richterswil
 FR,,Richterwil,,2295,Bösingen,,3178,0,Bösingen
-SG,,Ricken,+,3377,Wattwil,,8726,0,Ricken SG
-SG,,Ricken,+,3331,Ernetschwil,,8726,0,Ricken SG
-AG,,Rickenbach,,4234,Merenschwand,,5634,0,Merenschwand
-ZH,,Rickenbach,,225,Rickenbach (ZH),,8545,0,Rickenbach ZH
-SZ,,Rickenbach,,1372,Schwyz,,6432,0,Rickenbach SZ
-LU,,Rickenbach,,1097,Rickenbach (LU),,6221,0,Rickenbach LU
-BL,,Rickenbach,,2857,Rickenbach (BL),,4462,0,Rickenbach BL
+SG,,Ricken,+,3379,Wattwil,,8726,0,Ricken SG
+SG,,Ricken,+,3341,Gommiswald,,8726,0,Ricken SG
 SO,,Rickenbach,,2582,Rickenbach (SO),,4613,0,Rickenbach SO
+AG,,Rickenbach,,4234,Merenschwand,,5634,0,Merenschwand
+SZ,,Rickenbach,,1372,Schwyz,,6432,0,Rickenbach SZ
+ZH,,Rickenbach,,225,Rickenbach (ZH),,8545,0,Rickenbach ZH
+BL,,Rickenbach,,2857,Rickenbach (BL),,4462,0,Rickenbach BL
+LU,,Rickenbach,,1097,Rickenbach (LU),,6221,0,Rickenbach LU
 ZH,,Rickenbach bei Ottenbach,,11,Ottenbach,,8913,0,Ottenbach
 TG,,Rickenbach bei Wil,,4751,Rickenbach (TG),,9532,0,Rickenbach b. Wil
 ZH,,Ricketwil,,230,Winterthur,,8352,2,Ricketwil
 VS,,Riddes,,6139,Riddes,,1908,0,Riddes
-SZ,,Ried,,1367,Muotathal,,6436,3,Ried (Muotathal)
 BE,,Ried,,563,Frutigen,,3724,0,Ried (Frutigen)
+SZ,,Ried,,1367,Muotathal,,6436,3,Ried (Muotathal)
+UR,,Ried,,1216,Silenen,,6476,0,Intschi
 BE,,Ried,,793,St. Stephan,,3772,0,St. Stephan
 VS,,Ried,,6052,Bellwald,,3997,0,Bellwald
-UR,,Ried,,1216,Silenen,,6476,0,Intschi
 VS,,Ried (Lötschen),,6192,Blatten,,3919,0,Blatten(Lötschen)
 FR,,Ried bei Kerzers,,2276,Ried bei Kerzers,,3216,0,Ried b. Kerzers
 BE,,Ried bei Worb,,627,Worb,,3082,0,Schlosswil
 BE,,Riedbach,,351,Bern,!,3000,0,Bern
 VS,,Ried-Brig,,6008,Ried-Brig,,3911,0,Ried-Brig
-SG,,Rieden,,3314,Rieden,,8739,0,Rieden SG
 ZH,,Rieden,,69,Wallisellen,,8304,0,Wallisellen
+SG,,Rieden,,3341,Gommiswald,,8739,0,Rieden SG
 AG,,Rieden bei Nussbaumen,,4038,Obersiggenthal,,5415,2,Rieden AG
 VS,,Riederalp,,6181,Riederalp,,3987,0,Riederalp
 FR,,Riederberg,,2295,Bösingen,,3178,0,Bösingen
@@ -4375,12 +4371,12 @@ TG,,Riedt bei Erlen,,4476,Erlen,,8586,5,Riedt b. Erlen
 ZH,,Riedt bei Neerach,,88,Neerach,,8173,0,Neerach
 BE,,Riedtwil,,988,Seeberg,,3475,0,Riedtwil
 BS,,Riehen,,2703,Riehen,,4125,0,Riehen
-GR,,Riein,,3579,Riein,,7128,0,Riein
+GR,,Riein,,3619,Ilanz/Glion,,7128,0,Riein
 SZ,,Riemenstalden,,1369,Riemenstalden,,6452,2,Riemenstalden
 ZH,Q,Riesbach,,261,Zürich,!,8000,0,Zürich
-ZH,,Riet bei Gibswil,,120,Wald (ZH),,8498,0,Gibswil-Ried
+ZH,,Riet bei Gibswil,,120,Wald (ZH),,8498,0,Gibswil
 ZH,,Riet bei Neftenbach,,223,Neftenbach,,8412,1,Riet (Neftenbach)
-SG,,Rietbad,,3358,Nesslau-Krummenau,,9651,0,Ennetbühl
+SG,,Rietbad,,3360,Nesslau,,9651,0,Ennetbühl
 AG,,Rietheim,,4316,Rietheim,,5323,0,Rietheim
 SG,Q,Riethüsli,,3203,St. Gallen,!,9000,0,St. Gallen
 VD,,Riex,,5613,Bourg-en-Lavaux,,1097,0,Riex
@@ -4455,7 +4451,7 @@ LU,,Romoos,,1007,Romoos,,6113,0,Romoos
 GR,,Rona,,3541,Tinizong-Rona,,7454,0,Rona
 TI,,Ronco sopra Ascona,,5125,Ronco sopra Ascona,,6622,0,Ronco sopra Ascona
 GR,,Rongellen,,3711,Rongellen,,7430,2,Rongellen
-TI,,Rongie,,5041,Malvaglia,,6713,0,Malvaglia
+TI,,Rongie,,5050,Serravalle,,6713,0,Malvaglia
 LU,,Root,,1065,Root,,6037,0,Root
 VD,,Ropraz,,5798,Ropraz,,1088,0,Ropraz
 ZH,,Rorbas,,68,Rorbas,,8427,3,Rorbas
@@ -4466,18 +4462,18 @@ FR,,Rosé,,2174,Avry,,1754,0,Rosé
 SG,Q,Rosenberg,,3203,St. Gallen,!,9000,0,St. Gallen
 TG,,Rosenhuben,,4571,Gachnang,,8500,4,Gerlikon
 BE,,Rosenlaui,,786,Schattenhalb,,3860,2,Rosenlaui
-BS,Q,Rosental,,2701,Basel,!,4000,0,Basel
 TG,,Rosental,,4781,Wängi,,9545,0,Wängi
+BS,Q,Rosental,,2701,Basel,!,4000,0,Basel
 GR,,Rossa,,3808,Rossa,,6548,0,Rossa
 ZH,,Rossau,,9,Mettmenstetten,,8932,0,Mettmenstetten
 ZH,,Rossberg,,230,Winterthur,!,8400,0,Winterthur
 JU,,Rossemaison,,6721,Rossemaison,,2842,0,Rossemaison
 VD,,Rossenges,,5684,Rossenges,,1513,2,Rossenges
-VD,,Rossens,,5830,Villarzel,,1554,2,Rossens VD
 FR,,Rossens,,2222,Rossens (FR),,1728,0,Rossens FR
+VD,,Rossens,,5830,Villarzel,,1554,2,Rossens VD
 BE,,Rosshäusern,,668,Mühleberg,,3204,0,Rosshäusern
 VD,,Rossinière,,5842,Rossinière,,1658,0,Rossinière
-SG,,Rossrüti,,3421,Bronschhofen,,9512,0,Rossrüti
+SG,,Rossrüti,,3427,Wil (SG),,9512,0,Rossrüti
 TI,,Rossura,,5072,Faido,,6760,5,Rossura
 VS,,Rosswald,,6010,Termen,,3913,0,Rosswald
 SO,,Rothacker,,2585,Walterswil (SO),,5746,0,Walterswil SO
@@ -4521,8 +4517,8 @@ BE,,Rüegsau,,956,Rüegsau,,3417,0,Rüegsau
 BE,,Rüegsauschachen,,956,Rüegsau,,3415,3,Rüegsauschachen
 BE,,Rüegsbach,,956,Rüegsau,,3418,0,Rüegsbach
 GR,,Rueras,,3986,Tujetsch,,7189,0,Rueras
-SG,,Rüeterswil,,3337,St. Gallenkappel,,8735,2,Rüeterswil
-GR,,Rueun,,3614,Rueun,,7156,0,Rueun
+SG,,Rüeterswil,,3342,Eschenbach (SG),,8735,2,Rüeterswil
+GR,,Rueun,,3619,Ilanz/Glion,,7156,0,Rueun
 VD,,Rueyres,,5534,Rueyres,,1046,0,Rueyres
 FR,,Rueyres,,2152,Sâles,,1626,3,Rueyres-Treyfayes
 FR,,Rueyres-les-Prés,,2039,Rueyres-les-Prés,,1542,0,Rueyres-les-Prés
@@ -4536,8 +4532,8 @@ ZH,,Ruggen,,242,Birmensdorf (ZH),,8903,0,Birmensdorf ZH
 VS,,Rumeling,,6110,Leuk,,3953,0,Leuk Stadt
 BE,,Rumendingen,,421,Rumendingen,,3472,2,Rumendingen
 ZG,,Rumentikon,,1702,Cham,,6332,0,Hagendorn
-AG,,Rümikon,,4317,Rümikon,,5464,0,Rümikon AG
 ZH,,Rümikon,,219,Elsau,,8352,0,Elsau
+AG,,Rümikon,,4317,Rümikon,,5464,0,Rümikon AG
 BE,,Rumisberg,,987,Rumisberg,,4539,0,Rumisberg
 ZH,,Rümlang,,97,Rümlang,,8153,0,Rümlang
 BE,,Rümligen,,881,Rümligen,,3128,2,Rümligen
@@ -4548,9 +4544,9 @@ BE,,Rünkhofen,,605,Bowil,,3533,0,Bowil
 BE,,Rüplisried,,668,Mühleberg,,3204,0,Rosshäusern
 AG,,Rupperswil,,4206,Rupperswil,,5102,0,Rupperswil
 SO,,Ruppoldingen,,2581,Olten,,4663,0,Aarburg
-BE,,Ruppoldsried,,548,Ruppoldsried,,3251,2,Ruppoldsried
+BE,,Ruppoldsried,,310,Rapperswil (BE),,3251,2,Ruppoldsried
 BE,,Rüschegg,,853,Rüschegg,,3153,0,Rüschegg Gambach
-GR,,Ruschein,,3580,Ruschein,,7154,0,Ruschein
+GR,,Ruschein,,3619,Ilanz/Glion,,7154,0,Ruschein
 ZH,,Rüschlikon,,139,Rüschlikon,,8803,0,Rüschlikon
 ZH,,Russikon,,178,Russikon,,8332,0,Russikon
 GE,,Russin,,6637,Russin,,1281,0,Russin
@@ -4567,8 +4563,8 @@ ZH,,Rüti bei Bülach,,72,Winkel,,8185,0,Winkel
 BE,,Rüti bei Büren,,393,Rüti bei Büren,,3295,0,Rüti b. Büren
 BE,,Rüti bei Lyssach,,422,Rüti bei Lyssach,,3421,2,Rüti b. Lyssach
 BE,,Rüti bei Riggisberg,,879,Riggisberg,,3099,0,Rüti b. Riggisberg
-AG,,Rütihof,,4021,Baden,,5406,2,Rütihof
 AG,,Rütihof,,4006,Gränichen,,5722,0,Gränichen
+AG,,Rütihof,,4021,Baden,,5406,2,Rütihof
 UR,,Rütli,,1215,Seelisberg,,6441,2,Rütli
 BE,,Rütschelen,,340,Rütschelen,,4933,0,Rütschelen
 ZH,,Rutschwil,,214,Dägerlen,,8471,0,Rutschwil
@@ -4595,11 +4591,11 @@ VS,,Saas-Balen,,6289,Saas-Balen,,3908,0,Saas-Balen
 VS,,Saas-Fee,,6290,Saas-Fee,,3906,0,Saas-Fee
 VS,,Saas-Grund,,6291,Saas-Grund,,3910,0,Saas-Grund
 OW,,Sachseln,,1406,Sachseln,,6072,0,Sachseln
-VS,,Saclentz,,6024,Nendaz,,1996,4,Saclentz
+VS,,Saclentz,,6024,Nendaz,,1996,4,Saclentse
 GE,,Saconnex-d'Arve,,6633,Plan-les-Ouates,,1212,0,Grand-Lancy
 AG,,Safenwil,,4283,Safenwil,,5745,0,Safenwil
-GR,,Safien,,3651,Safien,,7107,0,Safien Platz
-GR,,Safien Platz,,3651,Safien,,7107,0,Safien Platz
+GR,,Safien,,3672,Safiental,,7107,0,Safien Platz
+GR,,Safien Platz,,3672,Safiental,,7107,0,Safien Platz
 BE,,Safnern,,746,Safnern,,2553,0,Safnern
 LU,,Sagen,,1139,Pfaffnau,,6264,0,Pfaffnau
 TI,,Sagno,,5269,Breggia,,6839,0,Sagno
@@ -4617,7 +4613,7 @@ FR,,Sales,,2189,Ependes (FR),,1731,0,Ependes FR
 FR,,Sâles (Gruyère),,2152,Sâles,,1625,0,Sâles (Gruyère)
 SG,,Salez,,3274,Sennwald,,9465,0,Salez
 VS,,Salgesch,,6113,Salgesch,,3970,0,Salgesch
-VS,,Salins,,6264,Salins,,1991,0,Salins
+VS,,Salins,,6266,Sion,,1991,0,Salins
 TG,,Salmsach,,4441,Salmsach,,8599,0,Salmsach
 TI,,Salorino,,5254,Mendrisio,,6872,0,Salorino
 GR,,Salouf,,3538,Salouf,,7462,0,Salouf
@@ -4630,7 +4626,7 @@ ZH,,Samstagern,,138,Richterswil,,8833,0,Samstagern
 GR,,San Carlo,,3561,Poschiavo,,7741,0,S. Carlo GR
 VS,,Sanetsch,,6265,Savièse,,1950,0,Sion
 BE,,Sangernboden,,852,Guggisberg,,1738,0,Sangernboden
-GR,,Sapün,,3924,Langwies,,7057,0,Langwies
+GR,,Sapün,,3921,Arosa,,7057,0,Langwies
 SG,,Sargans,,3296,Sargans,,7320,0,Sargans
 BE,,Säriswil,,360,Wohlen bei Bern,,3049,0,Säriswil
 AG,,Sarmenstorf,,4076,Sarmenstorf,,5614,0,Sarmenstorf
@@ -4645,12 +4641,11 @@ SZ,,Sattel,,1371,Sattel,,6417,0,Sattel
 VD,,Saubraz,,5437,Saubraz,,1189,0,Saubraz
 NE,,Sauges,,6414,Saint-Aubin-Sauges,,2024,0,St-Aubin-Sauges
 JU,,Saulcy,,6722,Saulcy,,2873,0,Saulcy
-NE,,Saules,,6477,Fenin-Vilars-Saules,,2063,4,Saules
+NE,,Saules,,6487,Val-de-Ruz,,2063,4,Saules
 BE,,Saules,,707,Saules (BE),,2732,3,Saules BE
 BE,,Saurenhorn,,311,Schüpfen,,3054,0,Schüpfen
 GE,,Sauverny,,6644,Versoix,,1290,0,Versoix
-NE,,Savagnier,,6484,Savagnier,,2065,0,Savagnier
-VS,,Savièse,,6265,Savièse,,1965,0,Savièse
+NE,,Savagnier,,6487,Val-de-Ruz,,2065,0,Savagnier
 VD,,Savigny,,5611,Savigny,,1073,0,Savigny
 GR,,Savognin,,3539,Savognin,,7460,0,Savognin
 TI,,Savosa,,5221,Savosa,,6942,0,Savosa
@@ -4663,12 +4658,12 @@ VS,,Saxon,,6141,Saxon,,1907,0,Saxon
 VS,,Saxonne,,6082,Ayent,,1966,5,Saxonne (Ayent)
 GR,,Says,,3945,Trimmis,,7202,0,Says
 TI,,Scaiano,,5398,Gambarogno,,6578,0,Caviano
-TI,,Scareglia,,5229,Valcolla,,6951,17,Scareglia
-JU,,Sceut,,6714,Glovelier,,2855,0,Glovelier
-ZH,,Schachen,,3,Bonstetten,,8906,0,Bonstetten
+TI,,Scareglia,,5192,Lugano,,6951,17,Scareglia
+JU,,Sceut,,6729,Haute-Sorne,,2855,0,Glovelier
 SZ,,Schachen,,1367,Muotathal,,6436,0,Muotathal
-LU,,Schachen,,1009,Werthenstein,,6105,0,Schachen LU
 SO,,Schachen,,2497,Obergösgen,,4653,0,Obergösgen
+ZH,,Schachen,,3,Bonstetten,,8906,0,Bonstetten
+LU,,Schachen,,1009,Werthenstein,,6105,0,Schachen LU
 AR,,Schachen bei Herisau,,3001,Herisau,,9112,0,Schachen b.Herisau
 AR,,Schachen bei Reute,,3035,Reute (AR),,9414,0,Schachen b. Reute
 SH,,Schaffhausen,,2939,Schaffhausen,!,8200,0,Schaffhausen
@@ -4677,13 +4672,13 @@ BE,,Schafis,,723,La Neuveville,,2514,0,Ligerz
 AG,,Schafisheim,,4207,Schafisheim,,5503,0,Schafisheim
 ZH,,Schalchen,,182,Wildberg,,8492,0,Wila
 SG,,Schalkhusen,,3392,Kirchberg (SG),,9533,0,Kirchberg SG
-BE,,Schalunen,,549,Schalunen,,3314,0,Schalunen
+BE,,Schalunen,,538,Fraubrunnen,,3314,0,Schalunen
 GR,,S-chanf,,3788,S-chanf,,7525,0,S-chanf
 BE,,Schangnau,,906,Schangnau,,6197,0,Schangnau
 SG,,Schänis,,3315,Schänis,,8718,0,Schänis
 GR,,Scharans,,3638,Scharans,,7412,0,Scharans
 GR,,S-charl,,3762,Scuol,,7550,0,Scuol
-LU,,Schärlig,,1006,Marbach (LU),,6196,0,Marbach LU
+LU,,Schärlig,,1010,Escholzmatt-Marbach,,6196,0,Marbach LU
 BE,,Scharnachtal,,567,Reichenbach im Kandertal,,3722,0,Scharnachtal
 UR,,Schattdorf,,1213,Schattdorf,,6467,0,Schattdorf
 BE,,Schattenhalb,,786,Schattenhalb,,3860,3,Schattenhalb
@@ -4695,14 +4690,14 @@ LU,,Schenkon,,1099,Schenkon,,6214,0,Schenkon
 BE,,Schernelz,,740,Ligerz,,2514,0,Ligerz
 AG,,Scherz,,4113,Scherz,,5246,0,Scherz
 TG,,Scherzingen,,4691,Münsterlingen,,8596,0,Scherzingen
-BE,,Scheunen,,550,Scheunen,,3305,2,Scheunen
+BE,,Scheunen,,540,Jegenstorf,,3305,2,Scheunen
 BE,,Scheunenberg,,394,Wengi,,3251,0,Wengi b. Büren
 BE,,Scheuren,,747,Scheuren,,2556,0,Scheuren
 GR,,Schiers,,3962,Schiers,,7220,0,Schiers
 AG,,Schiltwald,,4143,Schmiedrued,,5046,2,Walde AG
 SZ,,Schindellegi,,1321,Feusisberg,,8834,0,Schindellegi
 AG,,Schinznach-Bad,,4114,Schinznach-Bad,,5116,0,Schinznach Bad
-AG,,Schinznach-Dorf,,4115,Schinznach-Dorf,,5107,0,Schinznach Dorf
+AG,,Schinznach-Dorf,,4125,Schinznach,,5107,0,Schinznach Dorf
 GR,,Schlans,,3987,Trun,,7168,0,Schlans
 AI,,Schlatt,,3104,Schlatt-Haslen,,9050,7,Appenzell Schlatt
 TG,,Schlatt (TG),,4546,Schlatt (TG),,8252,0,Schlatt TG
@@ -4723,12 +4718,12 @@ BE,,Schmidigen,,959,Walterswil (BE),,3464,0,Schmidigen-Mühlew
 ZH,,Schmidrüti,,228,Turbenthal,,8495,0,Schmidrüti
 TG,,Schmidshof,,4921,Bussnang,,9565,4,Schmidshof
 AG,,Schmiedrued,,4143,Schmiedrued,,5046,1,Schmiedrued
-FR,,Schmitten,,2305,Schmitten (FR),,3185,0,Schmitten FR
-GR,,Schmitten,,3972,Seewis im Prättigau,,7212,2,Seewis-Schmitten
 GR,,Schmitten,,3514,Schmitten (GR),,7493,0,Schmitten (Albula)
+GR,,Schmitten,,3972,Seewis im Prättigau,,7212,2,Seewis-Schmitten
+FR,,Schmitten,,2305,Schmitten (FR),,3185,0,Schmitten FR
 SG,,Schmitter,,3234,Diepoldsau,,9444,0,Diepoldsau
 ZH,,Schnasberg,,219,Elsau,,8352,0,Elsau
-GR,,Schnaus,,3583,Schnaus,,7130,2,Schnaus
+GR,,Schnaus,,3619,Ilanz/Glion,,7130,2,Schnaus
 AG,,Schneisingen,,4318,Schneisingen,,5425,0,Schneisingen
 SO,,Schnottwil,,2461,Schnottwil,,3253,0,Schnottwil
 TG,,Schocherswil,,4461,Amriswil,,8581,0,Schocherswil
@@ -4746,9 +4741,9 @@ TG,,Schönholzerswilen,,4756,Schönholzerswilen,,8577,0,Schönholzerswilen
 BE,,Schönried,,843,Saanen,,3778,0,Schönried
 BL,,Schöntal,,2825,Füllinsdorf,,4414,0,Füllinsdorf
 ZH,,Schooren,,135,Kilchberg (ZH),,8802,0,Kilchberg ZH
+AG,,Schoren,,4235,Mühlau,,5642,0,Mühlau
 BE,,Schoren,,329,Langenthal,,4900,0,Langenthal
 BE,,Schoren,,942,Thun,!,3600,0,Thun
-AG,,Schoren,,4235,Mühlau,,5642,0,Mühlau
 OW,,Schoried,,1401,Alpnach,,6055,0,Alpnach Dorf
 BE,Q,Schosshalde,,351,Bern,!,3000,0,Bern
 ZH,,Schottikon,,219,Elsau,,8352,0,Elsau
@@ -4775,24 +4770,24 @@ BE,,Schwanden bei Schüpfen,,311,Schüpfen,,3054,0,Schüpfen
 BE,,Schwanden bei Sigriswil,,938,Sigriswil,,3657,0,Schwanden Sigrisw
 BE,,Schwanden im Emmental,,905,Rüderswil,,3433,0,Schwanden i. E.
 GL,,Schwändi bei Schwanden,,1631,Glarus Süd,,8762,2,Schwändi GL
-LU,,Schwarzenbach,,1081,Beromünster,,6215,2,Schwarzenbach LU
 BE,,Schwarzenbach,,954,Huttwil,,4953,0,Schwarzenbach BE
+LU,,Schwarzenbach,,1081,Beromünster,,6215,2,Schwarzenbach LU
 SG,,Schwarzenbach,,3405,Jonschwil,,9536,0,Schwarzenbach SG
 LU,,Schwarzenberg,,1066,Schwarzenberg,,6103,0,Schwarzenberg LU
 BE,,Schwarzenbühl,,853,Rüschegg,,3156,0,Riffenmatt
 BE,,Schwarzenburg,,855,Schwarzenburg,,3150,0,Schwarzenburg
-BE,,Schwarzenegg,+,945,Unterlangenegg,,3616,0,Schwarzenegg
 BE,,Schwarzenegg,+,935,Oberlangenegg,,3616,0,Schwarzenegg
+BE,,Schwarzenegg,+,945,Unterlangenegg,,3616,0,Schwarzenegg
 BE,,Schwarzenmatt,,791,Boltigen,,3766,0,Boltigen
 BE,,Schwarzhäusern,,341,Schwarzhäusern,,4911,0,Schwarzhäusern
 FR,,Schwarzsee,,2299,Plaffeien,,1716,3,Schwarzsee
 BE,,Schwefelberg Bad,,853,Rüschegg,,1738,0,Sangernboden
 TG,,Schweikhof,,4811,Herdern,,8506,0,Lanzenneunforn
 ZH,,Schweikhof,,4,Hausen am Albis,,8925,0,Ebertswil
-BE,,Schweinbrunnen,+,960,Wyssachen,,4953,0,Schwarzenbach BE
 BE,,Schweinbrunnen,+,954,Huttwil,,4953,0,Schwarzenbach BE
-BL,,Schweizerhalle,+,2770,Muttenz,,4133,0,Pratteln
+BE,,Schweinbrunnen,+,960,Wyssachen,,4953,0,Schwarzenbach BE
 BL,,Schweizerhalle,+,2831,Pratteln,,4133,0,Pratteln
+BL,,Schweizerhalle,+,2770,Muttenz,,4133,0,Pratteln
 TG,,Schweizersholz,,4471,Bischofszell,,9223,0,Schweizersholz
 AR,,Schwellbrunn,,3004,Schwellbrunn,,9103,0,Schwellbrunn
 AI,,Schwende,,3105,Schwende,,9057,2,Schwende
@@ -4808,7 +4803,7 @@ SZ,,Schwyz,,1372,Schwyz,,6430,0,Schwyz
 BE,,Schynige Platte,,577,Gsteigwiler,,3800,0,Interlaken
 TI,,Scubiago,,5282,Claro,,6702,0,Claro
 TI,,Scudellate,,5269,Breggia,,6838,3,Scudellate
-GR,,Sculms,,3587,Versam,,7402,0,Bonaduz
+GR,,Sculms,,3672,Safiental,,7402,0,Bonaduz
 GR,,Scuol,,3762,Scuol,,7550,0,Scuol
 GE,Q,Sécheron,,6621,Genève,!,1200,0,Genève
 VD,,Sédeilles,,5830,Villarzel,,1554,0,Sédeilles
@@ -4817,8 +4812,8 @@ GR,,Sedrun,,3986,Tujetsch,,7188,0,Sedrun
 ZH,,Seeb,,72,Winkel,,8185,0,Winkel
 ZH,Q,Seebach,,261,Zürich,,8052,0,Zürich
 BE,,Seeberg,,988,Seeberg,,3365,2,Seeberg
-UR,,Seedorf,,1214,Seedorf (UR),,6462,0,Seedorf UR
 BE,,Seedorf,,312,Seedorf (BE),,3267,0,Seedorf BE
+UR,,Seedorf,,1214,Seedorf (UR),,6462,0,Seedorf UR
 ZH,,Seegräben,,119,Seegräben,,8607,0,Aathal-Seegräben
 BE,,Seehof,,709,Seehof,,2747,2,Seehof
 UR,,Seelisberg,,1215,Seelisberg,,6377,0,Seelisberg
@@ -4826,8 +4821,8 @@ ZH,,Seelmatte,,228,Turbenthal,,8488,0,Turbenthal
 ZH,Q,Seen,,230,Winterthur,!,8400,0,Winterthur
 AG,,Seengen,,4208,Seengen,,5707,0,Seengen
 LU,,Seesatz,,1102,Sempach,,6203,0,Sempach Station
-SO,,Seewen,,2480,Seewen,,4206,0,Seewen SO
 SZ,,Seewen,,1372,Schwyz,,6423,0,Seewen SZ
+SO,,Seewen,,2480,Seewen,,4206,0,Seewen SO
 BE,,Seewil,,310,Rapperswil (BE),,3256,3,Seewil
 GR,,Seewis Dorf,,3972,Seewis im Prättigau,,7212,0,Seewis Dorf
 GR,,Seewis im Prättigau,,3972,Seewis im Prättigau,,7212,0,Seewis Dorf
@@ -4848,7 +4843,7 @@ GR,,Selva,,3986,Tujetsch,,7189,0,Rueras
 SO,,Selzach,,2556,Selzach,,2545,0,Selzach
 VS,,Sembrancher,,6035,Sembrancher,,1933,0,Sembrancher
 TI,,Sementina,,5019,Sementina,,6514,0,Sementina
-TI,,Semione,,5046,Semione,,6714,0,Semione
+TI,,Semione,,5050,Serravalle,,6714,0,Semione
 LU,,Sempach,,1102,Sempach,,6204,0,Sempach
 LU,,Sempach Station,,1093,Neuenkirch,,6203,0,Sempach Station
 FR,,Semsales,,2336,Semsales,,1623,0,Semsales
@@ -4860,11 +4855,11 @@ ZH,,Sennhof bei Russikon,,178,Russikon,,8332,0,Russikon
 SG,,Sennwald,,3274,Sennwald,,9466,0,Sennwald
 VS,,Sensine,,6023,Conthey,,1975,0,St-Séverin
 GR,,Sent,,3763,Sent,,7554,0,Sent
-AG,,Sentenhof,+,4228,Boswil,,5630,0,Muri AG
 AG,,Sentenhof,+,4236,Muri (AG),,5630,0,Muri AG
+AG,,Sentenhof,+,4228,Boswil,,5630,0,Muri AG
 AG,,Seon,,4209,Seon,,5703,0,Seon
 JU,,Séprais,,6702,Boécourt,,2857,0,Montavon
-GR,,Seraplana,,3751,Ramosch,,7558,0,Strada
+GR,,Seraplana,,3764,Valsot,,7558,0,Strada
 TI,,Serfontana,,5257,Morbio Inferiore,,6834,0,Morbio Inferiore
 VD,,Sergey,,5762,Sergey,,1355,2,Sergey
 VD,,Serix,,5805,Oron,,1607,1,Palézieux-Village
@@ -4875,7 +4870,7 @@ TI,,Serocca,,5141,Agno,,6982,0,Agno
 TI,,Serpiano,,5160,Brusino Arsizio,,6867,0,Serpiano
 NE,Q,Serrières,,6458,Neuchâtel,!,2000,0,Neuchâtel
 NE,,Serroue,+,6407,Corcelles-Cormondrèche,,2037,0,Montmollin
-NE,,Serroue,+,6474,Coffrane,,2037,0,Montmollin
+NE,,Serroue,+,6487,Val-de-Ruz,,2037,0,Montmollin
 GR,,Sertig Dörfli,,3851,Davos,,7272,0,Davos Clavadel
 VD,,Servion,,5799,Servion,,1077,0,Servion
 TI,,Seseglio,,5250,Chiasso,,6832,1,Seseglio
@@ -4884,32 +4879,32 @@ ZH,,Seuzach,,227,Seuzach,,8472,0,Seuzach
 FR,,Sévaz,,2043,Sévaz,,1541,3,Sévaz
 SG,,Sevelen,,3275,Sevelen,,9475,0,Sevelen
 VD,,Sévery,,5500,Sévery,,1141,0,Sévery
-GR,,Sevgein,,3584,Sevgein,,7127,0,Sevgein
+GR,,Sevgein,,3619,Ilanz/Glion,,7127,0,Sevgein
 GE,,Sézegnin,,6604,Avusy,,1285,0,Athenaz (Avusy)
 GE,,Sézenove,,6607,Bernex,,1233,0,Bernex
 GR,,Sfazù,,3561,Poschiavo,,7742,2,Sfazù
-GR,,Siat,,3615,Siat,,7157,0,Siat
+GR,,Siat,,3619,Ilanz/Glion,,7157,0,Siat
 SH,,Siblingen,,2953,Siblingen,,8225,0,Siblingen
 SZ,,Siebnen,+,1349,Wangen (SZ),,8854,0,Siebnen
-SZ,,Siebnen,+,1342,Galgenen,,8854,0,Siebnen
 SZ,,Siebnen,+,1346,Schübelbach,,8854,0,Siebnen
+SZ,,Siebnen,+,1342,Galgenen,,8854,0,Siebnen
 TG,,Siegershausen,,4666,Kemmental,,8573,0,Siegershausen
 GE,,Sierne,,6645,Veyrier,,1255,0,Veyrier
 VS,,Sierre,,6248,Sierre,,3960,0,Sierre
-AG,,Siggenthal Station,+,4044,Untersiggenthal,,5301,0,Siggenthal Station
 AG,,Siggenthal Station,+,4047,Würenlingen,,5301,0,Siggenthal Station
+AG,,Siggenthal Station,+,4044,Untersiggenthal,,5301,0,Siggenthal Station
 LU,,Sigigen,,1098,Ruswil,,6019,0,Sigigen
 TI,,Sigirino,,5238,Monteceneri,,6806,0,Sigirino
 AG,,Siglistorf,,4319,Siglistorf,,5462,0,Siglistorf
 VD,,Signal-de-Bougy,,5426,Bougy-Villars,,1172,0,Bougy-Villars
 BE,,Signau,,907,Signau,,3534,0,Signau
 VS,,Signèse,,6082,Ayent,,1966,11,Signèse (Ayent)
-TI,,Signôra,,5229,Valcolla,,6951,23,Signôra
+TI,,Signôra,,5192,Lugano,,6951,23,Signôra
 VD,,Signy,,5728,Signy-Avenex,,1274,1,Signy
 BE,,Sigriswil,,938,Sigriswil,,3655,0,Sigriswil
+ZH,,Sihlbrugg,+,132,Hirzel,,6340,4,Sihlbrugg
 ZH,,Sihlbrugg,+,4,Hausen am Albis,,6340,4,Sihlbrugg
 ZG,,Sihlbrugg,+,1705,Neuheim,,6340,4,Sihlbrugg
-ZH,,Sihlbrugg,+,132,Hirzel,,6340,4,Sihlbrugg
 ZH,,Sihlbrugg Station,,133,Horgen,,8135,2,Sihlbrugg Station
 ZH,,Sihlwald,,133,Horgen,,8135,3,Sihlwald
 UR,,Silenen,,1216,Silenen,,6473,0,Silenen
@@ -4956,8 +4951,8 @@ ZH,,Sonnenbühl,,65,Oberembrach,,8311,0,Brütten
 SG,,Sonnental,,3424,Oberbüren,,9245,2,Sonnental
 TI,,Sonogno,,5129,Sonogno,,6637,0,Sonogno
 TG,,Sonterswil,,4701,Wäldi,,8564,3,Sonterswil
-GR,,Sontga Clau,,3574,Ilanz,,7130,0,Ilanz
-TI,,Sonvico,,5224,Sonvico,,6968,0,Sonvico
+GR,,Sontga Clau,,3619,Ilanz/Glion,,7130,0,Ilanz
+TI,,Sonvico,,5192,Lugano,,6968,0,Sonvico
 BE,,Sonvilier,,445,Sonvilier,,2615,0,Sonvilier
 VD,,Sonzier,,5886,Montreux,,1822,0,Chernex
 ZH,,Sood,,131,Adliswil,,8134,0,Adliswil
@@ -4978,7 +4973,7 @@ VD,,Sottens,,5804,Jorat-Menthue,,1062,0,Sottens
 JU,,Soubey,,6759,Soubey,,2887,0,Soubey
 BE,,Souboz,,712,Souboz,,2748,0,Souboz
 VS,,Soulalex,,6034,Orsières,,1937,0,Orsières
-JU,,Soulce,,6723,Soulce,,2864,0,Soulce
+JU,,Soulce,,6729,Haute-Sorne,,2864,0,Soulce
 VS,,Soussillon,,6252,Anniviers,,3961,21,Vissoie
 JU,,Soyhières,,6724,Soyhières,,2805,0,Soyhières
 GR,,Sparsels,,3745,Tarasp,,7553,0,Tarasp
@@ -4994,7 +4989,7 @@ BE,,Spins,,301,Aarberg,,3270,0,Aarberg
 BE,,Spirenwald,,571,Beatenberg,,3803,0,Beatenberg
 UR,,Spiringen,,1218,Spiringen,,6464,0,Spiringen
 TG,,Spitz,,4436,Romanshorn,,8590,0,Romanshorn
-BE,,Spitzberg,,722,Lamboing,,2516,0,Lamboing
+BE,,Spitzberg,,726,Plateau de Diesse,,2516,0,Lamboing
 ZH,,Spitzen,,132,Hirzel,,8816,0,Hirzel
 GR,,Splügen,,3694,Splügen,,7435,0,Splügen
 GR,,Sporz,,3506,Vaz/Obervaz,,7078,0,Lenzerheide/Lai
@@ -5007,7 +5002,7 @@ BS,,St. Chrischona,,2702,Bettingen,,4126,0,Bettingen
 LU,,St. Erhard,,1089,Knutwil,,6212,0,St. Erhard
 SG,Q,St. Fiden,,3203,St. Gallen,!,9000,0,St. Gallen
 SG,,St. Gallen,,3203,St. Gallen,!,9000,0,St. Gallen
-SG,,St. Gallenkappel,,3337,St. Gallenkappel,,8735,0,St. Gallenkappel
+SG,,St. Gallenkappel,,3342,Eschenbach (SG),,8735,0,St. Gallenkappel
 SG,Q,St. Georgen,,3203,St. Gallen,!,9000,0,St. Gallen
 VS,,St. Germain,,6265,Savièse,,1965,4,St-Germain
 VS,,St. German,,6199,Raron,,3942,3,St. German
@@ -5025,16 +5020,16 @@ SG,,St. Margrethenberg,,3294,Pfäfers,,7313,0,St. Margrethenberg
 GR,,St. Martin,,3598,St. Martin,,7116,2,St. Martin
 GR,,St. Moritz,,3787,St. Moritz,,7500,0,St. Moritz
 GR,,St. Moritz Bad,,3787,St. Moritz,,7500,0,St. Moritz
-VS,,St. Niklaus,,6292,St. Niklaus,,3924,0,St. Niklaus VS
 SO,,St. Niklaus,,2544,Feldbrunnen-St. Niklaus,,4532,0,Feldbrunnen
+VS,,St. Niklaus,,6292,St. Niklaus,,3924,0,St. Niklaus VS
 BE,,St. Niklaus bei Koppigen,,413,Koppigen,,3425,0,Koppigen
 BE,,St. Niklaus bei Merzligen,+,741,Merzligen,,3274,0,Hermrigen
 BE,,St. Niklaus bei Merzligen,+,732,Bellmund,,3274,0,Hermrigen
-LU,,St. Niklausen,,1058,Horw,,6005,2,St. Niklausen LU
 OW,,St. Niklausen,,1404,Kerns,,6066,0,St. Niklausen OW
+LU,,St. Niklausen,,1058,Horw,,6005,2,St. Niklausen LU
 SO,,St. Pantaleon,,2478,Nuglar-St. Pantaleon,,4421,0,St. Pantaleon
 TG,,St. Pelagiberg,,4486,Hauptwil-Gottshaus,,9225,1,St. Pelagiberg
-GR,,St. Peter,,3931,St. Peter-Pagig,,7028,0,St. Peter
+GR,,St. Peter,,3921,Arosa,,7028,0,St. Peter
 BE,,St. Petersinsel,,756,Twann-Tüscherz,,3235,0,Erlach
 SG,,St. Peterzell,,3378,Neckertal,,9127,0,St. Peterzell
 FR,,St. Silvester,,2303,St. Silvester,,1736,0,St. Silvester
@@ -5045,9 +5040,9 @@ FR,,St. Wolfgang,,2293,Düdingen,,3186,0,Düdingen
 GR,,Sta Domenica,,3808,Rossa,,6546,0,Cauco
 GR,,Sta Maria in Calanca,,3810,Santa Maria in Calanca,,6541,0,Sta. Maria
 GR,,Sta. Maria Val Müstair,,3847,Val Müstair,,7536,0,Sta. Maria V. M.
-SO,,Staad,,2546,Grenchen,,2540,0,Grenchen
-SG,,Staad,+,3237,Thal,,9422,0,Staad SG
 SG,,Staad,+,3216,Rorschacherberg,,9422,0,Staad SG
+SG,,Staad,+,3237,Thal,,9422,0,Staad SG
+SO,,Staad,,2546,Grenchen,,2540,0,Grenchen
 TI,,Stabio,,5266,Stabio,,6855,0,Stabio
 TG,,Stachen,,4401,Arbon,,9320,3,Stachen
 TG,,Stad,,4646,Ermatingen,,8272,0,Ermatingen
@@ -5056,11 +5051,11 @@ ZH,,Stadel bei Niederglatt,,100,Stadel,,8174,0,Stadel
 NW,,Städtli,,1503,Dallenwil,,6383,0,Dallenwil
 ZH,,Stäfa,,158,Stäfa,,8712,0,Stäfa
 AG,,Staffelbach,,4284,Staffelbach,,5053,0,Staffelbach
-OW,,Stalden,,1407,Sarnen,,6063,0,Stalden (Sarnen)
 VS,,Stalden,,6298,Visperterminen,,3932,0,Visperterminen
+OW,,Stalden,,1407,Sarnen,,6063,0,Stalden (Sarnen)
 VS,,Stalden,,6293,Stalden (VS),,3922,0,Stalden VS
-BE,,Stalden im Emmental,+,612,Konolfingen,,3510,0,Konolfingen
 BE,,Stalden im Emmental,+,607,Freimettigen,,3510,0,Konolfingen
+BE,,Stalden im Emmental,+,612,Konolfingen,,3510,0,Konolfingen
 VS,,Staldenried,,6294,Staldenried,,3933,0,Staldenried
 ZH,,Stallikon,,13,Stallikon,,8143,0,Stallikon
 GR,,Stampa,,3792,Bregaglia,,7605,0,Stampa
@@ -5070,14 +5065,14 @@ AG,,Staretschwil,,4037,Oberrohrdorf,,5452,0,Oberrohrdorf
 SG,,Starkenbach,,3359,Wildhaus-Alt St. Johann,,9656,0,Alt St. Johann
 SG,,Starrberg,,3312,Benken (SG),,8717,0,Benken SG
 SO,,Starrkirch,,2584,Starrkirch-Wil,,4656,0,Starrkirch-Wil
-NE,,St-Aubin,,6414,Saint-Aubin-Sauges,,2024,0,St-Aubin-Sauges
 FR,,St-Aubin,,2041,Saint-Aubin (FR),,1566,0,St-Aubin FR
+NE,,St-Aubin,,6414,Saint-Aubin-Sauges,,2024,0,St-Aubin-Sauges
 AG,,Staufen,,4210,Staufen,,5603,0,Staufen
 VD,,St-Barthélemy,,5535,Saint-Barthélemy (VD),,1040,3,St-Barthélemy VD
 NE,,St-Blaise,,6459,Saint-Blaise,,2072,0,St-Blaise
 JU,,St-Brais,,6758,Saint-Brais,,2364,0,St-Brais
 VD,,St-Cergue,,5727,Saint-Cergue,,1264,0,St-Cergue
-VD,,St-Cierges,,5685,Saint-Cierges,,1410,5,St-Cierges
+VD,,St-Cierges,,5693,Montanaire,,1410,5,St-Cierges
 VD,,St-Denis,+,5485,Grancy,,1117,0,Grancy
 VD,,St-Denis,+,5475,Chavannes-le-Veyron,,1117,0,Grancy
 BE,,Stechelberg,,584,Lauterbrunnen,,3824,0,Stechelberg
@@ -5086,27 +5081,27 @@ VD,,Ste-Croix,,5568,Sainte-Croix,,1450,0,Ste-Croix
 BE,,Steffisburg,,939,Steffisburg,,3612,0,Steffisburg
 VS,,Steg,,6204,Steg-Hohtenn,,3940,0,Steg VS
 ZH,,Steg im Tösstal,,114,Fischenthal,,8496,0,Steg im Tösstal
-ZH,,Stegen bei Gachnang,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Stegen bei Gachnang,,298,Wiesendangen,,8543,0,Bertschikon
 TG,,Stehrenberg,,4921,Bussnang,,9503,0,Stehrenberg
 ZH,,Steig,,222,Hofstetten (ZH),,8354,0,Hofstetten ZH
-AG,,Stein,,4260,Stein (AG),,4332,0,Stein AG
 AR,,Stein,,3005,Stein (AR),,9063,0,Stein AR
-SG,,Stein,,3356,Stein (SG),,9655,0,Stein SG
+AG,,Stein,,4260,Stein (AG),,4332,0,Stein AG
+SG,,Stein,,3360,Nesslau,,9655,0,Stein SG
 SH,,Stein am Rhein,,2964,Stein am Rhein,,8260,0,Stein am Rhein
 SG,,Steinach,,3217,Steinach,,9323,0,Steinach
 TG,,Steinebrunn,,4411,Egnach,,9314,0,Steinebrunn
-AI,,Steinegg,+,3105,Schwende,,9050,6,Appenzell Steinegg
-TG,,Steinegg,,4821,Hüttwilen,,8536,0,Hüttwilen
 AI,,Steinegg,+,3103,Rüte,,9050,6,Appenzell Steinegg
+TG,,Steinegg,,4821,Hüttwilen,,8536,0,Hüttwilen
+AI,,Steinegg,+,3105,Schwende,,9050,6,Appenzell Steinegg
 TG,,Steineloh,+,4401,Arbon,,9320,2,Frasnacht
 TG,,Steineloh,+,4431,Roggwil (TG),,9320,2,Frasnacht
 SZ,,Steinen,,1373,Steinen,,6422,0,Steinen
-BE,,Steinen bei Signau,+,907,Signau,,3534,0,Signau
 BE,,Steinen bei Signau,+,605,Bowil,,3534,0,Signau
+BE,,Steinen bei Signau,+,907,Signau,,3534,0,Signau
 ZH,,Steinenbach hinteres Tal,,179,Sternenberg,,8499,0,Sternenberg
 ZH,,Steinenbach vorderes Tal,,181,Wila,,8492,0,Wila
 SZ,,Steinerberg,,1374,Steinerberg,,6416,0,Steinerberg
-BE,,Steingletscher,,781,Gadmen,,3860,0,Meiringen
+BE,,Steingletscher,,784,Innertkirchen,,3860,0,Meiringen
 VS,,Steinhaus,,6056,Ernen,,3995,4,Steinhaus
 ZG,,Steinhausen,,1708,Steinhausen,,6312,0,Steinhausen
 SO,,Steinhof,,2511,Aeschi (SO),,4556,4,Steinhof SO
@@ -5115,8 +5110,8 @@ ZH,,Steinmaur,,101,Steinmaur,,8162,0,Steinmaur
 GR,,Stels,,3962,Schiers,,7226,0,Stels
 ZH,,Sternenberg,,179,Sternenberg,,8499,0,Sternenberg
 ZH,,Stettbach,,191,Dübendorf,,8600,0,Dübendorf
-AG,,Stetten,,4041,Stetten (AG),,5608,0,Stetten AG
 SH,,Stetten,,2919,Stetten (SH),,8234,0,Stetten SH
+AG,,Stetten,,4041,Stetten (AG),,5608,0,Stetten AG
 TG,,Stettfurt,,4606,Stettfurt,,9507,0,Stettfurt
 BE,,Stettlen,,358,Stettlen,,3066,0,Stettlen
 VD,,St-George,,5434,Saint-George,,1188,2,St-George
@@ -5131,19 +5126,19 @@ VS,,St-Léonard,,6246,Saint-Léonard,,1958,0,St-Léonard
 VD,,St-Livres,,5435,Saint-Livres,,1176,0,St-Livres
 VD,,St-Loup,,5497,Pompaples,,1318,0,Pompaples
 VS,,St-Luc,,6252,Anniviers,,3961,22,St-Luc
-NE,,St-Martin,,6473,Chézard-Saint-Martin,,2054,0,Chézard-St-Martin
-FR,,St-Martin,,2335,Saint-Martin (FR),,1609,0,St-Martin FR
+NE,,St-Martin,,6487,Val-de-Ruz,,2054,0,Chézard-St-Martin
 VS,,St-Martin,,6087,Saint-Martin (VS),,1969,0,St-Martin VS
+FR,,St-Martin,,2335,Saint-Martin (FR),,1609,0,St-Martin FR
 GE,,St-Maurice,,6616,Collonge-Bellerive,,1222,0,Vésenaz
-VD,,St-Maurice,,5553,Champagne,,1424,0,Champagne
 VS,,St-Maurice,,6217,Saint-Maurice,,1890,0,St-Maurice
-BE,,Stocken,,765,Oberstocken,,3632,2,Niederstocken
+VD,,St-Maurice,,5553,Champagne,,1424,0,Champagne
+BE,,Stocken,,770,Stocken-Höfen,,3632,2,Niederstocken
 SZ,,Stöcken,,1375,Unteriberg,,8842,0,Unteriberg
 SZ,,Stoos,,1366,Morschach,,6433,0,Stoos SZ
 VD,,St-Oyens,,5436,Saint-Oyens,,1187,0,St-Oyens
 VS,,St-Pierre-de-Clages,,6022,Chamoson,,1955,5,St-Pierre-Clages
 VD,,St-Prex,,5646,Saint-Prex,,1162,0,St-Prex
-GR,,Strada im Engadin,,3753,Tschlin,,7558,0,Strada
+GR,,Strada im Engadin,,3764,Valsot,,7558,0,Strada
 TG,,Strass,,4571,Gachnang,,8500,0,Frauenfeld
 BE,Q,Strättligen,,942,Thun,!,3600,0,Thun
 AG,,Strengelbach,,4285,Strengelbach,,4802,0,Strengelbach
@@ -5152,13 +5147,13 @@ VS,,St-Romain,,6082,Ayent,,1966,4,St-Romain (Ayent)
 VD,,St-Saphorin (Lavaux),,5610,Saint-Saphorin (Lavaux),,1071,2,St-Saphorin-Lavaux
 VD,,St-Saphorin-sur-Morges,,5634,Echichens,,1113,0,St-Saphorin-Morges
 VS,,St-Séverin,,6023,Conthey,,1975,0,St-Séverin
-NE,,St-Sulpice,,6512,Val-de-Travers,,2123,0,St-Sulpice NE
 VD,,St-Sulpice,,5648,Saint-Sulpice (VD),,1025,0,St-Sulpice VD
+NE,,St-Sulpice,,6512,Val-de-Travers,,2123,0,St-Sulpice NE
 VD,,St-Triphon,,5409,Ollon,,1867,2,St-Triphon
-BE,,Stuckishaus,+,354,Kirchlindach,,3037,0,Herrenschwanden
 BE,,Stuckishaus,+,353,Bremgarten bei Bern,,3037,0,Herrenschwanden
-SG,,Studen,,3273,Grabs,,9472,0,Grabs
+BE,,Stuckishaus,+,354,Kirchlindach,,3037,0,Herrenschwanden
 SZ,,Studen,,1375,Unteriberg,,8845,0,Studen SZ
+SG,,Studen,,3273,Grabs,,9472,0,Grabs
 BE,,Studen (BE),,749,Studen (BE),,2557,0,Studen BE
 GR,,Stugl/Stuls,,3521,Bergün/Bravuogn,,7482,2,Stugl/Stuls
 JU,,St-Ursanne,,6808,Clos du Doubs,,2882,0,St-Ursanne
@@ -5175,9 +5170,9 @@ AG,,Suhr,,4012,Suhr,,5034,0,Suhr
 TI,,Suino,,5222,Sessa,,6997,0,Sessa
 TG,,Sulgen,,4506,Sulgen,,8583,0,Sulgen
 VD,,Sullens,,5501,Sullens,,1036,0,Sullens
-ZH,,Sulz,,225,Rickenbach (ZH),,8545,1,Rickenbach Sulz
-LU,,Sulz,,1030,Hitzkirch,,6284,2,Sulz LU
 AG,,Sulz,,4170,Laufenburg,,5085,0,Sulz AG
+LU,,Sulz,,1030,Hitzkirch,,6284,2,Sulz LU
+ZH,,Sulz,,225,Rickenbach (ZH),,8545,1,Rickenbach Sulz
 AG,,Sulz bei Künten,,4031,Künten,,5444,0,Künten
 ZH,,Sulzbach,,198,Uster,,8614,2,Sulzbach
 BE,,Sumiswald,,957,Sumiswald,,3454,0,Sumiswald
@@ -5188,11 +5183,11 @@ ZH,,Sünikon,,101,Steinmaur,,8162,1,Sünikon
 GR,,Sur,,3540,Sur,,7456,0,Sur
 GR,,Sur En,,3763,Sent,,7554,0,Sent
 GR,,Surava,,3515,Surava,,7472,0,Surava
-GR,,Surcasti,,3599,Suraua,,7115,0,Surcasti
+GR,,Surcasti,,3618,Lumnezia,,7115,0,Surcasti
 GR,,Surcuolm,,3617,Mundaun,,7138,0,Surcuolm
 TI,,Sureggio,,5226,Capriasca,,6953,0,Lugaggia
 BE,,Süri,,670,Neuenegg,,3204,0,Rosshäusern
-GR,,Surin,,3595,Lumbrein,,7148,2,Surin
+GR,,Surin,,3618,Lumnezia,,7148,2,Surin
 FR,,Surpierre,,2044,Surpierre,,1528,0,Surpierre
 GR,,Surrein,,3985,Sumvitg,,7173,0,Surrein
 LU,,Sursee,,1103,Sursee,,6210,0,Sursee
@@ -5214,15 +5209,15 @@ GR,,Tamins,,3733,Tamins,,7015,0,Tamins
 VS,,Tanay,,6159,Vouvry,,1896,2,Miex
 TG,,Tänikon,,4551,Aadorf,,8356,0,Ettenhausen TG
 ZH,,Tann,,113,Dürnten,,8632,0,Tann
-LU,,Tann,+,1081,Beromünster,,6214,0,Schenkon
 LU,,Tann,+,1099,Schenkon,,6214,0,Schenkon
+LU,,Tann,+,1081,Beromünster,,6214,0,Schenkon
 VD,,Tannay,,5729,Tannay,,1295,2,Tannay
 ZH,,Tanne bei Wädenswil,,140,Schönenberg (ZH),,8820,0,Wädenswil
 TG,,Tannegg,,4726,Fischingen,,8374,0,Dussnang
 BE,,Tannen,,418,Oberburg,,3068,0,Utzigen
 ZH,,Tannenboden,,199,Volketswil,,8603,0,Schwerzenbach
-SG,,Tannenbodenalp,+,3295,Quarten,,8898,0,Flumserberg Tboden
 SG,,Tannenbodenalp,+,3292,Flums,,8898,0,Flumserberg Tboden
+SG,,Tannenbodenalp,+,3295,Quarten,,8898,0,Flumserberg Tboden
 SG,,Tannenheim,,3292,Flums,,8897,0,Flumserberg Theim
 GR,,Tarasp,,3745,Tarasp,,7553,0,Tarasp
 GR,,Tartar,,3661,Cazis,,7422,0,Tartar
@@ -5235,23 +5230,23 @@ BE,,Tavannes,,713,Tavannes,,2710,0,Tavannes
 TI,,Taverne,,5227,Torricella-Taverne,,6807,0,Taverne
 BL,,Tecknau,,2862,Tecknau,,4492,0,Tecknau
 AG,,Tegerfelden,,4320,Tegerfelden,,5306,0,Tegerfelden
-TI,,Tegna,,5130,Tegna,,6652,0,Tegna
+TI,,Tegna,,5396,Terre di Pedemonte,,6652,0,Tegna
 BE,,Tellenfeld,,563,Frutigen,,3714,0,Frutigen
 TI,,Tenero,,5131,Tenero-Contra,,6598,0,Tenero
 TI,,Tengia,,5072,Faido,,6760,5,Rossura
 GR,,Tenigerbad,,3985,Sumvitg,,7173,0,Surrein
-GR,,Tenna,,3652,Tenna,,7106,0,Tenna
+GR,,Tenna,,3672,Safiental,,7106,0,Tenna
 BL,,Tenniken,,2863,Tenniken,,4456,0,Tenniken
 AG,,Tennwil,,4202,Meisterschwanden,,5617,0,Tennwil
 FR,,Tentlingen,,2307,Tentlingen,,1734,0,Tentlingen
 VS,,Termen,,6010,Termen,,3912,0,Termen
 TI,,Termine,,5202,Monteggio,,6998,0,Termine
 VD,,Territet,,5886,Montreux,,1820,5,Territet
-GR,,Tersnaus,,3599,Suraua,,7116,0,Tersnaus
+GR,,Tersnaus,,3618,Lumnezia,,7116,0,Tersnaus
 TI,,Tesserete,,5226,Capriasca,,6950,0,Tesserete
-NE,,Tête-de-Ran,,6481,Les Hauts-Geneveys,,2052,2,La Vue-des-Alpes
-ZH,,Teufen,,57,Freienstein-Teufen,,8428,0,Teufen ZH
+NE,,Tête-de-Ran,,6487,Val-de-Ruz,,2052,2,La Vue-des-Alpes
 AR,,Teufen,,3024,Teufen (AR),,9053,0,Teufen AR
+ZH,,Teufen,,57,Freienstein-Teufen,,8428,0,Teufen ZH
 AG,,Teufenthal,,4145,Teufenthal (AG),,5723,0,Teufenthal AG
 BE,,Teuffenthal,,940,Teuffenthal (BE),,3623,0,Teuffenthal BE
 SG,,Thal,,3237,Thal,,9425,0,Thal
@@ -5259,20 +5254,20 @@ BE,,Thalgraben,+,955,Lützelflüh,,3432,0,Lützelflüh-Goldb
 BE,,Thalgraben,+,406,Hasle bei Burgdorf,,3432,0,Lützelflüh-Goldb
 AG,,Thalheim,,4117,Thalheim (AG),,5112,0,Thalheim AG
 ZH,,Thalheim an der Thur,,39,Thalheim an der Thur,,8478,0,Thalheim
-GR,,Thalkirch,,3651,Safien,,7109,0,Thalkirch
+GR,,Thalkirch,,3672,Safiental,,7109,0,Thalkirch
 ZH,,Thalwil,,141,Thalwil,,8800,0,Thalwil
 SH,,Thayngen,,2920,Thayngen,,8240,0,Thayngen
 ZH,,Theilingen,,180,Weisslingen,,8484,3,Theilingen
 BL,,Therwil,,2775,Therwil,,4106,0,Therwil
 NE,,Thielle,,6461,La Tène,,2075,1,Thielle
 BE,,Thierachern,,941,Thierachern,,3634,0,Thierachern
-VD,,Thierrens,,5689,Thierrens,,1410,0,Thierrens
+VD,,Thierrens,,5693,Montanaire,,1410,0,Thierrens
 GL,,Thon,,1631,Glarus Süd,,8762,0,Schwanden GL
 GE,,Thônex,,6640,Thônex,,1226,0,Thônex
 BE,,Thorberg,,414,Krauchthal,,3326,0,Krauchthal
 BE,,Thörigen,,989,Thörigen,,3367,0,Thörigen
-BE,,Thörishaus,+,670,Neuenegg,,3174,0,Thörishaus
 BE,,Thörishaus,+,355,Köniz,,3174,0,Thörishaus
+BE,,Thörishaus,+,670,Neuenegg,,3174,0,Thörishaus
 BE,,Thun,,942,Thun,!,3600,0,Thun
 TG,,Thundorf,,4611,Thundorf,,8512,0,Thundorf
 BE,,Thunstetten,,342,Thunstetten,,4922,2,Thunstetten
@@ -5289,7 +5284,7 @@ TG,,Tobel,,4776,Tobel-Tägerschen,,9555,0,Tobel
 BE,,Toffen,,884,Toffen,,3125,0,Toffen
 ZH,,Tollhausen,,219,Elsau,,8352,0,Elsau
 VD,,Tolochenaz,,5649,Tolochenaz,,1131,0,Tolochenaz
-TG,,Toos,,4756,Schönholzerswilen,,8577,2,Toos
+TG,,Toos,,4756,Schönholzerswilen,,8577,0,Schönholzerswilen
 VS,,Törbel,,6296,Törbel,,3923,0,Törbel
 VS,,Torgon,,6158,Vionnaz,,1899,0,Torgon
 FR,,Torny-le-Grand,,2115,Torny,,1748,0,Torny-le-Grand
@@ -5300,8 +5295,8 @@ TI,,Torricella,,5227,Torricella-Taverne,,6808,0,Torricella
 ZH,Q,Töss,,230,Winterthur,!,8400,0,Winterthur
 ZH,,Tössriederen,,55,Eglisau,,8193,0,Eglisau
 ZH,,Toussen,,10,Obfelden,,8912,0,Obfelden
-BE,,Trachselwald,+,958,Trachselwald,,3456,0,Trachselwald
 BE,,Trachselwald,+,955,Lützelflüh,,3456,0,Trachselwald
+BE,,Trachselwald,+,958,Trachselwald,,3456,0,Trachselwald
 SZ,,Trachslau,,1301,Einsiedeln,,8840,2,Trachslau
 BE,,Tramelan,,446,Tramelan,,2720,0,Tramelan
 GL,,Trämligen,,1631,Glarus Süd,,8766,0,Matt
@@ -5326,7 +5321,7 @@ LU,,Triengen,,1104,Triengen,,6234,0,Triengen
 VS,,Trient,,6142,Trient,,1929,0,Trient
 SO,,Trimbach,,2500,Trimbach,,4632,0,Trimbach
 GR,,Trimmis,,3945,Trimmis,,7203,0,Trimmis
-BE,,Trimstein,,631,Trimstein,,3083,0,Trimstein
+BE,,Trimstein,,616,Münsingen,,3083,0,Trimstein
 GR,,Trin,,3734,Trin,,7014,0,Trin
 GR,,Trin Statiun,,3734,Trin,,7014,0,Trin
 AR,,Trogen,,3025,Trogen,,9043,0,Trogen
@@ -5345,12 +5340,12 @@ SZ,,Tschalun,,1368,Oberiberg,,8843,0,Oberiberg
 GR,,Tschamut,,3986,Tujetsch,,7189,0,Rueras
 GR,,Tschappina,,3612,Obersaxen,,7136,0,Obers Friggahüs
 GR,,Tschappina,,3669,Tschappina,,7428,0,Tschappina
-SO,,Tscheppach,,2462,Tscheppach,,4576,0,Tscheppach
+SO,,Tscheppach,,2465,Buchegg,,4576,0,Tscheppach
 SG,,Tscherlach,,3298,Walenstadt,,8881,6,Tscherlach
 GR,,Tschiertschen,,3932,Tschiertschen-Praden,,7064,0,Tschiertschen
 GR,,Tschierv,,3847,Val Müstair,,7532,0,Tschierv
 BE,,Tschingel bei Sigriswil,,938,Sigriswil,,3656,0,Tschingel
-GR,,Tschlin,,3753,Tschlin,,7559,0,Tschlin
+GR,,Tschlin,,3764,Valsot,,7559,0,Tschlin
 BE,,Tschugg,,501,Tschugg,,3233,0,Tschugg
 SG,,Tübach,,3218,Tübach,,9327,0,Tübach
 SG,,Tufertswil,,3393,Lütisburg,,9604,0,Lütisburg
@@ -5361,10 +5356,10 @@ GR,,Tumegl/Tomils,,3671,Tomils,,7418,0,Tumegl/Tomils
 BE,,Turbach,,843,Saanen,,3781,0,Turbach
 ZH,,Turbenthal,,228,Turbenthal,,8488,0,Turbenthal
 AG,,Turgi,,4042,Turgi,,5300,0,Turgi
-VS,,Turin,,6264,Salins,,1991,4,Turin (Salins)
+VS,,Turin,,6266,Sion,,1991,4,Turin (Salins)
 ZH,,Türlen,,4,Hausen am Albis,,8915,0,Hausen am Albis
 VS,,Turtig,,6199,Raron,,3942,0,Raron
-VS,,Turtmann,,6114,Turtmann,,3946,0,Turtmann
+VS,,Turtmann,,6119,Turtmann-Unterems,,3946,0,Turtmann
 BE,,Tüscherz,,756,Twann-Tüscherz,,2512,0,Tüscherz-Alfermée
 GR,,Tusen,,3612,Obersaxen,,7135,0,Obersaxen Giraniga
 TG,,Tuttwil,,4781,Wängi,,9546,0,Tuttwil
@@ -5373,7 +5368,7 @@ BE,,Twannberg,,756,Twann-Tüscherz,,2516,0,Lamboing
 LU,,Twerenegg,,1136,Menznau,,6122,0,Menznau
 LU,,Udligenswil,,1067,Udligenswil,,6044,0,Udligenswil
 FR,,Ueberstorf,,2308,Ueberstorf,,3182,0,Ueberstorf
-AG,,Ueberthal,,4108,Oberbözberg,,5237,0,Mönthal
+AG,,Ueberthal,,4124,Bözberg,,5237,0,Mönthal
 BE,,Uebeschi,,943,Uebeschi,,3635,0,Uebeschi
 FR,,Uebewil,,2293,Düdingen,,1700,0,Fribourg
 AG,,Ueken,,4179,Ueken,,5028,0,Ueken
@@ -5388,30 +5383,30 @@ BE,,Uetendorf,,944,Uetendorf,,3661,0,Uetendorf
 BE,,Uetendorf Allmend,,944,Uetendorf,,3661,0,Uetendorf
 ZH,,Uetikon am See,,159,Uetikon am See,,8707,0,Uetikon am See
 ZH,,Uetliberg,,13,Stallikon,,8143,2,Uetliberg
-SG,,Uetliburg,,3334,Gommiswald,,8738,0,Uetliburg SG
+SG,,Uetliburg,,3341,Gommiswald,,8738,0,Uetliburg SG
 BE,,Uettligen,,360,Wohlen bei Bern,,3043,0,Uettligen
 AG,,Uezwil,,4078,Uezwil,,5619,2,Uezwil
 SZ,,Ufenau,,1322,Freienbach,,8808,0,Pfäffikon SZ
 LU,,Uffikon,,1125,Dagmersellen,,6253,0,Uffikon
 LU,,Ufhusen,,1145,Ufhusen,,6153,0,Ufhusen
 ZH,,Uitikon,,248,Uitikon,,8142,0,Uitikon Waldegg
-SG,,Ulisbach,,3377,Wattwil,,9631,0,Ulisbach
+SG,,Ulisbach,,3379,Wattwil,,9631,0,Ulisbach
 FR,,Ulmiz,,2278,Ulmiz,,3214,0,Ulmiz
 VS,,Ulrichen,,6076,Obergoms,,3988,0,Ulrichen
 GR,,Umbrail,,3847,Val Müstair,,7536,0,Sta. Maria V. M.
 AG,,Umiken,,4095,Brugg,,5222,0,Umiken
 BE,,Underbort,,843,Saanen,,3792,0,Saanen
-JU,,Undervelier,,6725,Undervelier,,2863,0,Undervelier
+JU,,Undervelier,,6729,Haute-Sorne,,2863,0,Undervelier
 ZG,,Unterägeri,,1709,Unterägeri,,6314,0,Unterägeri
 BE,,Unterbach,,785,Meiringen,,3857,0,Unterbach BE
 VS,,Unterbäch,,6201,Unterbäch,,3944,0,Unterbäch VS
 SG,,Unterbilchen,,3216,Rorschacherberg,,9404,0,Rorschacherberg
-AG,,Unterbözberg,,4119,Unterbözberg,,5224,0,Unterbözberg
+AG,,Unterbözberg,,4124,Bözberg,,5225,1,Bözberg
 SG,,Unteregg,,3202,Muolen,,8589,0,Sitterdorf
 SG,,Untereggen,,3219,Untereggen,,9033,0,Untereggen
 AG,Q,Unterehrendingen,,4049,Ehrendingen,,5420,0,Ehrendingen
-VS,,Unterems,,6115,Unterems,,3948,0,Unterems
-AG,,Unterendingen,,4321,Unterendingen,,5305,0,Unterendingen
+VS,,Unterems,,6119,Turtmann-Unterems,,3948,0,Unterems
+AG,,Unterendingen,,4305,Endingen,,5305,0,Unterendingen
 ZH,,Unterengstringen,,249,Unterengstringen,,8103,0,Unterengstringen
 AG,,Unterentfelden,,4013,Unterentfelden,,5035,0,Unterentfelden
 TG,,Unterhard,+,4891,Berg (TG),,8570,0,Weinfelden
@@ -5443,7 +5438,7 @@ GR,,Untervaz,,3946,Untervaz,,7204,0,Untervaz
 SG,,Unterwasser,,3359,Wildhaus-Alt St. Johann,,9657,0,Unterwasser
 VS,,Unterwassern,,6076,Obergoms,,3999,0,Oberwald
 BE,Q,Unterzollikofen,,361,Zollikofen,,3052,0,Zollikofen
-GR,,Uors,,3599,Suraua,,7114,0,Uors (Lumnezia)
+GR,,Uors,,3618,Lumnezia,,7114,0,Uors (Lumnezia)
 ZH,,Urdorf,,250,Urdorf,,8902,0,Urdorf
 UR,,Urigen,,1219,Unterschächen,,6465,0,Unterschächen
 GR,,Urmein,,3670,Urmein,,7427,0,Urmein
@@ -5452,7 +5447,7 @@ UR,,Urnerboden,,1218,Spiringen,,8751,0,Urnerboden
 BE,,Ursellen,,612,Konolfingen,,3510,0,Konolfingen
 BE,,Ursenbach,,344,Ursenbach,,4937,0,Ursenbach
 VD,,Ursins,,5932,Ursins,,1412,2,Ursins
-AG,Q,Ursprung,,4119,Unterbözberg,,5224,0,Unterbözberg
+AG,Q,Ursprung,,4124,Bözberg,,5225,1,Bözberg
 LU,,Urswil,,1031,Hochdorf,,6280,2,Urswil
 FR,,Ursy,,2102,Ursy,,1670,0,Ursy
 BE,,Urtenen,,551,Urtenen-Schönbühl,,3322,0,Urtenen-Schönbühl
@@ -5465,8 +5460,8 @@ TG,,Uttwil,,4451,Uttwil,,8592,0,Uttwil
 BE,,Utzenstorf,,552,Utzenstorf,,3427,0,Utzenstorf
 BE,,Utzigen,,359,Vechigen,,3068,0,Utzigen
 VS,,Uvrier,,6266,Sion,,1958,2,Uvrier
-SG,,Uznaberg,+,3339,Uznach,,8730,0,Uznach
 SG,,Uznaberg,+,3338,Schmerikon,,8730,0,Uznach
+SG,,Uznaberg,+,3339,Uznach,,8730,0,Uznach
 SG,,Uznach,,3339,Uznach,,8730,0,Uznach
 SG,,Uzwil,,3408,Uzwil,,9240,0,Uzwil
 VS,,Vaas,,6240,Lens,,3978,0,Flanthey
@@ -5481,11 +5476,11 @@ GR,,Valata,,3612,Obersaxen,,7138,0,Surcuolm
 GE,,Valavran,,6606,Bellevue,,1293,0,Bellevue
 GR,,Valbella,,3506,Vaz/Obervaz,,7077,0,Valbella
 GR,,Valchava,,3847,Val Müstair,,7535,0,Valchava
-TI,,Valcolla,,5229,Valcolla,,6951,17,Scareglia
+TI,,Valcolla,,5192,Lugano,,6951,17,Scareglia
 VS,,Val-d'Illiez,,6157,Val-d'Illiez,,1873,0,Val-d'Illiez
 GR,,Valé,,3603,Vals,,7132,0,Vals
 VS,,Valençon,,6240,Lens,,3978,0,Flanthey
-GR,,Valendas,,3586,Valendas,,7122,0,Valendas
+GR,,Valendas,,3672,Safiental,,7122,0,Valendas
 SG,,Valens,,3294,Pfäfers,,7317,0,Valens
 VD,,Valeyres-sous-Montagny,,5933,Valeyres-sous-Montagny,,1441,0,Valeyres-Montagny
 VD,,Valeyres-sous-Rances,,5763,Valeyres-sous-Rances,,1358,0,Valeyres-Rances
@@ -5505,9 +5500,9 @@ VS,,Varen,,6116,Varen,,3953,2,Varen
 TI,,Varenzo,,5079,Quinto,,6777,1,Varenzo
 SG,,Vasön,,3294,Pfäfers,,7317,3,Vasön
 SG,,Vättis,,3294,Pfäfers,,7315,0,Vättis
-GR,,Vattiz,,3594,Degen,,7146,0,Vattiz
+GR,,Vattiz,,3618,Lumnezia,,7146,0,Vattiz
 FR,,Vauderens,,2102,Ursy,,1675,0,Vauderens
-BE,,Vauffelin,,447,Vauffelin,,2537,0,Vauffelin
+BE,,Vauffelin,,449,Sauge,,2537,0,Vauffelin
 VD,,Vaugondry,,5571,Tévenon,,1423,4,Vaugondry
 VD,,Vaulion,,5765,Vaulion,,1325,0,Vaulion
 FR,,Vaulruz,,2155,Vaulruz,,1627,0,Vaulruz
@@ -5518,11 +5513,11 @@ GR,,Vaz/Obervaz,,3506,Vaz/Obervaz,,7082,0,Vaz/Obervaz
 GR,,Vazerol,,3512,Brienz/Brinzauls,,7084,0,Brienz/Brinzauls
 BE,,Vechigen,,359,Vechigen,,3067,0,Boll
 GE,,Veigy (Suisse),,6602,Anières,,1251,0,Gy
-GR,,Vella,,3605,Vella,,7144,0,Vella
+GR,,Vella,,3618,Lumnezia,,7144,0,Vella
 TI,,Vellano,,5018,Sant'Antonio,,6583,0,S. Antonio
 JU,,Vellerat,,6728,Vellerat,,2830,2,Vellerat
-ZH,Q,Veltheim,,230,Winterthur,!,8400,0,Winterthur
 AG,,Veltheim,,4120,Veltheim (AG),,5106,0,Veltheim AG
+ZH,Q,Veltheim,,230,Winterthur,!,8400,0,Winterthur
 JU,,Vendlincourt,,6806,Vendlincourt,,2943,0,Vendlincourt
 VD,Q,Vennes,,5586,Lausanne,!,1000,0,Lausanne
 VS,,Vens,,6036,Vollèges,,1933,2,Vens(Sembrancher)
@@ -5534,7 +5529,7 @@ TI,,Verdasio,,5397,Centovalli,,6655,2,Verdasio
 TI,,Vergeletto,,5132,Vergeletto,,6664,0,Vergeletto
 VS,,Verlonnaz,,6034,Orsières,,1937,0,Orsières
 VS,,Vermala,,6244,Randogne,,3963,0,Crans-Montana
-JU,,Vermes,,6726,Vermes,,2829,0,Vermes
+JU,,Vermes,,6730,Val Terbi,,2829,0,Vermes
 SG,,Vermol,,3293,Mels,,8886,0,Mädris-Vermol
 VS,,Vernamiège,,6090,Mont-Noble,,1961,0,Vernamiège
 VD,,Vernand-Dessous,,5586,Lausanne,,1033,0,Cheseaux-Lausanne
@@ -5547,12 +5542,12 @@ GE,,Vernier,,6643,Vernier,,1214,0,Vernier
 VS,,Vérossaz,,6220,Vérossaz,,1891,11,Vérossaz
 VD,,Vers chez Patthey,,5556,Fiez,,1420,0,Fiez
 VS,,Vers l'Eglise,,6133,Fully,,1926,0,Fully
-GR,,Versam,,3587,Versam,,7104,0,Versam
-GR,,Versam Statiun,,3587,Versam,,7104,0,Versam
+GR,,Versam,,3672,Safiental,,7104,0,Versam
+GR,,Versam Statiun,,3672,Safiental,,7104,0,Versam
 VD,,Vers-chez-Jaccard,,5568,Sainte-Croix,,1450,0,Ste-Croix
 VD,,Vers-chez-les-Blancs,,5586,Lausanne,,1000,26,Lausanne 26
 VD,,Vers-chez-Perrin,,5822,Payerne,,1551,0,Vers-chez-Perrin
-TI,,Verscio,,5133,Verscio,,6653,0,Verscio
+TI,,Verscio,,5396,Terre di Pedemonte,,6653,0,Verscio
 VS,,Versegères,,6031,Bagnes,,1947,0,Versegères
 VD,,Vers-l'Eglise,,5411,Ormont-Dessus,,1864,0,Vers-l'Eglise
 VD,,Vers-Morey,,5415,Yvorne,,1853,0,Yvorne
@@ -5577,15 +5572,15 @@ VD,,Vich,,5732,Vich,,1267,1,Vich
 VS,,Vichères,,6033,Liddes,,1945,9,Vichères (Liddes)
 TI,,Vico Morcote,,5233,Vico Morcote,,6921,0,Vico Morcote
 GR,,Vicosoprano,,3792,Bregaglia,,7603,0,Vicosoprano
-JU,,Vicques,,6727,Vicques,,2824,0,Vicques
-BE,,Vielbringen bei Worb,,627,Worb,,3075,0,Rüfenacht BE
+JU,,Vicques,,6730,Val Terbi,,2824,0,Vicques
+BE,,Vielbringen bei Worb,,627,Worb,,3075,2,Vielbringen Worb
 TI,,Viganello,,5192,Lugano,,6962,0,Viganello
-TI,,Vigera,,5075,Osco,,6763,0,Osco
-GR,,Vignogn,,3604,Vignogn,,7147,0,Vignogn
-NE,,Vilars,,6477,Fenin-Vilars-Saules,,2063,0,Vilars NE
+TI,,Vigera,,5072,Faido,,6763,0,Osco
+GR,,Vignogn,,3618,Lumnezia,,7147,0,Vignogn
+NE,,Vilars,,6487,Val-de-Ruz,,2063,0,Vilars NE
+VS,,Villa,,6082,Ayent,,1966,6,Villa (Ayent)
 TI,,Villa,,5251,Coldrerio,,6877,0,Coldrerio
 TI,,Villa,,5063,Bedretto,,6781,1,Villa Bedretto
-VS,,Villa,,6082,Ayent,,1966,6,Villa (Ayent)
 TI,,Villa Luganese,,5192,Lugano,,6966,0,Villa Luganese
 FR,,Villangeaux,,2072,Ecublens (FR),,1673,4,Ecublens FR
 FR,,Villaraboud,,2099,Siviriez,,1679,0,Villaraboud
@@ -5622,15 +5617,15 @@ VD,,Villars-sur-Ollon,,5409,Ollon,,1884,0,Villars-sur-Ollon
 VD,,Villars-Tiercelin,,5804,Jorat-Menthue,,1058,0,Villars-Tiercelin
 FR,,Villarvolard,,2129,Corbières,,1651,0,Villarvolard
 VD,,Villarzel,,5830,Villarzel,,1555,0,Villarzel
-VS,,Villaz,,6083,Evolène,,1985,2,Villaz VS
+VS,,Villaz,,6083,Evolène,,1985,2,Villa (Evolène)
 FR,,Villaz-St-Pierre,,2111,Villaz-Saint-Pierre,,1690,0,Villaz-St-Pierre
-VD,,Villeneuve,,5414,Villeneuve (VD),,1844,0,Villeneuve VD
 FR,,Villeneuve,,2047,Villeneuve (FR),,1527,0,Villeneuve FR
+VD,,Villeneuve,,5414,Villeneuve (VD),,1844,0,Villeneuve VD
 BE,,Villeret,,448,Villeret,,2613,0,Villeret
+VS,,Villette,,6031,Bagnes,,1934,0,Le Châble VS
 GE,,Villette,,6640,Thônex,,1225,0,Chêne-Bourg
-VS,,Villette,,6031,Bagnes,,1934,3,Villette
 VD,,Villette (Lavaux),,5613,Bourg-en-Lavaux,,1096,2,Villette (Lavaux)
-NE,,Villiers,,6486,Villiers,,2057,0,Villiers
+NE,,Villiers,,6487,Val-de-Ruz,,2057,0,Villiers
 AG,,Villigen,,4121,Villigen,,5234,0,Villigen
 AG,,Villmergen,,4080,Villmergen,,5612,0,Villmergen
 AG,,Villnachern,,4122,Villnachern,,5213,0,Villnachern
@@ -5643,14 +5638,14 @@ VD,,Vinzel,,5863,Vinzel,,1184,1,Vinzel
 VS,,Vionnaz,,6158,Vionnaz,,1895,0,Vionnaz
 TI,,Vira,,5199,Mezzovico-Vira,,6805,0,Mezzovico
 TI,,Vira (Gambarogno),,5398,Gambarogno,,6574,0,Vira (Gambarogno)
-GE,,Vireloup,+,6606,Bellevue,,1239,0,Collex
 GE,,Vireloup,+,6615,Collex-Bossy,,1239,0,Collex
+GE,,Vireloup,+,6606,Bellevue,,1239,0,Collex
 VS,,Vison,,6132,Charrat,,1906,0,Charrat
 VS,,Visp,,6297,Visp,,3930,0,Visp
 VS,,Visperterminen,,6298,Visperterminen,,3932,0,Visperterminen
 VS,,Vissoie,,6252,Anniviers,,3961,21,Vissoie
 LU,,Vitznau,,1068,Vitznau,,6354,0,Vitznau
-GR,,Vnà,,3751,Ramosch,,7557,0,Vnà
+GR,,Vnà,,3764,Valsot,,7557,0,Vnà
 TI,,Vocaglia,,5136,Onsernone,,6663,0,Comologno
 AG,,Vogelsang,,4312,Lengnau (AG),,5426,0,Lengnau AG
 BE,,Vogelsang,,310,Rapperswil (BE),,3255,0,Rapperswil BE
@@ -5663,12 +5658,12 @@ ZH,,Vollenweid,,4,Hausen am Albis,,8915,0,Hausen am Albis
 AG,,Vordemwald,,4287,Vordemwald,,4803,0,Vordemwald
 BE,,Vorderfultigen,,880,Rüeggisberg,,3089,0,Hinterfultigen
 SG,Q,Vorderhof,,3219,Untereggen,,9033,0,Untereggen
-BE,,Vorderrinderbach,+,956,Rüegsau,,3418,0,Rüegsbach
 BE,,Vorderrinderbach,+,407,Heimiswil,,3412,0,Heimiswil
+BE,,Vorderrinderbach,+,956,Rüegsau,,3418,0,Rüegsbach
 SZ,,Vorderthal,,1348,Vorderthal,,8857,0,Vorderthal
 BE,,Vorimholz,,303,Grossaffoltern,,3257,0,Grossaffoltern
 VS,,Vouvry,,6159,Vouvry,,1896,0,Vouvry
-GR,,Vrin,,3606,Vrin,,7149,0,Vrin
+GR,,Vrin,,3618,Lumnezia,,7149,0,Vrin
 FR,,Vuadens,,2160,Vuadens,,1628,0,Vuadens
 FR,,Vuarat,,2321,Attalens,,1616,0,Attalens
 VD,,Vuarennes,,5886,Montreux,,1820,0,Montreux
@@ -5701,12 +5696,12 @@ BE,,Wahlendorf,,307,Meikirch,,3046,0,Wahlendorf
 BE,,Wahlenhütten,,853,Rüschegg,,1738,0,Sangernboden
 BE,,Wahlern,,855,Schwarzenburg,,3150,0,Schwarzenburg
 ZG,,Walchwil,,1710,Walchwil,,6318,0,Walchwil
-SG,,Wald,,3378,Neckertal,,9105,0,Schönengrund
-AR,,Wald,,3036,Wald (AR),,9044,0,Wald AR
 LU,,Wald,,1023,Ballwil,,6034,0,Inwil
+SG,,Wald,,3378,Neckertal,,9105,0,Schönengrund
 ZH,,Wald,,120,Wald (ZH),,8636,0,Wald ZH
+AR,,Wald,,3036,Wald (AR),,9044,0,Wald AR
+SG,,Walde,,3342,Eschenbach (SG),,8727,0,Walde SG
 AG,,Walde,,4143,Schmiedrued,,5046,2,Walde AG
-SG,,Walde,,3337,St. Gallenkappel,,8727,0,Walde SG
 BE,,Waldegg,,571,Beatenberg,,3803,0,Beatenberg
 ZH,,Waldegg bei Uitikon,,248,Uitikon,,8142,0,Uitikon Waldegg
 BL,,Waldenburg,,2895,Waldenburg,,4437,0,Waldenburg
@@ -5732,13 +5727,13 @@ ZH,,Waltalingen,,44,Waltalingen,,8468,0,Waltalingen
 GR,,Waltensburg/Vuorz,,3616,Waltensburg/Vuorz,,7158,0,Waltensburg/Vuorz
 AG,,Waltenschwil,,4240,Waltenschwil,,5622,0,Waltenschwil
 ZH,,Waltenstein,,226,Schlatt (ZH),,8418,0,Schlatt
-SO,,Walterswil,,2585,Walterswil (SO),,5746,0,Walterswil SO
 BE,,Walterswil,,959,Walterswil (BE),,4942,0,Walterswil BE
+SO,,Walterswil,,2585,Walterswil (SO),,5746,0,Walterswil SO
 ZH,,Waltikon,,160,Zumikon,,8126,0,Zumikon
 BE,,Waltrigen,,952,Dürrenroth,,3463,0,Häusernmoos
 BE,,Waltwil,,394,Wengi,,3251,0,Wengi b. Büren
-AR,,Walzenhausen,+,3037,Walzenhausen,,9428,0,Walzenhausen
 AI,,Walzenhausen,+,3111,Oberegg,,9428,0,Walzenhausen
+AR,,Walzenhausen,+,3037,Walzenhausen,,9428,0,Walzenhausen
 BE,,Wangelen,,923,Buchholterberg,,3615,0,Heimenschwand
 SZ,,Wangen,,1349,Wangen (SZ),,8855,0,Wangen SZ
 BE,,Wangen an der Aare,,992,Wangen an der Aare,,3380,0,Wangen an der Aare
@@ -5760,7 +5755,7 @@ ZH,,Wasterkingen,,70,Wasterkingen,,8195,0,Wasterkingen
 ZH,,Watt,,96,Regensdorf,,8105,2,Watt
 BE,,Wattenwil,,886,Wattenwil,,3665,0,Wattenwil
 BE,,Wattenwil bei Worb,,627,Worb,,3076,0,Worb
-SG,,Wattwil,,3377,Wattwil,,9630,0,Wattwil
+SG,,Wattwil,,3379,Wattwil,,9630,0,Wattwil
 LU,,Wauwil,,1146,Wauwil,,6242,0,Wauwil
 LU,,Wauwilermoos,,1127,Egolzwil,,6243,0,Egolzwil
 NE,,Wavre,,6461,La Tène,,2075,2,Wavre
@@ -5780,14 +5775,14 @@ ZH,,Weiningen,,251,Weiningen (ZH),,8104,0,Weiningen ZH
 BE,,Weinstegen,,332,Madiswil,,4936,0,Kleindietwil
 AI,,Weissbad,+,3103,Rüte,,9057,0,Weissbad
 AI,,Weissbad,+,3105,Schwende,,9057,0,Weissbad
-BE,,Weissenbach,,791,Boltigen,,3766,0,Boltigen
 AG,,Weissenbach,,4228,Boswil,,5632,0,Buttwil
+BE,,Weissenbach,,791,Boltigen,,3766,0,Boltigen
 BE,Q,Weissenbühl,,351,Bern,!,3000,0,Bern
 BE,,Weissenburg,,761,Därstetten,,3764,0,Weissenburg
 BE,,Weissenburgberg,,761,Därstetten,,3764,0,Weissenburg
 VS,,Weissenried,,6192,Blatten,,3919,0,Blatten(Lötschen)
-BE,,Weissenstein,+,307,Meikirch,,3045,0,Meikirch
 BE,,Weissenstein,+,360,Wohlen bei Bern,,3045,0,Meikirch
+BE,,Weissenstein,+,307,Meikirch,,3045,0,Meikirch
 SO,,Weissenstein bei Solothurn,,2553,Oberdorf (SO),,4515,1,Weissenstein
 ZH,,Weisslingen,,180,Weisslingen,,8484,0,Weisslingen
 SG,,Weisstannen,,3293,Mels,,7326,0,Weisstannen
@@ -5816,11 +5811,11 @@ LU,,Werthenstein-Unterdorf,,1098,Ruswil,,6106,0,Werthenstein
 AG,,Wettingen,,4045,Wettingen,,5430,0,Wettingen
 BS,Q,Wettstein,,2701,Basel,!,4000,0,Basel
 ZH,,Wettswil am Albis,,14,Wettswil am Albis,,8907,0,Wettswil
-TG,,Wetzikon,,4611,Thundorf,,8512,3,Wetzikon TG
 ZH,,Wetzikon,,121,Wetzikon (ZH),!,8620,0,Wetzikon ZH
+TG,,Wetzikon,,4611,Thundorf,,8512,3,Wetzikon TG
 BE,,Wickacker,,360,Wohlen bei Bern,,3036,0,Detligen
-AG,,Widen,,4081,Widen,,8967,0,Widen
 AG,,Widen,,4318,Schneisingen,,5425,0,Schneisingen
+AG,,Widen,,4081,Widen,,8967,0,Widen
 SO,,Widlisbach,,2555,Rüttenen,,4522,0,Rüttenen
 SG,,Widnau,,3238,Widnau,,9443,0,Widnau
 ZH,Q,Wiedikon,,261,Zürich,!,8000,0,Zürich
@@ -5829,20 +5824,20 @@ AR,,Wienacht,,3033,Lutzenberg,,9405,0,Wienacht-Tobel
 BE,,Wierezwil,,310,Rapperswil (BE),,3255,0,Rapperswil BE
 GR,,Wiesen,,3851,Davos,,7494,0,Davos Wiesen
 NW,,Wiesenberg,,1503,Dallenwil,,6383,3,Wiesenberg
-ZH,,Wiesendangen,,229,Wiesendangen,,8542,0,Wiesendangen
+ZH,,Wiesendangen,,298,Wiesendangen,,8542,0,Wiesendangen
 SH,,Wiesholz,,2963,Ramsen,,8262,0,Ramsen
 TG,,Wiezikon bei Sirnach,,4761,Sirnach,,8372,0,Wiezikon b.Sirnach
 SG,,Wigetshof,,3375,Oberhelfenschwil,,9621,0,Oberhelfenschwil
-LU,,Wiggen,,1003,Escholzmatt,,6192,0,Wiggen
+LU,,Wiggen,,1010,Escholzmatt-Marbach,,6192,0,Wiggen
 BE,,Wiggiswil,,553,Wiggiswil,,3053,4,Wiggiswil
 AG,,Wiggwil,,4224,Beinwil (Freiamt),,5637,0,Beinwil (Freiamt)
 TG,,Wigoltingen,,4951,Wigoltingen,,8556,0,Wigoltingen
 BE,,Wikartswil,,626,Walkringen,,3512,0,Walkringen
 LU,,Wikon,,1147,Wikon,,4806,0,Wikon
-SG,,Wil,,3425,Wil (SG),,9500,0,Wil SG
-ZH,,Wil,,71,Wil (ZH),,8196,0,Wil ZH
+SG,,Wil,,3427,Wil (SG),,9500,0,Wil SG
 SZ,,Wil,,1367,Muotathal,,6436,0,Muotathal
 AG,,Wil,,4184,Mettauertal,,5276,0,Wil AG
+ZH,,Wil,,71,Wil (ZH),,8196,0,Wil ZH
 ZH,,Wil bei Dübendorf,,191,Dübendorf,,8600,0,Dübendorf
 SO,,Wil bei Starrkirch,,2584,Starrkirch-Wil,,4656,0,Starrkirch-Wil
 AG,,Wil bei Turgi,,4042,Turgi,,5300,0,Turgi
@@ -5863,9 +5858,9 @@ TG,,Wilen bei Neunforn,+,4601,Neunforn,,8525,2,Wilen b. Neunforn
 ZH,,Wilen bei Neunforn,+,36,Oberstammheim,,8525,2,Wilen b. Neunforn
 TG,,Wilen bei Wil,,4786,Wilen (TG),,9535,0,Wilen b. Wil
 SZ,,Wilen bei Wollerau,,1322,Freienbach,,8832,2,Wilen b. Wollerau
-UR,,Wiler,,1209,Gurtnellen,,6482,0,Gurtnellen
-ZH,,Wiler,,68,Rorbas,,8427,3,Rorbas
 SO,,Wiler,,2611,Bärschwil,,4252,0,Bärschwil
+ZH,,Wiler,,68,Rorbas,,8427,3,Rorbas
+UR,,Wiler,,1209,Gurtnellen,,6482,0,Gurtnellen
 VS,,Wiler (Lötschen),,6202,Wiler (Lötschen),,3918,0,Wiler (Lötschen)
 BE,,Wiler bei Seedorf,,312,Seedorf (BE),,3266,0,Wiler b. Seedorf
 BE,,Wiler bei Utzenstorf,,554,Wiler bei Utzenstorf,,3428,0,Wiler b.Utzenstorf
@@ -5885,12 +5880,12 @@ AG,,Windisch,,4123,Windisch,,5210,0,Windisch
 ZH,,Windlach,,100,Stadel,,8175,0,Windlach
 BE,,Wingreis,,756,Twann-Tüscherz,,2513,0,Twann
 LU,,Winikon,,1104,Triengen,,6235,0,Winikon
-SO,,Winistorf,,2521,Heinrichswil-Winistorf,,4558,3,Winistorf
+SO,,Winistorf,,2535,Drei Höfe,,4558,3,Winistorf
 ZH,,Winkel,,72,Winkel,,8185,0,Winkel
 SG,,Winkeln,,3203,St. Gallen,,9015,0,St. Gallen
 ZH,,Winterberg,,176,Lindau,,8312,0,Winterberg ZH
-AG,,Winterhalden,+,4237,Oberrüti,,5647,0,Oberrüti
 AG,,Winterhalden,+,4239,Sins,,5647,0,Oberrüti
+AG,,Winterhalden,+,4237,Oberrüti,,5647,0,Oberrüti
 AG,,Winterschwil,,4224,Beinwil (Freiamt),,5637,0,Beinwil (Freiamt)
 BL,,Wintersingen,,2866,Wintersingen,,4451,0,Wintersingen
 ZH,,Winterthur,,230,Winterthur,!,8400,0,Winterthur
@@ -5948,8 +5943,8 @@ VD,,Yverdon-les-Bains,,5938,Yverdon-les-Bains,,1400,0,Yverdon-les-Bains
 VD,,Yvonand,,5939,Yvonand,,1462,0,Yvonand
 VD,,Yvorne,,5415,Yvorne,,1853,0,Yvorne
 GR,,Zalende,,3551,Brusio,,7748,0,Campascio
-GR,,Zalön,,3651,Safien,,7107,0,Safien Platz
-BE,,Zauggenried,,555,Zauggenried,,3309,2,Zauggenried
+GR,,Zalön,,3672,Safiental,,7107,0,Safien Platz
+BE,,Zauggenried,,538,Fraubrunnen,,3309,2,Zauggenried
 BE,,Zäziwil,,628,Zäziwil,,3532,0,Zäziwil
 BL,,Zeglingen,,2868,Zeglingen,,4495,0,Zeglingen
 AG,,Zeihen,,4183,Zeihen,,5079,0,Zeihen
@@ -5997,7 +5992,7 @@ SO,,Zullwil,,2622,Zullwil,,4234,0,Zullwil
 FR,,Zumholz,,2291,Alterswil,,1713,0,St. Antoni
 FR,,Zumholz bei Plaffeien,,2310,Zumholz,,1719,2,Zumholz
 ZH,,Zumikon,,160,Zumikon,,8126,0,Zumikon
-ZH,,Zünikon,,212,Bertschikon,,8543,0,Bertschikon
+ZH,,Zünikon,,298,Wiesendangen,,8543,0,Bertschikon
 BL,,Zunzgen,,2869,Zunzgen,,4455,0,Zunzgen
 GR,,Zuort,,3763,Sent,,7557,0,Vnà
 GR,,Zuoz,,3791,Zuoz,,7524,0,Zuoz

@@ -137,7 +137,6 @@
 199	Volketswil	ZH	261
 200	Wangen-Brüttisellen	ZH	261
 211	Altikon	ZH	
-212	Bertschikon	ZH	
 213	Brütten	ZH	261
 214	Dägerlen	ZH	
 215	Dättlikon	ZH	230
@@ -154,7 +153,6 @@
 226	Schlatt (ZH)	ZH	
 227	Seuzach	ZH	230
 228	Turbenthal	ZH	
-229	Wiesendangen	ZH	230
 230	Winterthur	ZH	230
 231	Zell (ZH)	ZH	230
 241	Aesch ZH	ZH	261
@@ -169,6 +167,7 @@
 250	Urdorf	ZH	261
 251	Weiningen (ZH)	ZH	261
 261	Zürich	ZH	261
+298	Wiesendangen	ZH	230
 301	Aarberg	BE	
 302	Bargen (BE)	BE	
 303	Grossaffoltern	BE	
@@ -262,15 +261,14 @@
 437	Mont-Tramelan	BE	
 438	Orvin	BE	
 439	Péry	BE	
-440	Plagne	BE	371
 441	Renan (BE)	BE	
 442	Romont (BE)	BE	
 443	Saint-Imier	BE	
 444	Sonceboz-Sombeval	BE	
 445	Sonvilier	BE	
 446	Tramelan	BE	
-447	Vauffelin	BE	371
 448	Villeret	BE	
+449	Sauge	BE	371
 491	Brüttelen	BE	
 492	Erlach	BE	
 493	Finsterhennen	BE	
@@ -285,27 +283,18 @@
 502	Vinelz	BE	
 532	Bangerten	BE	
 533	Bätterkinden	BE	
-534	Büren zum Hof	BE	
 535	Deisswil bei Münchenbuchsee	BE	
 536	Diemerswil	BE	351
-537	Etzelkofen	BE	
 538	Fraubrunnen	BE	351
-539	Grafenried	BE	351
 540	Jegenstorf	BE	351
 541	Iffwil	BE	
-542	Limpach	BE	
 543	Mattstetten	BE	351
 544	Moosseedorf	BE	351
-545	Mülchi	BE	
 546	Münchenbuchsee	BE	351
-547	Münchringen	BE	
-549	Schalunen	BE	351
-550	Scheunen	BE	
 551	Urtenen-Schönbühl	BE	351
 552	Utzenstorf	BE	
 553	Wiggiswil	BE	
 554	Wiler bei Utzenstorf	BE	
-555	Zauggenried	BE	
 556	Zielebach	BE	2601
 557	Zuzwil (BE)	BE	
 561	Adelboden	BE	
@@ -340,7 +329,6 @@
 594	Wilderswil	BE	581
 602	Arni (BE)	BE	
 603	Biglen	BE	
-604	Bleiken bei Oberdiessbach	BE	
 605	Bowil	BE	
 606	Brenzikofen	BE	
 607	Freimettigen	BE	
@@ -403,11 +391,9 @@
 712	Souboz	BE	
 713	Tavannes	BE	
 715	Rebévelier	BE	
-721	Diesse	BE	
-722	Lamboing	BE	
 723	La Neuveville	BE	
 724	Nods	BE	
-725	Prêles	BE	
+726	Plateau de Diesse	BE	
 731	Aegerten	BE	371
 732	Bellmund	BE	371
 733	Brügg	BE	371
@@ -435,13 +421,11 @@
 761	Därstetten	BE	
 762	Diemtigen	BE	
 763	Erlenbach im Simmental	BE	
-764	Niederstocken	BE	
-765	Oberstocken	BE	
 766	Oberwil im Simmental	BE	
 767	Reutigen	BE	
 768	Spiez	BE	942
 769	Wimmis	BE	
-781	Gadmen	BE	
+770	Stocken-Höfen	BE	
 782	Guttannen	BE	
 783	Hasliberg	BE	
 784	Innertkirchen	BE	
@@ -465,7 +449,6 @@
 868	Jaberg	BE	
 869	Kaufdorf	BE	351
 870	Kehrsatz	BE	351
-871	Kienersrüti	BE	
 872	Kirchdorf (BE)	BE	
 873	Kirchenthurnen	BE	
 874	Lohnstorf	BE	
@@ -498,7 +481,6 @@
 927	Heiligenschwendi	BE	
 928	Heimberg	BE	942
 929	Hilterfingen	BE	942
-930	Höfen	BE	
 931	Homberg	BE	
 932	Horrenbach-Buchen	BE	
 934	Oberhofen am Thunersee	BE	942
@@ -767,8 +749,6 @@
 2123	Botterens	FR	
 2124	Broc	FR	
 2125	Bulle	FR	2125
-2126	Cerniat (FR)	FR	
-2127	Charmey	FR	
 2128	Châtel-sur-Montsalvens	FR	
 2129	Corbières	FR	
 2130	Crésuz	FR	
@@ -788,6 +768,7 @@
 2155	Vaulruz	FR	
 2160	Vuadens	FR	2125
 2162	Bas-Intyamon	FR	
+2163	Val-de-Charmey	FR	
 2171	Arconciel	FR	2196
 2172	Autafond	FR	
 2173	Autigny	FR	
@@ -894,23 +875,14 @@
 2427	Matzendorf	SO	
 2428	Mümliswil-Ramiswil	SO	
 2429	Welschenrohr	SO	
-2441	Aetigkofen	SO	
-2442	Aetingen	SO	
-2444	Bibern (SO)	SO	
 2445	Biezwil	SO	
-2446	Brügglen	SO	
-2449	Gossliwil	SO	
-2450	Hessigkofen	SO	
-2452	Küttigkofen	SO	
-2453	Kyburg-Buchegg	SO	
 2455	Lüterkofen-Ichertswil	SO	
 2456	Lüterswil-Gächliwil	SO	
 2457	Messen	SO	
-2458	Mühledorf (SO)	SO	
 2461	Schnottwil	SO	
-2462	Tscheppach	SO	
 2463	Unterramsern	SO	
 2464	Lüsslingen-Nennigkofen	SO	
+2465	Buchegg	SO	
 2471	Bättwil	SO	2701
 2472	Büren (SO)	SO	2701
 2473	Dornach	SO	2701
@@ -1237,30 +1209,18 @@
 3541	Tinizong-Rona	GR	
 3551	Brusio	GR	
 3561	Poschiavo	GR	
-3571	Castrisch	GR	
 3572	Falera	GR	
-3574	Ilanz	GR	
 3575	Laax	GR	
-3576	Ladir	GR	
-3577	Luven	GR	
-3578	Pitasch	GR	
-3579	Riein	GR	
-3580	Ruschein	GR	
 3581	Sagogn	GR	
 3582	Schluein	GR	
-3583	Schnaus	GR	
-3584	Sevgein	GR	
-3593	Duvin	GR	
 3598	St. Martin	GR	
 3603	Vals	GR	
 3611	Andiast	GR	
 3612	Obersaxen	GR	
-3613	Pigniu	GR	
-3614	Rueun	GR	
-3615	Siat	GR	
 3616	Waltensburg/Vuorz	GR	
 3617	Mundaun	GR	
 3618	Lumnezia	GR	
+3619	Ilanz/Glion	GR	
 3631	Almens	GR	
 3633	Fürstenau	GR	
 3634	Paspels	GR	
@@ -1417,7 +1377,6 @@
 4066	Eggenwil	AG	261
 4067	Fischbach-Göslikon	AG	261
 4068	Hägglingen	AG	
-4069	Hermetschwil-Staffeln	AG	261
 4071	Jonen	AG	261
 4072	Niederwil (AG)	AG	
 4073	Oberlunkhofen	AG	261
@@ -1445,19 +1404,18 @@
 4105	Mandach	AG	
 4106	Mönthal	AG	
 4107	Mülligen	AG	4021
-4109	Oberflachs	AG	
 4110	Remigen	AG	
 4111	Riniken	AG	4021
 4112	Rüfenach	AG	
 4113	Scherz	AG	
 4114	Schinznach Bad	AG	
-4115	Schinznach Dorf	AG	
 4117	Thalheim (AG)	AG	
 4120	Veltheim (AG)	AG	
 4121	Villigen	AG	
 4122	Villnachern	AG	
 4123	Windisch	AG	4021
 4124	Bözberg	AG	
+4125	Schinznach	AG	
 4131	Beinwil am See	AG	
 4132	Birrwil	AG	
 4133	Burg (AG)	AG	
@@ -1584,7 +1542,6 @@
 4318	Schneisingen	AG	
 4319	Siglistorf	AG	
 4320	Tegerfelden	AG	
-4321	Unterendingen	AG	
 4322	Wislikofen	AG	
 4323	Bad Zurzach	AG	
 4401	Arbon	TG	4401
@@ -1702,7 +1659,6 @@
 5095	Brione (Verzasca)	TI	
 5096	Brione sopra Minusio	TI	5113
 5097	Brissago	TI	
-5099	Cavigliano	TI	5113
 5102	Corippo	TI	
 5105	Frasco	TI	
 5108	Gordola	TI	5113
@@ -1717,10 +1673,8 @@
 5121	Orselina	TI	5113
 5125	Ronco sopra Ascona	TI	5113
 5129	Sonogno	TI	
-5130	Tegna	TI	5113
 5131	Tenero-Contra	TI	5113
 5132	Vergeletto	TI	
-5133	Verscio	TI	5113
 5135	Vogorno	TI	
 5136	Onsernone	TI	
 5137	Isorno	TI	
@@ -1733,16 +1687,11 @@
 5149	Bedigliora	TI	5192
 5151	Bioggio	TI	5192
 5154	Bissone	TI	5192
-5155	Bogno	TI	
 5160	Brusino Arsizio	TI	5250
 5161	Cademario	TI	5192
 5162	Cadempino	TI	5192
-5163	Cadro	TI	5192
 5167	Canobbio	TI	5192
-5170	Carona	TI	5192
 5171	Caslano	TI	5192
-5173	Certara	TI	
-5174	Cimadera	TI	
 5176	Comano	TI	5192
 5178	Croglio	TI	5192
 5180	Cureglia	TI	5192
@@ -1773,11 +1722,9 @@
 5219	Rovio	TI	5192
 5221	Savosa	TI	5192
 5222	Sessa	TI	
-5224	Sonvico	TI	5192
 5225	Sorengo	TI	5192
 5226	Capriasca	TI	5192
 5227	Torricella-Taverne	TI	5192
-5229	Valcolla	TI	
 5230	Vernate	TI	5192
 5231	Vezia	TI	5192
 5233	Vico Morcote	TI	5192
@@ -1785,13 +1732,10 @@
 5237	Alto Malcantone	TI	
 5238	Monteceneri	TI	
 5242	Balerna	TI	5250
-5243	Besazio	TI	5250
 5249	Castel San Pietro	TI	5250
 5250	Chiasso	TI	5250
 5251	Coldrerio	TI	5250
-5253	Ligornetto	TI	5250
 5254	Mendrisio	TI	5250
-5255	Meride	TI	
 5257	Morbio Inferiore	TI	5250
 5260	Novazzano	TI	5250
 5263	Riva San Vitale	TI	5250
@@ -1812,6 +1756,7 @@
 5317	Maggia	TI	5113
 5323	Lavizzara	TI	
 5324	Avegno Gordevio	TI	5113
+5396	Terre di Pedemonte	TI	5113
 5397	Centovalli	TI	5113
 5398	Gambarogno	TI	
 5401	Aigle	VD	6153
@@ -1943,7 +1888,7 @@
 5621	Aclens	VD	5586
 5622	Bremblens	VD	5586
 5623	Buchillon	VD	5586
-5624	Bussigny-près-Lausanne	VD	5586
+5624	Bussigny	VD	5586
 5625	Bussy-Chardonney	VD	5586
 5627	Chavannes-près-Renens	VD	5586
 5628	Chigny	VD	5586
@@ -1993,7 +1938,7 @@
 5692	Vucherens	VD	
 5693	Montanaire	VD	
 5701	Arnex-sur-Nyon	VD	6621
-5702	Arzier	VD	6621
+5702	Arzier-Le Muids	VD	6621
 5703	Bassins	VD	6621
 5704	Begnins	VD	
 5705	Bogis-Bossey	VD	6621
@@ -2201,11 +2146,9 @@
 6157	Val-d'Illiez	VS	
 6158	Vionnaz	VS	
 6159	Vouvry	VS	
-6171	Betten	VS	
 6172	Bister	VS	
 6173	Bitsch	VS	6002
 6177	Grengiols	VS	
-6178	Martisberg	VS	
 6181	Riederalp	VS	
 6191	Ausserberg	VS	
 6192	Blatten	VS	
@@ -2219,6 +2162,7 @@
 6202	Wiler (Lötschen)	VS	
 6203	Mörel-Filet	VS	
 6204	Steg-Hohtenn	VS	
+6205	Bettmeralp	VS	
 6211	Collonges	VS	
 6212	Dorénaz	VS	
 6213	Evionnaz	VS	
