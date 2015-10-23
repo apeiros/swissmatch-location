@@ -110,7 +110,7 @@ module SwissMatch
           zip1_columns.values_at(3,5,10,11).flatten+
           zip2_columns.values_at(2,3,4).flatten+
           com2_columns[8]
-        ).map(&:to_i).pack("n*")
+        ).map(&:to_i).pack("C*")
 
         int2_columns = (
           zip1_columns.values_at(1,4,12,2).flatten+
