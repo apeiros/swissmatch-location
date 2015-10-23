@@ -71,8 +71,8 @@ Usage
     SwissMatch.canton("Zurigo").name                        # => "Zürich"
 
     # SwissMatch also provides data over swiss communities (Gemeinden)
-    SwissMatch.communities("Zürich").first.community_number # => 261
-    SwissMatch.community(261).name                          # => "Zürich"
+    SwissMatch.community("Zürich").community_number # => 261
+    SwissMatch.community(261).name                  # => "Zürich"
 
 
 SwissMatch and Rails/Databases
