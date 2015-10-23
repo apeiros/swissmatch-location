@@ -37,7 +37,7 @@ install and update your swissmatch data:
 7. Run `swissmatch-location install-data PATH_TO_MASTER_DATA_FILE`
 
 You can test your installation by running `swissmatch-location stats`. It should
-tell you the age of the data and a number >0 of zip codes. 
+tell you the age of the data and a number >0 of zip codes.  
 A negative age is possible since the swiss post provides files which start to be
 valid in the future.
 
