@@ -3,7 +3,7 @@
 # As it seems, the zipfiles don't report the "\n" in the zipfile-comment
 
 begin
-  require 'zip/zip'
+  require 'zip'
 rescue LoadError
   raise "To update the swissmatch datafiles, the rubyzip gem is required, `gem install rubyzip` or add it to your Gemfile."
 end
