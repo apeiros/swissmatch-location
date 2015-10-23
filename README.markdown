@@ -4,21 +4,47 @@ README
 
 Summary
 -------
+
 Deal with swiss zip codes, cantons and communities, using the official swiss post mat[ch]
 database.
 
 
 Installation
 ------------
+
 Install the gem: `gem install swissmatch-location`  
 Depending on how you installed rubygems, you have to use `sudo`:
 `sudo gem install swissmatch-location`  
 In Ruby: `require 'swissmatch/location'`  
 To automatically load the datafiles: `require 'swissmatch/location/autoload'`
 
+**IMPORTANT!**
+
+Due to a change in the license agreement of the swiss post, I'm no longer
+allowed to ship the data together with the gem. Here's a guide on how to
+install and update your swissmatch data:
+
+1. Go to https://www.post.ch/de/pages/downloadcenter-match
+2. In the pop-up menu top-left select "Register"
+3. Once you're registered (you'll get a snail-mail letter from the post to sign),
+   you visit the same page again and this time you choose "Login"
+3. After login, you choose the download page for "Address master data"
+   (de: "Adressstammdaten", fr: "Base de données d'adresses de référence", it:
+   "Banca dati indirizzi di riferimento")
+4. Download "Existing data" (de: "Bestand", fr: "Etat", it: "Versione completa")
+5. Unzip the file
+6. Open a shell and cd into the directory with the unzipped master data
+7. Run `swissmatch-location install-data PATH_TO_MASTER_DATA_FILE`
+
+You can test your installation by running `swissmatch-location stats`. It should
+tell you the age of the data and a number >0 of zip codes. 
+A negative age is possible since the swiss post provides files which start to be
+valid in the future.
+
 
 Usage
 -----
+
     require 'swissmatch/location/autoload' # use this to automatically load the data
 
     # Get all zip codes for a given code, the example returns the official name of the first
@@ -48,6 +74,7 @@ Usage
 
 SwissMatch and Rails/Databases
 ------------------------------
+
 If you want to load the data into your database, or use it in a rails project,
 then you should look at swissmatch-rails. It provides a couple of models and
 a data loading script.
@@ -55,6 +82,7 @@ a data loading script.
 
 Relevant Classes and Modules
 ----------------------------
+
 * __{SwissMatch}__
   Convenience methods to access cantons, communities and zip codes
 * __{SwissMatch::Cantons}__
@@ -68,7 +96,8 @@ Relevant Classes and Modules
 * __{SwissMatch::ZipCodes}__
   Swiss zip code collection
 * __{SwissMatch::ZipCode}__
-  A swiss zip code (a zip code can be described and uniquely identified by either code and city, code and add-on or the swiss posts ONRP)
+  A swiss zip code (a zip code can be described and uniquely identified by
+  either code and city, code and add-on or the swiss posts ONRP)
 
 
 Links
