@@ -25,9 +25,12 @@ allowed to ship the data together with the gem. Here's a guide on how to
 install and update your swissmatch data:
 
 1. Go to https://www.post.ch/de/pages/downloadcenter-match
-2. In the pop-up menu top-left select "Register"
+2. *In the pop-up menu top-left* select "Register"
 3. Once you're registered (you'll get a snail-mail letter from the post to sign),
    you visit the same page again and this time you choose "Login"
+   *from the pop-up menu top-left*, the login button top right *does not work
+   for this!* (the former logs you into the downloadcenter, the latter into
+   the customer center).
 3. After login, you choose the download page for "Address master data"
    (de: "Adressstammdaten", fr: "Base de données d'adresses de référence", it:
    "Banca dati indirizzi di riferimento")
