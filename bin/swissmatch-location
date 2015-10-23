@@ -1,0 +1,51 @@
+#!/usr/bin/env ruby
+
+lib_dir = File.expand_path("#{__dir__}/../lib")
+$LOAD_PATH << lib_dir if File.directory?(lib_dir) && !$LOAD_PATH.include?(lib_dir)
+
+require "fileutils"
+require "swissmatch/location"
+require "swissmatch/location/converter"
+
+begin
+  is_empty = false
+  SwissMatch::Location.load
+rescue SwissMatch::LoadError, ArgumentError
+  is_empty = true
+  SwissMatch::Location.load(SwissMatch::Location::DataFiles.empty)
+end
+
+case ARGV[0]
+  when "stats"
+    puts "SwissMatch::Location Statistics"
+    puts "Master Data from #{SwissMatch::Location.data.date} (age #{(Date.today - SwissMatch::Location.data.date).floor} days), random code #{SwissMatch::Location.data.random_code}"
+    puts "Zip Codes:   #{SwissMatch.zip_codes.size}"
+    puts "Cantons:     #{SwissMatch.cantons.size}"
+    puts "Communities: #{SwissMatch.communities.size}"
+    puts "Districts:   #{SwissMatch.districts.size}"
+
+  when "install-data"
+    master_file = ARGV[1]
+    install_dir = ARGV[2]
+
+    if !master_file
+      abort("Please supply a master file (`swissmatch-location install-data MASTER_FILE [INSTALL_DIRECTORY]`)")
+    elsif !File.exist?(master_file)
+      abort("Could not find #{master_file.inspect}")
+    elsif !File.readable?(master_file)
+      abort("Could not read #{master_file.inspect}")
+    end
+    unless install_dir
+      install_dir = File.expand_path('~/.swissmatch')
+      FileUtils.mkdir_p(install_dir)
+    end
+
+    puts "Installing data from #{master_file} in #{install_dir}"
+    binary_file = "#{install_dir}/locations_#{Time.now.strftime('%F')}.binary"
+    SwissMatch::Location::Converter.new(master_file).convert.write(binary_file)
+    puts "Done"
+
+  else
+    puts "Please supply either `stats` or `install-data MASTER_FILE [INSTALL_DIRECTORY]` as arguments"
+    exit(1)
+end
