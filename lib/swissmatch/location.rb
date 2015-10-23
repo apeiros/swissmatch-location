@@ -72,22 +72,26 @@ module SwissMatch
       @data.districts
     end
 
-    # @param [Integer] key
-    #   The community number of the community
+    # @param [Integer, String] key
+    #   The name or community number of the community
     #
     # @return [SwissMatch::Community]
-    #   The community with the community number
+    #   The community with the given name or community number
     def self.community(key)
-      @data.communities.by_community_number(key)
+      case key
+        when Integer
+          @data.communities.by_community_number(key)
+        when String
+          @data.communities.by_name(key)
+        else
+          raise TypeError, "Expected Integer or String, but got #{key.inspect}:#{key.class}"
+      end
     end
 
-    # @param [String] name
-    #   The name of the communities
-    #
     # @return [SwissMatch::Communities]
-    #   All communities, or those matching the given name
-    def self.communities(name=nil)
-      name ? @data.communities.by_name(name) : @data.communities
+    #   All communities
+    def self.communities
+      @data.communities
     end
 
     # @param [String, Integer] code_or_name
