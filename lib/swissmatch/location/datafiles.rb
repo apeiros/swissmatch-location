@@ -302,16 +302,16 @@ module SwissMatch
         end
 
         zip2_data.each do |onrp, rn, type, lang, short, name|
-          onrp      = onrp.to_i
-          lang_code = lang.to_i
+          onrp      = onrp
+          lang_code = lang
           language  = LanguageCodes[lang_code]
           entry     = temporary[onrp]
           if type == 2
-            entry[5] << Name.new(name, language, rn.to_i)
-            entry[7] << Name.new(short, language, rn.to_i)
+            entry[5] << Name.new(name, language, rn)
+            entry[7] << Name.new(short, language, rn)
           elsif type == 3
-            entry[8] << Name.new(name, language, rn.to_i)
-            entry[9] << Name.new(short, language, rn.to_i)
+            entry[8] << Name.new(name, language, rn)
+            entry[9] << Name.new(short, language, rn)
           end
         end
 
