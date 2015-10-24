@@ -83,6 +83,25 @@ then you should look at swissmatch-rails. It provides a couple of models and
 a data loading script.
 
 
+Notable Recent Changes
+----------------------
+
+### 0.1.2.x -> 1.0.0
+
+* Zip code master data is no longer bundled with the gem. Check the installation
+  guide for how to obtain, install and update the data.
+* swissmatch-location executable added to support the installation and updating
+  of the master data
+* SwissMatch.communities and SwissMatch::Location.communities no longer return
+  communities by name. This has moved to the .community methods since community
+  names are unique now.
+* SwissMatch::Location::Converter has been added to convert the new data format
+  into a compact data file (~140MB down to ~400KB)
+* SwissMatch::Location::DataFiles rewritten to read the new compact master data
+  file.
+* Dropped rubyzip dependency.
+
+
 Relevant Classes and Modules
 ----------------------------
 
