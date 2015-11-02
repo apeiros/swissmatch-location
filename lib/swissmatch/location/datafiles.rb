@@ -146,7 +146,13 @@ module SwissMatch
 
         file ||= latest_binary_file
 
-        raise LoadError.new("File #{file.inspect} not found or not readable", nil) unless file && File.readable?(file)
+        unless file && File.readable?(file)
+          if ENV['SWISSMATCH_DATA']
+            raise LoadError.new("File #{file.inspect} not found or not readable (used SWISSMATCH_DATA, data_directory=#{@data_directory}) - see https://github.com/apeiros/swissmatch-location#installation", nil)
+          else
+            raise LoadError.new("File #{file.inspect} not found or not readable (used ~/.swissmatch, data_directory=#{@data_directory}) - see https://github.com/apeiros/swissmatch-location#installation", nil)
+          end
+        end
 
         data = File.read(file, encoding: Encoding::BINARY)
         date, random_code, zip1_count, zip2_count, com1_count, com2_count, district_count = *data[0,18].unpack("NNn*")
